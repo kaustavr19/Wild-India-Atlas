@@ -1,0 +1,1 @@
+export function EmptyState({ title, body }: { title: string; body: string }) { return <div className="rounded-lg border border-dashed border-forest-700/20 bg-white/60 p-8 text-center"><h3 className="text-lg font-bold text-forest-900">{title}</h3><p className="mt-2 text-sm text-slate-600">{body}</p></div>; }
