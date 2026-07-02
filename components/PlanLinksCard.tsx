@@ -1,13 +1,16 @@
 import { BookOpen, ExternalLink, Navigation, Search, Ticket } from "lucide-react";
 import type { Hotspot } from "@/data/types";
-import { mapsDirectionsUrl, searchUrl, wikipediaUrl } from "@/data/officialLinks";
+import { mapsDirectionsUrl, permitPortalUrl, searchUrl, wikipediaUrl } from "@/data/officialLinks";
 
 export function PlanLinksCard({ hotspot }: { hotspot: Hotspot }) {
   const wiki = wikipediaUrl(hotspot.slug);
+  const permitPortal = permitPortalUrl[hotspot.slug];
   const links = [
     { icon: Navigation, label: "Get directions", href: mapsDirectionsUrl(hotspot.coordinates.latitude, hotspot.coordinates.longitude) },
     ...(wiki ? [{ icon: BookOpen, label: "Read the overview", href: wiki }] : []),
-    { icon: Ticket, label: "Search safari & permit booking", href: searchUrl(hotspot.name + " safari booking permits") },
+    permitPortal
+      ? { icon: Ticket, label: "Official permits & safari booking", href: permitPortal }
+      : { icon: Ticket, label: "Search safari & permit booking", href: searchUrl(hotspot.name + " safari booking permits") },
     { icon: Search, label: "Find the official forest department page", href: searchUrl(hotspot.name + " official forest department") },
   ];
   return (

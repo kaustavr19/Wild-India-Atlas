@@ -30,6 +30,38 @@ export function wikipediaUrl(slug: string): string | undefined {
   return title ? "https://en.wikipedia.org/wiki/" + encodeURIComponent(title.replace(/ /g, "_")) : undefined;
 }
 
+// Verified official (mostly *.gov.in) permit/booking portals, checked live before inclusion.
+// Where no verifiable official portal exists (e.g. no online booking system, or the
+// official domain was unreachable at research time), the slug is omitted and callers
+// should fall back to a search link instead of guessing a URL.
+export const permitPortalUrl: Record<string, string> = {
+  "jim-corbett-national-park": "https://corbettgov.org/",
+  "ranthambore-national-park": "https://forestrajasthan.com/",
+  "bandhavgarh-tiger-reserve": "https://forest.mponline.gov.in/",
+  "kanha-national-park": "https://forest.mponline.gov.in/",
+  "tadoba-andhari-tiger-reserve": "https://mytadoba.mahaforest.gov.in/",
+  "pench-national-park": "https://forest.mponline.gov.in/",
+  "kaziranga-national-park": "https://sewasetu.assam.gov.in/site/service-apply/online-safari-booking-kaziranga-national-park",
+  "manas-national-park": "https://sewasetu.assam.gov.in/site/service-apply/online-safari-booking-manas-national-park",
+  "sundarbans-national-park": "https://www.wildbengal.com/sundarban.php",
+  "keoladeo-ghana-bharatpur": "https://www.tourism.rajasthan.gov.in/keoladeo-ghana-national-park.html",
+  "chambal-river-sanctuary": "https://forest.rajasthan.gov.in/content/raj/forest/en/aboutus/departmental-wings/wild-life1/public-information/details-of-protected-area-/national-chambal-gariyal-sanctuary-area-detail.html",
+  "little-rann-of-kutch": "https://gujarattourism.com/saurashtra/surendranagar/wild-ass-sanctuary-in-little-rann-of-kutch.html",
+  "gir-national-park": "https://girlion.gujarat.gov.in/",
+  "hemis-national-park": "https://www.lahdclehpermit.in/",
+  "periyar-tiger-reserve": "https://periyartigerreserve.org/",
+  "nagarhole-kabini": "https://junglelodges.com",
+  "thattekad-bird-sanctuary": "https://ecotourism.forest.kerala.gov.in/propertydetail/200",
+  "mangalajodi-wetlands": "https://odishatourism.gov.in/content/tourism/en/trail-details/birding-at-mangalajodi.html",
+  "chilika-lake": "https://apps.odishatourism.gov.in/tour/chilika-lake",
+  "great-himalayan-national-park": "https://hpforest.gov.in/great-himalayan-national-park",
+  "desert-national-park": "https://forest.rajasthan.gov.in/content/raj/forest/en/aboutus/departmental-wings/wildlife/details-of-protected-area-/desert-national-park.html",
+  "dudhwa-national-park": "https://upecotourism.in/DudhwaTariff.aspx",
+  "satpura-tiger-reserve": "https://forest.mponline.gov.in/",
+  // "valley-of-flowers": official portal (valleyofflower.uk.gov.in) was unreachable at
+  // research time (connection refused) - falls back to search link instead.
+};
+
 export function mapsDirectionsUrl(lat: number, lng: number): string {
   return "https://www.google.com/maps/search/?api=1&query=" + lat + "," + lng;
 }
