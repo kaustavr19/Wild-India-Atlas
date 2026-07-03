@@ -1,4 +1,29 @@
 "use client";
-import Link from "next/link"; import Image from "next/image"; import { Menu, X } from "lucide-react"; import { useState } from "react";
+import Link from "next/link"; import Image from "next/image"; import { Menu, X } from "lucide-react"; import { useState } from "react"; import { ThemeToggle } from "./ThemeToggle";
 const nav = [{label:"Map",href:"/map"},{label:"Hotspots",href:"/hotspots"},{label:"Species",href:"#species",disabled:true},{label:"Seasonal Planner",href:"#seasonal",disabled:true},{label:"About",href:"/#about"}];
-export function Header(){ const [open,setOpen]=useState(false); return <header className="sticky top-0 z-50 border-b border-forest-700/10 bg-ivory/88 backdrop-blur-xl"><div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6"><Link href="/" className="flex items-center gap-2.5 font-bold text-forest-900"><Image src="/brand/logomark-black.svg" alt="" width={36} height={24} className="h-8 w-auto"/><span>Wild India Atlas</span></Link><nav className="hidden items-center gap-1 md:flex">{nav.map(item=>item.disabled?<span key={item.label} className="rounded-full px-4 py-2 text-sm font-semibold text-slate-400" title="Coming later">{item.label}</span>:<Link key={item.label} className="rounded-full px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-white hover:text-forest-700" href={item.href}>{item.label}</Link>)}</nav><button className="rounded-full p-2 md:hidden" onClick={()=>setOpen(!open)} aria-label="Toggle navigation">{open?<X/>:<Menu/>}</button></div>{open&&<div className="border-t border-forest-700/10 bg-ivory px-4 py-3 md:hidden">{nav.map(item=>item.disabled?<div key={item.label} className="px-3 py-2 text-sm font-semibold text-slate-400">{item.label} · Coming later</div>:<Link key={item.label} className="block rounded-lg px-3 py-2 font-semibold text-slate-700 hover:bg-white" href={item.href} onClick={()=>setOpen(false)}>{item.label}</Link>)}</div>}</header>; }
+export function Header(){ const [open,setOpen]=useState(false); return <div className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-4">
+  <header className="mx-auto flex max-w-5xl items-center justify-between gap-4 rounded-full border border-white/15 bg-forest-900/70 px-4 py-2.5 shadow-lg backdrop-blur-xl sm:px-5">
+    <Link href="/" className="flex items-center gap-2.5 font-bold text-white">
+      <Image src="/brand/logomark-white.svg" alt="" width={36} height={24} className="h-7 w-auto"/>
+      <span className="hidden sm:inline">Wild India Atlas</span>
+    </Link>
+    <nav className="hidden items-center gap-6 md:flex">
+      {nav.map(item=>item.disabled
+        ? <span key={item.label} className="font-mono text-xs font-semibold uppercase tracking-wider text-white/35" title="Coming later">{item.label}</span>
+        : <Link key={item.label} className="border-b-2 border-transparent py-1 font-mono text-xs font-semibold uppercase tracking-wider text-white/80 transition hover:border-flare hover:text-flare" href={item.href}>{item.label}</Link>
+      )}
+    </nav>
+    <div className="flex items-center gap-1">
+      <ThemeToggle/>
+      <button className="grid h-8 w-8 place-items-center rounded-full text-white/80 hover:bg-white/10 md:hidden" onClick={()=>setOpen(!open)} aria-label="Toggle navigation">{open?<X size={18}/>:<Menu size={18}/>}</button>
+    </div>
+  </header>
+  {open && (
+    <div className="mx-auto mt-2 max-w-5xl rounded-sm border border-white/15 bg-forest-900/85 p-2 backdrop-blur-xl md:hidden">
+      {nav.map(item=>item.disabled
+        ? <div key={item.label} className="px-3 py-2 font-mono text-xs font-semibold uppercase tracking-wider text-white/35">{item.label} · Coming later</div>
+        : <Link key={item.label} className="block rounded-sm px-3 py-2 font-mono text-xs font-semibold uppercase tracking-wider text-white/80 hover:bg-white/10 hover:text-flare" href={item.href} onClick={()=>setOpen(false)}>{item.label}</Link>
+      )}
+    </div>
+  )}
+</div>; }
