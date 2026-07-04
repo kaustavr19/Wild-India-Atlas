@@ -4,10 +4,10 @@ function MapExperience(){
   const params=useSearchParams();
   const [filters,setFilters]=useState<HotspotFilters>({...defaultFilters, query: params.get('query') ?? '', season: (params.get('season') as Season | null) ?? 'All'});
   const visible=useMemo(()=>filterHotspots(hotspots,filters),[filters]);
-  const [selected,setSelected]=useState<Hotspot | undefined>(visible[0]);
+  const [selected,setSelected]=useState<Hotspot | undefined>(undefined);
   const [panelOpen,setPanelOpen]=useState(true);
   const [tab,setTab]=useState<"map"|"list">("map");
-  const active=selected && visible.some(h=>h.slug===selected.slug) ? selected : visible[0];
+  const active=selected && visible.some(h=>h.slug===selected.slug) ? selected : undefined;
   function select(h: Hotspot){ setSelected(h); setPanelOpen(true); }
   return <main className="mx-auto flex max-w-[1680px] flex-col px-4 pb-4 pt-24 sm:px-6 sm:pt-28 lg:h-screen lg:pb-6">
     <div className="shrink-0">
@@ -30,7 +30,6 @@ function MapExperience(){
       <div className={(tab==="map" ? "block" : "hidden") + " relative min-w-0 lg:block lg:h-full"}>
         <IndiaMap hotspots={visible} selectedSlug={active?.slug} onSelect={select}/>
         {active && panelOpen && <HotspotPreviewCard hotspot={active} docked onClose={()=>setPanelOpen(false)}/>}
-        {!active && <div className="absolute inset-x-4 bottom-4"><EmptyState title="No marker selected" body="Select a hotspot from the map or list to preview it." /></div>}
       </div>
     </div>
   </main>;
