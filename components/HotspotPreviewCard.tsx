@@ -1,4 +1,4 @@
-import Link from "next/link"; import { ArrowRight, CalendarDays, MapPin, X } from "lucide-react"; import type { Hotspot } from "@/data/types"; import { Tag } from "./Tag"; import { HotspotImage } from "./HotspotImage";
+import Link from "next/link"; import { ArrowRight, CalendarDays, MapPin, Plane, TrainFront, X } from "lucide-react"; import type { Hotspot } from "@/data/types"; import { Tag } from "./Tag"; import { HotspotImage } from "./HotspotImage";
 
 export function HotspotPreviewCard({ hotspot, docked, onClose }: { hotspot: Hotspot; docked?: boolean; onClose?: () => void }) {
   if (docked) {
@@ -18,6 +18,8 @@ export function HotspotPreviewCard({ hotspot, docked, onClose }: { hotspot: Hots
             <div className="mt-2 flex flex-wrap items-center gap-2">
               <span className="rounded-sm bg-white/10 px-2 py-0.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-flare">{hotspot.type}</span>
               <span className="hidden font-mono text-[10px] uppercase tracking-wide text-white/50 sm:inline">Best: {hotspot.bestMonths.slice(0,4).join(", ")}</span>
+              {hotspot.nearestAirport && <span className="hidden items-center gap-1 font-mono text-[10px] uppercase tracking-wide text-white/50 md:inline-flex"><Plane size={11} />{hotspot.nearestAirport}</span>}
+              {hotspot.nearestRailway && <span className="hidden items-center gap-1 font-mono text-[10px] uppercase tracking-wide text-white/50 lg:inline-flex"><TrainFront size={11} />{hotspot.nearestRailway}</span>}
               <Link href={"/hotspots/" + hotspot.slug} className="ml-auto inline-flex items-center gap-1 rounded-sm bg-flare px-3 py-1.5 text-xs font-bold text-forest-900 hover:bg-white">View details <ArrowRight size={13} /></Link>
             </div>
           </div>
