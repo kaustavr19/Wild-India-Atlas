@@ -1,21 +1,30 @@
 "use client";
 import { useRef, useState } from "react";
-import { DoorOpen, Minus, Plane, Plus, RotateCcw, TrainFront, type LucideIcon } from "lucide-react";
+import { ChevronDown, DoorOpen, Minus, Plane, Plus, RotateCcw, SlidersHorizontal, TrainFront, type LucideIcon } from "lucide-react";
 import { geoMercator, geoPath } from "d3-geo";
 import type { Hotspot, Region } from "@/data/types";
 import { hotspots as allHotspots } from "@/data/hotspots";
 import indiaStates from "@/data/india-states.json";
 import { neighboringCountries } from "@/data/neighboringCountries";
 import { airportPoint, railwayPoint, entryGates, type AccessPoint } from "@/data/accessPoints";
+import { ecosystem, type Ecosystem } from "@/data/ecosystems";
 
 type AccessHover = { name: string; kind: string; coordinates: { latitude: number; longitude: number } };
+type LayerKey = "Mammals" | "Birds" | "Reptiles" | "Flora" | "Rare Species" | "Monsoon";
+const LAYER_KEYS: LayerKey[] = ["Mammals", "Birds", "Reptiles", "Flora", "Rare Species", "Monsoon"];
+function matchesLayer(h: Hotspot, key: LayerKey): boolean {
+  if (key === "Rare Species") return h.experienceTags.includes("Rare Species");
+  if (key === "Monsoon") return h.bestSeason.includes("Monsoon");
+  return h.wildlifeTypes.includes(key);
+}
 
-const typeColorClass: Record<string,string> = {"Tiger Reserve":"bg-amberfield","Bird Sanctuary":"bg-sky-500",Wetland:"bg-river","National Park":"bg-forest-700",Marine:"bg-cyan-500",Himalayan:"bg-slate-600",Grassland:"bg-yellow-600",Mangrove:"bg-emerald-800"};
-const typeColorHex: Record<string,string> = {"Tiger Reserve":"#d98c2b","Bird Sanctuary":"#0ea5e9",Wetland:"#2f7da1","National Park":"#24563a",Marine:"#06b6d4",Himalayan:"#475569",Grassland:"#ca8a04",Mangrove:"#065f46"};
+const ecosystemColorClass: Record<Ecosystem,string> = { forest:"bg-forest-700", wetland:"bg-river", desert:"bg-amberfield", alpine:"bg-slate-600", mangrove:"bg-emerald-800", marine:"bg-cyan-500" };
+const ecosystemColorHex: Record<Ecosystem,string> = { forest:"#24563a", wetland:"#2f7da1", desert:"#d98c2b", alpine:"#475569", mangrove:"#065f46", marine:"#06b6d4" };
 
+// Used only for region-cluster circles now — state fill is a flat neutral tone so it
+// doesn't visually compete with the ecosystem-colored pins (both palettes leaned on
+// green/orange/blue and were easy to misread as the same signal).
 const regionFill: Record<Region,string> = { North: "#6f9c5c", South: "#3f7f96", East: "#c39a3a", West: "#b6703c", Central: "#7c8f4c", Northeast: "#357a68", Islands: "#3f719c" };
-const stateToRegion = new Map<string, Region>();
-for (const h of allHotspots) for (const s of h.state.split("/").map(x=>x.trim())) stateToRegion.set(s, h.region);
 
 const monthAbbr = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const currentMonth = monthAbbr[new Date().getMonth()];
@@ -39,6 +48,8 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
   const isHero = variant === "hero";
   const [hovered, setHovered] = useState<Hotspot | undefined>();
   const [hoveredAccess, setHoveredAccess] = useState<AccessHover | undefined>();
+  const [activeLayers, setActiveLayers] = useState<Set<LayerKey>>(new Set());
+  const [legendOpen, setLegendOpen] = useState(false);
   const [view, setView] = useState<ViewBox>(DEFAULT_VIEW);
   const svgRef = useRef<SVGSVGElement>(null);
   const dragRef = useRef<{ startX: number; startY: number; viewX: number; viewY: number; moved: boolean } | null>(null);
@@ -108,7 +119,48 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
     onSelect?.(h);
   }
 
+  function toggleLayer(key: LayerKey) {
+    setActiveLayers(prev => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key); else next.add(key);
+      return next;
+    });
+  }
+
+  const visibleOnMap = activeLayers.size === 0 ? hotspots : hotspots.filter(h => Array.from(activeLayers).some(key => matchesLayer(h, key)));
+
   const zoomed = view.w < VIEW_W - 1;
+
+  type Cluster = { region: Region; count: number; cx: number; cy: number; hotspots: Hotspot[] };
+  const clusters: Cluster[] = (!isHero && !zoomed) ? (() => {
+    const byRegion = new Map<Region, Hotspot[]>();
+    for (const h of visibleOnMap) {
+      const arr = byRegion.get(h.region) ?? [];
+      arr.push(h);
+      byRegion.set(h.region, arr);
+    }
+    const result: Cluster[] = [];
+    for (const [region, hs] of byRegion) {
+      const pts = hs.map(h => projection([h.coordinates.longitude, h.coordinates.latitude])).filter((p): p is [number, number] => !!p);
+      if (!pts.length) continue;
+      const cx = pts.reduce((s, p) => s + p[0], 0) / pts.length;
+      const cy = pts.reduce((s, p) => s + p[1], 0) / pts.length;
+      result.push({ region, count: hs.length, cx, cy, hotspots: hs });
+    }
+    return result;
+  })() : [];
+
+  function handleClusterClick(cluster: Cluster) {
+    const pts = cluster.hotspots.map(h => projection([h.coordinates.longitude, h.coordinates.latitude])).filter((p): p is [number, number] => !!p);
+    if (!pts.length) return;
+    const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+    const pad = 50;
+    const minX = Math.min(...xs) - pad, maxX = Math.max(...xs) + pad;
+    const minY = Math.min(...ys) - pad, maxY = Math.max(...ys) + pad;
+    const w = maxX - minX, h = maxY - minY;
+    const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+    setView(clampView({ x: cx - w / 2, y: cy - h / 2, w, h }));
+  }
   // Marker sizes are defined in SVG user units, which stay fixed while the viewBox
   // shrinks as you zoom in — without this, markers grow to cover a larger and larger
   // geographic area on screen the more you zoom, looking imprecise. Scaling them down
@@ -140,22 +192,51 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
       {!isHero && (
         <div className="pointer-events-none absolute inset-x-3 top-3 z-10 flex flex-col gap-2 sm:inset-x-6 sm:top-6">
           <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <div className="pointer-events-auto max-w-full truncate rounded-sm border border-white/20 bg-white/20 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-white backdrop-blur-md">Interactive India atlas · {hotspots.length} visible</div>
+            <div className="pointer-events-auto max-w-full truncate rounded-sm border border-white/20 bg-white/20 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-white backdrop-blur-md">Interactive India atlas · {visibleOnMap.length} visible</div>
             {bestNowRegions.length > 0 && (
               <div className="pointer-events-auto max-w-full rounded-sm border border-flare/40 bg-flare/25 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-flare backdrop-blur-md sm:max-w-[60%]">
                 Best in {currentMonth}: {bestNowRegions.join(", ")}
               </div>
             )}
           </div>
-          <div className="flex flex-wrap gap-2">
-            <div className="pointer-events-auto flex max-w-full flex-wrap gap-2 rounded-sm border border-white/20 bg-white/20 p-3 font-mono text-[11px] font-semibold uppercase tracking-wide text-white backdrop-blur-md">
-              {Object.entries(typeColorClass).map(([type,cls])=><span key={type} className="flex items-center gap-1"><i className={"h-2.5 w-2.5 rounded-full " + cls}/>{type}</span>)}
-            </div>
-            {(activeAirport || activeRailway || (activeGates && activeGates.length > 0)) && (
-              <div className="pointer-events-auto flex max-w-full flex-wrap gap-2 rounded-sm border border-white/20 bg-white/20 p-3 font-mono text-[11px] font-semibold uppercase tracking-wide text-white backdrop-blur-md">
-                {activeAirport && <span className="flex items-center gap-1.5"><i className="grid h-4 w-4 shrink-0 place-items-center rounded-full" style={{background:"#a855f7"}}><Plane color="#ffffff" size={10} strokeWidth={2.5}/></i>Airport</span>}
-                {activeRailway && <span className="flex items-center gap-1.5"><i className="grid h-4 w-4 shrink-0 place-items-center rounded-full" style={{background:"#eab308"}}><TrainFront color="#ffffff" size={10} strokeWidth={2.5}/></i>Railway</span>}
-                {activeGates && activeGates.length > 0 && <span className="flex items-center gap-1.5"><i className="grid h-4 w-4 shrink-0 place-items-center rounded-full" style={{background:"#f43f5e"}}><DoorOpen color="#ffffff" size={10} strokeWidth={2.5}/></i>Entry gate</span>}
+          <div className="pointer-events-auto">
+            <button onClick={() => setLegendOpen(o => !o)} className="flex items-center gap-1.5 rounded-sm border border-white/20 bg-white/20 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-white backdrop-blur-md hover:bg-white/30">
+              <SlidersHorizontal size={13} />
+              Layers &amp; legend
+              {activeLayers.size > 0 && <span className="grid h-4 w-4 place-items-center rounded-full bg-flare text-[10px] text-forest-900">{activeLayers.size}</span>}
+              <ChevronDown size={13} className={"transition-transform " + (legendOpen ? "rotate-180" : "")} />
+            </button>
+            {legendOpen && (
+              <div className="mt-2 flex max-w-full flex-col gap-3 rounded-sm border border-white/20 bg-forest-900/95 p-3 backdrop-blur-md">
+                <div>
+                  <p className="mb-1.5 font-mono text-[10px] font-bold uppercase tracking-wide text-white/50">Layers</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {LAYER_KEYS.map(key => {
+                      const on = activeLayers.has(key);
+                      return (
+                        <button key={key} onClick={() => toggleLayer(key)} className={"rounded-full border px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wide transition " + (on ? "border-flare bg-flare text-forest-900" : "border-white/25 bg-white/10 text-white/80 hover:border-white/50")}>
+                          {key}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+                <div>
+                  <p className="mb-1.5 font-mono text-[10px] font-bold uppercase tracking-wide text-white/50">Ecosystem</p>
+                  <div className="flex flex-wrap gap-2 font-mono text-[11px] font-semibold uppercase tracking-wide text-white">
+                    {Object.entries(ecosystemColorClass).map(([eco,cls])=><span key={eco} className="flex items-center gap-1"><i className={"h-2.5 w-2.5 rounded-full " + cls}/>{eco}</span>)}
+                  </div>
+                </div>
+                {(activeAirport || activeRailway || (activeGates && activeGates.length > 0)) && (
+                  <div>
+                    <p className="mb-1.5 font-mono text-[10px] font-bold uppercase tracking-wide text-white/50">Access points</p>
+                    <div className="flex flex-wrap gap-2 font-mono text-[11px] font-semibold uppercase tracking-wide text-white">
+                      {activeAirport && <span className="flex items-center gap-1.5"><i className="grid h-4 w-4 shrink-0 place-items-center rounded-full" style={{background:"#a855f7"}}><Plane color="#ffffff" size={10} strokeWidth={2.5}/></i>Airport</span>}
+                      {activeRailway && <span className="flex items-center gap-1.5"><i className="grid h-4 w-4 shrink-0 place-items-center rounded-full" style={{background:"#eab308"}}><TrainFront color="#ffffff" size={10} strokeWidth={2.5}/></i>Railway</span>}
+                      {activeGates && activeGates.length > 0 && <span className="flex items-center gap-1.5"><i className="grid h-4 w-4 shrink-0 place-items-center rounded-full" style={{background:"#f43f5e"}}><DoorOpen color="#ffffff" size={10} strokeWidth={2.5}/></i>Entry gate</span>}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -187,13 +268,12 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
         <g>
           {(indiaStates as GeoJSON.FeatureCollection).features.map((f, i) => {
             const name = (f.properties as { name: string }).name;
-            const region = stateToRegion.get(name);
             const highlighted = !isHero && bestNowStates.has(name);
             return (
               <path
                 key={i}
                 d={pathGen(f) ?? undefined}
-                fill={highlighted ? "#f0a83c" : region ? regionFill[region] : "#5b6f4e"}
+                fill={highlighted ? "#f0a83c" : "#4a5c47"}
                 fillOpacity={isHero ? 0.55 : 1}
                 stroke="#fbf7ec"
                 strokeOpacity={isHero ? 0.25 : 1}
@@ -212,13 +292,22 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
             ))}
           </g>
         )}
-        {hotspots.map(h => {
+        {(isHero || zoomed) ? visibleOnMap.map(h => {
           const p = projection([h.coordinates.longitude, h.coordinates.latitude]);
           if (!p) return null;
           const active = selectedSlug === h.slug;
           return (
             <g key={h.slug} transform={"translate(" + p[0] + "," + p[1] + ")"} onClick={() => handleMarkerClick(h)} onMouseEnter={() => !isHero && setHovered(h)} onMouseLeave={() => setHovered(undefined)} className={isHero ? "" : "cursor-pointer"}>
-              <circle r={isHero ? 3 : (active ? 7 : 5) * zoomScale} fill={typeColorHex[h.type]} fillOpacity={isHero ? 0.5 : 1} stroke={active ? "#d98c2b" : "#ffffff"} strokeOpacity={isHero ? 0.4 : 1} strokeWidth={(active ? 2.5 : isHero ? 1 : 1.5) * zoomScale} className="transition" />
+              <circle r={isHero ? 3 : (active ? 7 : 5) * zoomScale} fill={ecosystemColorHex[ecosystem[h.slug]]} fillOpacity={isHero ? 0.5 : 1} stroke={active ? "#d98c2b" : "#ffffff"} strokeOpacity={isHero ? 0.4 : 1} strokeWidth={(active ? 2.5 : isHero ? 1 : 1.5) * zoomScale} className="transition" />
+            </g>
+          );
+        }) : clusters.map(c => {
+          const r = 10 + Math.min(c.count, 10) * 1.4;
+          return (
+            <g key={c.region} transform={"translate(" + c.cx + "," + c.cy + ")"} onClick={() => handleClusterClick(c)} className="cursor-pointer">
+              <circle r={r} fill={regionFill[c.region]} fillOpacity={0.92} stroke="#ffffff" strokeWidth={1.5} />
+              <text textAnchor="middle" dy={4} fontSize={12} fontWeight={700} fill="#ffffff" style={{ fontFamily: "var(--font-mono), monospace" }}>{c.count}</text>
+              <text textAnchor="middle" y={r + 11} fontSize={7.5} fontWeight={600} fill="#fbf7ec" style={{ fontFamily: "var(--font-mono), monospace" }}>{c.region}</text>
             </g>
           );
         })}

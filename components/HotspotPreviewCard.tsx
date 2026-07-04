@@ -1,4 +1,4 @@
-import Link from "next/link"; import { ArrowRight, CalendarDays, MapPin, Plane, TrainFront, X } from "lucide-react"; import type { Hotspot } from "@/data/types"; import { Tag } from "./Tag"; import { HotspotImage } from "./HotspotImage";
+import Link from "next/link"; import { ArrowRight, Camera, CalendarDays, Landmark, MapPin, Plane, ShieldCheck, TrainFront, X } from "lucide-react"; import type { Hotspot } from "@/data/types"; import { Tag } from "./Tag"; import { HotspotImage } from "./HotspotImage"; import { permitPortalUrl } from "@/data/officialLinks";
 
 export function HotspotPreviewCard({ hotspot, docked, onClose }: { hotspot: Hotspot; docked?: boolean; onClose?: () => void }) {
   if (docked) {
@@ -15,9 +15,19 @@ export function HotspotPreviewCard({ hotspot, docked, onClose }: { hotspot: Hots
               {onClose && <button onClick={onClose} aria-label="Close" className="shrink-0 rounded-sm p-1 text-white/60 hover:bg-white/10 hover:text-white"><X size={16} /></button>}
             </div>
             <p className="mt-1 hidden text-xs text-white/70 sm:line-clamp-1 sm:block">{hotspot.summary}</p>
+            <div className="mt-2 flex flex-wrap items-center gap-1.5">
+              {hotspot.mainSpecies.slice(0,2).map(s=><Tag key={s} tone="green">{s}</Tag>)}
+            </div>
             <div className="mt-2 flex flex-wrap items-center gap-2">
               <span className="rounded-sm bg-white/10 px-2 py-0.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-flare">{hotspot.type}</span>
               <span className="hidden font-mono text-[10px] uppercase tracking-wide text-white/50 sm:inline">Best: {hotspot.bestMonths.slice(0,4).join(", ")}</span>
+              <span className="hidden items-center gap-1 font-mono text-[10px] uppercase tracking-wide text-white/50 sm:inline-flex"><ShieldCheck size={11} />{hotspot.difficulty}</span>
+              {hotspot.experienceTags.includes("Photography") && <span className="hidden items-center gap-1 font-mono text-[10px] uppercase tracking-wide text-white/50 sm:inline-flex"><Camera size={11} />Photography-friendly</span>}
+              {permitPortalUrl[hotspot.slug] ? (
+                <a href={permitPortalUrl[hotspot.slug]} target="_blank" rel="noopener noreferrer" onClick={(e)=>e.stopPropagation()} className="hidden items-center gap-1 font-mono text-[10px] uppercase tracking-wide text-flare hover:underline md:inline-flex"><Landmark size={11} />Permits</a>
+              ) : (
+                <span className="hidden items-center gap-1 font-mono text-[10px] uppercase tracking-wide text-white/50 md:inline-flex"><Landmark size={11} />{hotspot.permitRequired}</span>
+              )}
               {hotspot.nearestAirport && <span className="hidden items-center gap-1 font-mono text-[10px] uppercase tracking-wide text-white/50 md:inline-flex"><Plane size={11} />{hotspot.nearestAirport}</span>}
               {hotspot.nearestRailway && <span className="hidden items-center gap-1 font-mono text-[10px] uppercase tracking-wide text-white/50 lg:inline-flex"><TrainFront size={11} />{hotspot.nearestRailway}</span>}
               <Link href={"/hotspots/" + hotspot.slug} className="ml-auto inline-flex items-center gap-1 rounded-sm bg-flare px-3 py-1.5 text-xs font-bold text-forest-900 hover:bg-white">View details <ArrowRight size={13} /></Link>
