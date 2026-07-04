@@ -137,10 +137,28 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
 
   return (
     <section className={"relative overflow-hidden bg-[#1c3a4a] " + (isHero ? "h-full w-full" : "h-full min-h-[560px] w-full rounded-sm border border-forest-700/20")}>
-      {!isHero && <div className="absolute left-6 top-6 z-10 rounded-sm border border-white/20 bg-white/20 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-white backdrop-blur-md">Interactive India atlas · {hotspots.length} visible</div>}
-      {!isHero && bestNowRegions.length > 0 && (
-        <div className="absolute right-6 top-6 z-10 max-w-[60%] rounded-sm border border-flare/40 bg-flare/25 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-flare backdrop-blur-md">
-          Best in {currentMonth}: {bestNowRegions.join(", ")}
+      {!isHero && (
+        <div className="pointer-events-none absolute inset-x-3 top-3 z-10 flex flex-col gap-2 sm:inset-x-6 sm:top-6">
+          <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <div className="pointer-events-auto max-w-full truncate rounded-sm border border-white/20 bg-white/20 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-white backdrop-blur-md">Interactive India atlas · {hotspots.length} visible</div>
+            {bestNowRegions.length > 0 && (
+              <div className="pointer-events-auto max-w-full rounded-sm border border-flare/40 bg-flare/25 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-flare backdrop-blur-md sm:max-w-[60%]">
+                Best in {currentMonth}: {bestNowRegions.join(", ")}
+              </div>
+            )}
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <div className="pointer-events-auto flex max-w-full flex-wrap gap-2 rounded-sm border border-white/20 bg-white/20 p-3 font-mono text-[11px] font-semibold uppercase tracking-wide text-white backdrop-blur-md">
+              {Object.entries(typeColorClass).map(([type,cls])=><span key={type} className="flex items-center gap-1"><i className={"h-2.5 w-2.5 rounded-full " + cls}/>{type}</span>)}
+            </div>
+            {(activeAirport || activeRailway || (activeGates && activeGates.length > 0)) && (
+              <div className="pointer-events-auto flex max-w-full flex-wrap gap-2 rounded-sm border border-white/20 bg-white/20 p-3 font-mono text-[11px] font-semibold uppercase tracking-wide text-white backdrop-blur-md">
+                {activeAirport && <span className="flex items-center gap-1.5"><i className="grid h-4 w-4 shrink-0 place-items-center rounded-full" style={{background:"#a855f7"}}><Plane color="#ffffff" size={10} strokeWidth={2.5}/></i>Airport</span>}
+                {activeRailway && <span className="flex items-center gap-1.5"><i className="grid h-4 w-4 shrink-0 place-items-center rounded-full" style={{background:"#eab308"}}><TrainFront color="#ffffff" size={10} strokeWidth={2.5}/></i>Railway</span>}
+                {activeGates && activeGates.length > 0 && <span className="flex items-center gap-1.5"><i className="grid h-4 w-4 shrink-0 place-items-center rounded-full" style={{background:"#f43f5e"}}><DoorOpen color="#ffffff" size={10} strokeWidth={2.5}/></i>Entry gate</span>}
+              </div>
+            )}
+          </div>
         </div>
       )}
       <svg
@@ -246,18 +264,6 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
           <button aria-label="Zoom in" onClick={() => zoomBy(1.4, view.x + view.w / 2, view.y + view.h / 2)} className="grid h-8 w-8 place-items-center rounded-sm border border-white/20 bg-white/20 text-white backdrop-blur-md hover:bg-white/30"><Plus size={16} /></button>
           <button aria-label="Zoom out" onClick={() => zoomBy(1 / 1.4, view.x + view.w / 2, view.y + view.h / 2)} className="grid h-8 w-8 place-items-center rounded-sm border border-white/20 bg-white/20 text-white backdrop-blur-md hover:bg-white/30"><Minus size={16} /></button>
           {zoomed && <button aria-label="Reset zoom" onClick={() => setView(DEFAULT_VIEW)} className="grid h-8 w-8 place-items-center rounded-sm border border-white/20 bg-white/20 text-white backdrop-blur-md hover:bg-white/30"><RotateCcw size={14} /></button>}
-        </div>
-      )}
-      {!isHero && (
-        <div className="pointer-events-none absolute bottom-4 left-4 flex max-w-[90%] flex-wrap gap-2 rounded-sm border border-white/20 bg-white/20 p-3 font-mono text-[11px] font-semibold uppercase tracking-wide text-white backdrop-blur-md">
-          {Object.entries(typeColorClass).map(([type,cls])=><span key={type} className="flex items-center gap-1"><i className={"h-2.5 w-2.5 rounded-full " + cls}/>{type}</span>)}
-        </div>
-      )}
-      {!isHero && (activeAirport || activeRailway || (activeGates && activeGates.length > 0)) && (
-        <div className="pointer-events-none absolute bottom-4 right-4 flex flex-wrap gap-2 rounded-sm border border-white/20 bg-white/20 p-3 font-mono text-[11px] font-semibold uppercase tracking-wide text-white backdrop-blur-md">
-          {activeAirport && <span className="flex items-center gap-1.5"><i className="grid h-4 w-4 place-items-center rounded-full" style={{background:"#a855f7"}}><Plane color="#ffffff" size={10} strokeWidth={2.5}/></i>Airport</span>}
-          {activeRailway && <span className="flex items-center gap-1.5"><i className="grid h-4 w-4 place-items-center rounded-full" style={{background:"#eab308"}}><TrainFront color="#ffffff" size={10} strokeWidth={2.5}/></i>Railway</span>}
-          {activeGates && activeGates.length > 0 && <span className="flex items-center gap-1.5"><i className="grid h-4 w-4 place-items-center rounded-full" style={{background:"#f43f5e"}}><DoorOpen color="#ffffff" size={10} strokeWidth={2.5}/></i>Entry gate</span>}
         </div>
       )}
     </section>
