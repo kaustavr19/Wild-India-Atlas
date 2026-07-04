@@ -29,3 +29,8 @@ export const ecosystem: Record<string, Ecosystem> = {
   "dudhwa-national-park": "forest",
   "satpura-tiger-reserve": "forest",
 };
+
+// Shared display colors so the map and detail pages read the same ecosystem the same way.
+export const ecosystemColorClass: Record<Ecosystem,string> = { forest:"bg-forest-700", wetland:"bg-river", desert:"bg-amberfield", alpine:"bg-slate-600", mangrove:"bg-emerald-800", marine:"bg-cyan-500" };
+export const ecosystemColorHex: Record<Ecosystem,string> = { forest:"#24563a", wetland:"#2f7da1", desert:"#d98c2b", alpine:"#475569", mangrove:"#065f46", marine:"#06b6d4" };
+

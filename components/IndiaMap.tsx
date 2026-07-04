@@ -7,7 +7,7 @@ import { hotspots as allHotspots } from "@/data/hotspots";
 import indiaStates from "@/data/india-states.json";
 import { neighboringCountries } from "@/data/neighboringCountries";
 import { airportPoint, railwayPoint, entryGates, type AccessPoint } from "@/data/accessPoints";
-import { ecosystem, type Ecosystem } from "@/data/ecosystems";
+import { ecosystem, ecosystemColorClass, ecosystemColorHex } from "@/data/ecosystems";
 
 type AccessHover = { name: string; kind: string; coordinates: { latitude: number; longitude: number } };
 type LayerKey = "Mammals" | "Birds" | "Reptiles" | "Flora" | "Rare Species" | "Monsoon";
@@ -17,9 +17,6 @@ function matchesLayer(h: Hotspot, key: LayerKey): boolean {
   if (key === "Monsoon") return h.bestSeason.includes("Monsoon");
   return h.wildlifeTypes.includes(key);
 }
-
-const ecosystemColorClass: Record<Ecosystem,string> = { forest:"bg-forest-700", wetland:"bg-river", desert:"bg-amberfield", alpine:"bg-slate-600", mangrove:"bg-emerald-800", marine:"bg-cyan-500" };
-const ecosystemColorHex: Record<Ecosystem,string> = { forest:"#24563a", wetland:"#2f7da1", desert:"#d98c2b", alpine:"#475569", mangrove:"#065f46", marine:"#06b6d4" };
 
 // Used only for region-cluster circles now — state fill is a flat neutral tone so it
 // doesn't visually compete with the ecosystem-colored pins (both palettes leaned on
