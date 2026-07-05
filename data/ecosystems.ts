@@ -32,6 +32,20 @@ export const ecosystem: Record<string, Ecosystem> = {
   "singalila-national-park": "alpine",
   "rushikulya-rookery": "marine",
   "gahirmatha-marine-sanctuary": "marine",
+  "bandipur-national-park": "forest",
+  "mudumalai-national-park": "forest",
+  "biligiri-rangaswamy-temple-tiger-reserve": "forest",
+  "sariska-tiger-reserve": "forest",
+  "panna-national-park": "forest",
+  "kuno-national-park": "forest",
+  "rajaji-national-park": "forest",
+  "melghat-tiger-reserve": "forest",
+  "simlipal-national-park": "forest",
+  "valmiki-tiger-reserve": "forest",
+  "indravati-national-park": "forest",
+  "namdapha-national-park": "forest",
+  "keibul-lamjao-national-park": "wetland",
+  "silent-valley-national-park": "forest",
 };
 
 // Shared display colors so the map and detail pages read the same ecosystem the same way.

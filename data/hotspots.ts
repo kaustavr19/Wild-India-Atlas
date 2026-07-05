@@ -66,7 +66,8 @@ export const hotspots: Hotspot[] = [
     "relatedHotspotSlugs": [
       "keoladeo-ghana-bharatpur",
       "chambal-river-sanctuary",
-      "hemis-national-park"
+      "hemis-national-park",
+      "rajaji-national-park"
     ]
   },
   {
@@ -134,7 +135,8 @@ export const hotspots: Hotspot[] = [
     "relatedHotspotSlugs": [
       "little-rann-of-kutch",
       "gir-national-park",
-      "desert-national-park"
+      "desert-national-park",
+      "sariska-tiger-reserve"
     ]
   },
   {
@@ -199,7 +201,8 @@ export const hotspots: Hotspot[] = [
     "relatedHotspotSlugs": [
       "kanha-national-park",
       "tadoba-andhari-tiger-reserve",
-      "pench-national-park"
+      "pench-national-park",
+      "panna-national-park"
     ]
   },
   {
@@ -266,7 +269,8 @@ export const hotspots: Hotspot[] = [
     "relatedHotspotSlugs": [
       "bandhavgarh-tiger-reserve",
       "tadoba-andhari-tiger-reserve",
-      "pench-national-park"
+      "pench-national-park",
+      "kuno-national-park"
     ]
   },
   {
@@ -334,7 +338,8 @@ export const hotspots: Hotspot[] = [
     "relatedHotspotSlugs": [
       "bandhavgarh-tiger-reserve",
       "kanha-national-park",
-      "pench-national-park"
+      "pench-national-park",
+      "melghat-tiger-reserve"
     ]
   },
   {
@@ -400,7 +405,8 @@ export const hotspots: Hotspot[] = [
     "relatedHotspotSlugs": [
       "bandhavgarh-tiger-reserve",
       "kanha-national-park",
-      "tadoba-andhari-tiger-reserve"
+      "tadoba-andhari-tiger-reserve",
+      "melghat-tiger-reserve"
     ]
   },
   {
@@ -465,7 +471,9 @@ export const hotspots: Hotspot[] = [
     "photographyNotes": "In floodplain grasslands, wetlands, woodlands, early morning and late afternoon light works best for One-horned Rhinoceros and Asian Elephant; a mid-range telephoto covers most sightings without needing to get close.",
     "ethicalNotes": "Stick to designated safari tracks and gate timings; give One-horned Rhinoceros space and let the guide set the pace rather than pushing for closer views.",
     "relatedHotspotSlugs": [
-      "manas-national-park"
+      "manas-national-park",
+      "namdapha-national-park",
+      "keibul-lamjao-national-park"
     ]
   },
   {
@@ -530,7 +538,9 @@ export const hotspots: Hotspot[] = [
     "photographyNotes": "In himalayan foothill grassland and forest, early morning and late afternoon light works best for Golden Langur and Asian Elephant; a mid-range telephoto covers most sightings without needing to get close.",
     "ethicalNotes": "Stick to designated safari tracks and gate timings; give Golden Langur space and let the guide set the pace rather than pushing for closer views.",
     "relatedHotspotSlugs": [
-      "kaziranga-national-park"
+      "kaziranga-national-park",
+      "namdapha-national-park",
+      "keibul-lamjao-national-park"
     ]
   },
   {
@@ -661,7 +671,9 @@ export const hotspots: Hotspot[] = [
     "relatedHotspotSlugs": [
       "jim-corbett-national-park",
       "chambal-river-sanctuary",
-      "hemis-national-park"
+      "hemis-national-park",
+      "sariska-tiger-reserve",
+      "rajaji-national-park"
     ]
   },
   {
@@ -989,7 +1001,9 @@ export const hotspots: Hotspot[] = [
     "ethicalNotes": "This is active big-cat habitat — stay inside the vehicle at all times, keep noise to a minimum, and never use calls or bait to draw out Asian Elephant.",
     "relatedHotspotSlugs": [
       "nagarhole-kabini",
-      "thattekad-bird-sanctuary"
+      "thattekad-bird-sanctuary",
+      "mudumalai-national-park",
+      "silent-valley-national-park"
     ]
   },
   {
@@ -1056,7 +1070,8 @@ export const hotspots: Hotspot[] = [
     "ethicalNotes": "Stick to designated safari tracks and gate timings; give Asian Elephant space and let the guide set the pace rather than pushing for closer views.",
     "relatedHotspotSlugs": [
       "periyar-tiger-reserve",
-      "thattekad-bird-sanctuary"
+      "thattekad-bird-sanctuary",
+      "bandipur-national-park"
     ]
   },
   {
@@ -1121,7 +1136,8 @@ export const hotspots: Hotspot[] = [
     "ethicalNotes": "Keep a respectful distance from nesting and feeding birds, avoid flash photography, and move slowly and quietly — sudden movement flushes flocks before everyone gets a look.",
     "relatedHotspotSlugs": [
       "periyar-tiger-reserve",
-      "nagarhole-kabini"
+      "nagarhole-kabini",
+      "silent-valley-national-park"
     ]
   },
   {
@@ -1184,7 +1200,8 @@ export const hotspots: Hotspot[] = [
     "ethicalNotes": "Stick to marked boat channels, avoid loud engines near roosting birds, and don't disturb Smooth-coated Otter baskings sites along the banks.",
     "relatedHotspotSlugs": [
       "sundarbans-national-park",
-      "chilika-lake"
+      "chilika-lake",
+      "simlipal-national-park"
     ]
   },
   {
@@ -1247,7 +1264,8 @@ export const hotspots: Hotspot[] = [
     "ethicalNotes": "Stick to marked boat channels, avoid loud engines near roosting birds, and don't disturb Irrawaddy Dolphin baskings sites along the banks.",
     "relatedHotspotSlugs": [
       "sundarbans-national-park",
-      "mangalajodi-wetlands"
+      "mangalajodi-wetlands",
+      "simlipal-national-park"
     ]
   },
   {
@@ -1507,7 +1525,9 @@ export const hotspots: Hotspot[] = [
     "relatedHotspotSlugs": [
       "jim-corbett-national-park",
       "keoladeo-ghana-bharatpur",
-      "chambal-river-sanctuary"
+      "chambal-river-sanctuary",
+      "rajaji-national-park",
+      "valmiki-tiger-reserve"
     ]
   },
   {
@@ -1576,7 +1596,8 @@ export const hotspots: Hotspot[] = [
     "relatedHotspotSlugs": [
       "bandhavgarh-tiger-reserve",
       "kanha-national-park",
-      "tadoba-andhari-tiger-reserve"
+      "tadoba-andhari-tiger-reserve",
+      "melghat-tiger-reserve"
     ]
   },
   {
@@ -1710,7 +1731,8 @@ export const hotspots: Hotspot[] = [
     "relatedHotspotSlugs": [
       "great-himalayan-national-park",
       "valley-of-flowers",
-      "hemis-national-park"
+      "hemis-national-park",
+      "namdapha-national-park"
     ]
   },
   {
@@ -1816,6 +1838,929 @@ export const hotspots: Hotspot[] = [
       "rushikulya-rookery",
       "chilika-lake",
       "sundarbans-national-park"
+    ]
+  },
+  {
+    "id": "h29",
+    "slug": "bandipur-national-park",
+    "name": "Bandipur National Park",
+    "state": "Karnataka",
+    "region": "South",
+    "coordinates": {
+      "latitude": 11.66,
+      "longitude": 76.63
+    },
+    "type": "Tiger Reserve",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds",
+      "Reptiles"
+    ],
+    "habitat": "Dry deciduous forest, bamboo, and open grassland at the base of the Nilgiris",
+    "summary": "A cornerstone of the Nilgiri Biosphere Reserve, forming one continuous forest with Mudumalai, Wayanad, and Nagarhole for India's largest wild elephant population.",
+    "knownFor": [
+      "Elephant herds",
+      "Nilgiri Biosphere corridor",
+      "Tiger density"
+    ],
+    "mainSpecies": [
+      "Bengal Tiger",
+      "Asian Elephant",
+      "Dhole"
+    ],
+    "birdSpecies": [
+      "Crested Serpent Eagle",
+      "Malabar Grey Hornbill"
+    ],
+    "floraHighlights": [
+      "Teak",
+      "Bamboo",
+      "Rosewood"
+    ],
+    "bestMonths": [
+      "Oct",
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Safari",
+      "Photography",
+      "Family-friendly"
+    ],
+    "difficulty": "Easy",
+    "idealDuration": "2-3 days",
+    "permitRequired": "Yes, safari or park entry permits required",
+    "nearestAirport": "Mysore Airport",
+    "nearestRailway": "Mysuru Junction Railway Station",
+    "travelNotes": "Fly into Mysore Airport or take the train to Mysuru Junction Railway Station; plan for 2-3 days to see dry deciduous forest, bamboo, and open grassland at the base of the Nilgiris properly. It's an easy-access park, so minimal prep is needed beyond sun protection and water.",
+    "photographyNotes": "In dry deciduous forest, bamboo, and open grassland, early morning and late afternoon light works best for Bengal Tiger and Asian Elephant; a mid-range telephoto covers most sightings without needing to get close.",
+    "ethicalNotes": "This is active big-cat habitat — stay inside the vehicle at all times, keep noise to a minimum, and never use calls or bait to draw out Bengal Tiger.",
+    "relatedHotspotSlugs": [
+      "mudumalai-national-park",
+      "nagarhole-kabini",
+      "biligiri-rangaswamy-temple-tiger-reserve"
+    ]
+  },
+  {
+    "id": "h30",
+    "slug": "mudumalai-national-park",
+    "name": "Mudumalai National Park",
+    "state": "Tamil Nadu",
+    "region": "South",
+    "coordinates": {
+      "latitude": 11.57,
+      "longitude": 76.53
+    },
+    "type": "Tiger Reserve",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds"
+    ],
+    "habitat": "Dry and moist deciduous forest transitioning into Nilgiri montane shola",
+    "summary": "A tri-state tiger and elephant corridor on the Nilgiri foothills, sharing an unbroken forest boundary with Bandipur and Wayanad.",
+    "knownFor": [
+      "Elephant corridor",
+      "Tiger reserve",
+      "Nilgiri foothill scenery"
+    ],
+    "mainSpecies": [
+      "Bengal Tiger",
+      "Asian Elephant",
+      "Gaur"
+    ],
+    "birdSpecies": [
+      "Malabar Grey Hornbill",
+      "Crested Serpent Eagle"
+    ],
+    "floraHighlights": [
+      "Teak",
+      "Rosewood",
+      "Bamboo"
+    ],
+    "bestMonths": [
+      "Oct",
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Safari",
+      "Photography",
+      "Family-friendly"
+    ],
+    "difficulty": "Easy",
+    "idealDuration": "2-3 days",
+    "permitRequired": "Yes, safari or park entry permits required",
+    "nearestAirport": "Coimbatore International Airport",
+    "nearestRailway": "Udhagamandalam Railway Station",
+    "travelNotes": "Fly into Coimbatore International Airport or take the train to Udhagamandalam Railway Station; plan for 2-3 days to see dry and moist deciduous forest transitioning into Nilgiri montane shola properly. It's an easy-access park, so minimal prep is needed beyond sun protection and water.",
+    "photographyNotes": "In dry and moist deciduous forest transitioning into Nilgiri montane shola, early morning and late afternoon light works best for Bengal Tiger and Asian Elephant; a mid-range telephoto covers most sightings without needing to get close.",
+    "ethicalNotes": "This is active big-cat habitat — stay inside the vehicle at all times, keep noise to a minimum, and never use calls or bait to draw out Bengal Tiger.",
+    "relatedHotspotSlugs": [
+      "bandipur-national-park",
+      "nagarhole-kabini",
+      "periyar-tiger-reserve"
+    ]
+  },
+  {
+    "id": "h31",
+    "slug": "biligiri-rangaswamy-temple-tiger-reserve",
+    "name": "Biligiri Rangaswamy Temple (BRT) Tiger Reserve",
+    "state": "Karnataka",
+    "region": "South",
+    "coordinates": {
+      "latitude": 11.83,
+      "longitude": 77.15
+    },
+    "type": "Tiger Reserve",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds",
+      "Reptiles"
+    ],
+    "habitat": "A rare east-west transition zone of dry scrub, deciduous forest, and evergreen shola on the BR Hills",
+    "summary": "A biogeographic bridge between the Western and Eastern Ghats, home to the Soliga community's centuries-old forest stewardship alongside tigers and elephants.",
+    "knownFor": [
+      "Soliga indigenous community",
+      "Western-Eastern Ghats transition",
+      "Elephant herds"
+    ],
+    "mainSpecies": [
+      "Bengal Tiger",
+      "Asian Elephant",
+      "Dhole"
+    ],
+    "birdSpecies": [
+      "Crested Serpent Eagle",
+      "Grey Junglefowl"
+    ],
+    "floraHighlights": [
+      "Sandalwood",
+      "Bamboo",
+      "Shola forest"
+    ],
+    "bestMonths": [
+      "Oct",
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Safari",
+      "Photography",
+      "Offbeat"
+    ],
+    "difficulty": "Moderate",
+    "idealDuration": "2-3 days",
+    "permitRequired": "Yes, safari or park entry permits required",
+    "nearestAirport": "Mysore Airport",
+    "nearestRailway": "Chamarajanagar Railway Station",
+    "travelNotes": "Fly into Mysore Airport or take the train to Chamarajanagar Railway Station; plan for 2-3 days to see the dry scrub, deciduous forest, and evergreen shola of the BR Hills properly. Expect moderate terrain — sturdy footwear, sun protection, and a windproof layer help.",
+    "photographyNotes": "In this dry scrub and shola transition zone, early morning and late afternoon light works best for Bengal Tiger and Asian Elephant; a mid-range telephoto covers most sightings without needing to get close.",
+    "ethicalNotes": "This is active big-cat habitat — stay inside the vehicle at all times, keep noise to a minimum, and never use calls or bait to draw out Bengal Tiger. Respect Soliga village land and ask before photographing residents.",
+    "relatedHotspotSlugs": [
+      "bandipur-national-park",
+      "nagarhole-kabini",
+      "mudumalai-national-park"
+    ]
+  },
+  {
+    "id": "h32",
+    "slug": "sariska-tiger-reserve",
+    "name": "Sariska Tiger Reserve",
+    "state": "Rajasthan",
+    "region": "West",
+    "coordinates": {
+      "latitude": 27.32,
+      "longitude": 76.44
+    },
+    "type": "Tiger Reserve",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds",
+      "Reptiles"
+    ],
+    "habitat": "Dry deciduous Aravalli forest, rocky hills, and ancient ruins",
+    "summary": "The first reserve in the world to successfully relocate tigers into a landscape where they'd gone locally extinct, set among Aravalli hills and crumbling forts.",
+    "knownFor": [
+      "Tiger reintroduction success",
+      "Aravalli hill forest",
+      "Kankwari Fort"
+    ],
+    "mainSpecies": [
+      "Bengal Tiger",
+      "Leopard",
+      "Nilgai"
+    ],
+    "birdSpecies": [
+      "Crested Serpent Eagle",
+      "Indian Peafowl"
+    ],
+    "floraHighlights": [
+      "Dhok",
+      "Salar",
+      "Kadaya"
+    ],
+    "bestMonths": [
+      "Oct",
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Safari",
+      "Photography",
+      "Family-friendly"
+    ],
+    "difficulty": "Easy",
+    "idealDuration": "2-3 days",
+    "permitRequired": "Yes, safari or park entry permits required",
+    "nearestAirport": "Jaipur International Airport",
+    "nearestRailway": "Alwar Railway Station",
+    "travelNotes": "Fly into Jaipur International Airport or take the train to Alwar Railway Station; plan for 2-3 days to see the dry deciduous Aravalli forest, rocky hills, and ancient ruins properly. It's an easy-access park, so minimal prep is needed beyond sun protection and water.",
+    "photographyNotes": "In the Aravalli's dry deciduous forest and rocky hills, early morning and late afternoon light works best for Bengal Tiger and Leopard; a mid-range telephoto covers most sightings without needing to get close.",
+    "ethicalNotes": "Stick to designated safari tracks and gate timings; give Bengal Tiger space and let the guide set the pace rather than pushing for closer views.",
+    "relatedHotspotSlugs": [
+      "ranthambore-national-park",
+      "keoladeo-ghana-bharatpur",
+      "panna-national-park"
+    ]
+  },
+  {
+    "id": "h33",
+    "slug": "panna-national-park",
+    "name": "Panna National Park",
+    "state": "Madhya Pradesh",
+    "region": "Central",
+    "coordinates": {
+      "latitude": 24.72,
+      "longitude": 80.19
+    },
+    "type": "Tiger Reserve",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds",
+      "Reptiles"
+    ],
+    "habitat": "Teak and dry deciduous forest cut by the Ken River gorge",
+    "summary": "A tiger reintroduction success story built almost from zero after 2009, now paired with dramatic Ken River gorge scenery and boat safaris.",
+    "knownFor": [
+      "Tiger reintroduction",
+      "Ken River gorge",
+      "Gharial boat safaris"
+    ],
+    "mainSpecies": [
+      "Bengal Tiger",
+      "Leopard",
+      "Chinkara"
+    ],
+    "birdSpecies": [
+      "Indian Skimmer",
+      "Crested Serpent Eagle"
+    ],
+    "floraHighlights": [
+      "Teak",
+      "Kardhai",
+      "Ghost tree"
+    ],
+    "bestMonths": [
+      "Oct",
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Safari",
+      "Photography",
+      "Offbeat"
+    ],
+    "difficulty": "Easy",
+    "idealDuration": "2-3 days",
+    "permitRequired": "Yes, safari or park entry permits required",
+    "nearestAirport": "Khajuraho Airport",
+    "nearestRailway": "Khajuraho Railway Station",
+    "travelNotes": "Fly into Khajuraho Airport or take the train to Khajuraho Railway Station; plan for 2-3 days to see the teak forest and Ken River gorge properly. It's an easy-access park, so minimal prep is needed beyond sun protection and water.",
+    "photographyNotes": "Along the Ken River gorge, early morning and late afternoon light works best for Bengal Tiger and Leopard; a mid-range telephoto covers most sightings without needing to get close.",
+    "ethicalNotes": "Stick to designated safari tracks and boat channels; give Bengal Tiger space and let the guide set the pace rather than pushing for closer views.",
+    "relatedHotspotSlugs": [
+      "bandhavgarh-tiger-reserve",
+      "kanha-national-park",
+      "kuno-national-park"
+    ]
+  },
+  {
+    "id": "h34",
+    "slug": "kuno-national-park",
+    "name": "Kuno National Park",
+    "state": "Madhya Pradesh",
+    "region": "Central",
+    "coordinates": {
+      "latitude": 25.25,
+      "longitude": 77.65
+    },
+    "type": "National Park",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds",
+      "Reptiles"
+    ],
+    "habitat": "Open grassland and dry deciduous scrub forest along the Kuno River",
+    "summary": "The site of India's 2022 Asiatic Cheetah reintroduction — open savanna-like grassland unlike any other park on this list.",
+    "knownFor": [
+      "Cheetah reintroduction",
+      "Open grassland habitat",
+      "Kuno River"
+    ],
+    "mainSpecies": [
+      "Asiatic Cheetah",
+      "Leopard",
+      "Chital"
+    ],
+    "birdSpecies": [
+      "Crested Serpent Eagle",
+      "Painted Stork"
+    ],
+    "floraHighlights": [
+      "Kardhai",
+      "Salai",
+      "Grassland"
+    ],
+    "bestMonths": [
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Safari",
+      "Photography",
+      "Offbeat"
+    ],
+    "difficulty": "Moderate",
+    "idealDuration": "2-3 days",
+    "permitRequired": "Yes, safari or park entry permits required; cheetah safari zones are separately managed and capacity-limited",
+    "nearestAirport": "Gwalior Airport",
+    "nearestRailway": "Sheopur Railway Station",
+    "travelNotes": "Fly into Gwalior Airport or take the train to Sheopur Railway Station; plan for 2-3 days to see the open grassland and scrub forest along the Kuno River properly. Expect moderate terrain — sturdy footwear, sun protection, and a windproof layer help.",
+    "photographyNotes": "In open grassland along the Kuno River, daytime hunting light suits Asiatic Cheetah better than dawn/dusk light favored elsewhere; a mid-range telephoto (200-400mm) captures both the chase and the habitat.",
+    "ethicalNotes": "This is a closely monitored reintroduced population — stay inside the vehicle at all times, follow forest department safari-zone rules exactly, and never pressure a guide for closer cheetah encounters.",
+    "relatedHotspotSlugs": [
+      "panna-national-park",
+      "ranthambore-national-park",
+      "bandhavgarh-tiger-reserve"
+    ]
+  },
+  {
+    "id": "h35",
+    "slug": "rajaji-national-park",
+    "name": "Rajaji National Park",
+    "state": "Uttarakhand",
+    "region": "North",
+    "coordinates": {
+      "latitude": 30.08,
+      "longitude": 78.27
+    },
+    "type": "Tiger Reserve",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds",
+      "Reptiles"
+    ],
+    "habitat": "Shivalik foothill forest, sal woodland, and the Ganga and Song river floodplains",
+    "summary": "A foothill elephant corridor bordering Corbett's landscape, with strong tiger recovery since its 2015 reserve status.",
+    "knownFor": [
+      "Elephant corridor",
+      "Shivalik foothill forest",
+      "Tiger recovery"
+    ],
+    "mainSpecies": [
+      "Bengal Tiger",
+      "Asian Elephant",
+      "Goral"
+    ],
+    "birdSpecies": [
+      "Great Hornbill",
+      "Crested Serpent Eagle"
+    ],
+    "floraHighlights": [
+      "Sal",
+      "Khair",
+      "Sissoo"
+    ],
+    "bestMonths": [
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Safari",
+      "Photography",
+      "Family-friendly"
+    ],
+    "difficulty": "Moderate",
+    "idealDuration": "2-3 days",
+    "permitRequired": "Yes, safari or park entry permits required",
+    "nearestAirport": "Dehradun Jolly Grant Airport",
+    "nearestRailway": "Haridwar Railway Station",
+    "travelNotes": "Fly into Dehradun Jolly Grant Airport or take the train to Haridwar Railway Station; plan for 2-3 days to see the Shivalik foothill forest and river floodplains properly. Expect moderate terrain — sturdy footwear, sun protection, and a windproof layer help.",
+    "photographyNotes": "In Shivalik foothill forest and river floodplains, early morning and late afternoon light works best for Bengal Tiger and Asian Elephant; a mid-range telephoto covers most sightings without needing to get close.",
+    "ethicalNotes": "This is active big-cat habitat — stay inside the vehicle at all times, keep noise to a minimum, and never use calls or bait to draw out Bengal Tiger.",
+    "relatedHotspotSlugs": [
+      "jim-corbett-national-park",
+      "keoladeo-ghana-bharatpur",
+      "dudhwa-national-park"
+    ]
+  },
+  {
+    "id": "h36",
+    "slug": "melghat-tiger-reserve",
+    "name": "Melghat Tiger Reserve",
+    "state": "Maharashtra",
+    "region": "Central",
+    "coordinates": {
+      "latitude": 21.33,
+      "longitude": 77.2
+    },
+    "type": "Tiger Reserve",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds"
+    ],
+    "habitat": "Rugged Satpura hill forest of teak and bamboo, cut by steep ravines",
+    "summary": "One of India's original nine Project Tiger reserves from 1973/74, a rugged Satpura hill landscape still off most safari circuits.",
+    "knownFor": [
+      "Original Project Tiger reserve",
+      "Forest Owlet rediscovery site",
+      "Rugged Satpura terrain"
+    ],
+    "mainSpecies": [
+      "Bengal Tiger",
+      "Sloth Bear",
+      "Leopard"
+    ],
+    "birdSpecies": [
+      "Forest Owlet",
+      "Malabar Pied Hornbill"
+    ],
+    "floraHighlights": [
+      "Teak",
+      "Bamboo",
+      "Ain"
+    ],
+    "bestMonths": [
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Safari",
+      "Birding",
+      "Offbeat"
+    ],
+    "difficulty": "Moderate",
+    "idealDuration": "3-4 days",
+    "permitRequired": "Yes, safari or park entry permits required",
+    "nearestAirport": "Nagpur Dr. Babasaheb Ambedkar International Airport",
+    "nearestRailway": "Amla Railway Station",
+    "travelNotes": "Fly into Nagpur Dr. Babasaheb Ambedkar International Airport or take the train to Amla Railway Station; plan for 3-4 days to see the rugged Satpura hill forest properly. Expect moderate terrain — sturdy footwear, sun protection, and a windproof layer help.",
+    "photographyNotes": "In Satpura hill forest and ravine country, early morning and late afternoon light works best for Bengal Tiger and Sloth Bear; a mid-range telephoto covers most sightings without needing to get close.",
+    "ethicalNotes": "This is active big-cat habitat — stay inside the vehicle at all times, keep noise to a minimum, and never use calls or bait to draw out Bengal Tiger.",
+    "relatedHotspotSlugs": [
+      "satpura-tiger-reserve",
+      "tadoba-andhari-tiger-reserve",
+      "pench-national-park"
+    ]
+  },
+  {
+    "id": "h37",
+    "slug": "simlipal-national-park",
+    "name": "Simlipal National Park",
+    "state": "Odisha",
+    "region": "East",
+    "coordinates": {
+      "latitude": 21.6,
+      "longitude": 86.3
+    },
+    "type": "Tiger Reserve",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds",
+      "Flora"
+    ],
+    "habitat": "Sal forest, waterfalls, and grassland across the Simlipal hill massif",
+    "summary": "A remote tribal-forest massif famous as one of the only places on Earth with a wild population of melanistic (black) tigers.",
+    "knownFor": [
+      "Melanistic tiger population",
+      "Joranda and Barehipani waterfalls",
+      "Tribal forest communities"
+    ],
+    "mainSpecies": [
+      "Bengal Tiger",
+      "Asian Elephant",
+      "Gaur"
+    ],
+    "birdSpecies": [
+      "Malabar Pied Hornbill",
+      "Crested Serpent Eagle"
+    ],
+    "floraHighlights": [
+      "Sal",
+      "Orchids",
+      "Grassland"
+    ],
+    "bestMonths": [
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Safari",
+      "Photography",
+      "Offbeat"
+    ],
+    "difficulty": "Remote",
+    "idealDuration": "3-4 days",
+    "permitRequired": "Yes, safari or park entry permits required; park closed mid-June to October for monsoon",
+    "nearestAirport": "Bhubaneswar Biju Patnaik International Airport",
+    "nearestRailway": "Baripada Railway Station",
+    "travelNotes": "Fly into Bhubaneswar Biju Patnaik International Airport or take the train to Baripada; plan for 3-4 days to see the sal forest, waterfalls, and grassland of the Simlipal massif. This is a remote-grade destination — build in buffer days, carry essentials, and confirm road/weather conditions before travelling.",
+    "photographyNotes": "In Simlipal's sal forest and waterfall country, early morning and late afternoon light works best for Bengal Tiger and Asian Elephant; a mid-range telephoto covers most sightings without needing to get close.",
+    "ethicalNotes": "This is active big-cat habitat — stay inside the vehicle at all times, keep noise to a minimum, and never use calls or bait to draw out Bengal Tiger. Respect tribal village land within the buffer zone.",
+    "relatedHotspotSlugs": [
+      "chilika-lake",
+      "mangalajodi-wetlands",
+      "rushikulya-rookery"
+    ]
+  },
+  {
+    "id": "h38",
+    "slug": "valmiki-tiger-reserve",
+    "name": "Valmiki Tiger Reserve",
+    "state": "Bihar",
+    "region": "East",
+    "coordinates": {
+      "latitude": 27.35,
+      "longitude": 84.13
+    },
+    "type": "Tiger Reserve",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds"
+    ],
+    "habitat": "Himalayan foothill sal forest and grassland along the Gandak River, contiguous with Nepal's Chitwan landscape",
+    "summary": "Bihar's only tiger reserve, sharing an unbroken forest border with Nepal's Chitwan National Park across the Gandak River.",
+    "knownFor": [
+      "Bihar's only tiger reserve",
+      "Nepal border forest continuity",
+      "Gandak river landscape"
+    ],
+    "mainSpecies": [
+      "Bengal Tiger",
+      "Leopard",
+      "Sloth Bear"
+    ],
+    "birdSpecies": [
+      "Great Hornbill",
+      "Crested Serpent Eagle"
+    ],
+    "floraHighlights": [
+      "Sal",
+      "Sissoo",
+      "Riverine grassland"
+    ],
+    "bestMonths": [
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Safari",
+      "Birding",
+      "Offbeat"
+    ],
+    "difficulty": "Moderate",
+    "idealDuration": "2-3 days",
+    "permitRequired": "Yes, safari or park entry permits required",
+    "nearestAirport": "Patna Airport",
+    "nearestRailway": "Bagaha Railway Station",
+    "travelNotes": "Fly into Patna Airport or take the train to Bagaha Railway Station; plan for 2-3 days to see the Himalayan foothill sal forest along the Gandak River properly. Expect moderate terrain — sturdy footwear, sun protection, and a windproof layer help.",
+    "photographyNotes": "In foothill sal forest along the Gandak River, early morning and late afternoon light works best for Bengal Tiger and Leopard; a mid-range telephoto covers most sightings without needing to get close.",
+    "ethicalNotes": "This is active big-cat habitat — stay inside the vehicle at all times, keep noise to a minimum, and never use calls or bait to draw out Bengal Tiger.",
+    "relatedHotspotSlugs": [
+      "dudhwa-national-park",
+      "jim-corbett-national-park",
+      "rajaji-national-park"
+    ]
+  },
+  {
+    "id": "h39",
+    "slug": "indravati-national-park",
+    "name": "Indravati National Park",
+    "state": "Chhattisgarh",
+    "region": "Central",
+    "coordinates": {
+      "latitude": 19.18,
+      "longitude": 80.9
+    },
+    "type": "National Park",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds"
+    ],
+    "habitat": "Dense teak and sal forest along the Indravati River in the Bastar plateau",
+    "summary": "One of India's most remote and least-visited tiger landscapes, home to wild buffalo and bordered by the Indravati River gorge; access is genuinely restricted.",
+    "knownFor": [
+      "Wild Asiatic Buffalo",
+      "Indravati river gorge",
+      "Remote Bastar forest"
+    ],
+    "mainSpecies": [
+      "Wild Asiatic Buffalo",
+      "Bengal Tiger",
+      "Gaur"
+    ],
+    "birdSpecies": [
+      "Hill Myna",
+      "Crested Serpent Eagle"
+    ],
+    "floraHighlights": [
+      "Teak",
+      "Sal",
+      "Bamboo"
+    ],
+    "bestMonths": [
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Offbeat"
+    ],
+    "difficulty": "Remote",
+    "idealDuration": "1-2 days",
+    "permitRequired": "Restricted — visitor access is limited and subject to local security clearance; core zone largely closed to tourism",
+    "nearestAirport": "Jagdalpur Airport",
+    "nearestRailway": "Jagdalpur Railway Station",
+    "travelNotes": "Fly into Jagdalpur Airport or take the train to Jagdalpur Railway Station; access beyond the buffer zone is limited by both terrain and security conditions in the Bastar region, so confirm current status with the forest department before planning any visit. This is a remote-grade destination — build in buffer days, carry essentials, and confirm road/weather conditions before travelling.",
+    "photographyNotes": "Where buffer-zone access is permitted, early morning and late afternoon light works best along the Indravati riverbanks; a mid-range telephoto covers most sightings without needing to get close.",
+    "ethicalNotes": "Never attempt to enter the core zone without explicit forest department clearance — this park's restricted access exists for both conservation and safety reasons, and should be respected rather than worked around.",
+    "relatedHotspotSlugs": [
+      "kanha-national-park",
+      "tadoba-andhari-tiger-reserve",
+      "simlipal-national-park"
+    ]
+  },
+  {
+    "id": "h40",
+    "slug": "namdapha-national-park",
+    "name": "Namdapha National Park",
+    "state": "Arunachal Pradesh",
+    "region": "Northeast",
+    "coordinates": {
+      "latitude": 27.48,
+      "longitude": 96.4
+    },
+    "type": "National Park",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds",
+      "Butterflies"
+    ],
+    "habitat": "Tropical and subtropical rainforest spanning a huge altitude range, from lowland floodplain to alpine ridge",
+    "summary": "The only park in the world confirmed to hold four big cat species — tiger, leopard, snow leopard, and clouded leopard — across an extreme altitude gradient of Eastern Himalayan rainforest.",
+    "knownFor": [
+      "Four big cat species",
+      "Extreme altitude gradient",
+      "Rare hoolock gibbons"
+    ],
+    "mainSpecies": [
+      "Bengal Tiger",
+      "Clouded Leopard",
+      "Hoolock Gibbon"
+    ],
+    "birdSpecies": [
+      "Wreathed Hornbill",
+      "White-bellied Heron"
+    ],
+    "floraHighlights": [
+      "Dipterocarp rainforest",
+      "Bamboo",
+      "Rhododendron"
+    ],
+    "bestMonths": [
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Trekking",
+      "Birding",
+      "Offbeat"
+    ],
+    "difficulty": "Remote",
+    "idealDuration": "5-7 days",
+    "permitRequired": "Yes, Inner Line Permit plus forest department entry permit required",
+    "nearestAirport": "Dibrugarh Airport",
+    "nearestRailway": "Naharlagun Railway Station",
+    "travelNotes": "Fly into Dibrugarh Airport or take the train to Naharlagun; plan for 5-7 days to cover even a fraction of Namdapha's altitude range on foot. This is a remote-grade destination — build in buffer days, carry essentials, and confirm road/weather conditions before travelling.",
+    "photographyNotes": "Rainforest canopy light is low and filtered — a fast lens and patience matter more than reach here; hornbills and gibbons are most active in early morning canopy light.",
+    "ethicalNotes": "Stay with a licensed local guide at all times — trails are unmarked and this is one of India's most sparsely surveyed parks, so independent trekking risks both safety and disturbing undocumented wildlife.",
+    "relatedHotspotSlugs": [
+      "manas-national-park",
+      "kaziranga-national-park",
+      "singalila-national-park"
+    ]
+  },
+  {
+    "id": "h41",
+    "slug": "keibul-lamjao-national-park",
+    "name": "Keibul Lamjao National Park",
+    "state": "Manipur",
+    "region": "Northeast",
+    "coordinates": {
+      "latitude": 24.5,
+      "longitude": 93.83
+    },
+    "type": "Wetland",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds"
+    ],
+    "habitat": "Floating phumdi (compressed vegetation mats) on Loktak Lake",
+    "summary": "The world's only floating national park, a mat of living wetland vegetation on Loktak Lake and the last refuge of the endangered Sangai brow-antlered deer.",
+    "knownFor": [
+      "World's only floating national park",
+      "Sangai brow-antlered deer",
+      "Loktak Lake phumdi"
+    ],
+    "mainSpecies": [
+      "Sangai Deer",
+      "Hog Deer",
+      "Otter"
+    ],
+    "birdSpecies": [
+      "Purple Swamphen",
+      "Bronze-winged Jacana"
+    ],
+    "floraHighlights": [
+      "Phumdi vegetation mats",
+      "Water hyacinth",
+      "Reeds"
+    ],
+    "bestMonths": [
+      "Nov",
+      "Dec",
+      "Jan",
+      "Feb"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Birding",
+      "Photography",
+      "Offbeat"
+    ],
+    "difficulty": "Moderate",
+    "idealDuration": "1-2 days",
+    "permitRequired": "Local entry or guide permissions vary; Protected Area Permit required for foreign nationals",
+    "nearestAirport": "Imphal Bir Tikendrajit International Airport",
+    "nearestRailway": "Jiribam Railway Station",
+    "travelNotes": "Fly into Imphal Bir Tikendrajit International Airport or take the train to Jiribam; plan for 1-2 days to see the floating phumdi habitat of Loktak Lake by boat. Expect moderate terrain — the phumdi surface is uneven and boat access is required, so a local guide is essential.",
+    "photographyNotes": "Sangai deer are shy and the phumdi surface limits how close a boat can approach — a long telephoto (300mm+) works better here than anywhere else on this list.",
+    "ethicalNotes": "Stay in the boat and follow the guide's lead — walking on phumdi mats damages this fragile floating habitat, and Sangai numbers are small enough that any disturbance during feeding matters.",
+    "relatedHotspotSlugs": [
+      "manas-national-park",
+      "kaziranga-national-park",
+      "namdapha-national-park"
+    ]
+  },
+  {
+    "id": "h42",
+    "slug": "silent-valley-national-park",
+    "name": "Silent Valley National Park",
+    "state": "Kerala",
+    "region": "South",
+    "coordinates": {
+      "latitude": 11.13,
+      "longitude": 76.45
+    },
+    "type": "National Park",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds",
+      "Flora",
+      "Butterflies"
+    ],
+    "habitat": "One of the last untouched tracts of tropical evergreen rainforest in the Western Ghats",
+    "summary": "A pristine, never-logged rainforest saved from a 1970s hydroelectric project by one of India's first major environmental movements, now a stronghold for lion-tailed macaque.",
+    "knownFor": [
+      "Untouched primary rainforest",
+      "1970s conservation movement",
+      "Lion-tailed macaque"
+    ],
+    "mainSpecies": [
+      "Lion-tailed Macaque",
+      "Nilgiri Langur",
+      "Tiger"
+    ],
+    "birdSpecies": [
+      "Malabar Grey Hornbill",
+      "Great Hornbill"
+    ],
+    "floraHighlights": [
+      "Primary evergreen rainforest",
+      "Shola forest",
+      "Endemic orchids"
+    ],
+    "bestMonths": [
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Trekking",
+      "Birding",
+      "Offbeat"
+    ],
+    "difficulty": "Moderate",
+    "idealDuration": "2-3 days",
+    "permitRequired": "Yes, forest department entry permit required; daily visitor numbers capped",
+    "nearestAirport": "Coimbatore International Airport",
+    "nearestRailway": "Palakkad Railway Station",
+    "travelNotes": "Fly into Coimbatore International Airport or take the train to Palakkad; plan for 2-3 days to see the primary rainforest properly. Expect moderate terrain — sturdy footwear, sun protection, and a light rain layer help even outside monsoon.",
+    "photographyNotes": "Dense, unbroken canopy means filtered, low light all day — a fast lens and a long telephoto both matter here for spotting lion-tailed macaque troops in the upper canopy.",
+    "ethicalNotes": "Never feed or approach lion-tailed macaque troops — this is one of the species' last strongholds, and human food habituation is a proven threat elsewhere in the Western Ghats.",
+    "relatedHotspotSlugs": [
+      "periyar-tiger-reserve",
+      "thattekad-bird-sanctuary",
+      "eravikulam-national-park"
     ]
   }
 ];

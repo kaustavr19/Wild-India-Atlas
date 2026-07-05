@@ -278,5 +278,145 @@
     "filePage": "https://commons.wikimedia.org/wiki/File:Habalikhati_Island_Turtle_Site.jpg",
     "author": "Subhrasingh",
     "license": "CC BY-SA 4.0"
+  },
+  "bandipur-national-park": {
+    "slug": "bandipur-national-park",
+    "title": "File:Bandipur Tiger Reserve Karnataka.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Bandipur_Tiger_Reserve_Karnataka.jpg/1280px-Bandipur_Tiger_Reserve_Karnataka.jpg",
+    "width": 1280,
+    "height": 960,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Bandipur_Tiger_Reserve_Karnataka.jpg",
+    "author": "Vinaysalimath",
+    "license": "CC BY-SA 4.0"
+  },
+  "mudumalai-national-park": {
+    "slug": "mudumalai-national-park",
+    "title": "File:Dry Forest Theppakadu Mudumalai Mar21 A7C 00505.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Dry_Forest_Theppakadu_Mudumalai_Mar21_A7C_00505.jpg/1280px-Dry_Forest_Theppakadu_Mudumalai_Mar21_A7C_00505.jpg",
+    "width": 1280,
+    "height": 853,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Dry_Forest_Theppakadu_Mudumalai_Mar21_A7C_00505.jpg",
+    "author": "Timothy A. Gonsalves",
+    "license": "CC BY-SA 4.0"
+  },
+  "biligiri-rangaswamy-temple-tiger-reserve": {
+    "slug": "biligiri-rangaswamy-temple-tiger-reserve",
+    "title": "File:Honnametti.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Honnametti.jpg/1280px-Honnametti.jpg",
+    "width": 1280,
+    "height": 960,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Honnametti.jpg",
+    "author": "Shyamal",
+    "license": "CC BY-SA 4.0"
+  },
+  "sariska-tiger-reserve": {
+    "slug": "sariska-tiger-reserve",
+    "title": "File:Sariska National Park.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sariska_National_Park.jpg/1280px-Sariska_National_Park.jpg",
+    "width": 1280,
+    "height": 960,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Sariska_National_Park.jpg",
+    "author": "Somabha9",
+    "license": "CC BY-SA 4.0"
+  },
+  "panna-national-park": {
+    "slug": "panna-national-park",
+    "title": "File:A bridge near Panna Tiger Researve, M. P. , India.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/A_bridge_near_Panna_Tiger_Researve%2C_M._P._%2C_India.jpg/1280px-A_bridge_near_Panna_Tiger_Researve%2C_M._P._%2C_India.jpg",
+    "width": 1280,
+    "height": 718,
+    "filePage": "https://commons.wikimedia.org/wiki/File:A_bridge_near_Panna_Tiger_Researve,_M._P._,_India.jpg",
+    "author": "Kgagan",
+    "license": "CC BY-SA 4.0"
+  },
+  "kuno-national-park": {
+    "slug": "kuno-national-park",
+    "title": "File:Kuno river.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Kuno_river.jpg/1280px-Kuno_river.jpg",
+    "width": 1280,
+    "height": 960,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Kuno_river.jpg",
+    "author": "M G Chandrasekr",
+    "license": "CC BY-SA 4.0"
+  },
+  "rajaji-national-park": {
+    "slug": "rajaji-national-park",
+    "title": "File:A herd of Spotted Deer at Rajaji National Park & Tiger Reserve, Uttarakhand - 2.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/A_herd_of_Spotted_Deer_at_Rajaji_National_Park_%26_Tiger_Reserve%2C_Uttarakhand_-_2.jpg/1280px-A_herd_of_Spotted_Deer_at_Rajaji_National_Park_%26_Tiger_Reserve%2C_Uttarakhand_-_2.jpg",
+    "width": 1280,
+    "height": 960,
+    "filePage": "https://commons.wikimedia.org/wiki/File:A_herd_of_Spotted_Deer_at_Rajaji_National_Park_%26_Tiger_Reserve,_Uttarakhand_-_2.jpg",
+    "author": "Kingshuk Mondal",
+    "license": "CC BY 4.0"
+  },
+  "melghat-tiger-reserve": {
+    "slug": "melghat-tiger-reserve",
+    "title": "File:An evening on the edge.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/An_evening_on_the_edge.jpg/1280px-An_evening_on_the_edge.jpg",
+    "width": 1280,
+    "height": 1280,
+    "filePage": "https://commons.wikimedia.org/wiki/File:An_evening_on_the_edge.jpg",
+    "author": "Chandrashekhar.viper",
+    "license": "CC BY-SA 4.0"
+  },
+  "simlipal-national-park": {
+    "slug": "simlipal-national-park",
+    "title": "File:Black tiger roaming around Simlipal National Park.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Black_tiger_roaming_around_Simlipal_National_Park.jpg",
+    "width": 1024,
+    "height": 682,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Black_tiger_roaming_around_Simlipal_National_Park.jpg",
+    "author": "Government of Odisha",
+    "license": "CC BY 4.0"
+  },
+  "valmiki-tiger-reserve": {
+    "slug": "valmiki-tiger-reserve",
+    "title": "File:Madanpur Jungle Bagaha, Champaran.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Madanpur_Jungle_Bagaha%2C_Champaran.jpg/1280px-Madanpur_Jungle_Bagaha%2C_Champaran.jpg",
+    "width": 1280,
+    "height": 720,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Madanpur_Jungle_Bagaha,_Champaran.jpg",
+    "author": "Praanshu",
+    "license": "CC BY-SA 4.0"
+  },
+  "indravati-national-park": {
+    "slug": "indravati-national-park",
+    "title": "File:Indravati river.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Indravati_river.jpg/1280px-Indravati_river.jpg",
+    "width": 1280,
+    "height": 768,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Indravati_river.jpg",
+    "author": "Syedsamali",
+    "license": "CC BY-SA 4.0"
+  },
+  "namdapha-national-park": {
+    "slug": "namdapha-national-park",
+    "title": "File:Wreathed Hornbill DSCN1580.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Wreathed_Hornbill_DSCN1580.jpg/1280px-Wreathed_Hornbill_DSCN1580.jpg",
+    "width": 1280,
+    "height": 960,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Wreathed_Hornbill_DSCN1580.jpg",
+    "author": "Rohit Naniwadekar",
+    "license": "CC BY-SA 4.0"
+  },
+  "keibul-lamjao-national-park": {
+    "slug": "keibul-lamjao-national-park",
+    "title": "File:Lost Identity -- Keibul Lamjao National Park.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Lost_Identity_--_Keibul_Lamjao_National_Park.jpg/1280px-Lost_Identity_--_Keibul_Lamjao_National_Park.jpg",
+    "width": 1280,
+    "height": 960,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Lost_Identity_--_Keibul_Lamjao_National_Park.jpg",
+    "author": "Jivya mul",
+    "license": "CC BY-SA 4.0"
+  },
+  "silent-valley-national-park": {
+    "slug": "silent-valley-national-park",
+    "title": "File:Evergreen forest of Silent Valley Np Kerala.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Evergreen_forest_of_Silent_Valley_Np_Kerala.jpg/1280px-Evergreen_forest_of_Silent_Valley_Np_Kerala.jpg",
+    "width": 1280,
+    "height": 853,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Evergreen_forest_of_Silent_Valley_Np_Kerala.jpg",
+    "author": "Davidvraju",
+    "license": "CC0"
   }
 }

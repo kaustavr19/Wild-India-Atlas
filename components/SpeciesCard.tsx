@@ -1,5 +1,13 @@
 import Link from "next/link"; import type { Species } from "@/data/types"; import { SpeciesImage } from "./SpeciesImage";
-export function SpeciesCard({ species }: { species: Species }) {
+export function SpeciesCard({ species, compact }: { species: Species; compact?: boolean }) {
+  if (compact) {
+    return <Link className="block min-w-0" href={"/species/" + species.slug}>
+      <article className="field-card group flex items-center gap-3 overflow-hidden rounded-sm p-2 transition hover:-translate-y-0.5">
+        <SpeciesImage slug={species.slug} category={species.category} className="h-14 w-14 shrink-0 rounded-sm" showCredit={false}/>
+        <div className="min-w-0 flex-1"><h3 className="truncate font-bold text-forest-900">{species.commonName}</h3></div>
+      </article>
+    </Link>;
+  }
   return <Link className="block min-w-0" href={"/species/" + species.slug}>
     <article className="field-card group overflow-hidden rounded-sm transition hover:-translate-y-0.5 hover:shadow-field">
       <div className="relative">
