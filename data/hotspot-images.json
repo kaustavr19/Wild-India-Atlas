@@ -238,5 +238,45 @@
     "filePage": "https://commons.wikimedia.org/wiki/File%3ACornus_capitata%2C_Tirthan_Valley%2C_Kullu_District%2C_Himachal_Pradesh_(%E0%A4%AB%E0%A4%BE%E0%A4%97%E0%A5%81).jpg",
     "author": "Ramwik",
     "license": "CC BY-SA 3.0"
+  },
+  "eravikulam-national-park": {
+    "slug": "eravikulam-national-park",
+    "title": "File:Varayad at Eravikulam National Park.jpeg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Varayad_at_Eravikulam_National_Park.jpeg/1280px-Varayad_at_Eravikulam_National_Park.jpeg",
+    "width": 1280,
+    "height": 960,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Varayad_at_Eravikulam_National_Park.jpeg",
+    "author": "Ppyoonus",
+    "license": "CC BY-SA 3.0"
+  },
+  "singalila-national-park": {
+    "slug": "singalila-national-park",
+    "title": "File:Red Panda in Singalila National Park (West Bengal) 0Y7A8042.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Red_Panda_in_Singalila_National_Park_%28West_Bengal%29_0Y7A8042.jpg/1280px-Red_Panda_in_Singalila_National_Park_%28West_Bengal%29_0Y7A8042.jpg",
+    "width": 1280,
+    "height": 853,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Red_Panda_in_Singalila_National_Park_(West_Bengal)_0Y7A8042.jpg",
+    "author": "Mayankranjan486",
+    "license": "CC BY 4.0"
+  },
+  "rushikulya-rookery": {
+    "slug": "rushikulya-rookery",
+    "title": "File:Olive Ridley Sea Turtle.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Olive_Ridley_Sea_Turtle.jpg/1280px-Olive_Ridley_Sea_Turtle.jpg",
+    "width": 1280,
+    "height": 853,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Olive_Ridley_Sea_Turtle.jpg",
+    "author": "Nandita Madhu",
+    "license": "CC BY-SA 4.0"
+  },
+  "gahirmatha-marine-sanctuary": {
+    "slug": "gahirmatha-marine-sanctuary",
+    "title": "File:Habalikhati Island Turtle Site.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Habalikhati_Island_Turtle_Site.jpg/1280px-Habalikhati_Island_Turtle_Site.jpg",
+    "width": 1280,
+    "height": 853,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Habalikhati_Island_Turtle_Site.jpg",
+    "author": "Subhrasingh",
+    "license": "CC BY-SA 4.0"
   }
 }

@@ -7,21 +7,13 @@ export const species: Species[] = [
     "commonName": "Bengal Tiger",
     "scientificName": "Panthera tigris tigris",
     "category": "Mammal",
-    "shortDescription": "Bengal Tiger profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "jim-corbett-national-park",
-      "ranthambore-national-park",
-      "bandhavgarh-tiger-reserve"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "India's flagship big cat and the reason most of the country's tiger reserves exist.",
+    "habitat": "Dry and moist deciduous forests, mangroves, and tall grasslands across central and northern India",
+    "conservationStatus": "Endangered (IUCN)",
+    "viewingTips": "Stay inside the vehicle at all times, keep voices low, and never ask a guide to chase a sighting or block a tiger's path.",
+    "difficultyOfSighting": "Moderate",
+    "photographyTips": "A 100-400mm telephoto covers most safari distances; shoot from a low angle in the vehicle and prioritize eye contact or movement over a static portrait.",
+    "similarSpeciesSlugs": ["asiatic-lion", "indian-leopard"]
   },
   {
     "id": "s2",
@@ -29,21 +21,13 @@ export const species: Species[] = [
     "commonName": "Asiatic Lion",
     "scientificName": "Panthera leo persica",
     "category": "Mammal",
-    "shortDescription": "Asiatic Lion profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "ranthambore-national-park",
-      "bandhavgarh-tiger-reserve",
-      "kanha-national-park"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "The world's only wild population outside Africa, confined to Gujarat's Gir landscape.",
+    "habitat": "Dry deciduous and thorn forest, specifically the Gir Forest landscape",
+    "conservationStatus": "Endangered (IUCN)",
+    "viewingTips": "Keep to designated safari tracks and let forest guides manage distance — prides here are used to vehicles but not to people on foot.",
+    "difficultyOfSighting": "Easy",
+    "photographyTips": "Gir's forest is denser than typical savanna lion habitat — a mid-range zoom (70-200mm) is often more useful than a long prime, since encounters happen at closer range.",
+    "similarSpeciesSlugs": ["bengal-tiger", "indian-leopard"]
   },
   {
     "id": "s3",
@@ -51,21 +35,13 @@ export const species: Species[] = [
     "commonName": "Indian Leopard",
     "scientificName": "Panthera pardus fusca",
     "category": "Mammal",
-    "shortDescription": "Indian Leopard profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "bandhavgarh-tiger-reserve",
-      "kanha-national-park",
-      "tadoba-andhari-tiger-reserve"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "India's most adaptable big cat, equally at home in dense forest and forest edges near villages.",
+    "habitat": "Highly adaptable — forests, rocky hills, and forest edges near human settlements across India",
+    "conservationStatus": "Vulnerable (IUCN)",
+    "viewingTips": "Resist pressuring guides for a closer approach — leopards are easily stressed by crowding and will abandon a kill or resting spot if pushed.",
+    "difficultyOfSighting": "Difficult",
+    "photographyTips": "Leopards favor early morning and dusk light and often rest on rocks or tree branches — scan elevated features, not just the ground, and keep shutter speed high for sudden movement.",
+    "similarSpeciesSlugs": ["bengal-tiger", "asiatic-lion"]
   },
   {
     "id": "s4",
@@ -73,21 +49,13 @@ export const species: Species[] = [
     "commonName": "Snow Leopard",
     "scientificName": "Panthera uncia",
     "category": "Mammal",
-    "shortDescription": "Snow Leopard profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "kanha-national-park",
-      "tadoba-andhari-tiger-reserve",
-      "pench-national-park"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "The elusive 'ghost of the mountains,' tracked across Ladakh's high-altitude valleys.",
+    "habitat": "High-altitude cold desert and rocky slopes above the treeline in the trans-Himalaya, 3,000-5,000m",
+    "conservationStatus": "Vulnerable (IUCN)",
+    "viewingTips": "Follow your spotter's lead on distance and noise discipline — sightings happen across open valleys where sound and movement travel far.",
+    "difficultyOfSighting": "Very Difficult",
+    "photographyTips": "Bring the longest lens you can carry (500mm+) and a spotting scope — most sightings are at great distance across a valley, so a guide's telescope does the finding and your camera does the confirming.",
+    "similarSpeciesSlugs": ["himalayan-monal"]
   },
   {
     "id": "s5",
@@ -95,21 +63,13 @@ export const species: Species[] = [
     "commonName": "One-horned Rhinoceros",
     "scientificName": "Rhinoceros unicornis",
     "category": "Mammal",
-    "shortDescription": "One-horned Rhinoceros profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "tadoba-andhari-tiger-reserve",
-      "pench-national-park",
-      "kaziranga-national-park"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "A genuine conservation success story, recovered from near-extinction in Assam's floodplains.",
+    "habitat": "Tall floodplain grasslands and swamps along the Brahmaputra basin",
+    "conservationStatus": "Vulnerable (IUCN) — recovered from Critically Endangered through decades of protection",
+    "viewingTips": "Stick to designated jeep or elephant-back safari routes; rhinos are grazers that need undisturbed access to grassland and water.",
+    "difficultyOfSighting": "Easy",
+    "photographyTips": "Elephant-back or jeep safaris in early morning mist offer classic silhouette shots — a mid telephoto (100-300mm) is usually enough since rhinos graze in the open.",
+    "similarSpeciesSlugs": ["asian-elephant", "barasingha"]
   },
   {
     "id": "s6",
@@ -117,21 +77,13 @@ export const species: Species[] = [
     "commonName": "Asian Elephant",
     "scientificName": "Elephas maximus",
     "category": "Mammal",
-    "shortDescription": "Asian Elephant profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "pench-national-park",
-      "kaziranga-national-park",
-      "manas-national-park"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "Highly social giants found in family herds across forests from central India to the northeast.",
+    "habitat": "Forests and grasslands across central India, the Western Ghats, and the northeast",
+    "conservationStatus": "Endangered (IUCN)",
+    "viewingTips": "Never approach a herd with calves or a lone bull in musth — maintain distance and let the animals dictate the encounter.",
+    "difficultyOfSighting": "Easy",
+    "photographyTips": "Herds are social and vocal — a wide-to-mid zoom captures group behavior better than a tight portrait; watch for interactions between calves and matriarchs.",
+    "similarSpeciesSlugs": ["one-horned-rhinoceros", "barasingha"]
   },
   {
     "id": "s7",
@@ -139,21 +91,13 @@ export const species: Species[] = [
     "commonName": "Barasingha",
     "scientificName": "Rucervus duvaucelii",
     "category": "Mammal",
-    "shortDescription": "Barasingha profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "kaziranga-national-park",
-      "manas-national-park",
-      "sundarbans-national-park"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "The swamp deer whose hardground subspecies was saved from the brink at Kanha.",
+    "habitat": "Swampy grasslands and floodplains, notably Kanha's hardground population and Kaziranga's wetland herds",
+    "conservationStatus": "Vulnerable (IUCN)",
+    "viewingTips": "Observe grazing herds from a distance during their vulnerable early-morning feeding window rather than approaching for a closer look.",
+    "difficultyOfSighting": "Moderate",
+    "photographyTips": "Best photographed at dawn when herds graze in open meadows before retreating to cover; a 300mm+ lens helps given their wariness.",
+    "similarSpeciesSlugs": ["one-horned-rhinoceros", "asian-elephant"]
   },
   {
     "id": "s8",
@@ -161,21 +105,13 @@ export const species: Species[] = [
     "commonName": "Gharial",
     "scientificName": "Gavialis gangeticus",
     "category": "Reptile",
-    "shortDescription": "Gharial profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "manas-national-park",
-      "sundarbans-national-park",
-      "keoladeo-ghana-bharatpur"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "A critically endangered fish-eating crocodilian known for its distinctive long, narrow snout.",
+    "habitat": "Clean, fast-flowing rivers with sandbanks, primarily the Chambal and Girwa rivers",
+    "conservationStatus": "Critically Endangered (IUCN)",
+    "viewingTips": "View only from a boat at a respectful distance — gharials bask on sandbanks and are highly sensitive to disturbance during nesting season.",
+    "difficultyOfSighting": "Moderate",
+    "photographyTips": "Photograph from a boat with a telephoto lens — gharials bask motionless on sandbanks, so a low angle emphasizes their distinctive long snout.",
+    "similarSpeciesSlugs": ["king-cobra"]
   },
   {
     "id": "s9",
@@ -183,21 +119,13 @@ export const species: Species[] = [
     "commonName": "Indian Wild Ass",
     "scientificName": "Equus hemionus khur",
     "category": "Mammal",
-    "shortDescription": "Indian Wild Ass profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "sundarbans-national-park",
-      "keoladeo-ghana-bharatpur",
-      "chambal-river-sanctuary"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "A fast, herd-forming equid found only in Gujarat's salt desert.",
+    "habitat": "Arid salt desert and grassland of the Little Rann of Kutch",
+    "conservationStatus": "Near Threatened (IUCN)",
+    "viewingTips": "Keep vehicles on marked tracks across the salt flats — the terrain is ecologically fragile and easy to damage.",
+    "difficultyOfSighting": "Easy",
+    "photographyTips": "Herds run in the open salt flats — a fast shutter speed and a mid telephoto (200-400mm) freeze motion well during a gallop.",
+    "similarSpeciesSlugs": ["great-indian-bustard"]
   },
   {
     "id": "s10",
@@ -205,21 +133,13 @@ export const species: Species[] = [
     "commonName": "Red Panda",
     "scientificName": "Ailurus fulgens",
     "category": "Mammal",
-    "shortDescription": "Red Panda profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "keoladeo-ghana-bharatpur",
-      "chambal-river-sanctuary",
-      "little-rann-of-kutch"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "A shy, bamboo-eating mountain specialist of the eastern Himalayan canopy.",
+    "habitat": "Temperate broadleaf and conifer forest with dense bamboo understory in the eastern Himalaya, above 2,200m",
+    "conservationStatus": "Endangered (IUCN)",
+    "viewingTips": "Stay on marked forest trails and keep noise to a minimum — red pandas are easily disturbed and spend most of the day resting in tree canopies.",
+    "difficultyOfSighting": "Very Difficult",
+    "photographyTips": "Red pandas are largely crepuscular and spend time in tree canopies — use a long lens and raise ISO rather than slowing shutter speed in filtered forest light.",
+    "similarSpeciesSlugs": ["himalayan-monal", "snow-leopard"]
   },
   {
     "id": "s11",
@@ -227,21 +147,13 @@ export const species: Species[] = [
     "commonName": "Great Indian Bustard",
     "scientificName": "Ardeotis nigriceps",
     "category": "Bird",
-    "shortDescription": "Great Indian Bustard profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "jim-corbett-national-park",
-      "ranthambore-national-park",
-      "bandhavgarh-tiger-reserve"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Wetlands, forests, grasslands, and migration corridors",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "One of the world's heaviest flying birds and among its most endangered, down to a few dozen individuals in the wild.",
+    "habitat": "Arid and semi-arid grasslands, principally the Thar Desert region",
+    "conservationStatus": "Critically Endangered (IUCN)",
+    "viewingTips": "Observe only from a vehicle at a distance set by your guide — this species is extremely wary and sensitive to disturbance, with a tiny remaining population.",
+    "difficultyOfSighting": "Very Difficult",
+    "photographyTips": "Sightings are distant in open grassland — a 500mm+ lens or heavy crop is usually necessary, and a vehicle serves as a natural hide since bustards are extremely wary on foot.",
+    "similarSpeciesSlugs": ["indian-wild-ass"]
   },
   {
     "id": "s12",
@@ -249,21 +161,13 @@ export const species: Species[] = [
     "commonName": "Sarus Crane",
     "scientificName": "Antigone antigone",
     "category": "Bird",
-    "shortDescription": "Sarus Crane profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "ranthambore-national-park",
-      "bandhavgarh-tiger-reserve",
-      "kanha-national-park"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Wetlands, forests, grasslands, and migration corridors",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "The world's tallest flying bird, famous for pairing for life and its elaborate courtship dance.",
+    "habitat": "Wetlands, marshes, and agricultural fields across northern and central India",
+    "conservationStatus": "Vulnerable (IUCN)",
+    "viewingTips": "Give nesting pairs a wide berth during breeding season and avoid entering marshy nesting areas on foot.",
+    "difficultyOfSighting": "Easy",
+    "photographyTips": "This species pairs for life and displays distinctive courtship dancing — a mid telephoto in open wetland light captures both behavior and its striking red head.",
+    "similarSpeciesSlugs": ["greater-flamingo"]
   },
   {
     "id": "s13",
@@ -271,21 +175,13 @@ export const species: Species[] = [
     "commonName": "Greater Flamingo",
     "scientificName": "Phoenicopterus roseus",
     "category": "Bird",
-    "shortDescription": "Greater Flamingo profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "bandhavgarh-tiger-reserve",
-      "kanha-national-park",
-      "tadoba-andhari-tiger-reserve"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Wetlands, forests, grasslands, and migration corridors",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "Large pink-flocked wading birds that gather by the thousand on India's saline lagoons.",
+    "habitat": "Shallow saline lagoons, salt pans, and brackish wetlands",
+    "conservationStatus": "Least Concern (IUCN)",
+    "viewingTips": "View flocks from a boat or shoreline hide rather than wading in — large groups scatter easily and burn energy needed for feeding.",
+    "difficultyOfSighting": "Easy",
+    "photographyTips": "Large flocks look best from a low angle at eye level with the water — early morning light brings out the pink plumage against still-water reflections.",
+    "similarSpeciesSlugs": ["sarus-crane"]
   },
   {
     "id": "s14",
@@ -293,43 +189,27 @@ export const species: Species[] = [
     "commonName": "Indian Pitta",
     "scientificName": "Pitta brachyura",
     "category": "Bird",
-    "shortDescription": "Indian Pitta profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "kanha-national-park",
-      "tadoba-andhari-tiger-reserve",
-      "pench-national-park"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Wetlands, forests, grasslands, and migration corridors",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "A jewel-colored, ground-foraging migrant more often heard than seen in dense forest.",
+    "habitat": "Dense deciduous forest and scrub, mostly encountered during migration between the Himalayan foothills and peninsular India",
+    "conservationStatus": "Least Concern (IUCN)",
+    "viewingTips": "Stay still and quiet on forest trails — pittas forage on the leaf litter and freeze at the first sign of movement.",
+    "difficultyOfSighting": "Difficult",
+    "photographyTips": "Pittas forage on the forest floor and freeze when alert — stay still, use a monopod for a long lens, and wait rather than approach.",
+    "similarSpeciesSlugs": ["malabar-hornbill"]
   },
   {
     "id": "s15",
     "slug": "malabar-hornbill",
-    "commonName": "Malabar Hornbill",
+    "commonName": "Malabar Grey Hornbill",
     "scientificName": "Ocyceros griseus",
     "category": "Bird",
-    "shortDescription": "Malabar Hornbill profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "tadoba-andhari-tiger-reserve",
-      "pench-national-park",
-      "kaziranga-national-park"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Wetlands, forests, grasslands, and migration corridors",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "A Western Ghats endemic hornbill, best located by its cackling call in the forest canopy.",
+    "habitat": "Western Ghats moist deciduous and evergreen forest canopy",
+    "conservationStatus": "Least Concern (IUCN)",
+    "viewingTips": "Keep to forest trails and avoid disturbing canopy nest cavities, which hornbills seal and reuse over multiple seasons.",
+    "difficultyOfSighting": "Moderate",
+    "photographyTips": "Look and listen for its cackling call in the canopy; backlit conditions are common, so spot-meter on the bird and add slight positive exposure compensation.",
+    "similarSpeciesSlugs": ["indian-pitta"]
   },
   {
     "id": "s16",
@@ -337,21 +217,13 @@ export const species: Species[] = [
     "commonName": "Himalayan Monal",
     "scientificName": "Lophophorus impejanus",
     "category": "Bird",
-    "shortDescription": "Himalayan Monal profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "pench-national-park",
-      "kaziranga-national-park",
-      "manas-national-park"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Wetlands, forests, grasslands, and migration corridors",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "A dazzlingly iridescent pheasant of the high Himalaya, and Uttarakhand's state bird.",
+    "habitat": "Temperate and subalpine forest with dense undergrowth, 2,400-4,500m in the Himalaya",
+    "conservationStatus": "Least Concern (IUCN)",
+    "viewingTips": "Stay on marked trails through alpine meadows — trampling fragile high-altitude vegetation does lasting damage for a single photo.",
+    "difficultyOfSighting": "Difficult",
+    "photographyTips": "Males are iridescent and best photographed in soft, overcast light to avoid blown highlights on the metallic plumage; forest edges near clearings are most productive in early morning.",
+    "similarSpeciesSlugs": ["snow-leopard", "red-panda"]
   },
   {
     "id": "s17",
@@ -359,21 +231,13 @@ export const species: Species[] = [
     "commonName": "King Cobra",
     "scientificName": "Ophiophagus hannah",
     "category": "Reptile",
-    "shortDescription": "King Cobra profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "kaziranga-national-park",
-      "manas-national-park",
-      "sundarbans-national-park"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "The world's longest venomous snake, a shy forest specialist rarely encountered by chance.",
+    "habitat": "Dense evergreen and moist deciduous forest, primarily the Western Ghats and northeastern India",
+    "conservationStatus": "Vulnerable (IUCN)",
+    "viewingTips": "Never approach or attempt to handle a king cobra — observe only from a safe, guide-approved distance and let it move away undisturbed.",
+    "difficultyOfSighting": "Very Difficult",
+    "photographyTips": "Never approach for a close shot — a long lens from a safe, guide-approved distance is the only responsible way to photograph a king cobra in the wild.",
+    "similarSpeciesSlugs": ["gharial"]
   },
   {
     "id": "s18",
@@ -381,21 +245,13 @@ export const species: Species[] = [
     "commonName": "Olive Ridley Turtle",
     "scientificName": "Lepidochelys olivacea",
     "category": "Marine",
-    "shortDescription": "Olive Ridley Turtle profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "manas-national-park",
-      "sundarbans-national-park",
-      "keoladeo-ghana-bharatpur"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Coasts and nearshore waters",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "A sea turtle famous for its mass synchronized nesting ('arribada') on Odisha's beaches.",
+    "habitat": "Sandy nesting beaches and nearshore waters along India's east coast, notably Odisha",
+    "conservationStatus": "Vulnerable (IUCN)",
+    "viewingTips": "Never use flash or torchlight directly on nesting turtles or hatchlings — it disorients them and can lead them away from the sea.",
+    "difficultyOfSighting": "Moderate",
+    "photographyTips": "Never use flash near nesting turtles — shoot with available light or a red-filtered torch under a guide's instruction.",
+    "similarSpeciesSlugs": []
   },
   {
     "id": "s19",
@@ -403,21 +259,13 @@ export const species: Species[] = [
     "commonName": "Nilgiri Tahr",
     "scientificName": "Nilgiritragus hylocrius",
     "category": "Mammal",
-    "shortDescription": "Nilgiri Tahr profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "sundarbans-national-park",
-      "keoladeo-ghana-bharatpur",
-      "chambal-river-sanctuary"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "A sure-footed mountain goat endemic to the Western Ghats' rolling shola-grassland peaks.",
+    "habitat": "Montane grassland and shola forest above 1,200m in the Western Ghats",
+    "conservationStatus": "Endangered (IUCN)",
+    "viewingTips": "Stick to designated viewpoints and trails in protected grasslands rather than climbing toward herds on open slopes.",
+    "difficultyOfSighting": "Moderate",
+    "photographyTips": "Tahr are relatively approachable in protected grassland reserves used to foot traffic — a mid telephoto works well, and misty highland light adds mood to images.",
+    "similarSpeciesSlugs": ["lion-tailed-macaque"]
   },
   {
     "id": "s20",
@@ -425,20 +273,14 @@ export const species: Species[] = [
     "commonName": "Lion-tailed Macaque",
     "scientificName": "Macaca silenus",
     "category": "Mammal",
-    "shortDescription": "Lion-tailed Macaque profile placeholder for the future Species Explorer.",
-    "bestHotspots": [
-      "keoladeo-ghana-bharatpur",
-      "chambal-river-sanctuary",
-      "little-rann-of-kutch"
-    ],
-    "bestMonths": [
-      "Nov",
-      "Dec",
-      "Jan",
-      "Feb"
-    ],
-    "habitat": "Forests, grasslands, mountains, or wetlands depending on species",
-    "conservationStatus": "Placeholder status",
-    "viewingTips": "Go with trained local guides, keep distance, and prioritize habitat quality over checklist speed."
+    "shortDescription": "A distinctive silver-maned primate confined to the undisturbed rainforest canopy of the Western Ghats.",
+    "habitat": "Undisturbed evergreen rainforest canopy in the Western Ghats",
+    "conservationStatus": "Endangered (IUCN)",
+    "viewingTips": "Never feed troops or approach closer than a guide advises — habituation to food from tourists is a serious threat to this species.",
+    "difficultyOfSighting": "Difficult",
+    "photographyTips": "This canopy-dwelling primate is shy of disturbance — a long lens and quiet observation from below the canopy work better than trying to get close.",
+    "similarSpeciesSlugs": ["nilgiri-tahr"]
   }
 ];
+
+export function getSpeciesBySlug(slug: string) { return species.find((s) => s.slug === slug); }

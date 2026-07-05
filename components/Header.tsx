@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link"; import Image from "next/image"; import { Menu, X } from "lucide-react"; import { useState } from "react"; import { ThemeToggle } from "./ThemeToggle";
-const nav = [{label:"Map",href:"/map"},{label:"Hotspots",href:"/hotspots"},{label:"Species",href:"#species",disabled:true},{label:"Seasonal Planner",href:"#seasonal",disabled:true},{label:"About",href:"/#about"}];
+const nav = [{label:"Map",href:"/map"},{label:"Hotspots",href:"/hotspots"},{label:"Species",href:"/species"},{label:"Seasonal Planner",href:"#seasonal",disabled:true},{label:"About",href:"/#about"}];
 export function Header(){ const [open,setOpen]=useState(false); return <div className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-4">
   <header className="mx-auto flex max-w-5xl items-center justify-between gap-4 rounded-full border border-white/15 bg-forest-900/70 px-4 py-2.5 shadow-lg backdrop-blur-xl sm:px-5">
     <Link href="/" className="flex items-center gap-2.5 font-bold text-white">
