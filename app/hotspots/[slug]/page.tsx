@@ -1,4 +1,4 @@
-import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Binoculars, Camera, Footprints, PawPrint, Sailboat, Sparkles, Users } from "lucide-react"; import { hotspots, getHotspotBySlug } from "@/data/hotspots"; import { QuickFactsCard } from "@/components/QuickFactsCard"; import { Tag } from "@/components/Tag"; import { PlanLinksCard } from "@/components/PlanLinksCard"; import { EthicalTravelNote } from "@/components/EthicalTravelNote"; import { HotspotCard } from "@/components/HotspotCard"; import { HotspotImage } from "@/components/HotspotImage"; import { ecosystem, ecosystemColorClass } from "@/data/ecosystems"; import { hasBoating } from "@/data/boatingSpots"; import { seasonalWisdom } from "@/data/seasonalWisdom"; import { buildItinerary } from "@/lib/itinerary"; import { haversineKm } from "@/lib/geo"; import { speciesSlugForName } from "@/lib/speciesLinks"; import { species, getSpeciesBySlug } from "@/data/species"; import { SpeciesCard } from "@/components/SpeciesCard";
+import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Binoculars, Camera, Footprints, Lock, LockOpen, PawPrint, Sailboat, Sparkles, Users } from "lucide-react"; import { hotspots, getHotspotBySlug } from "@/data/hotspots"; import { closureInfo } from "@/data/closures"; import { QuickFactsCard } from "@/components/QuickFactsCard"; import { Tag } from "@/components/Tag"; import { PlanLinksCard } from "@/components/PlanLinksCard"; import { EthicalTravelNote } from "@/components/EthicalTravelNote"; import { HotspotCard } from "@/components/HotspotCard"; import { HotspotImage } from "@/components/HotspotImage"; import { ecosystem, ecosystemColorClass } from "@/data/ecosystems"; import { hasBoating } from "@/data/boatingSpots"; import { seasonalWisdom } from "@/data/seasonalWisdom"; import { buildItinerary } from "@/lib/itinerary"; import { haversineKm } from "@/lib/geo"; import { speciesSlugForName } from "@/lib/speciesLinks"; import { species, getSpeciesBySlug } from "@/data/species"; import { SpeciesCard } from "@/components/SpeciesCard";
 
 const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const experienceIcons: Record<string, typeof Camera> = { Photography: Camera, Safari: PawPrint, Birding: Binoculars, Trekking: Footprints, "Family-friendly": Users, Offbeat: Sparkles };
@@ -52,6 +52,7 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
       .filter((s): s is string => Boolean(s))
   ));
   const featuredSpecies = featuredSpeciesSlugs.map(getSpeciesBySlug).filter(Boolean);
+  const closure = closureInfo[hotspot.slug];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -112,10 +113,20 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
         </section>
         <section className="field-card rounded-sm p-6">
           <h2 className="text-2xl font-black text-forest-900">Season &amp; closures</h2>
-          <div className="mt-4 grid gap-3">
-            {hotspot.bestSeason.map(s => <div key={s}><p className="font-mono text-xs font-bold uppercase tracking-wide text-clay">{s}</p><p className="mt-1 text-sm leading-6 text-slate-700 dark:text-slate-300">{seasonalWisdom[s].avoid}</p></div>)}
-          </div>
-          <p className="mt-3 text-xs italic text-slate-500 dark:text-slate-400">General seasonal guidance, not park-specific — confirm exact closure dates and permits locally before booking.</p>
+          {closure ? (
+            <div className="mt-4 flex items-start gap-3">
+              {closure.closesSeasonally ? <Lock size={18} className="mt-0.5 shrink-0 text-clay"/> : <LockOpen size={18} className="mt-0.5 shrink-0 text-forest-700 dark:text-forest-300"/>}
+              <div>
+                <p className="font-mono text-xs font-bold uppercase tracking-wide text-slate-700 dark:text-slate-300">{closure.closesSeasonally ? "This park closes seasonally" : "Open year-round"}</p>
+                <p className="mt-1 text-sm leading-6 text-slate-700 dark:text-slate-300">{closure.note}</p>
+              </div>
+            </div>
+          ) : (
+            <div className="mt-4 grid gap-3">
+              {hotspot.bestSeason.map(s => <div key={s}><p className="font-mono text-xs font-bold uppercase tracking-wide text-clay">{s}</p><p className="mt-1 text-sm leading-6 text-slate-700 dark:text-slate-300">{seasonalWisdom[s].avoid}</p></div>)}
+            </div>
+          )}
+          <p className="mt-3 text-xs italic text-slate-500 dark:text-slate-400">{closure ? "Exact dates are set annually by the state forest department and can shift by a week or two" : "General seasonal guidance, not park-specific"} — confirm before booking.</p>
         </section>
         <section className="field-card rounded-sm p-6">
           <h2 className="text-2xl font-black text-forest-900">Suggested itinerary</h2>

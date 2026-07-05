@@ -31,6 +31,20 @@ export const district: Record<string, string> = {
   "singalila-national-park": "Darjeeling",
   "rushikulya-rookery": "Ganjam",
   "gahirmatha-marine-sanctuary": "Kendrapara",
+  "bandipur-national-park": "Chamarajanagar",
+  "mudumalai-national-park": "Nilgiris",
+  "biligiri-rangaswamy-temple-tiger-reserve": "Chamarajanagar",
+  "sariska-tiger-reserve": "Alwar",
+  "panna-national-park": "Panna",
+  "kuno-national-park": "Sheopur",
+  "rajaji-national-park": "Haridwar, Dehradun & Pauri Garhwal",
+  "melghat-tiger-reserve": "Amravati",
+  "simlipal-national-park": "Mayurbhanj",
+  "valmiki-tiger-reserve": "West Champaran",
+  "indravati-national-park": "Bijapur",
+  "namdapha-national-park": "Changlang",
+  "keibul-lamjao-national-park": "Bishnupur",
+  "silent-valley-national-park": "Palakkad",
 };
 
 // Nearest airport, with real coordinates (Wikipedia infobox unless noted). Omitted where not verified.

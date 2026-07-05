@@ -1,32 +1,8 @@
 # Wild India Atlas
 
-A map-first travel guide for exploring India's wildlife hotspots — tiger reserves, bird sanctuaries, wetlands, and Himalayan sanctuaries — by region, season, and species.
+Wild India Atlas is a map-first travel guide for planning wildlife trips across India. It combines an interactive, real-boundary map of 42 tiger reserves, bird sanctuaries, wetlands, and Himalayan sanctuaries with a species guide (21 species and counting), so a trip can be planned by region, season, ecosystem, or species — whichever a traveler starts from. Every hotspot page carries real, individually-sourced photography, travel logistics (nearest airport/railway, permits, district), a species spotlight, a real closure/seasonal-access fact, and a suggested itinerary; species pages link back to exactly the hotspots where that animal is actually documented, derived live from the hotspot data rather than a separately hand-maintained list.
 
-## Version history
-
-**v3 — Planning-oriented species guide + hotspot detail pages** (current)
-- New Species Guide (`/species`, `/species/[slug]`) covering 21 species with real, attributed Wikimedia Commons photography — where to actually see each species (derived live from hotspots' real species lists, not a hand-maintained list — this caught and fixed several factually wrong entries, e.g. Snow Leopard previously pointed at three central-India tiger forests instead of Hemis), best months, sighting difficulty, habitat, ethical viewing notes, photography tips, and similar-species cross-links
-- 4 new hotspots added after verifying real range/species overlap first: Eravikulam National Park (Nilgiri Tahr), Singalila National Park (Red Panda), and Rushikulya + Gahirmatha (Olive Ridley Turtle nesting) — Gahirmatha's real access restrictions are prominently disclosed rather than glossed over
-- 3 existing hotspots corrected with real, previously-missing species (Malabar Grey Hornbill at Thattekad, King Cobra at Sundarbans and Periyar, Lion-tailed Macaque at Periyar), found by checking official park records before assuming new hotspots were needed
-- Hotspot detail pages rebuilt out to a full destination-page structure: unique SEO metadata + structured data per page (previously every page on the site shared one identical title/description), an ecosystem badge and "why go" callout in the hero, a structured experiences section, family-friendliness as an explicit fact, a season/closures block, a generic-but-personalized suggested itinerary, and a real geographic-nearest "nearby hotspots" section
-- Species and hotspots now link to each other bidirectionally from their species/wildlife tags
-- 14 more parks added to close the gap with a competitor audit (wildatlas.in/parks): Bandipur, Mudumalai, BRT Tiger Reserve, Sariska, Panna, Kuno, Rajaji, Melghat, Simlipal, Valmiki, Indravati, Namdapha, Keibul Lamjao, and Silent Valley — each fully sourced (real Wikimedia Commons photo, ecosystem classification, travel facts) to the same bar as the rest, bringing the atlas to 42 hotspots across 6 regions
-- Added an Asiatic Cheetah species entry so Kuno's 2022 reintroduction story links properly from its hotspot page
-- New "Species spotlight" section on hotspot detail pages — small clickable species cards (photo + name) for every mammal/bird with a matching species page
-- Species pages' "where can I see this" hotspot cards switched to a compact style (photo, name, state only) now that the list can run to a dozen+ parks per species
-- Homepage park/region counts are now computed live from the hotspot data instead of a hardcoded stat that had drifted out of date
-
-**v2 — Map as a trip-discovery engine**
-- Region clustering: the map groups hotspots into clickable clusters by region at the default zoom, expanding into individual pins once you zoom into one
-- Markers colored by ecosystem (forest, wetland, desert, alpine, mangrove, marine), manually classified from each hotspot's habitat description
-- Multi-select map layer toggles (Mammals, Birds, Reptiles, Flora, Rare Species, Monsoon) that filter both clusters and pins
-- Richer click-through preview: flagship species, difficulty, a linked permits badge, and a photography-friendly badge, alongside best months and nearest airport/railway
-- Collapsible "Layers & legend" panel (collapsed by default) instead of a permanently-visible wall of chips
-- Neutral state-fill color on the map so region, ecosystem, and "best this month" highlight colors no longer visually compete
-- Homepage "Where to go in [month]" section: season-level field notes (best for / avoid / travel caution) alongside the existing data-driven "good bets" picks
-
-**v1 — Prototype slice**
-Initial map-first build: interactive India map with real state boundaries, 24 hotspot records with sourced photography and travel data, a filterable map/list explorer, and hotspot detail pages.
+For the detailed build-by-build changelog, see [VERSION_HISTORY.md](VERSION_HISTORY.md).
 
 ## Features
 
@@ -87,7 +63,8 @@ data/
   officialLinks.ts             Wikipedia / Maps / search link builders
   accessPoints.ts              Verified district/airport/railway/entry-gate data per hotspot
   ecosystems.ts                 Ecosystem classification per hotspot (forest/wetland/desert/alpine/mangrove/marine)
-  seasonalWisdom.ts             Month-to-season mapping + season-level travel field notes
+  closures.ts                   Individually-researched per-park seasonal closure facts
+  seasonalWisdom.ts             Month-to-season mapping + generic season-level travel field notes (fallback only)
   boatingSpots.ts               Hotspots with a real, text-derived boating experience signal
 lib/
   filterHotspots.ts         Search and filter logic
@@ -106,7 +83,8 @@ public/brand/               Logo assets
 - Ecosystem categories (`data/ecosystems.ts`) are manually classified from each hotspot's existing habitat description. Seasonal field notes (`data/seasonalWisdom.ts`) are general, broadly-true patterns for Indian wildlife travel, not park-specific facts — always confirm exact closure dates and permits locally before booking.
 - Species photography is sourced from Wikimedia Commons the same way hotspot photography is — real, attributed, CC-licensed files (`data/species-images.json`).
 - A species' "where can I see this" and "best months" are computed live from the real hotspot species lists (`lib/speciesLinks.ts`), not a separately hand-maintained list — this is what caught and fixed several factually wrong species-location claims that existed before this pass. Species with no genuine hotspot match show an honest empty state rather than a fabricated location.
-- New hotspots added specifically to cover a species' real range (Eravikulam, Singalila, Rushikulya, Gahirmatha) were only added after checking that no existing hotspot already had a real, documented population — see the "1 fringe + flagship split" note in the v3 changelog for how a borderline case (Nilgiri Tahr at Periyar) was handled.
+- New hotspots added specifically to cover a species' real range (Eravikulam, Singalila, Rushikulya, Gahirmatha) were only added after checking that no existing hotspot already had a real, documented population — see the "1 fringe + flagship split" note in the [v1.3 changelog](VERSION_HISTORY.md) for how a borderline case (Nilgiri Tahr at Periyar) was handled.
+- "Season & closures" facts (`data/closures.ts`) are individually researched per park from state forest department notices and official park portals — not a blanket rule applied to every "Tiger Reserve"-type hotspot. Exact dates shift year to year by forest department order; treat these as a real planning signal, not a fixed calendar.
 
 ## Not yet built
 
