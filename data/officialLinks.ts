@@ -29,6 +29,22 @@ export const wikipediaTitle: Record<string, string> = {
   // "rushikulya-rookery": no dedicated Wikipedia article exists — only a brief mention
   // inside the general "Rushikulya River" article, which isn't specifically about the
   // rookery, so omitted rather than linking to a loosely-related page.
+  "bandipur-national-park": "Bandipur National Park",
+  "mudumalai-national-park": "Mudumalai National Park",
+  // "biligiri-rangaswamy-temple-tiger-reserve": no dedicated tiger-reserve article —
+  // only the broader "Biligiriranga Hills" geography article, so omitted rather than
+  // linking to a loosely-related page.
+  "sariska-tiger-reserve": "Sariska Tiger Reserve",
+  "panna-national-park": "Panna National Park",
+  "kuno-national-park": "Kuno National Park",
+  "rajaji-national-park": "Rajaji National Park",
+  "melghat-tiger-reserve": "Melghat",
+  "simlipal-national-park": "Simlipal National Park",
+  "valmiki-tiger-reserve": "Valmiki National Park",
+  "indravati-national-park": "Indravati National Park",
+  "namdapha-national-park": "Namdapha National Park",
+  "keibul-lamjao-national-park": "Keibul Lamjao National Park",
+  "silent-valley-national-park": "Silent Valley National Park",
 };
 
 export function wikipediaUrl(slug: string): string | undefined {
@@ -70,6 +86,27 @@ export const permitPortalUrl: Record<string, string> = {
   "singalila-national-park": "https://www.wildbengal.com/singalila-np.php",
   "rushikulya-rookery": "https://ganjam.odisha.gov.in/en/tourism/tourist-places/olive-ridley-turtles-rushikulya",
   "gahirmatha-marine-sanctuary": "https://www.ecotourodisha.com/",
+  "bandipur-national-park": "https://bandipurtr.in/",
+  "mudumalai-national-park": "https://www.mudumalaitigerreserve.com/",
+  "sariska-tiger-reserve": "https://forestrajasthan.com/",
+  "panna-national-park": "https://forest.mponline.gov.in/",
+  "kuno-national-park": "https://forest.mponline.gov.in/",
+  "simlipal-national-park": "https://www.similipal.org/",
+  "valmiki-tiger-reserve": "https://valmikitigerreserve.com/",
+  // "rajaji-national-park": booking sites found (e.g. rajajinationalpark.in) could not be
+  // verified as an official government portal — no .gov.in domain or clear forest
+  // department affiliation — so omitted rather than linking to an unverified reseller.
+  // "melghat-tiger-reserve": official melghattiger.gov.in was unreachable (DNS timeout)
+  // at research time — falls back to a search link instead.
+  // "indravati-national-park": no online booking system exists — access is tightly
+  // restricted and arranged directly through the Chhattisgarh Forest Department.
+  // "namdapha-national-park": the apparent official domain (namdaphatigerreserve.org)
+  // returned unrelated gambling-spam content at research time, suggesting a hijacked
+  // or expired domain — deliberately not linked.
+  // "keibul-lamjao-national-park": no confirmed online booking system — this is a
+  // free-entry, community-monitored park rather than a ticketed reserve.
+  // "silent-valley-national-park": official silentvalley.gov.in was unreachable
+  // (connection reset) at research time — falls back to a search link instead.
 };
 
 export function mapsDirectionsUrl(lat: number, lng: number): string {
