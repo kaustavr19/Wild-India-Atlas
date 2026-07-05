@@ -559,7 +559,8 @@ export const hotspots: Hotspot[] = [
     "mainSpecies": [
       "Bengal Tiger",
       "Fishing Cat",
-      "Saltwater Crocodile"
+      "Saltwater Crocodile",
+      "King Cobra"
     ],
     "birdSpecies": [
       "Brown-winged Kingfisher",
@@ -943,12 +944,15 @@ export const hotspots: Hotspot[] = [
     "knownFor": [
       "Elephants",
       "Evergreen forest",
-      "Boat safaris"
+      "Boat safaris",
+      "Nilgiri Tahr (occasional, fringe range)"
     ],
     "mainSpecies": [
       "Asian Elephant",
       "Gaur",
-      "Nilgiri Langur"
+      "Nilgiri Langur",
+      "Lion-tailed Macaque",
+      "King Cobra"
     ],
     "birdSpecies": [
       "Malabar Grey Hornbill",
@@ -1084,7 +1088,8 @@ export const hotspots: Hotspot[] = [
     ],
     "birdSpecies": [
       "Sri Lanka Frogmouth",
-      "Malabar Trogon"
+      "Malabar Trogon",
+      "Malabar Grey Hornbill"
     ],
     "floraHighlights": [
       "Evergreen trees",
@@ -1572,6 +1577,245 @@ export const hotspots: Hotspot[] = [
       "bandhavgarh-tiger-reserve",
       "kanha-national-park",
       "tadoba-andhari-tiger-reserve"
+    ]
+  },
+  {
+    "id": "h25",
+    "slug": "eravikulam-national-park",
+    "name": "Eravikulam National Park",
+    "state": "Kerala",
+    "region": "South",
+    "coordinates": {
+      "latitude": 10.20,
+      "longitude": 77.08
+    },
+    "type": "National Park",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds",
+      "Flora"
+    ],
+    "habitat": "High-altitude shola-grassland mosaic with rolling montane meadows",
+    "summary": "Kerala's flagship high-altitude park, home to the world's largest surviving Nilgiri Tahr population.",
+    "knownFor": [
+      "Nilgiri Tahr herds",
+      "Anamudi peak views",
+      "Neelakurinji bloom (next expected 2030)"
+    ],
+    "mainSpecies": [
+      "Nilgiri Tahr",
+      "Gaur",
+      "Nilgiri Langur"
+    ],
+    "birdSpecies": [
+      "Nilgiri Pipit",
+      "Nilgiri Blue Robin"
+    ],
+    "floraHighlights": [
+      "Neelakurinji",
+      "Shola forest",
+      "Montane grassland"
+    ],
+    "bestMonths": [
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+      "Jan"
+    ],
+    "bestSeason": [
+      "Post-monsoon",
+      "Winter"
+    ],
+    "experienceTags": [
+      "Photography",
+      "Birding",
+      "Family-friendly"
+    ],
+    "difficulty": "Easy",
+    "idealDuration": "1 day",
+    "permitRequired": "Yes, ticketed entry with a daily visitor cap; park closed February-March for tahr calving season",
+    "nearestAirport": "Cochin International Airport",
+    "nearestRailway": "Aluva Railway Station",
+    "travelNotes": "Fly into Cochin International Airport or take the train to Aluva Railway Station; the Rajamalai tourist zone is an easy half-day visit within the 8am-2pm entry window. Expect an easy paved-path walk — sun protection and a light jacket for cool highland air help.",
+    "photographyNotes": "Visiting hours mean flat midday light on the open grassland — a mid-range zoom is enough to capture habituated Nilgiri Tahr at close range without needing a long lens.",
+    "ethicalNotes": "Never feed or touch the Nilgiri Tahr even though they approach closely, stay on the paved path, and respect the February-March closure that protects calving season.",
+    "relatedHotspotSlugs": [
+      "periyar-tiger-reserve",
+      "nagarhole-kabini",
+      "thattekad-bird-sanctuary"
+    ]
+  },
+  {
+    "id": "h26",
+    "slug": "singalila-national-park",
+    "name": "Singalila National Park",
+    "state": "West Bengal",
+    "region": "East",
+    "coordinates": {
+      "latitude": 27.12,
+      "longitude": 88.07
+    },
+    "type": "Himalayan",
+    "wildlifeTypes": [
+      "Mammals",
+      "Birds",
+      "Flora"
+    ],
+    "habitat": "High-altitude Eastern Himalayan forest, bamboo understory, and ridge-top alpine terrain",
+    "summary": "A red panda stronghold on the Sandakphu ridge, with sunrise views of four of the world's five highest peaks.",
+    "knownFor": [
+      "Red Panda reintroduction",
+      "Sandakphu-Phalut trek",
+      "Kangchenjunga sunrise views"
+    ],
+    "mainSpecies": [
+      "Red Panda",
+      "Himalayan Black Bear",
+      "Clouded Leopard"
+    ],
+    "birdSpecies": [
+      "Blood Pheasant",
+      "Satyr Tragopan"
+    ],
+    "floraHighlights": [
+      "Rhododendron",
+      "Magnolia",
+      "Bamboo"
+    ],
+    "bestMonths": [
+      "Mar",
+      "Apr",
+      "May",
+      "Oct",
+      "Nov"
+    ],
+    "bestSeason": [
+      "Summer",
+      "Post-monsoon"
+    ],
+    "experienceTags": [
+      "Trekking",
+      "Photography",
+      "Offbeat"
+    ],
+    "difficulty": "Remote",
+    "idealDuration": "5-7 days",
+    "permitRequired": "Yes, forest department entry permit required at Manebhanjan; park closed mid-June to mid-September for monsoon",
+    "nearestAirport": "Bagdogra Airport",
+    "nearestRailway": "New Jalpaiguri Railway Station",
+    "travelNotes": "Fly into Bagdogra Airport or take the train to New Jalpaiguri; plan for 5-7 days to complete the Sandakphu-Phalut trekking circuit. Expect high-altitude trekking — warm layered clothing, sturdy boots, and acclimatization time help.",
+    "photographyNotes": "Red pandas are crepuscular and easily missed — a long lens and patience for filtered forest light matter more than speed; the signature shot here is sunrise over Kangchenjunga from Sandakphu.",
+    "ethicalNotes": "Stay on marked trekking trails, never bait or chase a red panda for a photo, and respect the mid-June to mid-September closure that protects the park through monsoon.",
+    "relatedHotspotSlugs": [
+      "great-himalayan-national-park",
+      "valley-of-flowers",
+      "hemis-national-park"
+    ]
+  },
+  {
+    "id": "h27",
+    "slug": "rushikulya-rookery",
+    "name": "Rushikulya Rookery",
+    "state": "Odisha",
+    "region": "East",
+    "coordinates": {
+      "latitude": 19.23,
+      "longitude": 85.05
+    },
+    "type": "Marine",
+    "wildlifeTypes": [
+      "Reptiles",
+      "Marine"
+    ],
+    "habitat": "Sandy river-mouth beach and sand-spit on the Bay of Bengal coast",
+    "summary": "The world's third-largest Olive Ridley rookery, where hundreds of thousands of turtles nest on a single beach each spring.",
+    "knownFor": [
+      "Olive Ridley arribada",
+      "Community-led turtle conservation",
+      "Hatchling emergence"
+    ],
+    "mainSpecies": [
+      "Olive Ridley Turtle"
+    ],
+    "birdSpecies": [],
+    "floraHighlights": [],
+    "bestMonths": [
+      "Feb",
+      "Mar"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Photography",
+      "Offbeat"
+    ],
+    "difficulty": "Moderate",
+    "idealDuration": "1-2 days",
+    "permitRequired": "No formal permit for beach access; visit with a local conservation guide during nesting season",
+    "nearestAirport": "Bhubaneswar Airport",
+    "nearestRailway": "Berhampur Railway Station",
+    "travelNotes": "Fly into Bhubaneswar Airport or take the train to Berhampur; plan for an overnight stay near Chatrapur to catch nighttime or early-morning nesting activity during the February-March arribada window. Expect flat beach walking, often after dark — a red-filtered torch and warm layers for cool coastal nights help.",
+    "photographyNotes": "Never use flash near nesting turtles or hatchlings — shoot with available light or a red-filtered torch, and keep a respectful distance from the water's edge where hatchlings are heading.",
+    "ethicalNotes": "Stay quiet and keep lights off nesting turtles and emerging hatchlings, never touch or block a turtle's path to the sea, and visit with a local conservation guide rather than wandering the beach independently during peak arribada.",
+    "relatedHotspotSlugs": [
+      "chilika-lake",
+      "mangalajodi-wetlands",
+      "sundarbans-national-park"
+    ]
+  },
+  {
+    "id": "h28",
+    "slug": "gahirmatha-marine-sanctuary",
+    "name": "Gahirmatha Marine Sanctuary",
+    "state": "Odisha",
+    "region": "East",
+    "coordinates": {
+      "latitude": 20.57,
+      "longitude": 86.84
+    },
+    "type": "Marine",
+    "wildlifeTypes": [
+      "Reptiles",
+      "Marine"
+    ],
+    "habitat": "Sandy barrier beach separating mangrove forest from the Bay of Bengal, plus open marine habitat",
+    "summary": "The world's largest Olive Ridley rookery — a strictly protected breeding sanctuary, not a walk-on beach destination.",
+    "knownFor": [
+      "World's largest Olive Ridley rookery",
+      "Operation Olivia turtle patrols",
+      "Restricted nesting zone"
+    ],
+    "mainSpecies": [
+      "Olive Ridley Turtle"
+    ],
+    "birdSpecies": [],
+    "floraHighlights": [],
+    "bestMonths": [
+      "Dec",
+      "Jan",
+      "Feb",
+      "Mar"
+    ],
+    "bestSeason": [
+      "Winter"
+    ],
+    "experienceTags": [
+      "Offbeat"
+    ],
+    "difficulty": "Remote",
+    "idealDuration": "1 day",
+    "permitRequired": "Restricted — the core nesting beach is closed to general tourists; only distant boat-based viewing via Bhitarkanika permits is possible, and even that doesn't reach the nesting zone. Closed May-July annually.",
+    "nearestAirport": "Bhubaneswar Airport",
+    "nearestRailway": "Bhadrak Railway Station",
+    "travelNotes": "Fly into Bhubaneswar Airport or take the train to Bhadrak; access is only by permitted boat safari from Chandbali or Gupti through Bhitarkanika's mangrove channels, and even then the core Gahirmatha nesting beach itself remains off-limits — most visitors see the mangroves and crocodiles of Bhitarkanika rather than the turtle rookery directly. For a guaranteed public arribada experience, Rushikulya is the honest recommendation instead.",
+    "photographyNotes": "Direct beach photography isn't possible here — bring a telephoto for distant mangrove and waterbird shots from the boat instead, and never use flash or bright lights near any turtle habitat you pass.",
+    "ethicalNotes": "Never attempt unauthorized beach landing, hire only forest-department-authorized boatmen, and respect that this sanctuary exists specifically to keep human disturbance away from nesting turtles — Gahirmatha's value is in being left alone, not visited.",
+    "relatedHotspotSlugs": [
+      "rushikulya-rookery",
+      "chilika-lake",
+      "sundarbans-national-park"
     ]
   }
 ];

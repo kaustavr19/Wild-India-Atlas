@@ -23,6 +23,12 @@ export const wikipediaTitle: Record<string, string> = {
   "valley-of-flowers": "Valley of Flowers National Park",
   "dudhwa-national-park": "Dudhwa National Park",
   "satpura-tiger-reserve": "Satpura National Park",
+  "eravikulam-national-park": "Eravikulam National Park",
+  "singalila-national-park": "Singalila National Park",
+  "gahirmatha-marine-sanctuary": "Gahirmatha Marine Sanctuary",
+  // "rushikulya-rookery": no dedicated Wikipedia article exists — only a brief mention
+  // inside the general "Rushikulya River" article, which isn't specifically about the
+  // rookery, so omitted rather than linking to a loosely-related page.
 };
 
 export function wikipediaUrl(slug: string): string | undefined {
@@ -60,6 +66,10 @@ export const permitPortalUrl: Record<string, string> = {
   "satpura-tiger-reserve": "https://forest.mponline.gov.in/",
   // "valley-of-flowers": official portal (valleyofflower.uk.gov.in) was unreachable at
   // research time (connection refused) - falls back to search link instead.
+  "eravikulam-national-park": "https://eravikulamnationalpark.in/",
+  "singalila-national-park": "https://www.wildbengal.com/singalila-np.php",
+  "rushikulya-rookery": "https://ganjam.odisha.gov.in/en/tourism/tourist-places/olive-ridley-turtles-rushikulya",
+  "gahirmatha-marine-sanctuary": "https://www.ecotourodisha.com/",
 };
 
 export function mapsDirectionsUrl(lat: number, lng: number): string {

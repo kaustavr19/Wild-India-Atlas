@@ -27,6 +27,10 @@ export const district: Record<string, string> = {
   "valley-of-flowers": "Chamoli",
   "dudhwa-national-park": "Lakhimpur Kheri",
   "satpura-tiger-reserve": "Narmadapuram",
+  "eravikulam-national-park": "Idukki",
+  "singalila-national-park": "Darjeeling",
+  "rushikulya-rookery": "Ganjam",
+  "gahirmatha-marine-sanctuary": "Kendrapara",
 };
 
 // Nearest airport, with real coordinates (Wikipedia infobox unless noted). Omitted where not verified.
@@ -55,6 +59,10 @@ export const airportPoint: Record<string, AccessPoint> = {
   "valley-of-flowers": { name: "Jolly Grant Airport, Dehradun", coordinates: { latitude: 30.18972, longitude: 78.18028 } },
   "dudhwa-national-park": { name: "Chaudhary Charan Singh International Airport, Lucknow", coordinates: { latitude: 26.76056, longitude: 80.89028 } },
   "satpura-tiger-reserve": { name: "Raja Bhoj Airport, Bhopal", coordinates: { latitude: 23.28750, longitude: 77.33750 } },
+  "eravikulam-national-park": { name: "Cochin International Airport", coordinates: { latitude: 10.15333, longitude: 76.38816 } },
+  "singalila-national-park": { name: "Bagdogra Airport", coordinates: { latitude: 26.6811, longitude: 88.3286 } },
+  "rushikulya-rookery": { name: "Biju Patnaik International Airport, Bhubaneswar", coordinates: { latitude: 20.24444, longitude: 85.81778 } },
+  "gahirmatha-marine-sanctuary": { name: "Biju Patnaik International Airport, Bhubaneswar", coordinates: { latitude: 20.24444, longitude: 85.81778 } },
 };
 
 // Nearest railway station, with real coordinates (Wikipedia infobox unless noted). Omitted where not verified
@@ -83,6 +91,10 @@ export const railwayPoint: Record<string, AccessPoint> = {
   "valley-of-flowers": { name: "Rishikesh Railway Station", coordinates: { latitude: 30.1077, longitude: 78.2880 } },
   "dudhwa-national-park": { name: "Dudhwa Railway Station", coordinates: { latitude: 28.509, longitude: 80.6732 } },
   "satpura-tiger-reserve": { name: "Pipariya Railway Station", coordinates: { latitude: 22.753977, longitude: 78.355292 } },
+  "eravikulam-national-park": { name: "Aluva Railway Station", coordinates: { latitude: 10.108, longitude: 76.356 } },
+  "singalila-national-park": { name: "New Jalpaiguri Railway Station", coordinates: { latitude: 26.6829, longitude: 88.4425 } },
+  "rushikulya-rookery": { name: "Berhampur Railway Station", coordinates: { latitude: 19.2968, longitude: 84.7974 } },
+  "gahirmatha-marine-sanctuary": { name: "Bhadrak Railway Station", coordinates: { latitude: 21.0908, longitude: 86.5165 } },
 };
 
 // Documented entry gates/zones. Only present where a real, source-backed coordinate was

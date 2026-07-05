@@ -28,6 +28,10 @@ export const ecosystem: Record<string, Ecosystem> = {
   "valley-of-flowers": "alpine",
   "dudhwa-national-park": "forest",
   "satpura-tiger-reserve": "forest",
+  "eravikulam-national-park": "alpine",
+  "singalila-national-park": "alpine",
+  "rushikulya-rookery": "marine",
+  "gahirmatha-marine-sanctuary": "marine",
 };
 
 // Shared display colors so the map and detail pages read the same ecosystem the same way.

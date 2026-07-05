@@ -1,4 +1,4 @@
-import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Binoculars, Camera, Footprints, PawPrint, Sailboat, Sparkles, Users } from "lucide-react"; import { hotspots, getHotspotBySlug } from "@/data/hotspots"; import { QuickFactsCard } from "@/components/QuickFactsCard"; import { Tag } from "@/components/Tag"; import { PlanLinksCard } from "@/components/PlanLinksCard"; import { EthicalTravelNote } from "@/components/EthicalTravelNote"; import { HotspotCard } from "@/components/HotspotCard"; import { HotspotImage } from "@/components/HotspotImage"; import { ecosystem, ecosystemColorClass } from "@/data/ecosystems"; import { hasBoating } from "@/data/boatingSpots"; import { seasonalWisdom } from "@/data/seasonalWisdom"; import { buildItinerary } from "@/lib/itinerary"; import { haversineKm } from "@/lib/geo";
+import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Binoculars, Camera, Footprints, PawPrint, Sailboat, Sparkles, Users } from "lucide-react"; import { hotspots, getHotspotBySlug } from "@/data/hotspots"; import { QuickFactsCard } from "@/components/QuickFactsCard"; import { Tag } from "@/components/Tag"; import { PlanLinksCard } from "@/components/PlanLinksCard"; import { EthicalTravelNote } from "@/components/EthicalTravelNote"; import { HotspotCard } from "@/components/HotspotCard"; import { HotspotImage } from "@/components/HotspotImage"; import { ecosystem, ecosystemColorClass } from "@/data/ecosystems"; import { hasBoating } from "@/data/boatingSpots"; import { seasonalWisdom } from "@/data/seasonalWisdom"; import { buildItinerary } from "@/lib/itinerary"; import { haversineKm } from "@/lib/geo"; import { speciesSlugForName } from "@/lib/speciesLinks"; import { species } from "@/data/species";
 
 const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const experienceIcons: Record<string, typeof Camera> = { Photography: Camera, Safari: PawPrint, Birding: Binoculars, Trekking: Footprints, "Family-friendly": Users, Offbeat: Sparkles };
@@ -77,8 +77,8 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
         <section className="field-card rounded-sm p-6">
           <h2 className="text-2xl font-black text-forest-900">What you can see</h2>
           <div className="mt-5 grid gap-4 md:grid-cols-2">
-            <Block title="Mammals" items={hotspot.mainSpecies}/>
-            <Block title="Birds" items={hotspot.birdSpecies}/>
+            <Block title="Mammals" items={hotspot.mainSpecies} linkSpecies/>
+            <Block title="Birds" items={hotspot.birdSpecies} linkSpecies/>
             <Block title="Flora" items={hotspot.floraHighlights}/>
             <Block title="Seasonal highlights" items={hotspot.knownFor}/>
           </div>
@@ -122,5 +122,5 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
     </section>
   </main>;
 }
-function Block({title,items}:{title:string;items:string[]}){return <div><h3 className="font-bold text-forest-900">{title}</h3><div className="mt-2 flex flex-wrap gap-2">{items.map(i=><Tag key={i}>{i}</Tag>)}</div></div>}
+function Block({title,items,linkSpecies}:{title:string;items:string[];linkSpecies?:boolean}){return <div><h3 className="font-bold text-forest-900">{title}</h3><div className="mt-2 flex flex-wrap gap-2">{items.map(i=>{ const slug = linkSpecies ? speciesSlugForName(i, species) : undefined; return slug ? <Link key={i} href={"/species/"+slug}><Tag>{i}</Tag></Link> : <Tag key={i}>{i}</Tag>; })}</div></div>}
 function Info({title,body}:{title:string;body:string}){return <section className="field-card rounded-sm p-5"><h2 className="text-xl font-black text-forest-900">{title}</h2><p className="mt-3 text-sm leading-6 text-slate-700 dark:text-slate-300">{body}</p></section>}
