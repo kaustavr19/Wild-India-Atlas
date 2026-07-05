@@ -280,6 +280,20 @@ export const species: Species[] = [
     "difficultyOfSighting": "Difficult",
     "photographyTips": "This canopy-dwelling primate is shy of disturbance — a long lens and quiet observation from below the canopy work better than trying to get close.",
     "similarSpeciesSlugs": ["nilgiri-tahr"]
+  },
+  {
+    "id": "s21",
+    "slug": "asiatic-cheetah",
+    "commonName": "Asiatic Cheetah",
+    "scientificName": "Acinonyx jubatus venaticus",
+    "category": "Mammal",
+    "shortDescription": "Declared extinct in India in 1952 and reintroduced from Namibia and South Africa starting in 2022, now re-establishing itself at Kuno.",
+    "habitat": "Open grassland and dry deciduous scrub forest, notably Kuno National Park's Sheopur-Morena landscape",
+    "conservationStatus": "Vulnerable (IUCN) — functionally extinct in India before the 2022 reintroduction",
+    "viewingTips": "Sightings are managed through forest department safari zones with strict vehicle limits — follow guide instructions closely, as this is an actively monitored, still-fragile reintroduced population.",
+    "difficultyOfSighting": "Very Difficult",
+    "photographyTips": "Cheetahs hunt by day in open grassland, unlike India's other big cats — a mid-range telephoto (200-400mm) captures both the chase and the habitat context.",
+    "similarSpeciesSlugs": ["indian-leopard"]
   }
 ];
 

@@ -5,11 +5,16 @@ A map-first travel guide for exploring India's wildlife hotspots — tiger reser
 ## Version history
 
 **v3 — Planning-oriented species guide + hotspot detail pages** (current)
-- New Species Guide (`/species`, `/species/[slug]`) covering 20 species with real, attributed Wikimedia Commons photography — where to actually see each species (derived live from hotspots' real species lists, not a hand-maintained list — this caught and fixed several factually wrong entries, e.g. Snow Leopard previously pointed at three central-India tiger forests instead of Hemis), best months, sighting difficulty, habitat, ethical viewing notes, photography tips, and similar-species cross-links
+- New Species Guide (`/species`, `/species/[slug]`) covering 21 species with real, attributed Wikimedia Commons photography — where to actually see each species (derived live from hotspots' real species lists, not a hand-maintained list — this caught and fixed several factually wrong entries, e.g. Snow Leopard previously pointed at three central-India tiger forests instead of Hemis), best months, sighting difficulty, habitat, ethical viewing notes, photography tips, and similar-species cross-links
 - 4 new hotspots added after verifying real range/species overlap first: Eravikulam National Park (Nilgiri Tahr), Singalila National Park (Red Panda), and Rushikulya + Gahirmatha (Olive Ridley Turtle nesting) — Gahirmatha's real access restrictions are prominently disclosed rather than glossed over
 - 3 existing hotspots corrected with real, previously-missing species (Malabar Grey Hornbill at Thattekad, King Cobra at Sundarbans and Periyar, Lion-tailed Macaque at Periyar), found by checking official park records before assuming new hotspots were needed
 - Hotspot detail pages rebuilt out to a full destination-page structure: unique SEO metadata + structured data per page (previously every page on the site shared one identical title/description), an ecosystem badge and "why go" callout in the hero, a structured experiences section, family-friendliness as an explicit fact, a season/closures block, a generic-but-personalized suggested itinerary, and a real geographic-nearest "nearby hotspots" section
 - Species and hotspots now link to each other bidirectionally from their species/wildlife tags
+- 14 more parks added to close the gap with a competitor audit (wildatlas.in/parks): Bandipur, Mudumalai, BRT Tiger Reserve, Sariska, Panna, Kuno, Rajaji, Melghat, Simlipal, Valmiki, Indravati, Namdapha, Keibul Lamjao, and Silent Valley — each fully sourced (real Wikimedia Commons photo, ecosystem classification, travel facts) to the same bar as the rest, bringing the atlas to 42 hotspots across 6 regions
+- Added an Asiatic Cheetah species entry so Kuno's 2022 reintroduction story links properly from its hotspot page
+- New "Species spotlight" section on hotspot detail pages — small clickable species cards (photo + name) for every mammal/bird with a matching species page
+- Species pages' "where can I see this" hotspot cards switched to a compact style (photo, name, state only) now that the list can run to a dozen+ parks per species
+- Homepage park/region counts are now computed live from the hotspot data instead of a hardcoded stat that had drifted out of date
 
 **v2 — Map as a trip-discovery engine**
 - Region clustering: the map groups hotspots into clickable clusters by region at the default zoom, expanding into individual pins once you zoom into one
@@ -30,10 +35,10 @@ Initial map-first build: interactive India map with real state boundaries, 24 ho
 - **Map layer toggles** — filter the map by Mammals, Birds, Reptiles, Flora, Rare Species, or Monsoon, independent of the sidebar filters
 - **Access-point markers** — selecting a hotspot shows its real nearest airport, railway station, and (where documented) entry gates directly on the map
 - **"Best time to visit" awareness** — the map and homepage highlight regions and hotspots whose best season matches the current month, plus a "Where to go in [month]" homepage section with season-level field notes (best for / avoid / travel caution)
-- **28 wildlife hotspots** with real photography sourced and attributed from Wikimedia Commons (CC-licensed), real nearest airport/railway names linked to Google Maps, and a "Plan your visit" block with directions, background reading, and booking-search links
+- **42 wildlife hotspots** with real photography sourced and attributed from Wikimedia Commons (CC-licensed), real nearest airport/railway names linked to Google Maps, and a "Plan your visit" block with directions, background reading, and booking-search links
 - **Interactive Map Explorer** (`/map`) — filter by region, wildlife type, experience, season, and difficulty; click a marker or list card for a rich preview (species, difficulty, permits, photography-friendly badge)
-- **Hotspot directory** (`/hotspots`) with the same filtering, and detail pages (`/hotspots/[slug]`) with a full destination structure — species, seasonal calendar, experiences, season/closures notes, a suggested itinerary, and real geographic-nearest hotspots
-- **Species Guide** (`/species`, `/species/[slug]`) — 20 species with real photography, where to actually see each one (derived live from hotspot data), best months, sighting difficulty, habitat, ethical viewing notes, and photography tips
+- **Hotspot directory** (`/hotspots`) with the same filtering, and detail pages (`/hotspots/[slug]`) with a full destination structure — species, a species-spotlight card grid, seasonal calendar, experiences, season/closures notes, a suggested itinerary, and real geographic-nearest hotspots
+- **Species Guide** (`/species`, `/species/[slug]`) — 21 species with real photography, where to actually see each one (derived live from hotspot data, shown as compact location cards), best months, sighting difficulty, habitat, ethical viewing notes, and photography tips
 - Jungle/expedition-inspired visual language — `Fraunces` for headlines, `Work Sans` for body text, an earthy palette, and a full-bleed map hero
 
 ## Tech stack
@@ -73,8 +78,8 @@ app/                     Next.js App Router pages
   species/[slug]/page.tsx     Species detail page
 components/               Reusable UI, map, and card components
 data/
-  hotspots.ts               28 hotspot records
-  species.ts                 20 species records (real content — habitat, conservation status, ethical/photography notes)
+  hotspots.ts               42 hotspot records
+  species.ts                 21 species records (real content — habitat, conservation status, ethical/photography notes)
   species-images.json         Wikimedia Commons image metadata + attribution, per species
   india-states.json           Vendored India state boundaries (GeoJSON)
   neighboringCountries.ts     Neighboring-country basemap layer (derived from world-atlas)

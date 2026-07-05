@@ -178,5 +178,14 @@
     "filePage": "https://commons.wikimedia.org/wiki/File:Lion-tailed_macaque_feeding_on_cullenia_exarillata_fruit_in_Anamalai_Tiger_Reserve_JEG1748_(cropped).JPG",
     "author": "P Jeganathan",
     "license": "CC BY-SA 3.0"
+  },
+  "asiatic-cheetah": {
+    "title": "File:Cheetah In India.jpg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Cheetah_In_India.jpg/1280px-Cheetah_In_India.jpg",
+    "width": 1280,
+    "height": 720,
+    "filePage": "https://commons.wikimedia.org/wiki/File:Cheetah_In_India.jpg",
+    "author": "PMO India",
+    "license": "CC BY 3.0"
   }
 }

@@ -1,4 +1,4 @@
-import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Binoculars, Camera, Footprints, PawPrint, Sailboat, Sparkles, Users } from "lucide-react"; import { hotspots, getHotspotBySlug } from "@/data/hotspots"; import { QuickFactsCard } from "@/components/QuickFactsCard"; import { Tag } from "@/components/Tag"; import { PlanLinksCard } from "@/components/PlanLinksCard"; import { EthicalTravelNote } from "@/components/EthicalTravelNote"; import { HotspotCard } from "@/components/HotspotCard"; import { HotspotImage } from "@/components/HotspotImage"; import { ecosystem, ecosystemColorClass } from "@/data/ecosystems"; import { hasBoating } from "@/data/boatingSpots"; import { seasonalWisdom } from "@/data/seasonalWisdom"; import { buildItinerary } from "@/lib/itinerary"; import { haversineKm } from "@/lib/geo"; import { speciesSlugForName } from "@/lib/speciesLinks"; import { species } from "@/data/species";
+import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Binoculars, Camera, Footprints, PawPrint, Sailboat, Sparkles, Users } from "lucide-react"; import { hotspots, getHotspotBySlug } from "@/data/hotspots"; import { QuickFactsCard } from "@/components/QuickFactsCard"; import { Tag } from "@/components/Tag"; import { PlanLinksCard } from "@/components/PlanLinksCard"; import { EthicalTravelNote } from "@/components/EthicalTravelNote"; import { HotspotCard } from "@/components/HotspotCard"; import { HotspotImage } from "@/components/HotspotImage"; import { ecosystem, ecosystemColorClass } from "@/data/ecosystems"; import { hasBoating } from "@/data/boatingSpots"; import { seasonalWisdom } from "@/data/seasonalWisdom"; import { buildItinerary } from "@/lib/itinerary"; import { haversineKm } from "@/lib/geo"; import { speciesSlugForName } from "@/lib/speciesLinks"; import { species, getSpeciesBySlug } from "@/data/species"; import { SpeciesCard } from "@/components/SpeciesCard";
 
 const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const experienceIcons: Record<string, typeof Camera> = { Photography: Camera, Safari: PawPrint, Birding: Binoculars, Trekking: Footprints, "Family-friendly": Users, Offbeat: Sparkles };
@@ -46,6 +46,12 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
     .map(h => ({ h, km: haversineKm(hotspot.coordinates, h.coordinates) }))
     .sort((a,b) => a.km - b.km)
     .slice(0, 3);
+  const featuredSpeciesSlugs = Array.from(new Set(
+    [...hotspot.mainSpecies, ...hotspot.birdSpecies]
+      .map(name => speciesSlugForName(name, species))
+      .filter((s): s is string => Boolean(s))
+  ));
+  const featuredSpecies = featuredSpeciesSlugs.map(getSpeciesBySlug).filter(Boolean);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -83,6 +89,12 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
             <Block title="Seasonal highlights" items={hotspot.knownFor}/>
           </div>
         </section>
+        {featuredSpecies.length > 0 && (
+          <section className="field-card rounded-sm p-6">
+            <h2 className="text-2xl font-black text-forest-900">Species spotlight</h2>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{featuredSpecies.map(s => <SpeciesCard key={s!.slug} species={s!} compact/>)}</div>
+          </section>
+        )}
         <section className="field-card rounded-sm p-6">
           <h2 className="text-2xl font-black text-forest-900">Best time to visit</h2>
           <div className="mt-5 grid grid-cols-6 gap-2 sm:grid-cols-12">{monthNames.map(m=><div key={m} className={"rounded-md px-2 py-3 text-center text-xs font-bold " + (hotspot.bestMonths.includes(m)?'bg-forest-700 text-white':'bg-white/70 text-slate-500 dark:bg-white/5 dark:text-slate-400')}>{m}</div>)}</div>

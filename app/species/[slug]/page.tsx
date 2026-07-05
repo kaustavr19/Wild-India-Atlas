@@ -50,7 +50,7 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
         <section className="field-card rounded-sm p-6">
           <h2 className="text-2xl font-black text-forest-900">Where can I see this?</h2>
           {matchedHotspots.length ? (
-            <div className="mt-5 grid gap-3 sm:grid-cols-2">{matchedHotspots.map(h => <HotspotCard key={h.slug} hotspot={h} />)}</div>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">{matchedHotspots.map(h => <HotspotCard key={h.slug} hotspot={h} compact />)}</div>
           ) : (
             <div className="mt-5"><EmptyState title="Not yet featured at an atlas hotspot" body="This species isn't a highlight of any of the 24 hotspots currently in the atlas — coverage for its real range is on the roadmap." /></div>
           )}
