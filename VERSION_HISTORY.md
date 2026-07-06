@@ -1,6 +1,12 @@
 # Version history
 
-**v1.3 — Planning-oriented species guide + hotspot detail pages** (current)
+**v1.4 — Provenance and freshness for closure data** (current)
+- `ClosureInfo` (`data/closures.ts`) now carries machine-readable provenance alongside each of the 42 researched closure facts: `sourceName` (the named department/authority, where the existing note already cited one — never invented), `lastVerified` (an ISO date), and a `confidence` rating (`official` / `inferred` / `unconfirmed`) derived from how firmly each note was already sourced
+- `sourceUrl` is part of the type but intentionally left unset for this pass — no URL is fabricated; it's only filled in once a specific citable page has been verified
+- New `<FreshnessBadge>` component renders a compact confidence-colored dot + "Verified {month year}" + source name (as a tooltip and secondary text) next to the closure note on hotspot detail pages, so a visitor can see at a glance how solid a given closure claim is
+- No closure facts (`closesSeasonally`/`note`) were changed in this pass — this is a schema and UI layer on top of the existing v1.3 research, not new content
+
+**v1.3 — Planning-oriented species guide + hotspot detail pages**
 - New Species Guide (`/species`, `/species/[slug]`) covering 21 species with real, attributed Wikimedia Commons photography — where to actually see each species (derived live from hotspots' real species lists, not a hand-maintained list — this caught and fixed several factually wrong entries, e.g. Snow Leopard previously pointed at three central-India tiger forests instead of Hemis), best months, sighting difficulty, habitat, ethical viewing notes, photography tips, and similar-species cross-links
 - 4 new hotspots added after verifying real range/species overlap first: Eravikulam National Park (Nilgiri Tahr), Singalila National Park (Red Panda), and Rushikulya + Gahirmatha (Olive Ridley Turtle nesting) — Gahirmatha's real access restrictions are prominently disclosed rather than glossed over
 - 3 existing hotspots corrected with real, previously-missing species (Malabar Grey Hornbill at Thattekad, King Cobra at Sundarbans and Periyar, Lion-tailed Macaque at Periyar), found by checking official park records before assuming new hotspots were needed
