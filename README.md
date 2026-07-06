@@ -13,7 +13,7 @@ For the detailed build-by-build changelog, see [VERSION_HISTORY.md](VERSION_HIST
 - **"Best time to visit" awareness** — the map and homepage highlight regions and hotspots whose best season matches the current month, plus a "Where to go in [month]" homepage section with season-level field notes (best for / avoid / travel caution)
 - **42 wildlife hotspots** with real photography sourced and attributed from Wikimedia Commons (CC-licensed), real nearest airport/railway names linked to Google Maps, and a "Plan your visit" block with directions, background reading, and booking-search links
 - **Interactive Map Explorer** (`/map`) — filter by region, wildlife type, experience, season, and difficulty; click a marker or list card for a rich preview (species, difficulty, permits, photography-friendly badge)
-- **Hotspot directory** (`/hotspots`) with the same filtering, and detail pages (`/hotspots/[slug]`) with a full destination structure — species, a species-spotlight card grid, seasonal calendar, experiences, season/closures notes, a suggested itinerary, and real geographic-nearest hotspots
+- **Hotspot directory** (`/hotspots`) with the same filtering, and detail pages (`/hotspots/[slug]`) with a full destination structure — species, a species-spotlight card grid, seasonal calendar, experiences, a season/closures fact with a source-confidence badge, a suggested itinerary, and real geographic-nearest hotspots
 - **Species Guide** (`/species`, `/species/[slug]`) — 21 species with real photography, where to actually see each one (derived live from hotspot data, shown as compact location cards), best months, sighting difficulty, habitat, ethical viewing notes, and photography tips
 - Jungle/expedition-inspired visual language — `Fraunces` for headlines, `Work Sans` for body text, an earthy palette, and a full-bleed map hero
 
@@ -63,7 +63,7 @@ data/
   officialLinks.ts             Wikipedia / Maps / search link builders
   accessPoints.ts              Verified district/airport/railway/entry-gate data per hotspot
   ecosystems.ts                 Ecosystem classification per hotspot (forest/wetland/desert/alpine/mangrove/marine)
-  closures.ts                   Individually-researched per-park seasonal closure facts
+  closures.ts                   Individually-researched per-park seasonal closure facts, with source name/URL, last-verified date, and a confidence rating per entry
   seasonalWisdom.ts             Month-to-season mapping + generic season-level travel field notes (fallback only)
   boatingSpots.ts               Hotspots with a real, text-derived boating experience signal
 lib/
@@ -85,6 +85,7 @@ public/brand/               Logo assets
 - A species' "where can I see this" and "best months" are computed live from the real hotspot species lists (`lib/speciesLinks.ts`), not a separately hand-maintained list — this is what caught and fixed several factually wrong species-location claims that existed before this pass. Species with no genuine hotspot match show an honest empty state rather than a fabricated location.
 - New hotspots added specifically to cover a species' real range (Eravikulam, Singalila, Rushikulya, Gahirmatha) were only added after checking that no existing hotspot already had a real, documented population — see the "1 fringe + flagship split" note in the [v1.3 changelog](VERSION_HISTORY.md) for how a borderline case (Nilgiri Tahr at Periyar) was handled.
 - "Season & closures" facts (`data/closures.ts`) are individually researched per park from state forest department notices and official park portals — not a blanket rule applied to every "Tiger Reserve"-type hotspot. Exact dates shift year to year by forest department order; treat these as a real planning signal, not a fixed calendar.
+- Each closure fact carries a `confidence` rating (`official`/`inferred`/`unconfirmed`) and a `lastVerified` date, shown on the hotspot page via a small `<FreshnessBadge>` — `sourceName` is only set where a note already cited a specific department, and `sourceUrl` is left unset until a specific citable page is verified, rather than ever being guessed.
 
 ## Not yet built
 
