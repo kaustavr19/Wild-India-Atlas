@@ -1,4 +1,8 @@
-import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Binoculars, Camera, Footprints, Lock, LockOpen, PawPrint, Sailboat, Sparkles, Users } from "lucide-react"; import { hotspots, getHotspotBySlug } from "@/data/hotspots"; import { closureInfo } from "@/data/closures"; import { FreshnessBadge } from "@/components/FreshnessBadge"; import { QuickFactsCard } from "@/components/QuickFactsCard"; import { Tag } from "@/components/Tag"; import { PlanLinksCard } from "@/components/PlanLinksCard"; import { EthicalTravelNote } from "@/components/EthicalTravelNote"; import { HotspotCard } from "@/components/HotspotCard"; import { HotspotImage } from "@/components/HotspotImage"; import { ecosystem, ecosystemColorClass } from "@/data/ecosystems"; import { hasBoating } from "@/data/boatingSpots"; import { seasonalWisdom } from "@/data/seasonalWisdom"; import { buildItinerary } from "@/lib/itinerary"; import { haversineKm } from "@/lib/geo"; import { speciesSlugForName } from "@/lib/speciesLinks"; import { species, getSpeciesBySlug } from "@/data/species"; import { SpeciesCard } from "@/components/SpeciesCard";
+import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Binoculars, Camera, Footprints, Lock, LockOpen, PawPrint, Sailboat, Sparkles, Users } from "lucide-react"; import { hotspots, getHotspotBySlug } from "@/data/hotspots"; import { closureInfo } from "@/data/closures"; import { FreshnessBadge } from "@/components/FreshnessBadge"; import { QuickFactsCard } from "@/components/QuickFactsCard"; import { Tag } from "@/components/Tag"; import { PlanLinksCard } from "@/components/PlanLinksCard"; import { EthicalTravelNote } from "@/components/EthicalTravelNote"; import { HotspotCard } from "@/components/HotspotCard"; import { HotspotImage } from "@/components/HotspotImage"; import { ecosystem, ecosystemColorClass } from "@/data/ecosystems"; import { hasBoating } from "@/data/boatingSpots"; import { seasonalWisdom } from "@/data/seasonalWisdom"; import { buildItinerary } from "@/lib/itinerary"; import { haversineKm } from "@/lib/geo"; import { speciesSlugForName } from "@/lib/speciesLinks"; import { species, getSpeciesBySlug } from "@/data/species"; import { SpeciesCard } from "@/components/SpeciesCard"; import ebirdSpeciesRaw from "@/data/ebirdSpecies.json"; import type { EbirdSpeciesEntry } from "@/scripts/fetch-ebird-species";
+const ebirdSpecies = ebirdSpeciesRaw as Record<string, EbirdSpeciesEntry[]>;
+function formatEbirdPulledDate(iso: string): string {
+  return new Date(iso + "T00:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" });
+}
 
 const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const experienceIcons: Record<string, typeof Camera> = { Photography: Camera, Safari: PawPrint, Birding: Binoculars, Trekking: Footprints, "Family-friendly": Users, Offbeat: Sparkles };
@@ -53,6 +57,7 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
   ));
   const featuredSpecies = featuredSpeciesSlugs.map(getSpeciesBySlug).filter(Boolean);
   const closure = closureInfo[hotspot.slug];
+  const ebirdEntries = ebirdSpecies[hotspot.slug];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -83,6 +88,12 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
       <div className="grid content-start gap-6">
         <section className="field-card rounded-sm p-6">
           <h2 className="text-2xl font-black text-forest-900">What you can see</h2>
+          {ebirdEntries && ebirdEntries.length > 0 && (
+            <span className="mt-1 inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500" />
+              via eBird · updated {formatEbirdPulledDate(ebirdEntries[0].lastPulled)}
+            </span>
+          )}
           <div className="mt-5 grid gap-4 md:grid-cols-2">
             <Block title="Mammals" items={hotspot.mainSpecies} linkSpecies/>
             <Block title="Birds" items={hotspot.birdSpecies} linkSpecies/>

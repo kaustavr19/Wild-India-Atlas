@@ -1,10 +1,21 @@
 # Version history
 
-**v1.4 — Provenance and freshness for closure data** (current)
+**v1.5 — eBird species-data integration tooling** (current)
+- Groundwork for grounding `mainSpecies`/`birdSpecies` in real eBird citizen-science records instead of editorial judgment alone — this phase ships the discovery and fetch tooling, not new species content
+- `scripts/find-ebird-hotspots.ts` (`npm run find:ebird-hotspots`) calls eBird's nearby-hotspots endpoint for each of the 42 hotspots and writes up to 5 candidate matches per park to a review file, `data/ebird-candidates.json` — it deliberately does not auto-pick a "best" candidate, since proximity alone doesn't prove an eBird hotspot sits inside a park's real boundary
+- `data/ebirdHotspots.ts` holds the confirmed slug → eBird hotspot mappings once a human has reviewed the candidates — starts empty; nothing is auto-filled
+- `scripts/fetch-ebird-species.ts` (`npm run fetch:ebird`) pulls the species list, taxonomy names, and a recent-observation count for each confirmed mapping into `data/ebirdSpecies.json`; slugs without a confirmed mapping are skipped and logged, not errored on
+- Both scripts are manually-run CLI tools reading `EBIRD_API_TOKEN` from `.env.local` (see `.env.local.example`) — no live eBird calls happen at build or request time, consistent with this being a static site with no backend
+- Hotspot detail pages show a small "via eBird · updated {month year}" note on the "What you can see" section only once real data exists for that park's slug — renders exactly as before everywhere else
+
+**v1.4 — Provenance and freshness for closure data**
 - `ClosureInfo` (`data/closures.ts`) now carries machine-readable provenance alongside each of the 42 researched closure facts: `sourceName` (the named department/authority, where the existing note already cited one — never invented), `lastVerified` (an ISO date), and a `confidence` rating (`official` / `inferred` / `unconfirmed`) derived from how firmly each note was already sourced
 - `sourceUrl` is part of the type but intentionally left unset for this pass — no URL is fabricated; it's only filled in once a specific citable page has been verified
 - New `<FreshnessBadge>` component renders a compact confidence-colored dot + "Verified {month year}" + source name (as a tooltip and secondary text) next to the closure note on hotspot detail pages, so a visitor can see at a glance how solid a given closure claim is
 - No closure facts (`closesSeasonally`/`note`) were changed in this pass — this is a schema and UI layer on top of the existing v1.3 research, not new content
+- `<FreshnessBadge>` redesigned into a real `<button>`: the confidence label, source name, and a "what does this mean" explanation now reveal in an on-click/tap popover instead of living only in a hover `title` tooltip, which was invisible on mobile
+- New `/data-sources` page explains the three confidence tiers in plain language, clarifies that "Verified" means when the note was last checked (not when the underlying policy changed), and that a source link is only ever shown once independently verified — linked from both the badge popover and a new sitewide footer
+- A bare `<ConfidenceDot>` (color only, no text) now appears next to the location line on every hotspot card and map preview card — `HotspotCard` (both variants) and `HotspotPreviewCard` (both variants) — so the confidence signal is visible while browsing, not just on the detail page
 
 **v1.3 — Planning-oriented species guide + hotspot detail pages**
 - New Species Guide (`/species`, `/species/[slug]`) covering 21 species with real, attributed Wikimedia Commons photography — where to actually see each species (derived live from hotspots' real species lists, not a hand-maintained list — this caught and fixed several factually wrong entries, e.g. Snow Leopard previously pointed at three central-India tiger forests instead of Hemis), best months, sighting difficulty, habitat, ethical viewing notes, photography tips, and similar-species cross-links

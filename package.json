@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "find:ebird-hotspots": "node --experimental-strip-types scripts/find-ebird-hotspots.ts",
+    "fetch:ebird": "node --experimental-strip-types scripts/fetch-ebird-species.ts"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
