@@ -1,6 +1,19 @@
 # Version history
 
-**v1.5 — eBird species-data integration tooling** (current)
+**v1.7 — Structural-risk disclosures + re-verification cadence** (current)
+- New `data/structuralRisks.ts` flags five hotspots whose real complexity is structural (jurisdiction, authority, or access status), not seasonal, so squeezing them into the closures.ts shape would have understated what a visitor needs to know: Chambal River Sanctuary (spans 3 states, no single authority), Chilika Lake (managed by the Chilika Development Authority, not a Forest Department), Sundarbans (overlapping Forest Department / Biosphere Reserve / Tiger Reserve jurisdiction), Kuno (state Forest Department plus national Project Cheetah oversight), and Indravati (general tourism effectively closed for years on security grounds)
+- New `<StructuralRiskNotice>` component — visually bigger and more prominent than `<FreshnessBadge>` on purpose, with a distinct warning treatment for Indravati's `access-restricted` flag versus an informational treatment for the three "jurisdiction is genuinely complicated" cases
+- Wired in right after the hero on all five hotspot pages — above the fold, not buried near the closures section — so Indravati in particular states plainly, near the top of the page, that it isn't currently bookable for general tourism
+- `/data-sources` gained a "Structural risk flags" section (with real examples rendered from the actual data) explaining what these flags mean, linked from every `<StructuralRiskNotice>`
+- New `docs/verification-cadence.md` documents a quarterly review cadence for `unconfirmed` closures and all structural-risk entries, yearly for `official`/`inferred` closures with no structural flag — policy only in this phase, no automated checker yet
+- Also backfilled a `VERSION_HISTORY.md` gap: the v1.6 entry below documents the `<FreshnessBadge>` popover redesign, which had shipped on `main` but was only ever noted as extra bullets under v1.4
+
+**v1.6 — Interactive freshness badge + data-sources page**
+- `<FreshnessBadge>` redesigned into a real `<button>`: the confidence label, source name, and a "what does this mean" explanation now reveal in an on-click/tap popover instead of living only in a hover `title` tooltip, which was invisible on mobile
+- New `/data-sources` page explains the three confidence tiers in plain language, clarifies that "Verified" means when the note was last checked (not when the underlying policy changed), and that a source link is only ever shown once independently verified — linked from both the badge popover and a new sitewide footer
+- A bare `<ConfidenceDot>` (color only, no text) now appears next to the location line on every hotspot card and map preview card — `HotspotCard` (both variants) and `HotspotPreviewCard` (both variants) — so the confidence signal is visible while browsing, not just on the detail page
+
+**v1.5 — eBird species-data integration tooling**
 - Groundwork for grounding `mainSpecies`/`birdSpecies` in real eBird citizen-science records instead of editorial judgment alone — this phase ships the discovery and fetch tooling, not new species content
 - `scripts/find-ebird-hotspots.ts` (`npm run find:ebird-hotspots`) calls eBird's nearby-hotspots endpoint for each of the 42 hotspots and writes up to 5 candidate matches per park to a review file, `data/ebird-candidates.json` — it deliberately does not auto-pick a "best" candidate, since proximity alone doesn't prove an eBird hotspot sits inside a park's real boundary
 - `data/ebirdHotspots.ts` holds the confirmed slug → eBird hotspot mappings once a human has reviewed the candidates — starts empty; nothing is auto-filled
@@ -13,9 +26,6 @@
 - `sourceUrl` is part of the type but intentionally left unset for this pass — no URL is fabricated; it's only filled in once a specific citable page has been verified
 - New `<FreshnessBadge>` component renders a compact confidence-colored dot + "Verified {month year}" + source name (as a tooltip and secondary text) next to the closure note on hotspot detail pages, so a visitor can see at a glance how solid a given closure claim is
 - No closure facts (`closesSeasonally`/`note`) were changed in this pass — this is a schema and UI layer on top of the existing v1.3 research, not new content
-- `<FreshnessBadge>` redesigned into a real `<button>`: the confidence label, source name, and a "what does this mean" explanation now reveal in an on-click/tap popover instead of living only in a hover `title` tooltip, which was invisible on mobile
-- New `/data-sources` page explains the three confidence tiers in plain language, clarifies that "Verified" means when the note was last checked (not when the underlying policy changed), and that a source link is only ever shown once independently verified — linked from both the badge popover and a new sitewide footer
-- A bare `<ConfidenceDot>` (color only, no text) now appears next to the location line on every hotspot card and map preview card — `HotspotCard` (both variants) and `HotspotPreviewCard` (both variants) — so the confidence signal is visible while browsing, not just on the detail page
 
 **v1.3 — Planning-oriented species guide + hotspot detail pages**
 - New Species Guide (`/species`, `/species/[slug]`) covering 21 species with real, attributed Wikimedia Commons photography — where to actually see each species (derived live from hotspots' real species lists, not a hand-maintained list — this caught and fixed several factually wrong entries, e.g. Snow Leopard previously pointed at three central-India tiger forests instead of Hemis), best months, sighting difficulty, habitat, ethical viewing notes, photography tips, and similar-species cross-links

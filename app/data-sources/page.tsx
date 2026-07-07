@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck } from "lucide-react";
 import { ConfidenceDot } from "@/components/FreshnessBadge";
+import { StructuralRiskNotice } from "@/components/StructuralRiskNotice";
+import { structuralRisks } from "@/data/structuralRisks";
 
 export const metadata: Metadata = {
   title: "How we verify data | Wild India Atlas",
@@ -75,6 +77,38 @@ export default function DataSourcesPage() {
           to a specific citable page is only shown once we've verified that page ourselves — we don't guess at
           government URLs or link to a homepage and call it a source.
         </p>
+      </section>
+
+      <section id="structural-risks" className="mt-6 field-card scroll-mt-24 rounded-sm p-6">
+        <h2 className="text-2xl font-black text-forest-900">Structural risk flags</h2>
+        <p className="mt-3 text-sm leading-6 text-slate-700 dark:text-slate-300">
+          A handful of hotspots have real complexity that isn't seasonal — it's about who has authority over the
+          place, or whether it's genuinely open to visitors at all. Where that applies, a larger callout appears
+          near the top of the hotspot page, separate from the closure badge:
+        </p>
+        <div className="mt-4 grid gap-3">
+          <div>
+            <p className="font-bold text-forest-900">Multiple jurisdictions / split management authority</p>
+            <p className="mt-1 text-sm leading-6 text-slate-700 dark:text-slate-300">
+              The park spans more than one state, or is managed by an authority that doesn't match the usual
+              state-Forest-Department pattern this site sources from elsewhere. Treat closure and permit
+              information for these parks as lower-confidence, and double-check the specific zone or authority
+              relevant to your visit.
+            </p>
+          </div>
+          <div>
+            <p className="font-bold text-forest-900">Access restricted</p>
+            <p className="mt-1 text-sm leading-6 text-slate-700 dark:text-slate-300">
+              The strongest flag we use — it means general tourism to that park is not currently possible, for
+              reasons unrelated to season. This is a warning, not a planning footnote: don't book a trip around a
+              park carrying this flag without independently confirming current access first.
+            </p>
+          </div>
+        </div>
+        <div className="mt-6 grid gap-4">
+          <StructuralRiskNotice risk={structuralRisks["kuno-national-park"]} />
+          <StructuralRiskNotice risk={structuralRisks["indravati-national-park"]} />
+        </div>
       </section>
 
       <p className="mt-8 text-sm text-slate-600 dark:text-slate-400">

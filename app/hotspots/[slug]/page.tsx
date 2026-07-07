@@ -1,4 +1,4 @@
-import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Binoculars, Camera, Footprints, Lock, LockOpen, PawPrint, Sailboat, Sparkles, Users } from "lucide-react"; import { hotspots, getHotspotBySlug } from "@/data/hotspots"; import { closureInfo } from "@/data/closures"; import { FreshnessBadge } from "@/components/FreshnessBadge"; import { QuickFactsCard } from "@/components/QuickFactsCard"; import { Tag } from "@/components/Tag"; import { PlanLinksCard } from "@/components/PlanLinksCard"; import { EthicalTravelNote } from "@/components/EthicalTravelNote"; import { HotspotCard } from "@/components/HotspotCard"; import { HotspotImage } from "@/components/HotspotImage"; import { ecosystem, ecosystemColorClass } from "@/data/ecosystems"; import { hasBoating } from "@/data/boatingSpots"; import { seasonalWisdom } from "@/data/seasonalWisdom"; import { buildItinerary } from "@/lib/itinerary"; import { haversineKm } from "@/lib/geo"; import { speciesSlugForName } from "@/lib/speciesLinks"; import { species, getSpeciesBySlug } from "@/data/species"; import { SpeciesCard } from "@/components/SpeciesCard"; import ebirdSpeciesRaw from "@/data/ebirdSpecies.json"; import type { EbirdSpeciesEntry } from "@/scripts/fetch-ebird-species";
+import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Binoculars, Camera, Footprints, Lock, LockOpen, PawPrint, Sailboat, Sparkles, Users } from "lucide-react"; import { hotspots, getHotspotBySlug } from "@/data/hotspots"; import { closureInfo } from "@/data/closures"; import { FreshnessBadge } from "@/components/FreshnessBadge"; import { QuickFactsCard } from "@/components/QuickFactsCard"; import { Tag } from "@/components/Tag"; import { PlanLinksCard } from "@/components/PlanLinksCard"; import { EthicalTravelNote } from "@/components/EthicalTravelNote"; import { HotspotCard } from "@/components/HotspotCard"; import { HotspotImage } from "@/components/HotspotImage"; import { ecosystem, ecosystemColorClass } from "@/data/ecosystems"; import { hasBoating } from "@/data/boatingSpots"; import { seasonalWisdom } from "@/data/seasonalWisdom"; import { buildItinerary } from "@/lib/itinerary"; import { haversineKm } from "@/lib/geo"; import { speciesSlugForName } from "@/lib/speciesLinks"; import { species, getSpeciesBySlug } from "@/data/species"; import { SpeciesCard } from "@/components/SpeciesCard"; import ebirdSpeciesRaw from "@/data/ebirdSpecies.json"; import type { EbirdSpeciesEntry } from "@/scripts/fetch-ebird-species"; import { structuralRisks } from "@/data/structuralRisks"; import { StructuralRiskNotice } from "@/components/StructuralRiskNotice";
 const ebirdSpecies = ebirdSpeciesRaw as Record<string, EbirdSpeciesEntry[]>;
 function formatEbirdPulledDate(iso: string): string {
   return new Date(iso + "T00:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" });
@@ -58,6 +58,7 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
   const featuredSpecies = featuredSpeciesSlugs.map(getSpeciesBySlug).filter(Boolean);
   const closure = closureInfo[hotspot.slug];
   const ebirdEntries = ebirdSpecies[hotspot.slug];
+  const structuralRisk = structuralRisks[hotspot.slug];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -84,6 +85,11 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
         <p className="mt-3 max-w-3xl border-l-2 border-flare pl-4 text-lg leading-8 text-ivory">{hotspot.summary}</p>
       </div>
     </section>
+    {structuralRisk && (
+      <section className="mx-auto max-w-7xl px-4 pt-8 sm:px-6">
+        <StructuralRiskNotice risk={structuralRisk} />
+      </section>
+    )}
     <section className="mx-auto grid max-w-7xl items-start gap-6 px-4 py-10 sm:px-6 lg:grid-cols-[1fr_360px]">
       <div className="grid content-start gap-6">
         <section className="field-card rounded-sm p-6">
