@@ -13,8 +13,9 @@ For the detailed build-by-build changelog, see [VERSION_HISTORY.md](VERSION_HIST
 - **"Best time to visit" awareness** — the map and homepage highlight regions and hotspots whose best season matches the current month, plus a "Where to go in [month]" homepage section with season-level field notes (best for / avoid / travel caution)
 - **42 wildlife hotspots** with real photography sourced and attributed from Wikimedia Commons (CC-licensed), real nearest airport/railway names linked to Google Maps, and a "Plan your visit" block with directions, background reading, and booking-search links
 - **Interactive Map Explorer** (`/map`) — filter by region, wildlife type, experience, season, and difficulty; click a marker or list card for a rich preview (species, difficulty, permits, photography-friendly badge)
-- **Hotspot directory** (`/hotspots`) with the same filtering, and detail pages (`/hotspots/[slug]`) with a full destination structure — species, a species-spotlight card grid, seasonal calendar, experiences, a season/closures fact with a source-confidence badge, a suggested itinerary, and real geographic-nearest hotspots
+- **Hotspot directory** (`/hotspots`) with the same filtering, and detail pages (`/hotspots/[slug]`) with a full destination structure — species, a species-spotlight card grid, seasonal calendar, experiences, a season/closures fact with a tap-to-reveal source-confidence badge, a suggested itinerary, and real geographic-nearest hotspots
 - **Species Guide** (`/species`, `/species/[slug]`) — 21 species with real photography, where to actually see each one (derived live from hotspot data, shown as compact location cards), best months, sighting difficulty, habitat, ethical viewing notes, and photography tips
+- **Data confidence, made visible** — a small confidence dot appears on every hotspot card (list, map sidebar, map preview) wherever a closure fact exists; on the detail page it expands into a full badge explaining the source and how recently it was checked, and a footer-linked [`/data-sources`](app/data-sources/page.tsx) page explains the three confidence tiers in plain language
 - Jungle/expedition-inspired visual language — `Fraunces` for headlines, `Work Sans` for body text, an earthy palette, and a full-bleed map hero
 
 ## Tech stack
@@ -35,6 +36,13 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+**Optional — eBird tooling.** Copy `.env.local.example` to `.env.local` and add a free key from [ebird.org/api/keygen](https://ebird.org/api/keygen), then:
+
+```bash
+npm run find:ebird-hotspots   # writes data/ebird-candidates.json for manual review
+npm run fetch:ebird            # fetches species data for confirmed data/ebirdHotspots.ts entries
+```
+
 ## Checks
 
 ```bash
@@ -52,7 +60,8 @@ app/                     Next.js App Router pages
   hotspots/[slug]/page.tsx    Hotspot detail page
   species/page.tsx           Species guide index
   species/[slug]/page.tsx     Species detail page
-components/               Reusable UI, map, and card components
+  data-sources/page.tsx       "How we verify data" — explains the confidence tiers
+components/               Reusable UI, map, and card components (incl. Footer.tsx, FreshnessBadge.tsx)
 data/
   hotspots.ts               42 hotspot records
   species.ts                 21 species records (real content — habitat, conservation status, ethical/photography notes)
@@ -66,11 +75,16 @@ data/
   closures.ts                   Individually-researched per-park seasonal closure facts, with source name/URL, last-verified date, and a confidence rating per entry
   seasonalWisdom.ts             Month-to-season mapping + generic season-level travel field notes (fallback only)
   boatingSpots.ts               Hotspots with a real, text-derived boating experience signal
+  ebirdHotspots.ts              Confirmed hotspot -> eBird hotspot mappings (manually reviewed; starts empty)
+  ebirdSpecies.json             eBird species data per hotspot, populated by scripts/fetch-ebird-species.ts (starts empty)
 lib/
   filterHotspots.ts         Search and filter logic
   speciesLinks.ts             Live species <-> hotspot derivation (no hand-maintained species-location lists)
   itinerary.ts                 Generic suggested-itinerary builder
   geo.ts                       Haversine distance for "nearby hotspots"
+scripts/                  Manually-run CLI tooling (not build hooks)
+  find-ebird-hotspots.ts    Finds candidate eBird hotspots near each park for manual review
+  fetch-ebird-species.ts     Fetches species data for confirmed eBird hotspot mappings
 public/brand/               Logo assets
 ```
 
@@ -85,7 +99,8 @@ public/brand/               Logo assets
 - A species' "where can I see this" and "best months" are computed live from the real hotspot species lists (`lib/speciesLinks.ts`), not a separately hand-maintained list — this is what caught and fixed several factually wrong species-location claims that existed before this pass. Species with no genuine hotspot match show an honest empty state rather than a fabricated location.
 - New hotspots added specifically to cover a species' real range (Eravikulam, Singalila, Rushikulya, Gahirmatha) were only added after checking that no existing hotspot already had a real, documented population — see the "1 fringe + flagship split" note in the [v1.3 changelog](VERSION_HISTORY.md) for how a borderline case (Nilgiri Tahr at Periyar) was handled.
 - "Season & closures" facts (`data/closures.ts`) are individually researched per park from state forest department notices and official park portals — not a blanket rule applied to every "Tiger Reserve"-type hotspot. Exact dates shift year to year by forest department order; treat these as a real planning signal, not a fixed calendar.
-- Each closure fact carries a `confidence` rating (`official`/`inferred`/`unconfirmed`) and a `lastVerified` date, shown on the hotspot page via a small `<FreshnessBadge>` — `sourceName` is only set where a note already cited a specific department, and `sourceUrl` is left unset until a specific citable page is verified, rather than ever being guessed.
+- Each closure fact carries a `confidence` rating (`official`/`inferred`/`unconfirmed`) and a `lastVerified` date, shown on the hotspot page via a `<FreshnessBadge>` (tap/click to reveal the source and a "what does this mean" explanation) and as a bare `<ConfidenceDot>` on cards elsewhere — `sourceName` is only set where a note already cited a specific department, and `sourceUrl` is left unset until a specific citable page is verified, rather than ever being guessed. See [`/data-sources`](app/data-sources/page.tsx) for the plain-language explanation.
+- Species presence (`mainSpecies`/`birdSpecies`) is currently hand-authored. `scripts/find-ebird-hotspots.ts` and `scripts/fetch-ebird-species.ts` are opt-in CLI tools (see Getting started) that ground this in real eBird citizen-science records instead — `data/ebirdHotspots.ts` and `data/ebirdSpecies.json` start empty and are never auto-filled with a guessed match; a human confirms each hotspot mapping before any species data is fetched.
 
 ## Not yet built
 
