@@ -2,7 +2,9 @@
 
 Wild India Atlas is a map-first travel guide for planning wildlife trips across India. It combines an interactive, real-boundary map of 42 tiger reserves, bird sanctuaries, wetlands, and Himalayan sanctuaries with a species guide (21 species and counting), so a trip can be planned by region, season, ecosystem, or species — whichever a traveler starts from. Every hotspot page carries real, individually-sourced photography, travel logistics (nearest airport/railway, permits, district), a species spotlight, a real closure/seasonal-access fact, and a suggested itinerary; species pages link back to exactly the hotspots where that animal is actually documented, derived live from the hotspot data rather than a separately hand-maintained list.
 
-For the detailed build-by-build changelog, see [VERSION_HISTORY.md](VERSION_HISTORY.md).
+## Changelog
+
+The current release is **v1.7 — Structural-risk disclosures + re-verification cadence**. Every past release, in full detail, lives in [VERSION_HISTORY.md](VERSION_HISTORY.md) — read it for the complete build-by-build history back to the original v1 prototype slice.
 
 ## Features
 
@@ -16,6 +18,7 @@ For the detailed build-by-build changelog, see [VERSION_HISTORY.md](VERSION_HIST
 - **Hotspot directory** (`/hotspots`) with the same filtering, and detail pages (`/hotspots/[slug]`) with a full destination structure — species, a species-spotlight card grid, seasonal calendar, experiences, a season/closures fact with a tap-to-reveal source-confidence badge, a suggested itinerary, and real geographic-nearest hotspots
 - **Species Guide** (`/species`, `/species/[slug]`) — 21 species with real photography, where to actually see each one (derived live from hotspot data, shown as compact location cards), best months, sighting difficulty, habitat, ethical viewing notes, and photography tips
 - **Data confidence, made visible** — a small confidence dot appears on every hotspot card (list, map sidebar, map preview) wherever a closure fact exists; on the detail page it expands into a full badge explaining the source and how recently it was checked, and a footer-linked [`/data-sources`](app/data-sources/page.tsx) page explains the three confidence tiers in plain language
+- **Structural-risk disclosures** — five hotspots whose real complexity is jurisdictional or access-related rather than seasonal (multi-state sanctuaries, split management authorities, and one park with tourism effectively closed on security grounds) get a prominent, plain-language callout right at the top of their page, distinct in tone from an ordinary closure fact
 - Jungle/expedition-inspired visual language — `Fraunces` for headlines, `Work Sans` for body text, an earthy palette, and a full-bleed map hero
 
 ## Tech stack
@@ -77,6 +80,7 @@ data/
   boatingSpots.ts               Hotspots with a real, text-derived boating experience signal
   ebirdHotspots.ts              Confirmed hotspot -> eBird hotspot mappings (manually reviewed; starts empty)
   ebirdSpecies.json             eBird species data per hotspot, populated by scripts/fetch-ebird-species.ts (starts empty)
+  structuralRisks.ts             Jurisdiction/authority/access-status flags for the 5 hotspots that need them
 lib/
   filterHotspots.ts         Search and filter logic
   speciesLinks.ts             Live species <-> hotspot derivation (no hand-maintained species-location lists)
@@ -85,6 +89,8 @@ lib/
 scripts/                  Manually-run CLI tooling (not build hooks)
   find-ebird-hotspots.ts    Finds candidate eBird hotspots near each park for manual review
   fetch-ebird-species.ts     Fetches species data for confirmed eBird hotspot mappings
+docs/
+  verification-cadence.md   Re-verification policy for closures.ts and structuralRisks.ts
 public/brand/               Logo assets
 ```
 
@@ -101,6 +107,8 @@ public/brand/               Logo assets
 - "Season & closures" facts (`data/closures.ts`) are individually researched per park from state forest department notices and official park portals — not a blanket rule applied to every "Tiger Reserve"-type hotspot. Exact dates shift year to year by forest department order; treat these as a real planning signal, not a fixed calendar.
 - Each closure fact carries a `confidence` rating (`official`/`inferred`/`unconfirmed`) and a `lastVerified` date, shown on the hotspot page via a `<FreshnessBadge>` (tap/click to reveal the source and a "what does this mean" explanation) and as a bare `<ConfidenceDot>` on cards elsewhere — `sourceName` is only set where a note already cited a specific department, and `sourceUrl` is left unset until a specific citable page is verified, rather than ever being guessed. See [`/data-sources`](app/data-sources/page.tsx) for the plain-language explanation.
 - Species presence (`mainSpecies`/`birdSpecies`) is currently hand-authored. `scripts/find-ebird-hotspots.ts` and `scripts/fetch-ebird-species.ts` are opt-in CLI tools (see Getting started) that ground this in real eBird citizen-science records instead — `data/ebirdHotspots.ts` and `data/ebirdSpecies.json` start empty and are never auto-filled with a guessed match; a human confirms each hotspot mapping before any species data is fetched.
+- `data/structuralRisks.ts` flags hotspots whose real complexity is jurisdictional, authority-related, or access-related rather than seasonal — kept as a separate file/shape from `data/closures.ts` on purpose, since a single closure sentence would understate this kind of fact. `sourceUrl` follows the same never-fabricate rule as `closures.ts`.
+- `docs/verification-cadence.md` documents how often each tier of fact should be re-checked (quarterly for `unconfirmed` closures and anything with a structural-risk flag, yearly otherwise) — a written policy for now, not yet an automated check.
 
 ## Not yet built
 
