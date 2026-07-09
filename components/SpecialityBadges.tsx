@@ -10,7 +10,7 @@ export function SpecialityBadges({ endemic, iconic, className }: { endemic: bool
   return (
     <div className={"flex flex-wrap gap-1.5" + (className ? " " + className : "")}>
       {iconic && (
-        <span className="inline-flex items-center gap-1 rounded-full bg-flare/20 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-amberfield dark:text-flare">
+        <span className="inline-flex items-center gap-1 rounded-full bg-amberfield/20 px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wide text-amberfield dark:text-sand">
           <Star size={10} className="fill-current" /> Iconic
         </span>
       )}

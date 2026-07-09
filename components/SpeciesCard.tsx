@@ -12,7 +12,7 @@ export function SpeciesCard({ species, compact }: { species: Species; compact?: 
     <article className="field-card group overflow-hidden rounded-sm transition hover:-translate-y-0.5 hover:shadow-field">
       <div className="relative">
         <SpeciesImage slug={species.slug} category={species.category} className="h-36 w-full" showCredit={false} />
-        <div className="absolute right-3 top-3 rounded-sm bg-forest-900/90 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-flare">{species.category}</div>
+        <div className="absolute right-3 top-3 rounded-sm bg-forest-900/90 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-sand">{species.category}</div>
       </div>
       <div className="p-4">
         <h3 className="font-bold text-forest-900">{species.commonName}</h3>

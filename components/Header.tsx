@@ -10,7 +10,7 @@ export function Header(){ const [open,setOpen]=useState(false); return <div clas
     <nav className="hidden items-center gap-6 md:flex">
       {nav.map(item=>item.disabled
         ? <span key={item.label} className="font-mono text-xs font-semibold uppercase tracking-wider text-white/35" title="Coming later">{item.label}</span>
-        : <Link key={item.label} className="border-b-2 border-transparent py-1 font-mono text-xs font-semibold uppercase tracking-wider text-white/80 transition hover:border-flare hover:text-flare" href={item.href}>{item.label}</Link>
+        : <Link key={item.label} className="border-b-2 border-transparent py-1 font-mono text-xs font-semibold uppercase tracking-wider text-white/80 transition hover:border-sand hover:text-sand" href={item.href}>{item.label}</Link>
       )}
     </nav>
     <div className="flex items-center gap-1">
@@ -22,7 +22,7 @@ export function Header(){ const [open,setOpen]=useState(false); return <div clas
     <div className="mx-auto mt-2 max-w-5xl rounded-sm border border-white/15 bg-forest-900/85 p-2 backdrop-blur-xl md:hidden">
       {nav.map(item=>item.disabled
         ? <div key={item.label} className="px-3 py-2 font-mono text-xs font-semibold uppercase tracking-wider text-white/35">{item.label} · Coming later</div>
-        : <Link key={item.label} className="block rounded-sm px-3 py-2 font-mono text-xs font-semibold uppercase tracking-wider text-white/80 hover:bg-white/10 hover:text-flare" href={item.href} onClick={()=>setOpen(false)}>{item.label}</Link>
+        : <Link key={item.label} className="block rounded-sm px-3 py-2 font-mono text-xs font-semibold uppercase tracking-wider text-white/80 hover:bg-white/10 hover:text-sand" href={item.href} onClick={()=>setOpen(false)}>{item.label}</Link>
       )}
     </div>
   )}

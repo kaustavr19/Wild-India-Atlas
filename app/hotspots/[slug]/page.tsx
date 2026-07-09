@@ -75,14 +75,14 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
       <HotspotImage slug={hotspot.slug} type={hotspot.type} className="absolute inset-0 -z-20 h-full w-full"/>
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-forest-900 via-forest-900/75 to-forest-900/10"/>
       <div className="mx-auto w-full max-w-7xl">
-        <Link href="/map" className="font-mono text-xs font-bold uppercase tracking-wide text-flare">← Back to map</Link>
+        <Link href="/map" className="font-mono text-xs font-bold uppercase tracking-wide text-sand">← Back to map</Link>
         <div className="mt-5 flex flex-wrap items-center gap-2">
           {eco && <span className={"flex items-center gap-1 rounded-sm px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-white " + ecosystemColorClass[eco]}>{eco}</span>}
           {hotspot.experienceTags.map(t=><span key={t} className="rounded-sm border border-white/30 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-white/90">{t}</span>)}
         </div>
         <h1 className="mt-4 max-w-4xl text-5xl font-semibold">{hotspot.name}</h1>
         <p className="mt-3 max-w-3xl text-sm font-semibold uppercase tracking-wide text-white/70">{hotspot.state} · {hotspot.habitat} · Best: {bestMonthsRange(hotspot.bestMonths)}</p>
-        <p className="mt-3 max-w-3xl border-l-2 border-flare pl-4 text-lg leading-8 text-ivory">{hotspot.summary}</p>
+        <p className="mt-3 max-w-3xl border-l-2 border-sand pl-4 text-lg leading-8 text-ivory">{hotspot.summary}</p>
       </div>
     </section>
     {structuralRisk && (
