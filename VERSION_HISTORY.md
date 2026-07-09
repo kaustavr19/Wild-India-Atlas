@@ -1,6 +1,10 @@
 # Version history
 
-**v1.12 — Merged species list + Endemic/Iconic badges** (current)
+**v1.13 — Real favicon and app icons** (current)
+- Added the site's actual favicon set to `public/` (`favicon.ico`, 16×16/32×32 PNGs, Apple touch icon, and Android Chrome 192×192/512×512 icons) — the site previously had no favicon at all
+- Wired them into `app/layout.tsx` via `Metadata.icons`/`Metadata.manifest`, and filled in `site.webmanifest`'s previously-blank `name`/`short_name` fields ("Wild India Atlas" / "Wild India") and set `theme_color` to the site's actual forest-900 brand color instead of the generator's default white
+
+**v1.12 — Merged species list + Endemic/Iconic badges**
 - New `scripts/tag-india-specialities.ts` (`npm run tag:specialities`) classifies every canonical species (21 Flagship + 1,268 Extended = 1,289 total) against iNaturalist, resolving India's `place_id` (6681) at runtime rather than hardcoding it, resolving a `taxonId` per species (reusing the one Extended fauna entries already carry from v1.10; resolving the rest via an exact scientific-name match), then batching `/v1/taxa/{ids}` lookups (30 per request) to read each species' `establishment_means` for India
 - **Endemic: 71 yes / 176 no / 1,042 unknown.** "Unknown" is the default for anything without a real India listing — including, notably, the Flagship Asiatic Lion (`Panthera leo persica`), whose exact trinomial has no match in iNaturalist's taxonomy at all (only `Panthera leo leo` does) — flagged to `data/india-specialities-taxon-review.json` rather than guessed. **1 species total needed that ambiguous/no-match review this run.**
 - Iconic is never inferred from observation counts — seeded `true` only for the 21 Flagship-curated species. `data/iconic-candidates.json` separately lists the top 15 Extended species per group (Bird/Mammal/Reptile/Amphibian, by summed observation count) as candidates for a human to review later, not as assigned tags
