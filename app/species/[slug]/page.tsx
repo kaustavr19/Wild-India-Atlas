@@ -1,22 +1,36 @@
-import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Camera, Compass, ShieldAlert } from "lucide-react"; import { species, getSpeciesBySlug } from "@/data/species"; import { hotspots } from "@/data/hotspots"; import { hotspotsForSpecies, bestMonthsForSpecies } from "@/lib/speciesLinks"; import { HotspotCard } from "@/components/HotspotCard"; import { SpeciesCard } from "@/components/SpeciesCard"; import { SpeciesImage } from "@/components/SpeciesImage"; import { EmptyState } from "@/components/EmptyState";
+import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Camera, Compass, ShieldAlert } from "lucide-react"; import { species, getSpeciesBySlug } from "@/data/species"; import { hotspots } from "@/data/hotspots"; import { hotspotsForSpecies, bestMonthsForSpecies } from "@/lib/speciesLinks"; import { HotspotCard } from "@/components/HotspotCard"; import { SpeciesCard } from "@/components/SpeciesCard"; import { SpeciesImage } from "@/components/SpeciesImage"; import { EmptyState } from "@/components/EmptyState"; import { getExtendedSpecies, getExtendedSpeciesBySlug } from "@/lib/extendedSpecies"; import { ExtendedSpeciesProfile } from "@/components/ExtendedSpeciesProfile";
 
 const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
-export function generateStaticParams(){ return species.map(s=>({slug:s.slug})); }
+export function generateStaticParams(){
+  return [...species.map(s=>({slug:s.slug})), ...getExtendedSpecies().map(s=>({slug:s.slug}))];
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const sp = getSpeciesBySlug(slug);
-  if (!sp) return {};
-  const title = sp.commonName + " — Where to See It in India | Wild India Atlas";
-  const description = sp.shortDescription + " Sighting difficulty: " + sp.difficultyOfSighting + ". " + sp.habitat + ".";
-  return { title, description, openGraph: { title, description, type: "article" } };
+  if (sp) {
+    const title = sp.commonName + " — Where to See It in India | Wild India Atlas";
+    const description = sp.shortDescription + " Sighting difficulty: " + sp.difficultyOfSighting + ". " + sp.habitat + ".";
+    return { title, description, openGraph: { title, description, type: "article" } };
+  }
+  const ext = getExtendedSpeciesBySlug(slug);
+  if (ext) {
+    const title = ext.commonName + " — Confirmed Sightings | Wild India Atlas";
+    const description = ext.commonName + " (" + ext.scientificName + "), confirmed via " + ext.source + " at " + ext.confirmedAt.length + " hotspot" + (ext.confirmedAt.length === 1 ? "" : "s") + " in the atlas.";
+    return { title, description, openGraph: { title, description, type: "article" } };
+  }
+  return {};
 }
 
 export default async function SpeciesDetail({ params }: { params: Promise<{ slug: string }> }){
   const { slug } = await params;
   const sp = getSpeciesBySlug(slug);
-  if(!sp) notFound();
+  if (!sp) {
+    const ext = getExtendedSpeciesBySlug(slug);
+    if (!ext) notFound();
+    return <ExtendedSpeciesProfile species={ext} />;
+  }
   const matchedHotspots = hotspotsForSpecies(sp, hotspots);
   const bestMonths = bestMonthsForSpecies(sp, hotspots);
   const similar = sp.similarSpeciesSlugs.map(getSpeciesBySlug).filter(Boolean);
