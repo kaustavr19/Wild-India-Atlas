@@ -1,0 +1,370 @@
+{
+  "Bird": [
+    {
+      "slug": "indian-peafowl",
+      "commonName": "Indian Peafowl",
+      "scientificName": "Pavo cristatus",
+      "totalObservations": 525
+    },
+    {
+      "slug": "eastern-cattle-egret",
+      "commonName": "Eastern Cattle-Egret",
+      "scientificName": "Ardea coromanda",
+      "totalObservations": 72
+    },
+    {
+      "slug": "red-wattled-lapwing",
+      "commonName": "Red-wattled Lapwing",
+      "scientificName": "Vanellus indicus",
+      "totalObservations": 51
+    },
+    {
+      "slug": "rock-pigeon",
+      "commonName": "Rock Pigeon",
+      "scientificName": "Columba livia",
+      "totalObservations": 39
+    },
+    {
+      "slug": "jungle-babbler",
+      "commonName": "Jungle Babbler",
+      "scientificName": "Argya striata",
+      "totalObservations": 38
+    },
+    {
+      "slug": "gray-francolin",
+      "commonName": "Gray Francolin",
+      "scientificName": "Ortygornis pondicerianus",
+      "totalObservations": 36
+    },
+    {
+      "slug": "medium-egret",
+      "commonName": "Medium Egret",
+      "scientificName": "Ardea intermedia",
+      "totalObservations": 26
+    },
+    {
+      "slug": "painted-spurfowl",
+      "commonName": "Painted Spurfowl",
+      "scientificName": "Galloperdix lunulata",
+      "totalObservations": 26
+    },
+    {
+      "slug": "yellow-footed-green-pigeon",
+      "commonName": "Yellow-footed Green-Pigeon",
+      "scientificName": "Treron phoenicopterus",
+      "totalObservations": 24
+    },
+    {
+      "slug": "asian-green-bee-eater",
+      "commonName": "Asian Green Bee-eater",
+      "scientificName": "Merops orientalis",
+      "totalObservations": 23
+    },
+    {
+      "slug": "red-vented-bulbul",
+      "commonName": "Red-vented Bulbul",
+      "scientificName": "Pycnonotus cafer",
+      "totalObservations": 23
+    },
+    {
+      "slug": "common-myna",
+      "commonName": "Common Myna",
+      "scientificName": "Acridotheres tristis",
+      "totalObservations": 19
+    },
+    {
+      "slug": "rose-ringed-parakeet",
+      "commonName": "Rose-ringed Parakeet",
+      "scientificName": "Psittacula krameri",
+      "totalObservations": 18
+    },
+    {
+      "slug": "great-egret",
+      "commonName": "Great Egret",
+      "scientificName": "Ardea alba",
+      "totalObservations": 16
+    },
+    {
+      "slug": "white-breasted-waterhen",
+      "commonName": "White-breasted Waterhen",
+      "scientificName": "Amaurornis phoenicurus",
+      "totalObservations": 15
+    }
+  ],
+  "Mammal": [
+    {
+      "slug": "chital",
+      "commonName": "Chital",
+      "scientificName": "Axis axis",
+      "totalObservations": 1557
+    },
+    {
+      "slug": "bengal-sacred-langur",
+      "commonName": "Bengal Sacred Langur",
+      "scientificName": "Semnopithecus entellus",
+      "totalObservations": 758
+    },
+    {
+      "slug": "wild-boar",
+      "commonName": "Wild Boar",
+      "scientificName": "Sus scrofa",
+      "totalObservations": 540
+    },
+    {
+      "slug": "nilgai",
+      "commonName": "Nilgai",
+      "scientificName": "Boselaphus tragocamelus",
+      "totalObservations": 435
+    },
+    {
+      "slug": "golden-jackal",
+      "commonName": "Golden Jackal",
+      "scientificName": "Canis aureus",
+      "totalObservations": 374
+    },
+    {
+      "slug": "rhesus-macaque",
+      "commonName": "Rhesus Macaque",
+      "scientificName": "Macaca mulatta",
+      "totalObservations": 329
+    },
+    {
+      "slug": "sambar",
+      "commonName": "Sambar",
+      "scientificName": "Rusa unicolor",
+      "totalObservations": 304
+    },
+    {
+      "slug": "gaur",
+      "commonName": "Gaur",
+      "scientificName": "Bos gaurus",
+      "totalObservations": 291
+    },
+    {
+      "slug": "northern-red-muntjac",
+      "commonName": "Northern Red Muntjac",
+      "scientificName": "Muntiacus vaginalis",
+      "totalObservations": 159
+    },
+    {
+      "slug": "indian-giant-squirrel",
+      "commonName": "Indian Giant Squirrel",
+      "scientificName": "Ratufa indica",
+      "totalObservations": 157
+    },
+    {
+      "slug": "five-striped-palm-squirrel",
+      "commonName": "Five-striped Palm Squirrel",
+      "scientificName": "Funambulus pennantii",
+      "totalObservations": 154
+    },
+    {
+      "slug": "indian-flying-fox",
+      "commonName": "Indian Flying Fox",
+      "scientificName": "Pteropus medius",
+      "totalObservations": 152
+    },
+    {
+      "slug": "ruddy-mongoose",
+      "commonName": "Ruddy Mongoose",
+      "scientificName": "Urva smithii",
+      "totalObservations": 133
+    },
+    {
+      "slug": "bonnet-macaque",
+      "commonName": "Bonnet Macaque",
+      "scientificName": "Macaca radiata",
+      "totalObservations": 99
+    },
+    {
+      "slug": "malabar-sacred-langur",
+      "commonName": "Malabar Sacred Langur",
+      "scientificName": "Semnopithecus hypoleucos",
+      "totalObservations": 95
+    }
+  ],
+  "Reptile": [
+    {
+      "slug": "bengal-monitor",
+      "commonName": "Bengal Monitor",
+      "scientificName": "Varanus bengalensis",
+      "totalObservations": 193
+    },
+    {
+      "slug": "indian-garden-lizard",
+      "commonName": "Indian Garden Lizard",
+      "scientificName": "Calotes versicolor",
+      "totalObservations": 160
+    },
+    {
+      "slug": "indian-flapshell-turtle",
+      "commonName": "Indian Flapshell Turtle",
+      "scientificName": "Lissemys punctata",
+      "totalObservations": 90
+    },
+    {
+      "slug": "chequered-keelback",
+      "commonName": "Chequered Keelback",
+      "scientificName": "Fowlea piscator",
+      "totalObservations": 79
+    },
+    {
+      "slug": "common-water-monitor",
+      "commonName": "Common Water Monitor",
+      "scientificName": "Varanus salvator",
+      "totalObservations": 62
+    },
+    {
+      "slug": "indian-black-turtle",
+      "commonName": "Indian Black Turtle",
+      "scientificName": "Melanochelys trijuga",
+      "totalObservations": 57
+    },
+    {
+      "slug": "saltwater-crocodile",
+      "commonName": "Saltwater Crocodile",
+      "scientificName": "Crocodylus porosus",
+      "totalObservations": 56
+    },
+    {
+      "slug": "mugger-crocodile",
+      "commonName": "Mugger Crocodile",
+      "scientificName": "Crocodylus palustris",
+      "totalObservations": 45
+    },
+    {
+      "slug": "indian-roofed-turtle",
+      "commonName": "Indian Roofed Turtle",
+      "scientificName": "Pangshura tecta",
+      "totalObservations": 36
+    },
+    {
+      "slug": "rock-dragon",
+      "commonName": "Rock Dragon",
+      "scientificName": "Psammophilus dorsalis",
+      "totalObservations": 31
+    },
+    {
+      "slug": "oriental-rat-snake",
+      "commonName": "Oriental Rat Snake",
+      "scientificName": "Ptyas mucosa",
+      "totalObservations": 31
+    },
+    {
+      "slug": "northern-house-gecko",
+      "commonName": "Northern House Gecko",
+      "scientificName": "Hemidactylus flaviviridis",
+      "totalObservations": 30
+    },
+    {
+      "slug": "forsten-s-cat-snake",
+      "commonName": "Forsten's Cat Snake",
+      "scientificName": "Boiga forsteni",
+      "totalObservations": 20
+    },
+    {
+      "slug": "spot-tailed-pitviper",
+      "commonName": "Spot-tailed Pitviper",
+      "scientificName": "Trimeresurus erythrurus",
+      "totalObservations": 20
+    },
+    {
+      "slug": "common-bronzeback-tree-snake",
+      "commonName": "Common Bronzeback Tree Snake",
+      "scientificName": "Dendrelaphis tristis",
+      "totalObservations": 19
+    }
+  ],
+  "Amphibian": [
+    {
+      "slug": "asian-common-toad",
+      "commonName": "Asian Common Toad",
+      "scientificName": "Duttaphrynus melanostictus",
+      "totalObservations": 68
+    },
+    {
+      "slug": "chunam-tree-frog",
+      "commonName": "Chunam Tree Frog",
+      "scientificName": "Polypedates maculatus",
+      "totalObservations": 56
+    },
+    {
+      "slug": "common-skittering-frog",
+      "commonName": "Common skittering frog",
+      "scientificName": "Euphlyctis cyanophlyctis",
+      "totalObservations": 47
+    },
+    {
+      "slug": "indus-valley-bullfrog",
+      "commonName": "Indus Valley Bullfrog",
+      "scientificName": "Hoplobatrachus tigerinus",
+      "totalObservations": 33
+    },
+    {
+      "slug": "common-paddy-field-frog",
+      "commonName": "Common Paddy Field Frog",
+      "scientificName": "Minervarya agricola",
+      "totalObservations": 29
+    },
+    {
+      "slug": "painted-globular-frog",
+      "commonName": "Painted Globular Frog",
+      "scientificName": "Uperodon taprobanicus",
+      "totalObservations": 29
+    },
+    {
+      "slug": "ornate-narrow-mouthed-toad",
+      "commonName": "Ornate Narrow-mouthed Toad",
+      "scientificName": "Microhyla ornata",
+      "totalObservations": 10
+    },
+    {
+      "slug": "honnametti-bush-frog",
+      "commonName": "Honnametti bush frog",
+      "scientificName": "Raorchestes honnametti",
+      "totalObservations": 9
+    },
+    {
+      "slug": "marbled-balloon-frog",
+      "commonName": "Marbled balloon frog",
+      "scientificName": "Uperodon systoma",
+      "totalObservations": 9
+    },
+    {
+      "slug": "shrub-frogs",
+      "commonName": "Shrub Frogs",
+      "scientificName": "Pseudophilautus",
+      "totalObservations": 7
+    },
+    {
+      "slug": "dudhwa-tree-frog",
+      "commonName": "Dudhwa tree frog",
+      "scientificName": "Chirixalus dudhwaensis",
+      "totalObservations": 6
+    },
+    {
+      "slug": "indus-valley-toad",
+      "commonName": "Indus Valley Toad",
+      "scientificName": "Firouzophrynus stomaticus",
+      "totalObservations": 5
+    },
+    {
+      "slug": "sholigari-narrow-mouthed-frog",
+      "commonName": "Sholigari Narrow-mouthed Frog",
+      "scientificName": "Microhyla sholigari",
+      "totalObservations": 5
+    },
+    {
+      "slug": "burrowing-frogs",
+      "commonName": "Burrowing Frogs",
+      "scientificName": "Sphaerotheca",
+      "totalObservations": 5
+    },
+    {
+      "slug": "paddy-field-frog",
+      "commonName": "Paddy Field Frog",
+      "scientificName": "Fejervarya limnocharis",
+      "totalObservations": 4
+    }
+  ]
+}

@@ -1,0 +1,5158 @@
+{
+  "Panthera tigris tigris": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Panthera pardus fusca": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Panthera uncia": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Rhinoceros unicornis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Elephas maximus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Rucervus duvaucelii": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Gavialis gangeticus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Equus hemionus khur": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Ailurus fulgens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ardeotis nigriceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Antigone antigone": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phoenicopterus roseus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pitta brachyura": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ocyceros griseus": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Lophophorus impejanus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ophiophagus hannah": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lepidochelys olivacea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Nilgiritragus hylocrius": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Macaca silenus": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Acinonyx jubatus venaticus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Ablepharus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ablepharus himalayanus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ablepharus sikimmensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Abroscopus albogularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Abroscopus schisticeps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Abroscopus superciliaris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Accipiter nisus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aceros nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Acridotheres fuscus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Acridotheres ginginianus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Acridotheres grandis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Acridotheres tristis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Acritillas indica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Acrocephalus agricola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Acrocephalus dumetorum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Acrocephalus melanopogon": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Acrocephalus stentoreus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Actinodura cyanouroptera": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Actinodura egertoni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Actinodura nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Actinodura strigula": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Actitis hypoleucos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aegithalos concinnus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aegithalos iouschistos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aegithalos niveogularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aegithina nigrolutea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aegithina tiphia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aegypius monachus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aerodramus brevirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aerodramus unicolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aethopyga gouldiae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aethopyga ignicauda": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aethopyga nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aethopyga saturata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aethopyga siparaja": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Agraphospiza rubescens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ahaetulla": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ahaetulla anomala": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ahaetulla flavescens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ahaetulla isabellina": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Ahaetulla laudankia": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Ahaetulla malabarica": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Ahaetulla oxyrhynca": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Alaemon alaudipes": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Alauda gulgula": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Alaudala raytal": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Alcedo atthis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Alcedo hercules": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Alcedo meninting": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Alcippe nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Alcippe poioicephala": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Alcurus striatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Alophoixus flaveolus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Amandava amandava": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Amaurornis phoenicurus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Ammomanes deserti": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ammomanes phoenicura": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Amolops": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ampeliceps coronatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Amphiesma stolatum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anarhynchus alexandrinus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Anarhynchus atrifrons": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anarhynchus leschenaultii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anas acuta": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anas crecca": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anas platyrhynchos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anas poecilorhyncha": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Anas zonorhyncha": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anastomus oscitans": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Anathana ellioti": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Anhinga melanogaster": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anorrhinus austeni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anser albifrons": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anser anser": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anser erythropus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anser indicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anthracoceros albirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anthracoceros coronatus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Anthus campestris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anthus godlewskii": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Anthus hodgsoni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anthus nilghiriensis": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Anthus richardi": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anthus roseatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anthus rufulus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Anthus similis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anthus spinoletta": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Anthus trivialis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Antilope cervicapra": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Apus affinis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Apus leuconyx": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Apus nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aquila chrysaetos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aquila fasciata": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Aquila heliaca": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aquila nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aquila rapax": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Arachnothera longirostra": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Arachnothera magna": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Arborophila atrogularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Arborophila torqueola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Arctictis binturong": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ardea alba": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Ardea cinerea": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Ardea coromanda": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Ardea goliath": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ardea insignis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ardea intermedia": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Ardea purpurea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ardeola grayii": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Arenaria interpres": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Argya affinis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Argya caudata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Argya earlei": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Argya longirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Argya malcolmi": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Argya striata": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Argya subrufa": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Artamus fuscus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Arundinax aedon": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Arvicanthini": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Asio flammeus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Astur gentilis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Athene blewitti": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Athene brama": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Aviceda jerdoni": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Aviceda leuphotes": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Axis axis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Axis porcinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aythya baeri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aythya ferina": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aythya fuligula": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aythya marila": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Aythya nyroca": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Bandicota": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Batagur baska": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Batrachostomus hodgsoni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Batrachostomus moniliger": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Blythipicus pyrrhotis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Boiga forsteni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Boiga multomaculata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Boiga nuchalis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Boiga thackerayi": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Boiga trigonata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Bos gaurus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Bos grunniens": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Bos taurus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Boselaphus tragocamelus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Botaurus cinnamomeus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Botaurus flavicollis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Botaurus minutus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Botaurus sinensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Botaurus stellaris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Brachypteryx cruralis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Brachypteryx hyperythra": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Brachypteryx leucophris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Branta ruficollis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Bubalus bubalis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Bucanetes githagineus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Buceros bicornis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Bufonidae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Bulweria fallax": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Bungarus caeruleus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Bungarus fasciatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Burhinus indicus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Butastur teesa": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Buteo buteo": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Buteo refectus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Buteo rufinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Butorides atricapilla": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Cacomantis merulinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cacomantis passerinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cacomantis sonneratii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cairina moschata": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Calandrella acutirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calandrella brachydactyla": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calandrella dukhunensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calidris alba": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calidris alpina": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calidris falcinellus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calidris ferruginea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calidris minuta": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Calidris pugnax": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calidris temminckii": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Calidris tenuirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calliope calliope": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calliope pectoralis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calliope tschebaiewi": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calliophis melanurus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calliophis nigrescens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Callosciurus erythraeus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Callosciurus pygerythrus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calotes calotes": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calotes nemoricola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Calotes versicolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Camelus dromedarius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Canis aureus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Canis familiaris": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Canis lupus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Capra hircus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Caprimulgus affinis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Caprimulgus asiaticus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Caprimulgus atripennis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Caprimulgus indicus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Caprimulgus jotaka": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Caprimulgus macrurus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Caprimulgus mahrattensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Caprini": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Caprolagus hispidus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Carduelis caniceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Carpodacus edwardsii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Carpodacus erythrinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Carpodacus rodochroa": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Carpodacus rodopeplus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Carpodacus subhimachalus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Carpodacus thura": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Carpospiza brachydactyla": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cecropis daurica": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Centropus bengalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Centropus sinensis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Cephalopyrus flammiceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cerberus rynchops": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cercotrichas galactotes": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Certhia discolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Certhia himalayana": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Certhia hodgsoni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Certhia nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ceryle rudis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Cettia brunnifrons": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cettia castaneocoronata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cettia major": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ceyx erithaca": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chalcoparia singalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chalcophaps indica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chamaeleo zeylanicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Charadrius hiaticula": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chelidorhynx hypoxanthus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chirixalus dudhwaensis": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Chiroptera": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chlidonias hybrida": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chlidonias leucopterus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chloris spinoides": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chloropsis aurifrons": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chloropsis hardwickii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chloropsis jerdoni": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Chloropsis moluccensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chroicocephalus brunnicephalus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chroicocephalus genei": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chroicocephalus ridibundus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chrysococcyx maculatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chrysococcyx xanthorhynchus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chrysocolaptes festivus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chrysocolaptes guttacristatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chrysocolaptes socialis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chrysomma altirostre": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chrysomma sinense": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Chrysopelea ornata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Chrysophlegma flavinucha": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ciconia ciconia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ciconia episcopus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Ciconia nigra": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cinclus pallasii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cinnyris asiaticus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Cinnyris lotenius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Circaetus gallicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Circus aeruginosus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Circus cyaneus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Circus macrourus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Circus melanoleucos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Circus pygargus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Circus spilonotus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cissa chinensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cisticola exilis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cisticola juncidis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Clamator coromandus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Clamator jacobinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Clanga clanga": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Clanga hastata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Clinotarsus curtipes": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Cnemaspis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cnemaspis mysoriensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cnemaspis umashaankeri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cochoa viridis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Coelognathus helena": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Coelognathus radiatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Columba elphinstonii": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Columba eversmanni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Columba hodgsonii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Columba leuconota": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Columba livia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Columba pulchricollis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Columba punicea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Copsychus fulicatus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Copsychus malabaricus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Copsychus saularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Coracias affinis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Coracias benghalensis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Coracias garrulus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Coracina javensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Coracina macei": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Corvus corax": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Corvus macrorhynchos": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Corvus splendens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Coturnix coromandelica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Coturnix coturnix": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Craspedocephalus anamallensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Craspedocephalus gramineus": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Craspedocephalus malabaricus": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Crocodylus palustris": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Crocodylus porosus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cuculus canorus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cuculus micropterus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cuculus poliocephalus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cuculus saturatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Culicicapa ceylonensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cuon alpinus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Curruca crassirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Curruca curruca": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Curruca nana": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cursorius coromandelicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cursorius cursor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cutia nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyanoderma chrysaeum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyanoderma pyrrhops": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyanoderma ruficeps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyanoderma rufifrons": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cynopterus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cynopterus sphinx": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyornis hainanus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyornis magnirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyornis pallidipes": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyornis poliogenys": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyornis rubeculoides": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyornis tickelliae": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyornis unicolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyornis whitei": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cypsiurus balasiensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Cyrtodactylus nebulosus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Daboia russelii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Delichon dasypus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Delichon nipalense": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Delichon urbicum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrelaphis biloreatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrelaphis cyanochloris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrelaphis proarchos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrelaphis tristis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrocitta formosae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrocitta frontalis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrocitta leucogastra": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrocitta vagabunda": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrocopos darjellensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrocopos himalayensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrocopos hyperythrus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrocopos macei": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrocoptes auriceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrocygna bicolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendrocygna javanica": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Dendronanthus indicus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicaeum concolor": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicaeum cruentatum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicaeum erythrorhynchos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicaeum ignipectus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicaeum minullum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicroglossinae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicrurus aeneus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicrurus annectens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicrurus caerulescens": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicrurus hottentottus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicrurus leucophaeus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicrurus macrocercus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicrurus paradiseus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Dicrurus remifer": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dinopium benghalense": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Dinopium javanense": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dinopium shorii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Draco dussumieri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dremomys lokriah": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dryobates cathpharius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dryocopus javensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ducula aenea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ducula badia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ducula cuprea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dumetia atriceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Dumetia hyperythra": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Duttaphrynus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Duttaphrynus melanostictus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Duttaphrynus scaber": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Duttaphrynus stuarti": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Echis carinatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Egretta garzetta": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Egretta gularis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Elachura formosa": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Elanus caeruleus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Elaphe hodgsoni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Emberiza bruniceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Emberiza buchanani": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Emberiza cia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Emberiza fucata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Emberiza hortulana": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Emberiza lathami": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Emberiza melanocephala": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Emberiza pusilla": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Emberiza rutila": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Emberiza spodocephala": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Emberiza stewarti": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Emberiza striolata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Enicurus immaculatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Enicurus leschenaulti": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Enicurus maculatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Enicurus schistaceus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Enicurus scouleri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ephippiorhynchus asiaticus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Equus asinus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Eremopterix griseus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Eremopterix nigriceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Erpornis zantholeuca": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Erythrogenys erythrogenys": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Erythrogenys hypoleucos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Eryx conicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Eryx johnii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Esacus recurvirostris": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Eublepharis satpuraensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Eudynamys scolopaceus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Eumyias albicaudatus": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Eumyias thalassinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Euodice malabarica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Euphlyctis adolfi": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Euphlyctis cyanophlyctis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Eurystomus orientalis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Eutropis allapallensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Eutropis carinata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Eutropis macularia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Eutropis trivittata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Falco amurensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Falco chicquera": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Falco columbarius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Falco jugger": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Falco naumanni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Falco peregrinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Falco severus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Falco subbuteo": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Falco tinnunculus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Fejervarya": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Fejervarya limnocharis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Felis catus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Felis chaus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula albicilla": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula erithacus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula hodgsoni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula hyperythra": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula nigrorufa": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula parva": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula ruficauda": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula sapphira": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula strophiata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula superciliaris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula tricolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula westermanni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ficedula zanthopygia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Firouzophrynus stomaticus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Fowlea piscator": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Francolinus francolinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Francolinus pictus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Fulica atra": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Fulvetta vinipectus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Funambulus palmarum": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Funambulus pennantii": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Funambulus tristriatus": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Galerida cristata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Galerida deva": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Galerida malabarica": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Gallicrex cinerea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gallinago gallinago": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Gallinago stenura": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gallinula chloropus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Galloperdix lunulata": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Galloperdix spadicea": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Gallus gallus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gallus sonneratii": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Gampsorhynchus rufulus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Garrulax leucolophus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Garrulax monileger": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Garrulus glandarius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Garrulus lanceolatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gazella bennettii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gecinulus grantia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gekko gecko": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gekkonidae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gelochelidon nilotica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Geochelone elegans": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Geokichla citrina": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Geokichla sibirica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gerbillinae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ghatixalus asterops": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Ghatixalus magnus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Glareola lactea": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Glareola maldivarum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Glareola pratincola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Glaucidium cuculoides": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Glaucidium radiatum": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Gloydius himalayanus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Golunda ellioti": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gorsachius melanolophus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gracula indica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gracula religiosa": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gracupica contra": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Graminicola bengalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Grammatoptila striata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Grus grus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Grus virgo": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gymnoris xanthocollis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Gypaetus barbatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gyps bengalensis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Gyps fulvus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Gyps himalayensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gyps indicus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Gyps tenuirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Gypsophila brevicaudata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Haematopus ostralegus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Halcyon coromanda": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Halcyon pileata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Halcyon smyrnensis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Haliaeetus albicilla": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Haliaeetus leucoryphus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Haliastur indus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Harpactes erythrocephalus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Harpactes fasciatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Helopsaltes certhiola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemicircus canente": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus brookii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus flaviviridis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus frenatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus giganteus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus graniticolus": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus kushmorensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus leschenaultii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus murrayi": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus parvimaculatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus platyurus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus triedrus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemidactylus whitakeri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemiechinus collaris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemiphyllodactylus jnana": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemiprocne coronata": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemipus picatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemitesia pallidipes": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemitragus jemlahicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hemixos flavala": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Herpetoreas platyceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Heterophasia capistrata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Heterophasia picaoides": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Heterophasia pulchella": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hieraaetus pennatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hierococcyx nisicolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hierococcyx sparverioides": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hierococcyx varius": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Himantopus himantopus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Hipposideros lankadiva": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hirundapus caudacutus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hirundapus cochinchinensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hirundapus giganteus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hirundo domicola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hirundo rustica": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Hirundo smithii": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Homo sapiens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hoolock hoolock": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hoplobatrachus crassus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hoplobatrachus tigerinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Horornis brunnescens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Horornis flavolivaceus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Horornis fortipes": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Houbaropsis bengalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hyaena hyaena": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hydrophasianus chirurgus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hydroprogne caspia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hydrornis nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hylarana": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Hylarana aurantiaca": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hylarana bahuvistara": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hylarana flavescens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hylarana leptoglossa": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hylopetes alboniger": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hypnale hypnale": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hypocolius ampelinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hypothymis azurea": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Hypsipetes ganeesa": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hypsipetes leucocephalus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hystrix": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Hystrix indica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ianthocincla ocellata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ibidorhyncha struthersii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ichthyaetus ichthyaetus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Icthyophaga humilis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Icthyophaga ichthyaetus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Icthyophaga leucogaster": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ictinaetus malaiensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Iduna caligata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Iduna rama": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Iguania": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Indicator xanthonotus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Indirana": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Indotyphlops braminus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Irena puella": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ithaginis cruentus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ixos mcclellandii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Japalura": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Jynx torquilla": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Kerivoula picta": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ketupa coromanda": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ketupa flavipes": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ketupa ketupu": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ketupa nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ketupa zeylonensis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Kurixalus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lalage melanoptera": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lalage melaschistos": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Lanius collurio": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lanius cristatus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Lanius excubitor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lanius isabellinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lanius phoenicuroides": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lanius schach": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Lanius tephronotus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lanius vittatus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Larus fuscus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Larus mongolicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Larvivora brunnea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Laudakia tuberculata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Leiopicus mahrattensis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Leioptila annectens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Leiothrix argentauris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Leiothrix lutea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Leptocoma minima": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Leptocoma zeylonica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Leptoptilos dubius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Leptoptilos javanicus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Lepus nigricollis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Leucogeranus leucogeranus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Leucoptilon concretum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Leucosticte nemoricola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lewinia striata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Limnodromus scolopaceus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Limnodromus semipalmatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Limosa lapponica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Limosa limosa": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Liocichla phoenicea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lioparus chrysotis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lissemys punctata": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Locustella davidi": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Locustella kashmirensis": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Locustella naevia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Locustella thoracica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lonchura atricapilla": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lonchura kelaarti": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lonchura malacca": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lonchura punctulata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lonchura striata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lophophanes dichrous": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lophospiza trivirgata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lophotriorchis kienerii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lophura leucomelanos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Loriculus vernalis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Loxia curvirostra": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Luscinia phaenicuroides": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Luscinia svecica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lutra": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lutra cinerea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lutra perspicillata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lycodon aulicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lycodon fasciolatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lycodon jara": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lycodon striatus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Lycodon travancoricus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lymnocryptes minimus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lyncornis macrotis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Lyroderma lyra": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Macaca arctoides": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Macaca assamensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Macaca mulatta": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Macaca radiata": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Machlolophus aplonotus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Machlolophus spilonotus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Machlolophus xanthogenys": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Macropygia unchall": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Malacocincla abbotti": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Manis crassicaudata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mareca falcata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mareca penelope": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mareca strepera": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Marmaronetta angustirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Martes flavigula": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Megaceryle lugubris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Megaderma spasma": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Megalurus palustris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Melanochelys tricarinata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Melanochelys trijuga": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Melanochlora sultanea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Melanocorypha bimaculata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mellivora capensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Melursus ursinus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Mergus merganser": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Merops apiaster": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Merops leschenaulti": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Merops orientalis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Merops persicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Merops philippinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Metopidius indicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Micrixalus adonis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Microcarbo niger": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Microhierax caerulescens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Microhierax melanoleucos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Microhyla nilphamariensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Microhyla ornata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Microhyla rubra": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Microhyla sholigari": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Microhylidae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Micropternus brachyurus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Microtarsus priocephalus": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Milvus migrans": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Minervarya": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Minervarya agricola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Minervarya brevipalmata": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Minla ignotincta": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mirafra javanica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mixornis gularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Monilesaurus ellioti": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Monilesaurus rouxii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Montecincla cachinnans": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Montecincla fairbanki": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Monticola cinclorhyncha": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Monticola rufiventris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Monticola solitarius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Moschiola indica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Motacilla alba": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Motacilla cinerea": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Motacilla citreola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Motacilla flava": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Motacilla maderaspatensis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Motacilla tschutschensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mulleripicus pulverulentus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Muntiacus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Muntiacus muntjak": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Muntiacus vaginalis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Murinae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Muroidea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mus booduga": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mus musculus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Muscicapa dauurica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Muscicapa muttui": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Muscicapa sibirica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Muscicapa striata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mycerobas affinis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mycerobas carnipes": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mycerobas icterioides": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mycerobas melanozanthos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Mycteria leucocephala": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Myiomela leucura": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Myophonus caeruleus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Myophonus horsfieldii": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Myzornis pyrrhoura": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Naemorhedus goral": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Naja kaouthia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Naja naja": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Napothera epilepidota": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Neofelis nebulosa": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Neophron percnopterus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Netta rufina": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Nettapus coromandelianus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Nilssonia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Nilssonia gangetica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Nilssonia hurum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Niltava grandis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Niltava macgrigoriae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Niltava sundara": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ninox scutulata": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Nisaetus cirrhatus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Nisaetus kelaarti": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Nisaetus nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Nucifraga hemispila": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Numenius arquata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Numenius phaeopus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Nyctibatrachus poocha": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Nycticebus bengalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Nycticorax nycticorax": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Nyctyornis athertoni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ocyceros birostris": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Oenanthe chrysopygia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Oenanthe deserti": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Oenanthe fusca": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Oenanthe isabellina": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Oenanthe picata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Oligodon arnensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Oligodon cinereus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Oligodon russelius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Oligodon taeniolatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Oligodon violaceus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Onychoprion fuscatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ophisops leschenaultii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Orcaella brevirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Oriolus chinensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Oriolus kundoo": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Oriolus tenuirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Oriolus traillii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Oriolus xanthornus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Orthotomus atrogularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Orthotomus sutorius": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Ortygornis gularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ortygornis pondicerianus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Otus bakkamoena": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Otus brucei": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Otus lettia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Otus spilocephalus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Otus sunia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pachycephala cinerea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pachyglossa agilis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Pachyglossa chrysorrhea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pachyglossa melanozantha": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Paguma larvata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pandion haliaetus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pangshura tecta": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pangshura tentoria": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Paradoxornis aemodius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Paradoxornis bakeri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Paradoxornis flavirostris": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Paradoxornis gularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Paradoxornis unicolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Paradoxurus hermaphroditus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Paradoxurus jerdoni": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Paraechinus micropus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pardofelis marmorata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Parus cinereus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Parus monticolus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Passer cinnamomeus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Passer domesticus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Passer hispaniolensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Passer montanus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Passer pyrrhonotus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pastor roseus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pavo cristatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pelargopsis amauroptera": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pelargopsis capensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pelecanus crispus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pelecanus onocrotalus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pelecanus philippensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pellorneum ruficeps": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Pellorneum tickelli": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Perdicula argoondah": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Perdicula asiatica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Perdicula erythrorhyncha": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Pericrocotus brevirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pericrocotus cinnamomeus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Pericrocotus divaricatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pericrocotus erythropygius": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Pericrocotus ethologus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pericrocotus flammeus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pericrocotus roseus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pericrocotus solaris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pericrocotus speciosus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Periparus ater": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Periparus rubidiventris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Periparus rufonuchalis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pernis ptilorhynchus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Petaurista albiventer": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Petaurista petaurista": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Petaurista philippensis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Petrochelidon fluvicola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phaenicophaeus tristis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phaenicophaeus viridirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phalacrocorax carbo": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phalacrocorax fuscicollis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phalaropus lobatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phodilus assimilis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phodilus badius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phoeniconaias minor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phoenicurus auroreus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phoenicurus coeruleocephala": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phoenicurus frontalis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phoenicurus fuliginosus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phoenicurus hodgsoni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phoenicurus leucocephalus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phoenicurus ochruros": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phoenicurus schisticeps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phrynoderma hexadactylum": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Phyllergates cucullatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus affinis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus burkii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus cantator": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus castaniceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus chloronotus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus collybita": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus fuligiventer": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus fuscatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus griseolus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus humei": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus inornatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus intermedius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus maculipennis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus magnirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus nitidus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus occipitalis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus poliogenys": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus pulcher": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus reguloides": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus subviridis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus trochiloides": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus tytleri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus whistleri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Phylloscopus xanthoschistos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Picumnus innominatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Picus canus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Picus chlorolophus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Picus squamatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Picus xanthopygaeus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pitta megarhyncha": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pitta sordida": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Platalea leucorodia": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Platyceps rhodorachis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Platyceps ventromaculatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Plegadis falcinellus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Plocealauda affinis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Plocealauda assamica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Plocealauda erythroptera": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Ploceus benghalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ploceus manyar": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ploceus philippinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pluvialis fulva": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pluvialis squatarola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pnoepyga albiventer": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pnoepyga immaculata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pnoepyga pusilla": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Podiceps cristatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Podiceps grisegena": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Podiceps nigricollis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Polypedates": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Polypedates maculatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Polypedates occidentalis": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Polypedates taeniatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Polypedates teraiensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Polyplectron bicalcaratum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pomatorhinus horsfieldii": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Pomatorhinus ochraceiceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pomatorhinus phayrei": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pomatorhinus ruficollis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pomatorhinus schisticeps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pomatorhinus superciliaris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Porphyrio poliocephalus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Porzana porzana": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Prinia buchanani": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Prinia crinigera": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Prinia flaviventris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Prinia hodgsonii": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Prinia inornata": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Prinia lepida": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Prinia rufescens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Prinia socialis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Prinia superciliaris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Prinia sylvatica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Prionailurus rubiginosus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Prionailurus viverrinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Procarduelis nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Prunella collaris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Prunella himalayana": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Prunella strophiata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psammodynastes pulverulentus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psammophilus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psammophilus blanfordanus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Psammophilus dorsalis": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Psammophis condanarus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psammophis longifrons": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psarisomus dalhousiae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pseudibis papillosa": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Pseudophilautus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pseudophilautus amboli": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Pseudophilautus wynaadensis": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Pseudoxenodon macrops": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psilopogon asiaticus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psilopogon cyanotis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psilopogon franklinii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psilopogon haemacephalus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Psilopogon lineatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psilopogon malabaricus": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Psilopogon virens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psilopogon viridis": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Psilopogon zeylanicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psittacula alexandri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psittacula columboides": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Psittacula cyanocephala": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Psittacula eupatria": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psittacula himalayana": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psittacula krameri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Psittacula roseata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pterocles exustus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pterocles indicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pterocles orientalis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pteropodidae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pteropus medius": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Pterorhinus albogularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pterorhinus delesserti": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Pterorhinus gularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pterorhinus pectoralis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pterorhinus ruficollis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pterorhinus sannio": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pteruthius aeralatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pteruthius melanotis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pteruthius rufiventer": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pteruthius xanthochlorus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ptyas mucosa": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ptyctolaemus gularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ptyonoprogne concolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ptyonoprogne rupestris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pucrasia macrolopha": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pycnonotus cafer": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pycnonotus jocosus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pycnonotus leucogenys": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pycnonotus leucotis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pycnonotus luteolus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pyrrhocorax graculus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pyrrhoplectes epauletta": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pyrrhula erythrocephala": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Pyrrhula nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Python bivittatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Python molurus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rallina eurizonoides": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rallus aquaticus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rallus indicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ranidae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Raorchestes": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Raorchestes honnametti": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Raorchestes jayarami": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rattus rattus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ratufa bicolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ratufa indica": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Recurvirostra avosetta": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Regulus regulus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rhabdophis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rhabdophis himalayanus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rhabdophis plumbicolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rhacophorus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rhacophorus malabaricus": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Rhinolophus lepidus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rhinolophus rouxii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rhipidura albicollis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rhipidura albogularis": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Rhipidura aureola": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Rhyticeros undulatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Riopa": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Riopa albopunctata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Riopa guentheri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Riopa punctata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Riparia chinensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Riparia diluta": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Riparia riparia": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rostratula benghalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rousettus leschenaultii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rubigula flaviventris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rubigula gularis": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Rusa unicolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Rynchops albicollis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Salea anamallayana": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Salpornis spilonota": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Sarcogyps calvus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Sarkidiornis melanotos": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Saroglossa spilopterus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sasia ochracea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Saxicola caprata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Saxicola ferreus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Saxicola insignis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Saxicola leucurus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Saxicola macrorhynchus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Saxicola maurus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Schoenicola platyurus": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Schoenicola striatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Schoeniparus castaneceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Schoeniparus dubius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Schoeniparus rufogularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Scolopax rusticola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Scotophilus heathii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Semnopithecus entellus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Semnopithecus hector": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Semnopithecus hypoleucos": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Semnopithecus johnii": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Semnopithecus priam": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Semnopithecus schistaceus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Serilophus rubropygius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sholicola albiventris": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Sibirionetta formosa": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sibynophis sagittarius": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sibynophis subpunctatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sitana ponticeriana": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sitana spinaecephalus": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Sitana sushili": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Sitta castanea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sitta cinnamoventris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sitta formosa": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sitta frontalis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sitta himalayensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Smithophis arunachalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Soricidae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Spatula clypeata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Spatula querquedula": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Spelaeornis caudatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sphaerotheca": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sphaerotheca breviceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sphaerotheca maskeyi": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sphenomorphus indicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Spilopelia chinensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Spilopelia senegalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Spilornis cheela": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Spodiopsar cineraceus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Spodiopsar sericeus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Stachyris nigriceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Stachyris oglei": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Staphida castaniceps": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sterna acuticauda": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Sterna aurantia": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Sterna hirundo": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sternula albifrons": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Streptopelia decaocto": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Streptopelia orientalis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Streptopelia tranquebarica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Strix leptogrammica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Strix nivicolum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Strix ocellata": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Sturnia blythii": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Sturnia malabarica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sturnia pagodarum": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Sturnus vulgaris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Suncus murinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Surniculus dicruroides": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Surniculus lugubris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sus scrofa": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Suthora atrosuperciliaris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Suthora fulvifrons": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Suthora nipalensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Sylviparus modestus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Synoicus chinensis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Taccocua leschenaultii": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Tachybaptus ruficollis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Tachymarptis melba": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tachyspiza badia": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Tachyspiza virgata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tadorna ferruginea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tadorna tadorna": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Taenioptynx brodiei": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Takydromus sexlineatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tamiops mcclellandii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tarsiger chrysaeus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tarsiger cyanurus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tarsiger hyperythrus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tarsiger indicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tarsiger rufilatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tatera indica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tephrodornis pondicerianus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Tephrodornis sylvicola": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Tephrodornis virgatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Terpsiphone affinis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Terpsiphone paradisi": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tesia cyaniventer": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tesia olivea": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tetracerus quadricornis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Thalasseus bergii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Thinornis dubius": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Thinornis placidus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Threskiornis melanocephalus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Tichodroma muraria": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tickellia hodgsoni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Timalia pileata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Todiramphus chloris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Trachischium": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Trachypithecus pileatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tragopan melanocephalus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tragopan satyra": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Treron affinis": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Treron apicauda": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Treron bicinctus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Treron curvirostra": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Treron phayrei": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Treron phoenicopterus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Treron sphenurus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Trimeresurus erythrurus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Trimeresurus salazar": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tringa erythropus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tringa glareola": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Tringa nebularia": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Tringa ochropus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Tringa stagnatilis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tringa totanus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Trochalopteron affine": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Trochalopteron erythrocephalum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Trochalopteron lineatum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Trochalopteron squamatum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Trochalopteron subunicolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Trochalopteron variegatum": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Troglodytes troglodytes": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tupaia belangeri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turdus albocinctus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turdus atrogularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turdus boulboul": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turdus dissimilis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turdus eunomus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turdus obscurus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turdus rubrocanus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turdus ruficollis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turdus simillimus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turdus unicolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turnix suscitator": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turnix sylvaticus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Turnix tanki": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Typhlopidae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Tyto javanica": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Uperodon globulosus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Uperodon systoma": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Uperodon taprobanicus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Uperodon variegatus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Upupa epops": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Urocissa erythroryncha": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Urocissa flavirostris": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Uropeltis ellioti": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Uropeltis maculata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ursus arctos": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Ursus thibetanus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Urva auropunctata": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Urva edwardsii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Urva fusca": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Urva smithii": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Urva urva": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Urva vitticollis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Vandeleuria oleraceus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Vanellus cinereus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Vanellus duvaucelii": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Vanellus indicus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Vanellus leucurus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Vanellus malabaricus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Vanellus vanellus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Varanus bengalensis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Varanus flavescens": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Varanus salvator": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Vespertilionidae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Vespertilioninae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Viverra zibetha": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Viverricula indica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Viverridae": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Vulpes bengalensis": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Vulpes vulpes": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Xenus cinereus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Yuhina bakeri": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Yuhina flavicollis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Yuhina gularis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Yuhina nigrimenta": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Yuhina occipitalis": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Yungipicus canicapillus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Yungipicus nanus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Zapornia akool": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Zapornia bicolor": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Zapornia fusca": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Zapornia parva": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Zapornia pusilla": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Zhangixalus smaragdinus": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Zoonavena sylvatica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Zoothera dauma": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Zoothera dixoni": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Zoothera mollissima": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Zoothera monticola": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Zoothera neilgherriensis": {
+    "endemic": "yes",
+    "lastChecked": "2026-07-09"
+  },
+  "Zoothera salimalii": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  },
+  "Zosterops palpebrosus": {
+    "endemic": "no",
+    "lastChecked": "2026-07-09"
+  },
+  "Panthera leo persica": {
+    "endemic": "unknown",
+    "lastChecked": "2026-07-09"
+  }
+}

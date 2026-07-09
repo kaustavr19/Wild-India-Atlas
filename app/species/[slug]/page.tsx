@@ -1,4 +1,4 @@
-import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Camera, Compass, ShieldAlert } from "lucide-react"; import { species, getSpeciesBySlug } from "@/data/species"; import { hotspots } from "@/data/hotspots"; import { hotspotsForSpecies, bestMonthsForSpecies } from "@/lib/speciesLinks"; import { HotspotCard } from "@/components/HotspotCard"; import { SpeciesCard } from "@/components/SpeciesCard"; import { SpeciesImage } from "@/components/SpeciesImage"; import { EmptyState } from "@/components/EmptyState"; import { getExtendedSpecies, getExtendedSpeciesBySlug } from "@/lib/extendedSpecies"; import { ExtendedSpeciesProfile } from "@/components/ExtendedSpeciesProfile";
+import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Camera, Compass, ShieldAlert } from "lucide-react"; import { species, getSpeciesBySlug } from "@/data/species"; import { hotspots } from "@/data/hotspots"; import { hotspotsForSpecies, bestMonthsForSpecies } from "@/lib/speciesLinks"; import { HotspotCard } from "@/components/HotspotCard"; import { SpeciesCard } from "@/components/SpeciesCard"; import { SpeciesImage } from "@/components/SpeciesImage"; import { EmptyState } from "@/components/EmptyState"; import { getExtendedSpecies, getExtendedSpeciesBySlug } from "@/lib/extendedSpecies"; import { ExtendedSpeciesProfile } from "@/components/ExtendedSpeciesProfile"; import { indiaSpecialities } from "@/data/indiaSpecialities"; import { SpecialityBadges } from "@/components/SpecialityBadges";
 
 const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
@@ -34,6 +34,7 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
   const matchedHotspots = hotspotsForSpecies(sp, hotspots);
   const bestMonths = bestMonthsForSpecies(sp, hotspots);
   const similar = sp.similarSpeciesSlugs.map(getSpeciesBySlug).filter(Boolean);
+  const speciality = indiaSpecialities[sp.scientificName];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -53,6 +54,7 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
         <div className="mt-5 flex flex-wrap items-center gap-2">
           <span className="rounded-sm bg-forest-700 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-white">{sp.category}</span>
           <span className="rounded-sm border border-white/30 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-white/90">Sighting: {sp.difficultyOfSighting}</span>
+          {speciality && <SpecialityBadges endemic={speciality.endemic === "yes"} iconic={speciality.iconic} />}
         </div>
         <h1 className="mt-4 max-w-4xl text-5xl font-semibold">{sp.commonName}</h1>
         <p className="mt-2 max-w-3xl text-lg italic text-white/70">{sp.scientificName}</p>
