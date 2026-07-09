@@ -2,12 +2,15 @@ import Link from "next/link";
 import { MapPin } from "lucide-react";
 import type { ExtendedSpecies } from "@/lib/extendedSpecies";
 import { formatVerifiedDate } from "@/lib/formatDate";
+import { indiaSpecialities } from "@/data/indiaSpecialities";
+import { SpecialityBadges } from "./SpecialityBadges";
 
 // Deliberately distinct from the Flagship species profile (app/species/[slug]/page.tsx) — no
 // viewingTips/photographyTips/similarSpecies sections, since that data doesn't exist for an
 // auto-derived Extended entry. Rendering an empty section or invented tips would misrepresent
 // this as curated content when it's really a grouped citizen-science record.
 export function ExtendedSpeciesProfile({ species }: { species: ExtendedSpecies }) {
+  const speciality = indiaSpecialities[species.scientificName];
   return (
     <main>
       <section className={"relative flex min-h-[280px] items-end overflow-hidden px-4 pb-10 pt-28 text-white sm:px-6 " + (species.photoUrl ? "" : "bg-forest-900")}>
@@ -22,6 +25,7 @@ export function ExtendedSpeciesProfile({ species }: { species: ExtendedSpecies }
           <div className="mt-5 flex flex-wrap items-center gap-2">
             <span className="rounded-sm bg-forest-700 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-white">{species.iconicGroup}</span>
             <span className="rounded-sm border border-white/30 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-white/90">via {species.source}</span>
+            {speciality && <SpecialityBadges endemic={speciality.endemic === "yes"} iconic={speciality.iconic} />}
           </div>
           <h1 className="mt-4 max-w-4xl text-5xl font-semibold">{species.commonName}</h1>
           <p className="mt-2 max-w-3xl text-lg italic text-white/70">{species.scientificName}</p>

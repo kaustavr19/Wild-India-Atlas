@@ -1,0 +1,2901 @@
+{
+  "Panthera tigris tigris": {
+    "taxonId": 130793
+  },
+  "Panthera leo persica": {
+    "unresolved": true,
+    "reason": "no-exact-match"
+  },
+  "Panthera pardus fusca": {
+    "taxonId": 372505
+  },
+  "Panthera uncia": {
+    "taxonId": 74831
+  },
+  "Gavialis gangeticus": {
+    "taxonId": 116523
+  },
+  "Equus hemionus khur": {
+    "taxonId": 495825
+  },
+  "Ailurus fulgens": {
+    "taxonId": 41653
+  },
+  "Ardeotis nigriceps": {
+    "taxonId": 114
+  },
+  "Antigone antigone": {
+    "taxonId": 508056
+  },
+  "Phoenicopterus roseus": {
+    "taxonId": 73222
+  },
+  "Pitta brachyura": {
+    "taxonId": 14388
+  },
+  "Ocyceros griseus": {
+    "taxonId": 5538
+  },
+  "Lophophorus impejanus": {
+    "taxonId": 1175
+  },
+  "Lepidochelys olivacea": {
+    "taxonId": 39670
+  },
+  "Nilgiritragus hylocrius": {
+    "taxonId": 74772
+  },
+  "Macaca silenus": {
+    "taxonId": 43446
+  },
+  "Acinonyx jubatus venaticus": {
+    "taxonId": 147527
+  },
+  "Abroscopus albogularis": {
+    "taxonId": 116786
+  },
+  "Abroscopus schisticeps": {
+    "taxonId": 116787
+  },
+  "Abroscopus superciliaris": {
+    "taxonId": 116788
+  },
+  "Accipiter nisus": {
+    "taxonId": 5106
+  },
+  "Aceros nipalensis": {
+    "taxonId": 5523
+  },
+  "Acridotheres fuscus": {
+    "taxonId": 14869
+  },
+  "Acridotheres ginginianus": {
+    "taxonId": 14874
+  },
+  "Acridotheres grandis": {
+    "taxonId": 14870
+  },
+  "Acridotheres tristis": {
+    "taxonId": 204454
+  },
+  "Acritillas indica": {
+    "taxonId": 495192
+  },
+  "Acrocephalus agricola": {
+    "taxonId": 116791
+  },
+  "Acrocephalus dumetorum": {
+    "taxonId": 116797
+  },
+  "Acrocephalus melanopogon": {
+    "taxonId": 116799
+  },
+  "Acrocephalus stentoreus": {
+    "taxonId": 116806
+  },
+  "Actinodura cyanouroptera": {
+    "taxonId": 339876
+  },
+  "Actinodura egertoni": {
+    "taxonId": 15467
+  },
+  "Actinodura nipalensis": {
+    "taxonId": 15466
+  },
+  "Actinodura strigula": {
+    "taxonId": 339877
+  },
+  "Actitis hypoleucos": {
+    "taxonId": 3978
+  },
+  "Aegithalos concinnus": {
+    "taxonId": 7277
+  },
+  "Aegithalos iouschistos": {
+    "taxonId": 7279
+  },
+  "Aegithalos niveogularis": {
+    "taxonId": 7276
+  },
+  "Aegithina nigrolutea": {
+    "taxonId": 7940
+  },
+  "Aegithina tiphia": {
+    "taxonId": 7938
+  },
+  "Aegypius monachus": {
+    "taxonId": 5382
+  },
+  "Aerodramus brevirostris": {
+    "taxonId": 339933
+  },
+  "Aerodramus unicolor": {
+    "taxonId": 144609
+  },
+  "Aethopyga gouldiae": {
+    "taxonId": 13418
+  },
+  "Aethopyga ignicauda": {
+    "taxonId": 13419
+  },
+  "Aethopyga nipalensis": {
+    "taxonId": 13417
+  },
+  "Aethopyga saturata": {
+    "taxonId": 13416
+  },
+  "Aethopyga siparaja": {
+    "taxonId": 204458
+  },
+  "Agraphospiza rubescens": {
+    "taxonId": 558598
+  },
+  "Alaemon alaudipes": {
+    "taxonId": 7353
+  },
+  "Alauda gulgula": {
+    "taxonId": 7350
+  },
+  "Alaudala raytal": {
+    "taxonId": 546380
+  },
+  "Alcedo atthis": {
+    "taxonId": 2599
+  },
+  "Alcedo hercules": {
+    "taxonId": 2610
+  },
+  "Alcedo meninting": {
+    "taxonId": 2562
+  },
+  "Alcippe nipalensis": {
+    "taxonId": 15115
+  },
+  "Alcippe poioicephala": {
+    "taxonId": 15118
+  },
+  "Alcurus striatus": {
+    "taxonId": 1506129
+  },
+  "Alophoixus flaveolus": {
+    "taxonId": 14629
+  },
+  "Amandava amandava": {
+    "taxonId": 13959
+  },
+  "Amaurornis phoenicurus": {
+    "taxonId": 199
+  },
+  "Ammomanes deserti": {
+    "taxonId": 7384
+  },
+  "Ammomanes phoenicura": {
+    "taxonId": 72495
+  },
+  "Ampeliceps coronatus": {
+    "taxonId": 15007
+  },
+  "Anarhynchus alexandrinus": {
+    "taxonId": 1505620
+  },
+  "Anarhynchus atrifrons": {
+    "taxonId": 1505780
+  },
+  "Anarhynchus leschenaultii": {
+    "taxonId": 1505629
+  },
+  "Anas acuta": {
+    "taxonId": 6933
+  },
+  "Anas crecca": {
+    "taxonId": 6937
+  },
+  "Anas platyrhynchos": {
+    "taxonId": 6930
+  },
+  "Anas poecilorhyncha": {
+    "taxonId": 6925
+  },
+  "Anas zonorhyncha": {
+    "taxonId": 72504
+  },
+  "Anastomus oscitans": {
+    "taxonId": 4775
+  },
+  "Anhinga melanogaster": {
+    "taxonId": 5062
+  },
+  "Anorrhinus austeni": {
+    "taxonId": 72505
+  },
+  "Anser albifrons": {
+    "taxonId": 7019
+  },
+  "Anser anser": {
+    "taxonId": 7018
+  },
+  "Anser erythropus": {
+    "taxonId": 7013
+  },
+  "Anser indicus": {
+    "taxonId": 7008
+  },
+  "Anthracoceros albirostris": {
+    "taxonId": 5551
+  },
+  "Anthracoceros coronatus": {
+    "taxonId": 5555
+  },
+  "Anthus campestris": {
+    "taxonId": 13712
+  },
+  "Anthus godlewskii": {
+    "taxonId": 13737
+  },
+  "Anthus hodgsoni": {
+    "taxonId": 13724
+  },
+  "Anthus nilghiriensis": {
+    "taxonId": 13744
+  },
+  "Anthus richardi": {
+    "taxonId": 13726
+  },
+  "Anthus roseatus": {
+    "taxonId": 13731
+  },
+  "Anthus rufulus": {
+    "taxonId": 13709
+  },
+  "Anthus similis": {
+    "taxonId": 204463
+  },
+  "Anthus spinoletta": {
+    "taxonId": 13713
+  },
+  "Anthus trivialis": {
+    "taxonId": 13711
+  },
+  "Apus affinis": {
+    "taxonId": 6612
+  },
+  "Apus leuconyx": {
+    "taxonId": 144637
+  },
+  "Apus nipalensis": {
+    "taxonId": 6633
+  },
+  "Aquila chrysaetos": {
+    "taxonId": 5074
+  },
+  "Aquila fasciata": {
+    "taxonId": 144467
+  },
+  "Aquila heliaca": {
+    "taxonId": 5071
+  },
+  "Aquila nipalensis": {
+    "taxonId": 5083
+  },
+  "Aquila rapax": {
+    "taxonId": 5079
+  },
+  "Arachnothera longirostra": {
+    "taxonId": 202484
+  },
+  "Arachnothera magna": {
+    "taxonId": 13432
+  },
+  "Arborophila atrogularis": {
+    "taxonId": 750
+  },
+  "Arborophila torqueola": {
+    "taxonId": 781
+  },
+  "Ardea alba": {
+    "taxonId": 144455
+  },
+  "Ardea cinerea": {
+    "taxonId": 4954
+  },
+  "Ardea coromanda": {
+    "taxonId": 1585373
+  },
+  "Ardea goliath": {
+    "taxonId": 4969
+  },
+  "Ardea insignis": {
+    "taxonId": 4970
+  },
+  "Ardea intermedia": {
+    "taxonId": 558445
+  },
+  "Ardea purpurea": {
+    "taxonId": 4951
+  },
+  "Ardeola grayii": {
+    "taxonId": 4993
+  },
+  "Arenaria interpres": {
+    "taxonId": 3938
+  },
+  "Argya affinis": {
+    "taxonId": 1289422
+  },
+  "Argya caudata": {
+    "taxonId": 1289417
+  },
+  "Argya earlei": {
+    "taxonId": 1289414
+  },
+  "Argya longirostris": {
+    "taxonId": 1289426
+  },
+  "Argya malcolmi": {
+    "taxonId": 1289428
+  },
+  "Argya striata": {
+    "taxonId": 1289423
+  },
+  "Argya subrufa": {
+    "taxonId": 1289425
+  },
+  "Artamus fuscus": {
+    "taxonId": 8079
+  },
+  "Arundinax aedon": {
+    "taxonId": 793194
+  },
+  "Asio flammeus": {
+    "taxonId": 20315
+  },
+  "Astur gentilis": {
+    "taxonId": 1579015
+  },
+  "Athene blewitti": {
+    "taxonId": 144596
+  },
+  "Athene brama": {
+    "taxonId": 20012
+  },
+  "Aviceda jerdoni": {
+    "taxonId": 5264
+  },
+  "Aviceda leuphotes": {
+    "taxonId": 5262
+  },
+  "Aythya baeri": {
+    "taxonId": 7053
+  },
+  "Aythya ferina": {
+    "taxonId": 7045
+  },
+  "Aythya fuligula": {
+    "taxonId": 7046
+  },
+  "Aythya marila": {
+    "taxonId": 7047
+  },
+  "Aythya nyroca": {
+    "taxonId": 7055
+  },
+  "Batrachostomus hodgsoni": {
+    "taxonId": 19688
+  },
+  "Batrachostomus moniliger": {
+    "taxonId": 19687
+  },
+  "Blythipicus pyrrhotis": {
+    "taxonId": 18430
+  },
+  "Botaurus cinnamomeus": {
+    "taxonId": 1583070
+  },
+  "Botaurus flavicollis": {
+    "taxonId": 1583069
+  },
+  "Botaurus minutus": {
+    "taxonId": 1578961
+  },
+  "Botaurus sinensis": {
+    "taxonId": 1583066
+  },
+  "Botaurus stellaris": {
+    "taxonId": 5033
+  },
+  "Brachypteryx cruralis": {
+    "taxonId": 979630
+  },
+  "Brachypteryx hyperythra": {
+    "taxonId": 12934
+  },
+  "Brachypteryx leucophris": {
+    "taxonId": 523002
+  },
+  "Branta ruficollis": {
+    "taxonId": 7102
+  },
+  "Bucanetes githagineus": {
+    "taxonId": 72572
+  },
+  "Buceros bicornis": {
+    "taxonId": 5536
+  },
+  "Bulweria fallax": {
+    "taxonId": 4132
+  },
+  "Burhinus indicus": {
+    "taxonId": 144482
+  },
+  "Butastur teesa": {
+    "taxonId": 5375
+  },
+  "Buteo buteo": {
+    "taxonId": 204472
+  },
+  "Buteo refectus": {
+    "taxonId": 512768
+  },
+  "Buteo rufinus": {
+    "taxonId": 5192
+  },
+  "Butorides atricapilla": {
+    "taxonId": 1636180
+  },
+  "Cacomantis merulinus": {
+    "taxonId": 1856
+  },
+  "Cacomantis passerinus": {
+    "taxonId": 96386
+  },
+  "Cacomantis sonneratii": {
+    "taxonId": 1827
+  },
+  "Cairina moschata": {
+    "taxonId": 7120
+  },
+  "Calandrella acutirostris": {
+    "taxonId": 7391
+  },
+  "Calandrella brachydactyla": {
+    "taxonId": 578093
+  },
+  "Calandrella dukhunensis": {
+    "taxonId": 558522
+  },
+  "Calidris alba": {
+    "taxonId": 3849
+  },
+  "Calidris alpina": {
+    "taxonId": 3857
+  },
+  "Calidris falcinellus": {
+    "taxonId": 339594
+  },
+  "Calidris ferruginea": {
+    "taxonId": 3863
+  },
+  "Calidris minuta": {
+    "taxonId": 3838
+  },
+  "Calidris pugnax": {
+    "taxonId": 339593
+  },
+  "Calidris temminckii": {
+    "taxonId": 3837
+  },
+  "Calidris tenuirostris": {
+    "taxonId": 3852
+  },
+  "Calliope calliope": {
+    "taxonId": 145064
+  },
+  "Calliope pectoralis": {
+    "taxonId": 564057
+  },
+  "Calliope tschebaiewi": {
+    "taxonId": 558546
+  },
+  "Caprimulgus affinis": {
+    "taxonId": 19466
+  },
+  "Caprimulgus asiaticus": {
+    "taxonId": 19455
+  },
+  "Caprimulgus atripennis": {
+    "taxonId": 19509
+  },
+  "Caprimulgus indicus": {
+    "taxonId": 19404
+  },
+  "Caprimulgus jotaka": {
+    "taxonId": 367509
+  },
+  "Caprimulgus macrurus": {
+    "taxonId": 204476
+  },
+  "Caprimulgus mahrattensis": {
+    "taxonId": 19391
+  },
+  "Carduelis caniceps": {
+    "taxonId": 1584584
+  },
+  "Carpodacus edwardsii": {
+    "taxonId": 9653
+  },
+  "Carpodacus erythrinus": {
+    "taxonId": 9639
+  },
+  "Carpodacus rodochroa": {
+    "taxonId": 72614
+  },
+  "Carpodacus rodopeplus": {
+    "taxonId": 72613
+  },
+  "Carpodacus subhimachalus": {
+    "taxonId": 558597
+  },
+  "Carpodacus thura": {
+    "taxonId": 204478
+  },
+  "Carpospiza brachydactyla": {
+    "taxonId": 145330
+  },
+  "Cecropis daurica": {
+    "taxonId": 144792
+  },
+  "Centropus bengalensis": {
+    "taxonId": 1644
+  },
+  "Centropus sinensis": {
+    "taxonId": 1677
+  },
+  "Cephalopyrus flammiceps": {
+    "taxonId": 13684
+  },
+  "Cercotrichas galactotes": {
+    "taxonId": 145026
+  },
+  "Certhia discolor": {
+    "taxonId": 7460
+  },
+  "Certhia himalayana": {
+    "taxonId": 7461
+  },
+  "Certhia hodgsoni": {
+    "taxonId": 97090
+  },
+  "Certhia nipalensis": {
+    "taxonId": 7459
+  },
+  "Ceryle rudis": {
+    "taxonId": 2662
+  },
+  "Cettia brunnifrons": {
+    "taxonId": 116856
+  },
+  "Cettia castaneocoronata": {
+    "taxonId": 339700
+  },
+  "Cettia major": {
+    "taxonId": 116862
+  },
+  "Ceyx erithaca": {
+    "taxonId": 850880
+  },
+  "Chalcoparia singalensis": {
+    "taxonId": 145118
+  },
+  "Chalcophaps indica": {
+    "taxonId": 508097
+  },
+  "Charadrius hiaticula": {
+    "taxonId": 4801
+  },
+  "Chelidorhynx hypoxanthus": {
+    "taxonId": 793144
+  },
+  "Chlidonias hybrida": {
+    "taxonId": 62148
+  },
+  "Chlidonias leucopterus": {
+    "taxonId": 4514
+  },
+  "Chloris spinoides": {
+    "taxonId": 145358
+  },
+  "Chloropsis aurifrons": {
+    "taxonId": 12007
+  },
+  "Chloropsis hardwickii": {
+    "taxonId": 12006
+  },
+  "Chloropsis jerdoni": {
+    "taxonId": 72667
+  },
+  "Chloropsis moluccensis": {
+    "taxonId": 1506947
+  },
+  "Chroicocephalus brunnicephalus": {
+    "taxonId": 144511
+  },
+  "Chroicocephalus genei": {
+    "taxonId": 144501
+  },
+  "Chroicocephalus ridibundus": {
+    "taxonId": 144510
+  },
+  "Chrysococcyx maculatus": {
+    "taxonId": 1728
+  },
+  "Chrysococcyx xanthorhynchus": {
+    "taxonId": 1720
+  },
+  "Chrysocolaptes festivus": {
+    "taxonId": 18418
+  },
+  "Chrysocolaptes guttacristatus": {
+    "taxonId": 201081
+  },
+  "Chrysocolaptes socialis": {
+    "taxonId": 1507447
+  },
+  "Chrysomma altirostre": {
+    "taxonId": 15668
+  },
+  "Chrysomma sinense": {
+    "taxonId": 15670
+  },
+  "Chrysophlegma flavinucha": {
+    "taxonId": 793107
+  },
+  "Ciconia ciconia": {
+    "taxonId": 4733
+  },
+  "Ciconia episcopus": {
+    "taxonId": 4738
+  },
+  "Ciconia nigra": {
+    "taxonId": 4736
+  },
+  "Cinclus pallasii": {
+    "taxonId": 7642
+  },
+  "Cinnyris asiaticus": {
+    "taxonId": 145193
+  },
+  "Cinnyris lotenius": {
+    "taxonId": 145203
+  },
+  "Circaetus gallicus": {
+    "taxonId": 5242
+  },
+  "Circus aeruginosus": {
+    "taxonId": 5173
+  },
+  "Circus cyaneus": {
+    "taxonId": 559064
+  },
+  "Circus macrourus": {
+    "taxonId": 5178
+  },
+  "Circus melanoleucos": {
+    "taxonId": 5169
+  },
+  "Circus pygargus": {
+    "taxonId": 5167
+  },
+  "Circus spilonotus": {
+    "taxonId": 979659
+  },
+  "Cissa chinensis": {
+    "taxonId": 8510
+  },
+  "Cisticola exilis": {
+    "taxonId": 7657
+  },
+  "Cisticola juncidis": {
+    "taxonId": 7697
+  },
+  "Clamator coromandus": {
+    "taxonId": 1788
+  },
+  "Clamator jacobinus": {
+    "taxonId": 1789
+  },
+  "Clanga clanga": {
+    "taxonId": 201035
+  },
+  "Clanga hastata": {
+    "taxonId": 201034
+  },
+  "Cochoa viridis": {
+    "taxonId": 12920
+  },
+  "Columba elphinstonii": {
+    "taxonId": 3042
+  },
+  "Columba eversmanni": {
+    "taxonId": 3015
+  },
+  "Columba hodgsonii": {
+    "taxonId": 3076
+  },
+  "Columba leuconota": {
+    "taxonId": 3045
+  },
+  "Columba livia": {
+    "taxonId": 3017
+  },
+  "Columba pulchricollis": {
+    "taxonId": 3044
+  },
+  "Columba punicea": {
+    "taxonId": 3028
+  },
+  "Copsychus fulicatus": {
+    "taxonId": 145031
+  },
+  "Copsychus malabaricus": {
+    "taxonId": 204490
+  },
+  "Copsychus saularis": {
+    "taxonId": 204491
+  },
+  "Coracias affinis": {
+    "taxonId": 485365
+  },
+  "Coracias benghalensis": {
+    "taxonId": 979665
+  },
+  "Coracias garrulus": {
+    "taxonId": 2266
+  },
+  "Coracina javensis": {
+    "taxonId": 7955
+  },
+  "Coracina macei": {
+    "taxonId": 7957
+  },
+  "Corvus corax": {
+    "taxonId": 8010
+  },
+  "Corvus macrorhynchos": {
+    "taxonId": 8026
+  },
+  "Corvus splendens": {
+    "taxonId": 8031
+  },
+  "Coturnix coromandelica": {
+    "taxonId": 803
+  },
+  "Coturnix coturnix": {
+    "taxonId": 804
+  },
+  "Cuculus canorus": {
+    "taxonId": 1907
+  },
+  "Cuculus micropterus": {
+    "taxonId": 1904
+  },
+  "Cuculus poliocephalus": {
+    "taxonId": 1902
+  },
+  "Cuculus saturatus": {
+    "taxonId": 1899
+  },
+  "Culicicapa ceylonensis": {
+    "taxonId": 116875
+  },
+  "Curruca crassirostris": {
+    "taxonId": 1289479
+  },
+  "Curruca curruca": {
+    "taxonId": 1289484
+  },
+  "Curruca nana": {
+    "taxonId": 1289477
+  },
+  "Cursorius coromandelicus": {
+    "taxonId": 4599
+  },
+  "Cursorius cursor": {
+    "taxonId": 4595
+  },
+  "Cutia nipalensis": {
+    "taxonId": 15327
+  },
+  "Cyanoderma chrysaeum": {
+    "taxonId": 339779
+  },
+  "Cyanoderma pyrrhops": {
+    "taxonId": 339783
+  },
+  "Cyanoderma ruficeps": {
+    "taxonId": 339784
+  },
+  "Cyanoderma rufifrons": {
+    "taxonId": 339786
+  },
+  "Cyornis hainanus": {
+    "taxonId": 12858
+  },
+  "Cyornis magnirostris": {
+    "taxonId": 98876
+  },
+  "Cyornis pallidipes": {
+    "taxonId": 793242
+  },
+  "Cyornis poliogenys": {
+    "taxonId": 12860
+  },
+  "Cyornis rubeculoides": {
+    "taxonId": 578349
+  },
+  "Cyornis tickelliae": {
+    "taxonId": 979677
+  },
+  "Cyornis unicolor": {
+    "taxonId": 12844
+  },
+  "Cyornis whitei": {
+    "taxonId": 1286868
+  },
+  "Cypsiurus balasiensis": {
+    "taxonId": 6676
+  },
+  "Delichon dasypus": {
+    "taxonId": 11876
+  },
+  "Delichon nipalense": {
+    "taxonId": 72795
+  },
+  "Delichon urbicum": {
+    "taxonId": 64705
+  },
+  "Dendrocitta formosae": {
+    "taxonId": 8306
+  },
+  "Dendrocitta frontalis": {
+    "taxonId": 8309
+  },
+  "Dendrocitta leucogastra": {
+    "taxonId": 8308
+  },
+  "Dendrocitta vagabunda": {
+    "taxonId": 8305
+  },
+  "Dendrocopos darjellensis": {
+    "taxonId": 17926
+  },
+  "Dendrocopos himalayensis": {
+    "taxonId": 17939
+  },
+  "Dendrocopos hyperythrus": {
+    "taxonId": 72799
+  },
+  "Dendrocopos macei": {
+    "taxonId": 17996
+  },
+  "Dendrocoptes auriceps": {
+    "taxonId": 792979
+  },
+  "Dendrocygna bicolor": {
+    "taxonId": 6899
+  },
+  "Dendrocygna javanica": {
+    "taxonId": 6891
+  },
+  "Dendronanthus indicus": {
+    "taxonId": 14146
+  },
+  "Dicaeum concolor": {
+    "taxonId": 204501
+  },
+  "Dicaeum cruentatum": {
+    "taxonId": 13386
+  },
+  "Dicaeum erythrorhynchos": {
+    "taxonId": 13380
+  },
+  "Dicaeum ignipectus": {
+    "taxonId": 72808
+  },
+  "Dicaeum minullum": {
+    "taxonId": 145115
+  },
+  "Dicrurus aeneus": {
+    "taxonId": 8265
+  },
+  "Dicrurus annectens": {
+    "taxonId": 793142
+  },
+  "Dicrurus caerulescens": {
+    "taxonId": 8276
+  },
+  "Dicrurus hottentottus": {
+    "taxonId": 8267
+  },
+  "Dicrurus leucophaeus": {
+    "taxonId": 8264
+  },
+  "Dicrurus macrocercus": {
+    "taxonId": 8277
+  },
+  "Dicrurus paradiseus": {
+    "taxonId": 204502
+  },
+  "Dicrurus remifer": {
+    "taxonId": 8286
+  },
+  "Dinopium benghalense": {
+    "taxonId": 979697
+  },
+  "Dinopium javanense": {
+    "taxonId": 204504
+  },
+  "Dinopium shorii": {
+    "taxonId": 18389
+  },
+  "Dryobates cathpharius": {
+    "taxonId": 792984
+  },
+  "Dryocopus javensis": {
+    "taxonId": 17839
+  },
+  "Ducula aenea": {
+    "taxonId": 3211
+  },
+  "Ducula badia": {
+    "taxonId": 3246
+  },
+  "Ducula cuprea": {
+    "taxonId": 1429228
+  },
+  "Dumetia atriceps": {
+    "taxonId": 1289446
+  },
+  "Dumetia hyperythra": {
+    "taxonId": 15608
+  },
+  "Egretta garzetta": {
+    "taxonId": 4943
+  },
+  "Egretta gularis": {
+    "taxonId": 4935
+  },
+  "Elachura formosa": {
+    "taxonId": 367676
+  },
+  "Elanus caeruleus": {
+    "taxonId": 5275
+  },
+  "Emberiza bruniceps": {
+    "taxonId": 9215
+  },
+  "Emberiza buchanani": {
+    "taxonId": 9205
+  },
+  "Emberiza cia": {
+    "taxonId": 9193
+  },
+  "Emberiza fucata": {
+    "taxonId": 9198
+  },
+  "Emberiza hortulana": {
+    "taxonId": 9196
+  },
+  "Emberiza lathami": {
+    "taxonId": 793305
+  },
+  "Emberiza melanocephala": {
+    "taxonId": 9203
+  },
+  "Emberiza pusilla": {
+    "taxonId": 9197
+  },
+  "Emberiza rutila": {
+    "taxonId": 9206
+  },
+  "Emberiza spodocephala": {
+    "taxonId": 9204
+  },
+  "Emberiza stewarti": {
+    "taxonId": 9213
+  },
+  "Emberiza striolata": {
+    "taxonId": 204505
+  },
+  "Enicurus immaculatus": {
+    "taxonId": 13086
+  },
+  "Enicurus leschenaulti": {
+    "taxonId": 13092
+  },
+  "Enicurus maculatus": {
+    "taxonId": 13089
+  },
+  "Enicurus schistaceus": {
+    "taxonId": 13087
+  },
+  "Enicurus scouleri": {
+    "taxonId": 13091
+  },
+  "Ephippiorhynchus asiaticus": {
+    "taxonId": 4753
+  },
+  "Eremopterix griseus": {
+    "taxonId": 72839
+  },
+  "Eremopterix nigriceps": {
+    "taxonId": 7376
+  },
+  "Erpornis zantholeuca": {
+    "taxonId": 15319
+  },
+  "Erythrogenys erythrogenys": {
+    "taxonId": 1289442
+  },
+  "Erythrogenys hypoleucos": {
+    "taxonId": 1289443
+  },
+  "Esacus recurvirostris": {
+    "taxonId": 4919
+  },
+  "Eudynamys scolopaceus": {
+    "taxonId": 204510
+  },
+  "Eumyias albicaudatus": {
+    "taxonId": 72846
+  },
+  "Eumyias thalassinus": {
+    "taxonId": 72848
+  },
+  "Euodice malabarica": {
+    "taxonId": 145350
+  },
+  "Eurystomus orientalis": {
+    "taxonId": 2293
+  },
+  "Falco amurensis": {
+    "taxonId": 4686
+  },
+  "Falco chicquera": {
+    "taxonId": 4670
+  },
+  "Falco columbarius": {
+    "taxonId": 4672
+  },
+  "Falco jugger": {
+    "taxonId": 4692
+  },
+  "Falco naumanni": {
+    "taxonId": 59845
+  },
+  "Falco peregrinus": {
+    "taxonId": 4647
+  },
+  "Falco severus": {
+    "taxonId": 4662
+  },
+  "Falco subbuteo": {
+    "taxonId": 4643
+  },
+  "Falco tinnunculus": {
+    "taxonId": 472766
+  },
+  "Ficedula albicilla": {
+    "taxonId": 68519
+  },
+  "Ficedula erithacus": {
+    "taxonId": 979717
+  },
+  "Ficedula hodgsoni": {
+    "taxonId": 523147
+  },
+  "Ficedula hyperythra": {
+    "taxonId": 523148
+  },
+  "Ficedula nigrorufa": {
+    "taxonId": 13116
+  },
+  "Ficedula parva": {
+    "taxonId": 13113
+  },
+  "Ficedula ruficauda": {
+    "taxonId": 522881
+  },
+  "Ficedula sapphira": {
+    "taxonId": 13108
+  },
+  "Ficedula strophiata": {
+    "taxonId": 13110
+  },
+  "Ficedula superciliaris": {
+    "taxonId": 13114
+  },
+  "Ficedula tricolor": {
+    "taxonId": 13111
+  },
+  "Ficedula westermanni": {
+    "taxonId": 13117
+  },
+  "Ficedula zanthopygia": {
+    "taxonId": 13124
+  },
+  "Francolinus francolinus": {
+    "taxonId": 649
+  },
+  "Francolinus pictus": {
+    "taxonId": 644
+  },
+  "Fulica atra": {
+    "taxonId": 482
+  },
+  "Fulvetta vinipectus": {
+    "taxonId": 144971
+  },
+  "Galerida cristata": {
+    "taxonId": 578607
+  },
+  "Galerida deva": {
+    "taxonId": 7357
+  },
+  "Galerida malabarica": {
+    "taxonId": 7361
+  },
+  "Gallicrex cinerea": {
+    "taxonId": 535
+  },
+  "Gallinago gallinago": {
+    "taxonId": 318836
+  },
+  "Gallinago stenura": {
+    "taxonId": 3921
+  },
+  "Gallinula chloropus": {
+    "taxonId": 201282
+  },
+  "Galloperdix lunulata": {
+    "taxonId": 1138
+  },
+  "Galloperdix spadicea": {
+    "taxonId": 1134
+  },
+  "Gallus gallus": {
+    "taxonId": 882
+  },
+  "Gallus sonneratii": {
+    "taxonId": 880
+  },
+  "Gampsorhynchus rufulus": {
+    "taxonId": 15686
+  },
+  "Garrulax leucolophus": {
+    "taxonId": 15182
+  },
+  "Garrulax monileger": {
+    "taxonId": 15154
+  },
+  "Garrulus glandarius": {
+    "taxonId": 8088
+  },
+  "Garrulus lanceolatus": {
+    "taxonId": 8087
+  },
+  "Gecinulus grantia": {
+    "taxonId": 18422
+  },
+  "Gelochelidon nilotica": {
+    "taxonId": 144536
+  },
+  "Geokichla citrina": {
+    "taxonId": 201215
+  },
+  "Geokichla sibirica": {
+    "taxonId": 201194
+  },
+  "Glareola lactea": {
+    "taxonId": 4602
+  },
+  "Glareola maldivarum": {
+    "taxonId": 4601
+  },
+  "Glareola pratincola": {
+    "taxonId": 4604
+  },
+  "Glaucidium cuculoides": {
+    "taxonId": 19839
+  },
+  "Glaucidium radiatum": {
+    "taxonId": 19871
+  },
+  "Gorsachius melanolophus": {
+    "taxonId": 5043
+  },
+  "Gracula indica": {
+    "taxonId": 145092
+  },
+  "Gracula religiosa": {
+    "taxonId": 204517
+  },
+  "Gracupica contra": {
+    "taxonId": 145099
+  },
+  "Graminicola bengalensis": {
+    "taxonId": 15698
+  },
+  "Grammatoptila striata": {
+    "taxonId": 339819
+  },
+  "Grus grus": {
+    "taxonId": 41
+  },
+  "Grus virgo": {
+    "taxonId": 48
+  },
+  "Gymnoris xanthocollis": {
+    "taxonId": 979724
+  },
+  "Gypaetus barbatus": {
+    "taxonId": 5379
+  },
+  "Gyps bengalensis": {
+    "taxonId": 5368
+  },
+  "Gyps fulvus": {
+    "taxonId": 5366
+  },
+  "Gyps himalayensis": {
+    "taxonId": 5367
+  },
+  "Gyps indicus": {
+    "taxonId": 5369
+  },
+  "Gyps tenuirostris": {
+    "taxonId": 68500
+  },
+  "Gypsophila brevicaudata": {
+    "taxonId": 1289433
+  },
+  "Haematopus ostralegus": {
+    "taxonId": 4843
+  },
+  "Halcyon coromanda": {
+    "taxonId": 2317
+  },
+  "Halcyon pileata": {
+    "taxonId": 2353
+  },
+  "Halcyon smyrnensis": {
+    "taxonId": 204519
+  },
+  "Haliaeetus albicilla": {
+    "taxonId": 5309
+  },
+  "Haliaeetus leucoryphus": {
+    "taxonId": 5312
+  },
+  "Haliastur indus": {
+    "taxonId": 5406
+  },
+  "Harpactes erythrocephalus": {
+    "taxonId": 20812
+  },
+  "Harpactes fasciatus": {
+    "taxonId": 20800
+  },
+  "Helopsaltes certhiola": {
+    "taxonId": 1289501
+  },
+  "Hemicircus canente": {
+    "taxonId": 18481
+  },
+  "Hemiprocne coronata": {
+    "taxonId": 6535
+  },
+  "Hemipus picatus": {
+    "taxonId": 7847
+  },
+  "Hemitesia pallidipes": {
+    "taxonId": 1506571
+  },
+  "Hemixos flavala": {
+    "taxonId": 979736
+  },
+  "Heterophasia capistrata": {
+    "taxonId": 15101
+  },
+  "Heterophasia picaoides": {
+    "taxonId": 15106
+  },
+  "Heterophasia pulchella": {
+    "taxonId": 15105
+  },
+  "Hieraaetus pennatus": {
+    "taxonId": 5154
+  },
+  "Hierococcyx nisicolor": {
+    "taxonId": 144577
+  },
+  "Hierococcyx sparverioides": {
+    "taxonId": 567164
+  },
+  "Hierococcyx varius": {
+    "taxonId": 144575
+  },
+  "Himantopus himantopus": {
+    "taxonId": 4835
+  },
+  "Hirundapus caudacutus": {
+    "taxonId": 6852
+  },
+  "Hirundapus cochinchinensis": {
+    "taxonId": 6851
+  },
+  "Hirundapus giganteus": {
+    "taxonId": 6855
+  },
+  "Hirundo domicola": {
+    "taxonId": 102886
+  },
+  "Hirundo rustica": {
+    "taxonId": 11901
+  },
+  "Hirundo smithii": {
+    "taxonId": 11896
+  },
+  "Horornis brunnescens": {
+    "taxonId": 339711
+  },
+  "Horornis flavolivaceus": {
+    "taxonId": 339714
+  },
+  "Horornis fortipes": {
+    "taxonId": 339710
+  },
+  "Houbaropsis bengalensis": {
+    "taxonId": 81
+  },
+  "Hydrophasianus chirurgus": {
+    "taxonId": 4589
+  },
+  "Hydroprogne caspia": {
+    "taxonId": 144537
+  },
+  "Hydrornis nipalensis": {
+    "taxonId": 367602
+  },
+  "Hypocolius ampelinus": {
+    "taxonId": 116935
+  },
+  "Hypothymis azurea": {
+    "taxonId": 204523
+  },
+  "Hypsipetes ganeesa": {
+    "taxonId": 144909
+  },
+  "Hypsipetes leucocephalus": {
+    "taxonId": 204524
+  },
+  "Ianthocincla ocellata": {
+    "taxonId": 339831
+  },
+  "Ibidorhyncha struthersii": {
+    "taxonId": 4908
+  },
+  "Ichthyaetus ichthyaetus": {
+    "taxonId": 144521
+  },
+  "Icthyophaga humilis": {
+    "taxonId": 1505758
+  },
+  "Icthyophaga ichthyaetus": {
+    "taxonId": 1505727
+  },
+  "Icthyophaga leucogaster": {
+    "taxonId": 1505653
+  },
+  "Ictinaetus malaiensis": {
+    "taxonId": 367472
+  },
+  "Iduna caligata": {
+    "taxonId": 201178
+  },
+  "Iduna rama": {
+    "taxonId": 201179
+  },
+  "Indicator xanthonotus": {
+    "taxonId": 17578
+  },
+  "Irena puella": {
+    "taxonId": 12013
+  },
+  "Ithaginis cruentus": {
+    "taxonId": 1140
+  },
+  "Ixos mcclellandii": {
+    "taxonId": 144917
+  },
+  "Jynx torquilla": {
+    "taxonId": 18448
+  },
+  "Ketupa coromanda": {
+    "taxonId": 1441747
+  },
+  "Ketupa flavipes": {
+    "taxonId": 20342
+  },
+  "Ketupa ketupu": {
+    "taxonId": 20339
+  },
+  "Ketupa nipalensis": {
+    "taxonId": 1441750
+  },
+  "Ketupa zeylonensis": {
+    "taxonId": 20343
+  },
+  "Lalage melanoptera": {
+    "taxonId": 201113
+  },
+  "Lalage melaschistos": {
+    "taxonId": 201112
+  },
+  "Lanius collurio": {
+    "taxonId": 12038
+  },
+  "Lanius cristatus": {
+    "taxonId": 12021
+  },
+  "Lanius excubitor": {
+    "taxonId": 559070
+  },
+  "Lanius isabellinus": {
+    "taxonId": 12042
+  },
+  "Lanius phoenicuroides": {
+    "taxonId": 339680
+  },
+  "Lanius schach": {
+    "taxonId": 12035
+  },
+  "Lanius tephronotus": {
+    "taxonId": 12037
+  },
+  "Lanius vittatus": {
+    "taxonId": 12052
+  },
+  "Larus fuscus": {
+    "taxonId": 4381
+  },
+  "Larus mongolicus": {
+    "taxonId": 480198
+  },
+  "Larvivora brunnea": {
+    "taxonId": 145059
+  },
+  "Leiopicus mahrattensis": {
+    "taxonId": 792981
+  },
+  "Leioptila annectens": {
+    "taxonId": 1289429
+  },
+  "Leiothrix argentauris": {
+    "taxonId": 15559
+  },
+  "Leiothrix lutea": {
+    "taxonId": 15560
+  },
+  "Leptocoma minima": {
+    "taxonId": 145147
+  },
+  "Leptocoma zeylonica": {
+    "taxonId": 145146
+  },
+  "Leptoptilos dubius": {
+    "taxonId": 4751
+  },
+  "Leptoptilos javanicus": {
+    "taxonId": 4749
+  },
+  "Leucogeranus leucogeranus": {
+    "taxonId": 144289
+  },
+  "Leucoptilon concretum": {
+    "taxonId": 1506136
+  },
+  "Leucosticte nemoricola": {
+    "taxonId": 9613
+  },
+  "Lewinia striata": {
+    "taxonId": 792878
+  },
+  "Limnodromus scolopaceus": {
+    "taxonId": 3873
+  },
+  "Limnodromus semipalmatus": {
+    "taxonId": 3868
+  },
+  "Limosa lapponica": {
+    "taxonId": 3951
+  },
+  "Limosa limosa": {
+    "taxonId": 3947
+  },
+  "Liocichla phoenicea": {
+    "taxonId": 204534
+  },
+  "Lioparus chrysotis": {
+    "taxonId": 144967
+  },
+  "Locustella davidi": {
+    "taxonId": 339730
+  },
+  "Locustella kashmirensis": {
+    "taxonId": 339731
+  },
+  "Locustella naevia": {
+    "taxonId": 116941
+  },
+  "Locustella thoracica": {
+    "taxonId": 339732
+  },
+  "Lonchura atricapilla": {
+    "taxonId": 72989
+  },
+  "Lonchura kelaarti": {
+    "taxonId": 13906
+  },
+  "Lonchura malacca": {
+    "taxonId": 979790
+  },
+  "Lonchura punctulata": {
+    "taxonId": 13893
+  },
+  "Lonchura striata": {
+    "taxonId": 13887
+  },
+  "Lophophanes dichrous": {
+    "taxonId": 144831
+  },
+  "Lophospiza trivirgata": {
+    "taxonId": 1582801
+  },
+  "Lophotriorchis kienerii": {
+    "taxonId": 72995
+  },
+  "Lophura leucomelanos": {
+    "taxonId": 1081
+  },
+  "Loriculus vernalis": {
+    "taxonId": 18974
+  },
+  "Loxia curvirostra": {
+    "taxonId": 10411
+  },
+  "Luscinia phaenicuroides": {
+    "taxonId": 145061
+  },
+  "Luscinia svecica": {
+    "taxonId": 13071
+  },
+  "Lymnocryptes minimus": {
+    "taxonId": 3911
+  },
+  "Lyncornis macrotis": {
+    "taxonId": 201064
+  },
+  "Machlolophus aplonotus": {
+    "taxonId": 513970
+  },
+  "Machlolophus spilonotus": {
+    "taxonId": 513972
+  },
+  "Machlolophus xanthogenys": {
+    "taxonId": 513969
+  },
+  "Macropygia unchall": {
+    "taxonId": 2870
+  },
+  "Malacocincla abbotti": {
+    "taxonId": 1289436
+  },
+  "Mareca falcata": {
+    "taxonId": 558440
+  },
+  "Mareca penelope": {
+    "taxonId": 558441
+  },
+  "Mareca strepera": {
+    "taxonId": 558439
+  },
+  "Marmaronetta angustirostris": {
+    "taxonId": 7139
+  },
+  "Megaceryle lugubris": {
+    "taxonId": 2556
+  },
+  "Megalurus palustris": {
+    "taxonId": 116978
+  },
+  "Melanochlora sultanea": {
+    "taxonId": 13682
+  },
+  "Melanocorypha bimaculata": {
+    "taxonId": 7366
+  },
+  "Mergus merganser": {
+    "taxonId": 7004
+  },
+  "Merops apiaster": {
+    "taxonId": 2191
+  },
+  "Merops leschenaulti": {
+    "taxonId": 2208
+  },
+  "Merops orientalis": {
+    "taxonId": 2229
+  },
+  "Merops persicus": {
+    "taxonId": 2245
+  },
+  "Merops philippinus": {
+    "taxonId": 2212
+  },
+  "Metopidius indicus": {
+    "taxonId": 4576
+  },
+  "Microcarbo niger": {
+    "taxonId": 497004
+  },
+  "Microhierax caerulescens": {
+    "taxonId": 4710
+  },
+  "Microhierax melanoleucos": {
+    "taxonId": 4708
+  },
+  "Micropternus brachyurus": {
+    "taxonId": 367550
+  },
+  "Microtarsus priocephalus": {
+    "taxonId": 1506391
+  },
+  "Milvus migrans": {
+    "taxonId": 5268
+  },
+  "Minla ignotincta": {
+    "taxonId": 15329
+  },
+  "Mirafra javanica": {
+    "taxonId": 7318
+  },
+  "Mixornis gularis": {
+    "taxonId": 339771
+  },
+  "Montecincla cachinnans": {
+    "taxonId": 602390
+  },
+  "Montecincla fairbanki": {
+    "taxonId": 602392
+  },
+  "Monticola cinclorhyncha": {
+    "taxonId": 793262
+  },
+  "Monticola rufiventris": {
+    "taxonId": 13142
+  },
+  "Monticola solitarius": {
+    "taxonId": 13141
+  },
+  "Motacilla alba": {
+    "taxonId": 13695
+  },
+  "Motacilla cinerea": {
+    "taxonId": 13688
+  },
+  "Motacilla citreola": {
+    "taxonId": 13687
+  },
+  "Motacilla flava": {
+    "taxonId": 204545
+  },
+  "Motacilla maderaspatensis": {
+    "taxonId": 558550
+  },
+  "Motacilla tschutschensis": {
+    "taxonId": 145207
+  },
+  "Mulleripicus pulverulentus": {
+    "taxonId": 18009
+  },
+  "Muscicapa dauurica": {
+    "taxonId": 512431
+  },
+  "Muscicapa muttui": {
+    "taxonId": 12976
+  },
+  "Muscicapa sibirica": {
+    "taxonId": 12987
+  },
+  "Muscicapa striata": {
+    "taxonId": 12971
+  },
+  "Mycerobas affinis": {
+    "taxonId": 10219
+  },
+  "Mycerobas carnipes": {
+    "taxonId": 10220
+  },
+  "Mycerobas icterioides": {
+    "taxonId": 10218
+  },
+  "Mycerobas melanozanthos": {
+    "taxonId": 10217
+  },
+  "Mycteria leucocephala": {
+    "taxonId": 4743
+  },
+  "Myiomela leucura": {
+    "taxonId": 558547
+  },
+  "Myophonus caeruleus": {
+    "taxonId": 68507
+  },
+  "Myophonus horsfieldii": {
+    "taxonId": 59848
+  },
+  "Myzornis pyrrhoura": {
+    "taxonId": 15562
+  },
+  "Napothera epilepidota": {
+    "taxonId": 15137
+  },
+  "Neophron percnopterus": {
+    "taxonId": 5361
+  },
+  "Netta rufina": {
+    "taxonId": 7122
+  },
+  "Nettapus coromandelianus": {
+    "taxonId": 7128
+  },
+  "Niltava grandis": {
+    "taxonId": 12810
+  },
+  "Niltava macgrigoriae": {
+    "taxonId": 12808
+  },
+  "Niltava sundara": {
+    "taxonId": 12806
+  },
+  "Ninox scutulata": {
+    "taxonId": 204550
+  },
+  "Nisaetus cirrhatus": {
+    "taxonId": 73100
+  },
+  "Nisaetus kelaarti": {
+    "taxonId": 339591
+  },
+  "Nisaetus nipalensis": {
+    "taxonId": 73104
+  },
+  "Nucifraga hemispila": {
+    "taxonId": 1583632
+  },
+  "Numenius arquata": {
+    "taxonId": 3896
+  },
+  "Numenius phaeopus": {
+    "taxonId": 3901
+  },
+  "Nycticorax nycticorax": {
+    "taxonId": 4981
+  },
+  "Nyctyornis athertoni": {
+    "taxonId": 2250
+  },
+  "Ocyceros birostris": {
+    "taxonId": 5540
+  },
+  "Oenanthe chrysopygia": {
+    "taxonId": 107387
+  },
+  "Oenanthe deserti": {
+    "taxonId": 12842
+  },
+  "Oenanthe fusca": {
+    "taxonId": 980211
+  },
+  "Oenanthe isabellina": {
+    "taxonId": 12837
+  },
+  "Oenanthe picata": {
+    "taxonId": 12831
+  },
+  "Onychoprion fuscatus": {
+    "taxonId": 144525
+  },
+  "Oriolus chinensis": {
+    "taxonId": 7867
+  },
+  "Oriolus kundoo": {
+    "taxonId": 144733
+  },
+  "Oriolus tenuirostris": {
+    "taxonId": 7864
+  },
+  "Oriolus traillii": {
+    "taxonId": 7890
+  },
+  "Oriolus xanthornus": {
+    "taxonId": 7875
+  },
+  "Orthotomus atrogularis": {
+    "taxonId": 15351
+  },
+  "Orthotomus sutorius": {
+    "taxonId": 15347
+  },
+  "Ortygornis gularis": {
+    "taxonId": 1289690
+  },
+  "Ortygornis pondicerianus": {
+    "taxonId": 1289691
+  },
+  "Otus bakkamoena": {
+    "taxonId": 204559
+  },
+  "Otus brucei": {
+    "taxonId": 20285
+  },
+  "Otus lettia": {
+    "taxonId": 144586
+  },
+  "Otus spilocephalus": {
+    "taxonId": 20264
+  },
+  "Otus sunia": {
+    "taxonId": 20234
+  },
+  "Pachycephala cinerea": {
+    "taxonId": 144725
+  },
+  "Pachyglossa agilis": {
+    "taxonId": 1586473
+  },
+  "Pachyglossa chrysorrhea": {
+    "taxonId": 1586470
+  },
+  "Pachyglossa melanozantha": {
+    "taxonId": 1586428
+  },
+  "Pandion haliaetus": {
+    "taxonId": 116999
+  },
+  "Paradoxornis aemodius": {
+    "taxonId": 1586086
+  },
+  "Paradoxornis bakeri": {
+    "taxonId": 1586092
+  },
+  "Paradoxornis flavirostris": {
+    "taxonId": 15361
+  },
+  "Paradoxornis gularis": {
+    "taxonId": 15365
+  },
+  "Paradoxornis unicolor": {
+    "taxonId": 15372
+  },
+  "Parus cinereus": {
+    "taxonId": 339691
+  },
+  "Parus monticolus": {
+    "taxonId": 13596
+  },
+  "Passer cinnamomeus": {
+    "taxonId": 793321
+  },
+  "Passer domesticus": {
+    "taxonId": 13858
+  },
+  "Passer hispaniolensis": {
+    "taxonId": 13854
+  },
+  "Passer montanus": {
+    "taxonId": 13851
+  },
+  "Passer pyrrhonotus": {
+    "taxonId": 13857
+  },
+  "Pastor roseus": {
+    "taxonId": 145108
+  },
+  "Pavo cristatus": {
+    "taxonId": 1204
+  },
+  "Pelargopsis amauroptera": {
+    "taxonId": 2380
+  },
+  "Pelargopsis capensis": {
+    "taxonId": 2366
+  },
+  "Pelecanus crispus": {
+    "taxonId": 4333
+  },
+  "Pelecanus onocrotalus": {
+    "taxonId": 4327
+  },
+  "Pelecanus philippensis": {
+    "taxonId": 4336
+  },
+  "Pellorneum ruficeps": {
+    "taxonId": 15093
+  },
+  "Pellorneum tickelli": {
+    "taxonId": 145003
+  },
+  "Perdicula argoondah": {
+    "taxonId": 724
+  },
+  "Perdicula asiatica": {
+    "taxonId": 728
+  },
+  "Perdicula erythrorhyncha": {
+    "taxonId": 737
+  },
+  "Pericrocotus brevirostris": {
+    "taxonId": 7853
+  },
+  "Pericrocotus cinnamomeus": {
+    "taxonId": 7852
+  },
+  "Pericrocotus divaricatus": {
+    "taxonId": 7860
+  },
+  "Pericrocotus erythropygius": {
+    "taxonId": 979870
+  },
+  "Pericrocotus ethologus": {
+    "taxonId": 7858
+  },
+  "Pericrocotus flammeus": {
+    "taxonId": 717333
+  },
+  "Pericrocotus roseus": {
+    "taxonId": 7862
+  },
+  "Pericrocotus solaris": {
+    "taxonId": 7850
+  },
+  "Pericrocotus speciosus": {
+    "taxonId": 339679
+  },
+  "Periparus ater": {
+    "taxonId": 144823
+  },
+  "Periparus rubidiventris": {
+    "taxonId": 144825
+  },
+  "Periparus rufonuchalis": {
+    "taxonId": 144824
+  },
+  "Pernis ptilorhynchus": {
+    "taxonId": 144458
+  },
+  "Petrochelidon fluvicola": {
+    "taxonId": 144804
+  },
+  "Phaenicophaeus tristis": {
+    "taxonId": 73192
+  },
+  "Phaenicophaeus viridirostris": {
+    "taxonId": 73193
+  },
+  "Phalacrocorax carbo": {
+    "taxonId": 4270
+  },
+  "Phalacrocorax fuscicollis": {
+    "taxonId": 4264
+  },
+  "Phalaropus lobatus": {
+    "taxonId": 3959
+  },
+  "Phodilus assimilis": {
+    "taxonId": 144585
+  },
+  "Phodilus badius": {
+    "taxonId": 513060
+  },
+  "Phoeniconaias minor": {
+    "taxonId": 4259
+  },
+  "Phoenicurus auroreus": {
+    "taxonId": 12993
+  },
+  "Phoenicurus coeruleocephala": {
+    "taxonId": 523153
+  },
+  "Phoenicurus frontalis": {
+    "taxonId": 12996
+  },
+  "Phoenicurus fuliginosus": {
+    "taxonId": 145068
+  },
+  "Phoenicurus hodgsoni": {
+    "taxonId": 12998
+  },
+  "Phoenicurus leucocephalus": {
+    "taxonId": 145070
+  },
+  "Phoenicurus ochruros": {
+    "taxonId": 13000
+  },
+  "Phoenicurus schisticeps": {
+    "taxonId": 12990
+  },
+  "Phyllergates cucullatus": {
+    "taxonId": 144921
+  },
+  "Phylloscopus affinis": {
+    "taxonId": 117005
+  },
+  "Phylloscopus burkii": {
+    "taxonId": 793204
+  },
+  "Phylloscopus cantator": {
+    "taxonId": 117012
+  },
+  "Phylloscopus castaniceps": {
+    "taxonId": 793202
+  },
+  "Phylloscopus chloronotus": {
+    "taxonId": 117014
+  },
+  "Phylloscopus collybita": {
+    "taxonId": 117016
+  },
+  "Phylloscopus fuligiventer": {
+    "taxonId": 117021
+  },
+  "Phylloscopus fuscatus": {
+    "taxonId": 117022
+  },
+  "Phylloscopus griseolus": {
+    "taxonId": 117024
+  },
+  "Phylloscopus humei": {
+    "taxonId": 117026
+  },
+  "Phylloscopus inornatus": {
+    "taxonId": 117028
+  },
+  "Phylloscopus intermedius": {
+    "taxonId": 793190
+  },
+  "Phylloscopus maculipennis": {
+    "taxonId": 117032
+  },
+  "Phylloscopus magnirostris": {
+    "taxonId": 117033
+  },
+  "Phylloscopus nitidus": {
+    "taxonId": 144925
+  },
+  "Phylloscopus occipitalis": {
+    "taxonId": 117036
+  },
+  "Phylloscopus poliogenys": {
+    "taxonId": 793199
+  },
+  "Phylloscopus pulcher": {
+    "taxonId": 117042
+  },
+  "Phylloscopus reguloides": {
+    "taxonId": 117043
+  },
+  "Phylloscopus subviridis": {
+    "taxonId": 117051
+  },
+  "Phylloscopus trochiloides": {
+    "taxonId": 117054
+  },
+  "Phylloscopus tytleri": {
+    "taxonId": 117175
+  },
+  "Phylloscopus whistleri": {
+    "taxonId": 793200
+  },
+  "Phylloscopus xanthoschistos": {
+    "taxonId": 117057
+  },
+  "Picumnus innominatus": {
+    "taxonId": 17802
+  },
+  "Picus canus": {
+    "taxonId": 18301
+  },
+  "Picus chlorolophus": {
+    "taxonId": 18337
+  },
+  "Picus squamatus": {
+    "taxonId": 18331
+  },
+  "Picus xanthopygaeus": {
+    "taxonId": 18300
+  },
+  "Pitta megarhyncha": {
+    "taxonId": 14454
+  },
+  "Pitta sordida": {
+    "taxonId": 14389
+  },
+  "Platalea leucorodia": {
+    "taxonId": 3731
+  },
+  "Plegadis falcinellus": {
+    "taxonId": 3756
+  },
+  "Plocealauda affinis": {
+    "taxonId": 1583799
+  },
+  "Plocealauda assamica": {
+    "taxonId": 1583803
+  },
+  "Plocealauda erythroptera": {
+    "taxonId": 1583802
+  },
+  "Ploceus benghalensis": {
+    "taxonId": 13795
+  },
+  "Ploceus manyar": {
+    "taxonId": 13790
+  },
+  "Ploceus philippinus": {
+    "taxonId": 13794
+  },
+  "Pluvialis fulva": {
+    "taxonId": 4896
+  },
+  "Pluvialis squatarola": {
+    "taxonId": 4892
+  },
+  "Pnoepyga albiventer": {
+    "taxonId": 15334
+  },
+  "Pnoepyga immaculata": {
+    "taxonId": 15335
+  },
+  "Pnoepyga pusilla": {
+    "taxonId": 15333
+  },
+  "Podiceps cristatus": {
+    "taxonId": 4208
+  },
+  "Podiceps grisegena": {
+    "taxonId": 4224
+  },
+  "Podiceps nigricollis": {
+    "taxonId": 4205
+  },
+  "Polyplectron bicalcaratum": {
+    "taxonId": 1186
+  },
+  "Pomatorhinus horsfieldii": {
+    "taxonId": 15270
+  },
+  "Pomatorhinus ochraceiceps": {
+    "taxonId": 15278
+  },
+  "Pomatorhinus phayrei": {
+    "taxonId": 1444546
+  },
+  "Pomatorhinus ruficollis": {
+    "taxonId": 15271
+  },
+  "Pomatorhinus schisticeps": {
+    "taxonId": 15272
+  },
+  "Pomatorhinus superciliaris": {
+    "taxonId": 339787
+  },
+  "Porphyrio poliocephalus": {
+    "taxonId": 474332
+  },
+  "Porzana porzana": {
+    "taxonId": 178
+  },
+  "Prinia buchanani": {
+    "taxonId": 7723
+  },
+  "Prinia crinigera": {
+    "taxonId": 73276
+  },
+  "Prinia flaviventris": {
+    "taxonId": 7716
+  },
+  "Prinia hodgsonii": {
+    "taxonId": 7724
+  },
+  "Prinia inornata": {
+    "taxonId": 7710
+  },
+  "Prinia lepida": {
+    "taxonId": 1287012
+  },
+  "Prinia rufescens": {
+    "taxonId": 7713
+  },
+  "Prinia socialis": {
+    "taxonId": 7711
+  },
+  "Prinia superciliaris": {
+    "taxonId": 604016
+  },
+  "Prinia sylvatica": {
+    "taxonId": 7727
+  },
+  "Procarduelis nipalensis": {
+    "taxonId": 558599
+  },
+  "Prunella collaris": {
+    "taxonId": 13996
+  },
+  "Prunella himalayana": {
+    "taxonId": 13997
+  },
+  "Prunella strophiata": {
+    "taxonId": 13987
+  },
+  "Psarisomus dalhousiae": {
+    "taxonId": 8947
+  },
+  "Pseudibis papillosa": {
+    "taxonId": 3763
+  },
+  "Psilopogon asiaticus": {
+    "taxonId": 367546
+  },
+  "Psilopogon cyanotis": {
+    "taxonId": 1505315
+  },
+  "Psilopogon franklinii": {
+    "taxonId": 979918
+  },
+  "Psilopogon haemacephalus": {
+    "taxonId": 367521
+  },
+  "Psilopogon lineatus": {
+    "taxonId": 367534
+  },
+  "Psilopogon malabaricus": {
+    "taxonId": 367519
+  },
+  "Psilopogon virens": {
+    "taxonId": 367525
+  },
+  "Psilopogon viridis": {
+    "taxonId": 367536
+  },
+  "Psilopogon zeylanicus": {
+    "taxonId": 367535
+  },
+  "Psittacula alexandri": {
+    "taxonId": 18901
+  },
+  "Psittacula columboides": {
+    "taxonId": 18912
+  },
+  "Psittacula cyanocephala": {
+    "taxonId": 68499
+  },
+  "Psittacula eupatria": {
+    "taxonId": 18904
+  },
+  "Psittacula himalayana": {
+    "taxonId": 18902
+  },
+  "Psittacula krameri": {
+    "taxonId": 18911
+  },
+  "Psittacula roseata": {
+    "taxonId": 18905
+  },
+  "Pterocles exustus": {
+    "taxonId": 117083
+  },
+  "Pterocles indicus": {
+    "taxonId": 117085
+  },
+  "Pterocles orientalis": {
+    "taxonId": 117088
+  },
+  "Pterorhinus albogularis": {
+    "taxonId": 1289393
+  },
+  "Pterorhinus delesserti": {
+    "taxonId": 1289411
+  },
+  "Pterorhinus gularis": {
+    "taxonId": 1289410
+  },
+  "Pterorhinus pectoralis": {
+    "taxonId": 1289399
+  },
+  "Pterorhinus ruficollis": {
+    "taxonId": 1289404
+  },
+  "Pterorhinus sannio": {
+    "taxonId": 1289401
+  },
+  "Pteruthius aeralatus": {
+    "taxonId": 144730
+  },
+  "Pteruthius melanotis": {
+    "taxonId": 15266
+  },
+  "Pteruthius rufiventer": {
+    "taxonId": 15265
+  },
+  "Pteruthius xanthochlorus": {
+    "taxonId": 15264
+  },
+  "Ptyonoprogne concolor": {
+    "taxonId": 144790
+  },
+  "Ptyonoprogne rupestris": {
+    "taxonId": 144788
+  },
+  "Pucrasia macrolopha": {
+    "taxonId": 1213
+  },
+  "Pycnonotus cafer": {
+    "taxonId": 14593
+  },
+  "Pycnonotus jocosus": {
+    "taxonId": 14591
+  },
+  "Pycnonotus leucogenys": {
+    "taxonId": 14592
+  },
+  "Pycnonotus leucotis": {
+    "taxonId": 14590
+  },
+  "Pycnonotus luteolus": {
+    "taxonId": 14610
+  },
+  "Pyrrhocorax graculus": {
+    "taxonId": 8350
+  },
+  "Pyrrhoplectes epauletta": {
+    "taxonId": 10498
+  },
+  "Pyrrhula erythrocephala": {
+    "taxonId": 9467
+  },
+  "Pyrrhula nipalensis": {
+    "taxonId": 9461
+  },
+  "Rallina eurizonoides": {
+    "taxonId": 266
+  },
+  "Rallus aquaticus": {
+    "taxonId": 513926
+  },
+  "Rallus indicus": {
+    "taxonId": 144477
+  },
+  "Recurvirostra avosetta": {
+    "taxonId": 4883
+  },
+  "Regulus regulus": {
+    "taxonId": 793469
+  },
+  "Rhipidura albicollis": {
+    "taxonId": 604526
+  },
+  "Rhipidura albogularis": {
+    "taxonId": 144736
+  },
+  "Rhipidura aureola": {
+    "taxonId": 8126
+  },
+  "Rhyticeros undulatus": {
+    "taxonId": 514339
+  },
+  "Riparia chinensis": {
+    "taxonId": 144786
+  },
+  "Riparia diluta": {
+    "taxonId": 144787
+  },
+  "Riparia riparia": {
+    "taxonId": 11941
+  },
+  "Rostratula benghalensis": {
+    "taxonId": 3999
+  },
+  "Rubigula flaviventris": {
+    "taxonId": 793157
+  },
+  "Rubigula gularis": {
+    "taxonId": 793155
+  },
+  "Rynchops albicollis": {
+    "taxonId": 4498
+  },
+  "Salpornis spilonota": {
+    "taxonId": 793145
+  },
+  "Sarcogyps calvus": {
+    "taxonId": 5420
+  },
+  "Sarkidiornis melanotos": {
+    "taxonId": 7160
+  },
+  "Saroglossa spilopterus": {
+    "taxonId": 793271
+  },
+  "Sasia ochracea": {
+    "taxonId": 18394
+  },
+  "Saxicola caprata": {
+    "taxonId": 12910
+  },
+  "Saxicola ferreus": {
+    "taxonId": 73361
+  },
+  "Saxicola insignis": {
+    "taxonId": 12907
+  },
+  "Saxicola leucurus": {
+    "taxonId": 73362
+  },
+  "Saxicola macrorhynchus": {
+    "taxonId": 73363
+  },
+  "Saxicola maurus": {
+    "taxonId": 201193
+  },
+  "Schoenicola platyurus": {
+    "taxonId": 117215
+  },
+  "Schoenicola striatus": {
+    "taxonId": 1289494
+  },
+  "Schoeniparus castaneceps": {
+    "taxonId": 144999
+  },
+  "Schoeniparus dubius": {
+    "taxonId": 339798
+  },
+  "Schoeniparus rufogularis": {
+    "taxonId": 144996
+  },
+  "Scolopax rusticola": {
+    "taxonId": 3931
+  },
+  "Serilophus rubropygius": {
+    "taxonId": 1507112
+  },
+  "Sholicola albiventris": {
+    "taxonId": 558545
+  },
+  "Sibirionetta formosa": {
+    "taxonId": 558428
+  },
+  "Sitta castanea": {
+    "taxonId": 604724
+  },
+  "Sitta cinnamoventris": {
+    "taxonId": 604725
+  },
+  "Sitta formosa": {
+    "taxonId": 14822
+  },
+  "Sitta frontalis": {
+    "taxonId": 14813
+  },
+  "Sitta himalayensis": {
+    "taxonId": 14833
+  },
+  "Spatula clypeata": {
+    "taxonId": 558438
+  },
+  "Spatula querquedula": {
+    "taxonId": 558429
+  },
+  "Spelaeornis caudatus": {
+    "taxonId": 15564
+  },
+  "Spilopelia chinensis": {
+    "taxonId": 1455918
+  },
+  "Spilopelia senegalensis": {
+    "taxonId": 1455922
+  },
+  "Spilornis cheela": {
+    "taxonId": 5158
+  },
+  "Spodiopsar cineraceus": {
+    "taxonId": 547179
+  },
+  "Spodiopsar sericeus": {
+    "taxonId": 547178
+  },
+  "Stachyris nigriceps": {
+    "taxonId": 15535
+  },
+  "Stachyris oglei": {
+    "taxonId": 15526
+  },
+  "Staphida castaniceps": {
+    "taxonId": 1289461
+  },
+  "Sterna acuticauda": {
+    "taxonId": 4461
+  },
+  "Sterna aurantia": {
+    "taxonId": 4428
+  },
+  "Sterna hirundo": {
+    "taxonId": 4450
+  },
+  "Sternula albifrons": {
+    "taxonId": 144529
+  },
+  "Streptopelia decaocto": {
+    "taxonId": 2969
+  },
+  "Streptopelia orientalis": {
+    "taxonId": 2927
+  },
+  "Streptopelia tranquebarica": {
+    "taxonId": 2935
+  },
+  "Strix leptogrammica": {
+    "taxonId": 19922
+  },
+  "Strix nivicolum": {
+    "taxonId": 367501
+  },
+  "Strix ocellata": {
+    "taxonId": 19943
+  },
+  "Sturnia blythii": {
+    "taxonId": 145104
+  },
+  "Sturnia malabarica": {
+    "taxonId": 145103
+  },
+  "Sturnia pagodarum": {
+    "taxonId": 512092
+  },
+  "Sturnus vulgaris": {
+    "taxonId": 14850
+  },
+  "Surniculus dicruroides": {
+    "taxonId": 339600
+  },
+  "Surniculus lugubris": {
+    "taxonId": 1930
+  },
+  "Suthora atrosuperciliaris": {
+    "taxonId": 1505892
+  },
+  "Suthora fulvifrons": {
+    "taxonId": 339765
+  },
+  "Suthora nipalensis": {
+    "taxonId": 339767
+  },
+  "Sylviparus modestus": {
+    "taxonId": 13680
+  },
+  "Synoicus chinensis": {
+    "taxonId": 505884
+  },
+  "Taccocua leschenaultii": {
+    "taxonId": 513662
+  },
+  "Tachybaptus ruficollis": {
+    "taxonId": 4237
+  },
+  "Tachymarptis melba": {
+    "taxonId": 72516
+  },
+  "Tachyspiza badia": {
+    "taxonId": 1583224
+  },
+  "Tachyspiza virgata": {
+    "taxonId": 1582842
+  },
+  "Tadorna ferruginea": {
+    "taxonId": 7068
+  },
+  "Tadorna tadorna": {
+    "taxonId": 7067
+  },
+  "Taenioptynx brodiei": {
+    "taxonId": 1286804
+  },
+  "Tarsiger chrysaeus": {
+    "taxonId": 12924
+  },
+  "Tarsiger cyanurus": {
+    "taxonId": 210941
+  },
+  "Tarsiger hyperythrus": {
+    "taxonId": 12927
+  },
+  "Tarsiger indicus": {
+    "taxonId": 12928
+  },
+  "Tarsiger rufilatus": {
+    "taxonId": 145066
+  },
+  "Tephrodornis pondicerianus": {
+    "taxonId": 117122
+  },
+  "Tephrodornis sylvicola": {
+    "taxonId": 144718
+  },
+  "Tephrodornis virgatus": {
+    "taxonId": 550958
+  },
+  "Terpsiphone affinis": {
+    "taxonId": 549462
+  },
+  "Terpsiphone paradisi": {
+    "taxonId": 549464
+  },
+  "Tesia cyaniventer": {
+    "taxonId": 117124
+  },
+  "Tesia olivea": {
+    "taxonId": 117126
+  },
+  "Thalasseus bergii": {
+    "taxonId": 144540
+  },
+  "Thinornis dubius": {
+    "taxonId": 1580336
+  },
+  "Thinornis placidus": {
+    "taxonId": 1580337
+  },
+  "Threskiornis melanocephalus": {
+    "taxonId": 3738
+  },
+  "Tichodroma muraria": {
+    "taxonId": 14840
+  },
+  "Tickellia hodgsoni": {
+    "taxonId": 117129
+  },
+  "Timalia pileata": {
+    "taxonId": 15606
+  },
+  "Todiramphus chloris": {
+    "taxonId": 472078
+  },
+  "Tragopan melanocephalus": {
+    "taxonId": 1057
+  },
+  "Tragopan satyra": {
+    "taxonId": 1058
+  },
+  "Treron affinis": {
+    "taxonId": 201048
+  },
+  "Treron apicauda": {
+    "taxonId": 3380
+  },
+  "Treron bicinctus": {
+    "taxonId": 3394
+  },
+  "Treron curvirostra": {
+    "taxonId": 3358
+  },
+  "Treron phayrei": {
+    "taxonId": 201050
+  },
+  "Treron phoenicopterus": {
+    "taxonId": 3352
+  },
+  "Treron sphenurus": {
+    "taxonId": 3432
+  },
+  "Tringa erythropus": {
+    "taxonId": 3882
+  },
+  "Tringa glareola": {
+    "taxonId": 3888
+  },
+  "Tringa nebularia": {
+    "taxonId": 3878
+  },
+  "Tringa ochropus": {
+    "taxonId": 3885
+  },
+  "Tringa stagnatilis": {
+    "taxonId": 3881
+  },
+  "Tringa totanus": {
+    "taxonId": 3879
+  },
+  "Trochalopteron affine": {
+    "taxonId": 339866
+  },
+  "Trochalopteron erythrocephalum": {
+    "taxonId": 339868
+  },
+  "Trochalopteron lineatum": {
+    "taxonId": 339858
+  },
+  "Trochalopteron squamatum": {
+    "taxonId": 339862
+  },
+  "Trochalopteron subunicolor": {
+    "taxonId": 339860
+  },
+  "Trochalopteron variegatum": {
+    "taxonId": 339864
+  },
+  "Troglodytes troglodytes": {
+    "taxonId": 145363
+  },
+  "Turdus albocinctus": {
+    "taxonId": 12773
+  },
+  "Turdus atrogularis": {
+    "taxonId": 145086
+  },
+  "Turdus boulboul": {
+    "taxonId": 12734
+  },
+  "Turdus dissimilis": {
+    "taxonId": 12750
+  },
+  "Turdus eunomus": {
+    "taxonId": 145087
+  },
+  "Turdus obscurus": {
+    "taxonId": 12776
+  },
+  "Turdus rubrocanus": {
+    "taxonId": 12763
+  },
+  "Turdus ruficollis": {
+    "taxonId": 203819
+  },
+  "Turdus simillimus": {
+    "taxonId": 145085
+  },
+  "Turdus unicolor": {
+    "taxonId": 12760
+  },
+  "Turnix suscitator": {
+    "taxonId": 20867
+  },
+  "Turnix sylvaticus": {
+    "taxonId": 20887
+  },
+  "Turnix tanki": {
+    "taxonId": 20897
+  },
+  "Tyto javanica": {
+    "taxonId": 370399
+  },
+  "Upupa epops": {
+    "taxonId": 20969
+  },
+  "Urocissa erythroryncha": {
+    "taxonId": 495200
+  },
+  "Urocissa flavirostris": {
+    "taxonId": 8416
+  },
+  "Vanellus cinereus": {
+    "taxonId": 4875
+  },
+  "Vanellus duvaucelii": {
+    "taxonId": 4854
+  },
+  "Vanellus indicus": {
+    "taxonId": 4871
+  },
+  "Vanellus leucurus": {
+    "taxonId": 4860
+  },
+  "Vanellus malabaricus": {
+    "taxonId": 144484
+  },
+  "Vanellus vanellus": {
+    "taxonId": 4857
+  },
+  "Xenus cinereus": {
+    "taxonId": 3969
+  },
+  "Yuhina bakeri": {
+    "taxonId": 15324
+  },
+  "Yuhina flavicollis": {
+    "taxonId": 980037
+  },
+  "Yuhina gularis": {
+    "taxonId": 15315
+  },
+  "Yuhina nigrimenta": {
+    "taxonId": 15318
+  },
+  "Yuhina occipitalis": {
+    "taxonId": 15316
+  },
+  "Yungipicus canicapillus": {
+    "taxonId": 792951
+  },
+  "Yungipicus nanus": {
+    "taxonId": 792949
+  },
+  "Zapornia akool": {
+    "taxonId": 508917
+  },
+  "Zapornia bicolor": {
+    "taxonId": 508923
+  },
+  "Zapornia fusca": {
+    "taxonId": 508914
+  },
+  "Zapornia parva": {
+    "taxonId": 508919
+  },
+  "Zapornia pusilla": {
+    "taxonId": 508920
+  },
+  "Zoonavena sylvatica": {
+    "taxonId": 6700
+  },
+  "Zoothera dauma": {
+    "taxonId": 13018
+  },
+  "Zoothera dixoni": {
+    "taxonId": 13042
+  },
+  "Zoothera mollissima": {
+    "taxonId": 512782
+  },
+  "Zoothera monticola": {
+    "taxonId": 13028
+  },
+  "Zoothera neilgherriensis": {
+    "taxonId": 512770
+  },
+  "Zoothera salimalii": {
+    "taxonId": 509544
+  },
+  "Zosterops palpebrosus": {
+    "taxonId": 980260
+  }
+}
