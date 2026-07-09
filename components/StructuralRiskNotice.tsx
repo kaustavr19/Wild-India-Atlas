@@ -7,6 +7,8 @@ const kindLabel: Record<StructuralRisk["kind"], string> = {
   "split-authority": "Split management authority",
   "access-restricted": "Not currently bookable for general tourism",
   "informal-pa": "Informal protected area",
+  "sparse-documentation": "Remote, thinly documented",
+  "restricted-marine-zone": "Restricted marine access zone",
 };
 
 // Bigger and more visually distinct than FreshnessBadge on purpose — this is a structural

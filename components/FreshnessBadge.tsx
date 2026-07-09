@@ -3,6 +3,7 @@ import { useId, useState } from "react";
 import Link from "next/link";
 import { Info } from "lucide-react";
 import type { ClosureInfo } from "@/data/closures";
+import { formatVerifiedDate } from "@/lib/formatDate";
 
 export const confidenceDotClass: Record<ClosureInfo["confidence"], string> = {
   official: "bg-forest-700 dark:bg-forest-400",
@@ -23,11 +24,6 @@ export const confidenceLabel: Record<ClosureInfo["confidence"], string> = {
   inferred: "Inferred from general reporting",
   unconfirmed: "Unconfirmed — no official notice found",
 };
-
-export function formatVerifiedDate(iso: string): string {
-  const d = new Date(iso + "T00:00:00");
-  return d.toLocaleDateString("en-US", { month: "short", year: "numeric" });
-}
 
 // Bare confidence dot for use on cards/list views — no text, just a tiny signal that a
 // hotspot's closure fact carries a known confidence tier. Non-interactive (title tooltip

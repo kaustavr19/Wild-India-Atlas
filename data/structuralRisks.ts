@@ -1,6 +1,6 @@
 export type StructuralRisk = {
   slug: string;
-  kind: "multi-jurisdiction" | "split-authority" | "access-restricted" | "informal-pa";
+  kind: "multi-jurisdiction" | "split-authority" | "access-restricted" | "informal-pa" | "sparse-documentation" | "restricted-marine-zone";
   summary: string;
   detail: string;
   sourceName?: string;
@@ -47,5 +47,26 @@ export const structuralRisks: Record<string, StructuralRisk> = {
     summary: "General tourism to Indravati is not currently bookable or visitable.",
     detail: "Access has been effectively closed to general tourism for years on security grounds in this part of Bastar, Chhattisgarh. This listing is kept for reference, not as a travel recommendation — do not plan a trip here based on the rest of this page without independently confirming current access status with the Chhattisgarh Forest Department first.",
     lastVerified: "2026-07-07",
+  },
+  "hemis-national-park": {
+    slug: "hemis-national-park",
+    kind: "sparse-documentation",
+    summary: "Hemis is remote and high-altitude, with far less online documentation than other parks in this atlas.",
+    detail: "Hemis sits in the trans-Himalayan cold desert of Ladakh, and permit rules, road access, and closure timing — particularly around snow-leopard viewing season and winter weather — are far less consistently documented online than for lowland parks. Treat anything on this page beyond the basics as a starting point rather than a confirmed fact, and verify current permit and safety guidance directly with the Ladakh Wildlife Department or a local operator before planning around it, especially for a winter visit.",
+    lastVerified: "2026-07-09",
+  },
+  "rushikulya-rookery": {
+    slug: "rushikulya-rookery",
+    kind: "informal-pa",
+    summary: "Rushikulya is a seasonal turtle-nesting beach, not a formally boundaried visitor park.",
+    detail: "Rushikulya Rookery is one of the world's major Olive Ridley mass-nesting sites, but unlike the tiger reserves and national parks elsewhere in this atlas, it isn't a single legally boundaried protected area with dedicated visitor infrastructure. Access and viewing arrangements are locally coordinated — often by village-level turtle-protection groups alongside the Odisha Forest Department — around the nesting season (typically Jan–Mar) and can vary from year to year. Confirm current arrangements locally before visiting.",
+    lastVerified: "2026-07-09",
+  },
+  "gahirmatha-marine-sanctuary": {
+    slug: "gahirmatha-marine-sanctuary",
+    kind: "restricted-marine-zone",
+    summary: "Gahirmatha is a marine sanctuary with seasonally restricted boat access, not a park you tour freely.",
+    detail: "Gahirmatha Marine Wildlife Sanctuary protects the world's largest Olive Ridley nesting rookery, and general boat access into the core nesting zone is restricted — especially during the Nov–May nesting and hatching season — and enforced jointly by the Odisha Forest Department and Coast Guard. This is different from Indravati's blanket tourism closure: Gahirmatha can be visited with the right permits and timing, but don't assume open boat access without confirming current rules first.",
+    lastVerified: "2026-07-09",
   },
 };
