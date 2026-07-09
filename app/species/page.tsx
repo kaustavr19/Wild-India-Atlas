@@ -1,4 +1,4 @@
-import type { Metadata } from "next"; import { species } from "@/data/species"; import { SpeciesCard } from "@/components/SpeciesCard"; import { getExtendedSpecies } from "@/lib/extendedSpecies"; import { ExtendedSpeciesSection } from "@/components/ExtendedSpeciesSection";
+import type { Metadata } from "next"; import { species as flagshipSpecies } from "@/data/species"; import { getExtendedSpecies } from "@/lib/extendedSpecies"; import { indiaSpecialities } from "@/data/indiaSpecialities"; import { MergedSpeciesList } from "@/components/MergedSpeciesList"; import type { MergedSpeciesListItem } from "@/components/MergedSpeciesCard";
 
 export const metadata: Metadata = {
   title: "Wildlife Species Guide — Wild India Atlas",
@@ -6,13 +6,32 @@ export const metadata: Metadata = {
 };
 
 export default function SpeciesPage(){
+  const items: MergedSpeciesListItem[] = [
+    ...flagshipSpecies.map((s): MergedSpeciesListItem => ({
+      slug: s.slug,
+      commonName: s.commonName,
+      scientificName: s.scientificName,
+      group: s.category,
+      tier: "Flagship",
+      endemic: indiaSpecialities[s.scientificName]?.endemic === "yes",
+      iconic: indiaSpecialities[s.scientificName]?.iconic ?? true,
+    })),
+    ...getExtendedSpecies().map((s): MergedSpeciesListItem => ({
+      slug: s.slug,
+      commonName: s.commonName,
+      scientificName: s.scientificName,
+      group: s.iconicGroup,
+      tier: "Extended",
+      photoUrl: s.photoUrl,
+      endemic: indiaSpecialities[s.scientificName]?.endemic === "yes",
+      iconic: indiaSpecialities[s.scientificName]?.iconic ?? false,
+    })),
+  ];
+
   return <main className="mx-auto max-w-7xl px-4 pb-16 pt-24 sm:px-6 sm:pt-28">
     <p className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-river">Species guide</p>
-    <h1 className="mt-2 text-4xl font-semibold text-forest-900">{species.length} species to plan around</h1>
-    <p className="mt-3 max-w-2xl text-slate-700 dark:text-slate-300">From Bengal Tigers to Snow Leopards — see where each species actually lives in the atlas, when to go, and how difficult a real sighting is.</p>
-    <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-      {species.map(s => <SpeciesCard key={s.slug} species={s} />)}
-    </div>
-    <ExtendedSpeciesSection species={getExtendedSpecies()} />
+    <h1 className="mt-2 text-4xl font-semibold text-forest-900">{items.length} species to plan around</h1>
+    <p className="mt-3 max-w-2xl text-slate-700 dark:text-slate-300">From hand-curated Flagship profiles to real citizen-science records confirmed via eBird and iNaturalist — search, filter by group, or narrow to species that are endemic to India or editorially iconic.</p>
+    <MergedSpeciesList items={items} />
   </main>;
 }
