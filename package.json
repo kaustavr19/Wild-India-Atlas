@@ -9,7 +9,8 @@
     "typecheck": "tsc --noEmit",
     "find:ebird-hotspots": "node --experimental-strip-types scripts/find-ebird-hotspots.ts",
     "fetch:ebird": "node --experimental-strip-types scripts/fetch-ebird-species.ts",
-    "find:inaturalist-places": "node --experimental-strip-types scripts/find-inaturalist-places.ts"
+    "find:inaturalist-places": "node --experimental-strip-types scripts/find-inaturalist-places.ts",
+    "fetch:inaturalist": "node --experimental-strip-types scripts/fetch-inaturalist-species.ts"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
