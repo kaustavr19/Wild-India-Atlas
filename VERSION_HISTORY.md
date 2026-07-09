@@ -1,6 +1,10 @@
 # Version history
 
-**v1.11 — Extended species tier (merge + list + profile pages)** (current)
+**v1.12 — Real favicon and app icons** (current)
+- Added the site's actual favicon set to `public/` (`favicon.ico`, 16×16/32×32 PNGs, Apple touch icon, and Android Chrome 192×192/512×512 icons) — the site previously had no favicon at all
+- Wired them into `app/layout.tsx` via `Metadata.icons`/`Metadata.manifest`, and filled in `site.webmanifest`'s previously-blank `name`/`short_name` fields ("Wild India Atlas" / "Wild India") and set `theme_color` to the site's actual forest-900 brand color instead of the generator's default white
+
+**v1.11 — Extended species tier (merge + list + profile pages)**
 - New `lib/extendedSpecies.ts` groups the real per-hotspot `data/ebirdSpecies.json` and `data/inaturalistSpecies.json` records into one canonical entry per species (keyed by scientific name), sitting alongside — not replacing — the 21 hand-curated `data/species.ts` (Flagship) entries
 - **1,268 canonical Extended species** after dedup: 949 Bird, 122 Mammal, 139 Reptile, 58 Amphibian. 11 species that matched an existing Flagship entry were excluded from getting their own Extended page — matching is done on genus+species, not full-string equality, specifically so Flagship's trinomial subspecies names (e.g. Bengal Tiger's `Panthera tigris tigris`) correctly catch eBird/iNaturalist's binomial `Panthera tigris` as the same animal, rather than creating a redundant duplicate entry
 - `/species` gains an "Extended species" section below the unchanged Flagship grid — searchable by name, filterable by group (Bird/Mammal/Reptile/Amphibian), with a "Show more" reveal pattern (mirrors the "Show all N species" toggle from v1.8's `<EbirdChecklist>`) rather than rendering 1,268 cards at once
