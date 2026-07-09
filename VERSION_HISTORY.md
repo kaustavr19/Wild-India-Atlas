@@ -1,6 +1,12 @@
 # Version history
 
-**v1.8 — eBird checklist surfaced in the UI + structural-risk gap closed** (current)
+**v1.9 — iNaturalist discovery tooling (fauna)** (current)
+- Mirrors the eBird discovery pattern from v1.5, but for iNaturalist and scoped to mammals/reptiles/amphibians for this phase — birds are already covered by eBird, flora/other taxa are future work
+- New `scripts/find-inaturalist-places.ts` (`npm run find:inaturalist-places`) queries iNaturalist's public `places/autocomplete` endpoint (no API key required) for each of the 42 hotspots, trying a couple of reasonable name variants per park (stripping "National Park"/"Tiger Reserve"-style suffixes, splitting combined names like "Nagarhole / Kabini") before giving up, and writes candidates to `data/inaturalist-candidates.json` — 26 parks got exactly one candidate, 7 got multiple, 9 got no place match at all and are recorded as `method: "no-place-match"` rather than silently guessing a radius fallback
+- New `data/inaturalistPlaces.ts` holds confirmed slug → iNaturalist place mappings, populated by hand after reviewing the candidates file — same conservative bar as `data/ebirdHotspots.ts`, and "single candidate" alone wasn't enough: three single-candidate results were excluded on closer look because the match itself was wrong (Manas matched Zimbabwe's Mana Pools National Park; Desert National Park matched Australia's Little Desert National Park) or unclear (Thattekad matched a generic "Forest division" administrative area, not clearly the sanctuary's own boundary) — 23 of 42 parks are confirmed, the rest wait for manual review
+- Tooling only in this phase, consistent with how the eBird discovery pass shipped — no species-fetching script yet, and nothing rendered in the UI
+
+**v1.8 — eBird checklist surfaced in the UI + structural-risk gap closed**
 - New "Birds confirmed via eBird" section on the 36 hotspot pages that have a confirmed eBird mapping (`data/ebirdSpecies.json`) — additive to, and visually separate from, the existing curated `mainSpecies`/`birdSpecies` chips, not a replacement for them; collapses to the first 24 species with a "Show all N species" toggle since some parks report 300+
 - Deliberately omits eBird's `obsCount` from the UI: it's the bird count from a single most-recent checklist, not a frequency or likelihood, and would overstate the signal if shown as a percentage-like figure — presence on the list is what's meaningful, not the count
 - Curated species chips now carry a quiet cross-reference dot when that species also appears on the hotspot's eBird checklist (matched on common or scientific name) — a small signal, not a redesign of the chip UI

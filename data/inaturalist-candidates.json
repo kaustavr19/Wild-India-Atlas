@@ -1,0 +1,678 @@
+{
+  "jim-corbett-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 233242,
+        "name": "Jim Corbett National Park",
+        "displayName": "Jim Corbett National Park, UT, IN",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.10757087452800035,
+        "matchedQuery": "Jim Corbett National Park"
+      }
+    ]
+  },
+  "ranthambore-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69203,
+        "name": "Ranthambore",
+        "displayName": "Ranthambore",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.07451428600002193,
+        "matchedQuery": "Ranthambore"
+      }
+    ]
+  },
+  "bandhavgarh-tiger-reserve": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 186934,
+        "name": "Bandhavgarh National Park",
+        "displayName": "Bandhavgarh National Park, MP, IN",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.24435744221602,
+        "matchedQuery": "Bandhavgarh"
+      }
+    ]
+  },
+  "kanha-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 186936,
+        "name": "Kanha National Park",
+        "displayName": "Kanha National Park, MP, IN",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.31565801906756,
+        "matchedQuery": "Kanha National Park"
+      }
+    ]
+  },
+  "tadoba-andhari-tiger-reserve": {
+    "method": "no-place-match",
+    "triedQueries": [
+      "Tadoba Andhari Tiger Reserve",
+      "Tadoba Andhari"
+    ]
+  },
+  "pench-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 186937,
+        "name": "Pench National Park",
+        "displayName": "Pench National Park, MP, IN",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.2489201260107,
+        "matchedQuery": "Pench National Park"
+      }
+    ]
+  },
+  "kaziranga-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 68897,
+        "name": "Kaziranga",
+        "displayName": "Kaziranga",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.0706770229000131,
+        "matchedQuery": "Kaziranga"
+      }
+    ]
+  },
+  "manas-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 63162,
+        "name": "Mana Pools National Park",
+        "displayName": "Mana Pools National Park",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.4315149079478526,
+        "matchedQuery": "Manas National Park"
+      }
+    ]
+  },
+  "sundarbans-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 227699,
+        "name": "Sundarbans National Park",
+        "displayName": "Sundarbans National Park, WB, IN",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.1644597327426647,
+        "matchedQuery": "Sundarbans National Park"
+      }
+    ]
+  },
+  "keoladeo-ghana-bharatpur": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69206,
+        "name": "Keoladeo Ghana",
+        "displayName": "Keoladeo Ghana",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.0033319313999939427,
+        "matchedQuery": "Keoladeo Ghana"
+      }
+    ]
+  },
+  "chambal-river-sanctuary": {
+    "method": "no-place-match",
+    "triedQueries": [
+      "Chambal River Sanctuary",
+      "Chambal River"
+    ]
+  },
+  "little-rann-of-kutch": {
+    "method": "no-place-match",
+    "triedQueries": [
+      "Little Rann of Kutch"
+    ]
+  },
+  "gir-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 97385,
+        "name": "Girne",
+        "displayName": "Girne, Northern Cyprus",
+        "placeType": 102,
+        "adminLevel": 10,
+        "bboxArea": 0.210510780746628,
+        "matchedQuery": "Gir"
+      },
+      {
+        "placeId": 12257,
+        "name": "Giresun",
+        "displayName": "Giresun, TR",
+        "placeType": 103,
+        "adminLevel": 10,
+        "bboxArea": 1.27470462722693,
+        "matchedQuery": "Gir"
+      },
+      {
+        "placeId": 13834,
+        "name": "Giro",
+        "displayName": "Giro, AF, GZ",
+        "placeType": 102,
+        "adminLevel": 20,
+        "bboxArea": 0.1419674699718954,
+        "matchedQuery": "Gir"
+      },
+      {
+        "placeId": 102590,
+        "name": "Girisu De Cris",
+        "displayName": "Girisu De Cris, BH, RO",
+        "placeType": 1004,
+        "adminLevel": 20,
+        "bboxArea": 0.01889503643904316,
+        "matchedQuery": "Gir"
+      },
+      {
+        "placeId": 39269,
+        "name": "Girie",
+        "displayName": "Girie, AD, NG",
+        "placeType": 1018,
+        "adminLevel": 20,
+        "bboxArea": 0.26356681948528127,
+        "matchedQuery": "Gir"
+      }
+    ]
+  },
+  "hemis-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 85251,
+        "name": "Hemi Matenga Memorial Park Scenic Reserve",
+        "displayName": "Hemi Matenga Memorial Park Scenic Reserve, WG, NZ",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.0008329662071110651,
+        "matchedQuery": "Hemis"
+      },
+      {
+        "placeId": 176104,
+        "name": "Hemisphere Park",
+        "displayName": "Hemisphere Park, San Antonio,",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.0000488137687,
+        "matchedQuery": "Hemis"
+      },
+      {
+        "placeId": 69395,
+        "name": "Hemis",
+        "displayName": "Hemis",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.6060352662,
+        "matchedQuery": "Hemis"
+      }
+    ]
+  },
+  "periyar-tiger-reserve": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 210499,
+        "name": "Periyar Tiger Reserve West Forest division ",
+        "displayName": "Periyar Tiger Reserve West Forest division , KL, IN",
+        "placeType": 1009,
+        "adminLevel": null,
+        "bboxArea": 0.041477079507409,
+        "matchedQuery": "Periyar Tiger Reserve"
+      },
+      {
+        "placeId": 210502,
+        "name": "Periyar Tiger Reserve East Forest division",
+        "displayName": "Periyar Tiger Reserve East Forest division, KL, IN",
+        "placeType": 1009,
+        "adminLevel": null,
+        "bboxArea": 0.10865639496926183,
+        "matchedQuery": "Periyar Tiger Reserve"
+      },
+      {
+        "placeId": 190814,
+        "name": "Periyar Tiger Reserve",
+        "displayName": "Periyar Tiger Reserve",
+        "placeType": 10,
+        "adminLevel": null,
+        "bboxArea": 0.10865639496926183,
+        "matchedQuery": "Periyar Tiger Reserve"
+      }
+    ]
+  },
+  "nagarhole-kabini": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 9639,
+        "name": "Nagarhole National Park",
+        "displayName": "Nagarhole National Park, KA, IN",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.106764552,
+        "matchedQuery": "Nagarhole"
+      }
+    ]
+  },
+  "thattekad-bird-sanctuary": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 210454,
+        "name": "Thattekad Forest division",
+        "displayName": "Thattekad Forest division, KL, IN",
+        "placeType": 1009,
+        "adminLevel": null,
+        "bboxArea": 0.004098124889891942,
+        "matchedQuery": "Thattekad"
+      }
+    ]
+  },
+  "mangalajodi-wetlands": {
+    "method": "no-place-match",
+    "triedQueries": [
+      "Mangalajodi Wetlands",
+      "Mangalajodi"
+    ]
+  },
+  "chilika-lake": {
+    "method": "no-place-match",
+    "triedQueries": [
+      "Chilika Lake"
+    ]
+  },
+  "great-himalayan-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69577,
+        "name": "Great Himalayan",
+        "displayName": "Great Himalayan",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.13823341840007275,
+        "matchedQuery": "Great Himalayan"
+      }
+    ]
+  },
+  "desert-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 51712,
+        "name": "Little Desert National Park",
+        "displayName": "Little Desert National Park, VI, AU",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.2406283458,
+        "matchedQuery": "Desert National Park"
+      }
+    ]
+  },
+  "valley-of-flowers": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69580,
+        "name": "Valley Of Flowers",
+        "displayName": "Valley Of Flowers",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.01339384299999119,
+        "matchedQuery": "Valley of Flowers"
+      },
+      {
+        "placeId": 127435,
+        "name": "Flower Valley Farm",
+        "displayName": "Flower Valley Farm",
+        "placeType": null,
+        "adminLevel": null,
+        "bboxArea": 0.0013506241394281137,
+        "matchedQuery": "Valley of Flowers"
+      },
+      {
+        "placeId": 227481,
+        "name": "Nanda Devi and Valley of Flowers National Parks",
+        "displayName": "Nanda Devi and Valley of Flowers National Parks World Heritage Site, UT, IN",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.25903494225062124,
+        "matchedQuery": "Valley of Flowers"
+      }
+    ]
+  },
+  "dudhwa-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 68896,
+        "name": "Dudhwa",
+        "displayName": "Dudhwa",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.18913026359990814,
+        "matchedQuery": "Dudhwa"
+      }
+    ]
+  },
+  "satpura-tiger-reserve": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69588,
+        "name": "Satpura National Park",
+        "displayName": "Satpura National Park",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.2738331004479,
+        "matchedQuery": "Satpura"
+      }
+    ]
+  },
+  "eravikulam-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 68903,
+        "name": "Eravikulam",
+        "displayName": "Eravikulam",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.030083296200019528,
+        "matchedQuery": "Eravikulam"
+      }
+    ]
+  },
+  "singalila-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69775,
+        "name": "Singalila",
+        "displayName": "Singalila",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.01699727620002015,
+        "matchedQuery": "Singalila"
+      }
+    ]
+  },
+  "rushikulya-rookery": {
+    "method": "no-place-match",
+    "triedQueries": [
+      "Rushikulya Rookery",
+      "Rushikulya"
+    ]
+  },
+  "gahirmatha-marine-sanctuary": {
+    "method": "no-place-match",
+    "triedQueries": [
+      "Gahirmatha Marine Sanctuary",
+      "Gahirmatha"
+    ]
+  },
+  "bandipur-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69355,
+        "name": "Bandipur",
+        "displayName": "Bandipur",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.23737500660003596,
+        "matchedQuery": "Bandipur"
+      }
+    ]
+  },
+  "mudumalai-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 70349,
+        "name": "Mudumalai",
+        "displayName": "Mudumalai",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.00966254211075855,
+        "matchedQuery": "Mudumalai"
+      }
+    ]
+  },
+  "biligiri-rangaswamy-temple-tiger-reserve": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 142643,
+        "name": "Biligiri Rangaswamy Temple Tiger Reserve",
+        "displayName": "Biligiri Rangaswamy Temple Tiger Reserve, KA, IN",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.11928462237544915,
+        "matchedQuery": "Biligiri Rangaswamy Temple Tiger Reserve"
+      }
+    ]
+  },
+  "sariska-tiger-reserve": {
+    "method": "no-place-match",
+    "triedQueries": [
+      "Sariska Tiger Reserve",
+      "Sariska"
+    ]
+  },
+  "panna-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 36131,
+        "name": "Pannala",
+        "displayName": "Pannala, LK, KG",
+        "placeType": 1009,
+        "adminLevel": 20,
+        "bboxArea": 0.03637885032730289,
+        "matchedQuery": "Panna"
+      },
+      {
+        "placeId": 32307,
+        "name": "Panna",
+        "displayName": "Panna, MP, IN",
+        "placeType": 102,
+        "adminLevel": 20,
+        "bboxArea": 1.1821866421671243,
+        "matchedQuery": "Panna"
+      },
+      {
+        "placeId": 69640,
+        "name": "Panna",
+        "displayName": "Panna",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.17189952120003793,
+        "matchedQuery": "Panna"
+      },
+      {
+        "placeId": 234332,
+        "name": "Pannavadi Parisal Thurai ",
+        "displayName": "Pannavadi Parisal Thurai ",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.0012585333231640951,
+        "matchedQuery": "Panna"
+      },
+      {
+        "placeId": 222014,
+        "name": "Pannavadi Bird Watching Area",
+        "displayName": "Pannavadi Bird Watching Area",
+        "placeType": 16,
+        "adminLevel": null,
+        "bboxArea": 0.0012585333231640951,
+        "matchedQuery": "Panna"
+      }
+    ]
+  },
+  "kuno-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 34015,
+        "name": "Kunohe",
+        "displayName": "Kunohe, IW, JP",
+        "placeType": 9,
+        "adminLevel": 20,
+        "bboxArea": 0.023895398713652993,
+        "matchedQuery": "Kuno"
+      },
+      {
+        "placeId": 30248,
+        "name": "Kunoy",
+        "displayName": "Kunoy, NO, FO",
+        "placeType": 1004,
+        "adminLevel": 20,
+        "bboxArea": 0.04995861950032727,
+        "matchedQuery": "Kuno"
+      },
+      {
+        "placeId": 164682,
+        "name": "Kunovice",
+        "displayName": "Kunovice, ZK, CZ",
+        "placeType": 1005,
+        "adminLevel": null,
+        "bboxArea": 0.007610629237987049,
+        "matchedQuery": "Kuno"
+      }
+    ]
+  },
+  "rajaji-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69738,
+        "name": "Rajaji",
+        "displayName": "Rajaji",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.22974117119990903,
+        "matchedQuery": "Rajaji"
+      }
+    ]
+  },
+  "melghat-tiger-reserve": {
+    "method": "no-place-match",
+    "triedQueries": [
+      "Melghat Tiger Reserve",
+      "Melghat"
+    ]
+  },
+  "simlipal-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69202,
+        "name": "Simlipal",
+        "displayName": "Simlipal",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.07650481759997388,
+        "matchedQuery": "Simlipal"
+      }
+    ]
+  },
+  "valmiki-tiger-reserve": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 70344,
+        "name": "Valmiki",
+        "displayName": "Valmiki",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.04190999236212222,
+        "matchedQuery": "Valmiki"
+      }
+    ]
+  },
+  "indravati-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69589,
+        "name": "Indravati",
+        "displayName": "Indravati",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.20297543249996094,
+        "matchedQuery": "Indravati"
+      }
+    ]
+  },
+  "namdapha-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69391,
+        "name": "Namdapha",
+        "displayName": "Namdapha",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.2353378453133524,
+        "matchedQuery": "Namdapha"
+      }
+    ]
+  },
+  "keibul-lamjao-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69398,
+        "name": "Keibul-Lamjao",
+        "displayName": "Keibul-Lamjao",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.005766020400001184,
+        "matchedQuery": "Keibul Lamjao"
+      }
+    ]
+  },
+  "silent-valley-national-park": {
+    "method": "place-candidates",
+    "candidates": [
+      {
+        "placeId": 69578,
+        "name": "Silent Valley",
+        "displayName": "Silent Valley",
+        "placeType": 100,
+        "adminLevel": null,
+        "bboxArea": 0.017071817900009226,
+        "matchedQuery": "Silent Valley"
+      },
+      {
+        "placeId": 199131,
+        "name": "Silent Valley NP",
+        "displayName": "Silent Valley NP",
+        "placeType": 10,
+        "adminLevel": null,
+        "bboxArea": 0.0376872716093374,
+        "matchedQuery": "Silent Valley"
+      }
+    ]
+  }
+}
