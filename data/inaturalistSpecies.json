@@ -5889,7 +5889,7 @@
       "commonName": "Asian Elephant",
       "scientificName": "Elephas maximus",
       "iconicTaxon": "Mammalia",
-      "observationCount": 137,
+      "observationCount": 138,
       "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/2035244/medium.jpg",
       "conservationStatus": "endangered",
       "lastPulled": "2026-07-09"
@@ -5899,7 +5899,7 @@
       "commonName": "Chital",
       "scientificName": "Axis axis",
       "iconicTaxon": "Mammalia",
-      "observationCount": 114,
+      "observationCount": 115,
       "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/261197112/medium.jpg",
       "lastPulled": "2026-07-09"
     },
@@ -5908,7 +5908,7 @@
       "commonName": "Gaur",
       "scientificName": "Bos gaurus",
       "iconicTaxon": "Mammalia",
-      "observationCount": 72,
+      "observationCount": 73,
       "photoUrl": "https://static.inaturalist.org/photos/299727910/medium.jpeg",
       "conservationStatus": "vulnerable",
       "lastPulled": "2026-07-09"
@@ -5934,6 +5934,16 @@
       "lastPulled": "2026-07-09"
     },
     {
+      "taxonId": 75053,
+      "commonName": "Sambar",
+      "scientificName": "Rusa unicolor",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 30,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/58143931/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
       "taxonId": 41967,
       "commonName": "Tiger",
       "scientificName": "Panthera tigris",
@@ -5941,16 +5951,6 @@
       "observationCount": 29,
       "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13207883/medium.jpg",
       "conservationStatus": "endangered",
-      "lastPulled": "2026-07-09"
-    },
-    {
-      "taxonId": 75053,
-      "commonName": "Sambar",
-      "scientificName": "Rusa unicolor",
-      "iconicTaxon": "Mammalia",
-      "observationCount": 29,
-      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/58143931/medium.jpeg",
-      "conservationStatus": "vulnerable",
       "lastPulled": "2026-07-09"
     },
     {
@@ -8441,5 +8441,3946 @@
       "lastPulled": "2026-07-09"
     }
   ],
-  "keibul-lamjao-national-park": []
+  "keibul-lamjao-national-park": [],
+  "hemis-national-park": [
+    {
+      "taxonId": 42313,
+      "commonName": "Bharal",
+      "scientificName": "Pseudois nayaur",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 48,
+      "photoUrl": "https://static.inaturalist.org/photos/41916158/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 46094,
+      "commonName": "Himalayan Marmot",
+      "scientificName": "Marmota himalayana",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 16,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/27731925/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43124,
+      "commonName": "Woolly Hare",
+      "scientificName": "Lepus oiostolus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 13,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/554534581/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43171,
+      "commonName": "Large-eared Pika",
+      "scientificName": "Ochotona macrotis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 10,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/102742978/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43177,
+      "commonName": "Ladak Pika",
+      "scientificName": "Ochotona ladacensis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 8,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/103162463/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 318732,
+      "commonName": "Himalayan Agama",
+      "scientificName": "Paralaudakia himalayana",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 8,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/114913966/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 74831,
+      "commonName": "Snow Leopard",
+      "scientificName": "Panthera uncia",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 6,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/16308659/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 850028,
+      "commonName": "Himalayan Pika",
+      "scientificName": "Ochotona roylii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/21909093/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42069,
+      "commonName": "Red Fox",
+      "scientificName": "Vulpes vulpes",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 4,
+      "photoUrl": "https://static.inaturalist.org/photos/265916780/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 889089,
+      "commonName": "Domestic Yak",
+      "scientificName": "Bos grunniens",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://static.inaturalist.org/photos/253802998/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41979,
+      "commonName": "Eurasian Lynx",
+      "scientificName": "Lynx lynx",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/186702089/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 148030,
+      "commonName": "Donkey",
+      "scientificName": "Equus asinus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/140505310/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1367375,
+      "commonName": "Glacier Skink",
+      "scientificName": "Ablepharus ladacensis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/102743086/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 27072,
+      "commonName": "Jan’s Cliff Racer",
+      "scientificName": "Platyceps rhodorachis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/160489537/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41811,
+      "commonName": "Mountain Weasel",
+      "scientificName": "Mustela altaica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/294953/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42048,
+      "commonName": "Gray Wolf",
+      "scientificName": "Canis lupus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/43410580/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 46628,
+      "commonName": "Pale Gray Shrew",
+      "scientificName": "Crocidura pergrisea",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/138531673/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 209233,
+      "commonName": "Domestic Horse",
+      "scientificName": "Equus caballus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/23672580/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    }
+  ],
+  "panna-national-park": [
+    {
+      "taxonId": 42166,
+      "commonName": "Chital",
+      "scientificName": "Axis axis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 24,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/261197112/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42426,
+      "commonName": "Nilgai",
+      "scientificName": "Boselaphus tragocamelus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 23,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/489655167/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1071032,
+      "commonName": "Bengal Sacred Langur",
+      "scientificName": "Semnopithecus entellus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 20,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/102576725/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42134,
+      "commonName": "Wild Boar",
+      "scientificName": "Sus scrofa",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 12,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/414500081/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 75053,
+      "commonName": "Sambar",
+      "scientificName": "Rusa unicolor",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 12,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/58143931/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42253,
+      "commonName": "Indian Gazelle",
+      "scientificName": "Gazella bennettii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 10,
+      "photoUrl": "https://static.inaturalist.org/photos/230592162/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 851014,
+      "commonName": "Golden Jackal",
+      "scientificName": "Canis aureus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 10,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/12400254/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41967,
+      "commonName": "Tiger",
+      "scientificName": "Panthera tigris",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 9,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13207883/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41961,
+      "commonName": "Jungle Cat",
+      "scientificName": "Felis chaus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60135146/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41963,
+      "commonName": "Leopard",
+      "scientificName": "Panthera pardus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/8666580/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26093,
+      "commonName": "Common skittering frog",
+      "scientificName": "Euphlyctis cyanophlyctis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/585716278/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41618,
+      "commonName": "Small Indian Civet",
+      "scientificName": "Viverricula indica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/303182/medium.JPG",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925714,
+      "commonName": "Northern Palm Civet",
+      "scientificName": "Paradoxurus hermaphroditus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://static.inaturalist.org/photos/58323677/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 30687,
+      "commonName": "Russell's Viper",
+      "scientificName": "Daboia russelii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/25582268/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41651,
+      "commonName": "Sloth Bear",
+      "scientificName": "Melursus ursinus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/62552125/medium.png",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41834,
+      "commonName": "Ratel",
+      "scientificName": "Mellivora capensis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/343004199/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41888,
+      "commonName": "Striped Hyaena",
+      "scientificName": "Hyaena hyaena",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/282398333/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42056,
+      "commonName": "Indian Fox",
+      "scientificName": "Vulpes bengalensis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/502431502/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42101,
+      "commonName": "Dhole",
+      "scientificName": "Cuon alpinus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/65925444/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42386,
+      "commonName": "Four-horned Antelope",
+      "scientificName": "Tetracerus quadricornis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/305818129/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43460,
+      "commonName": "Rhesus Macaque",
+      "scientificName": "Macaca mulatta",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/8739674/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 44175,
+      "commonName": "Indian Crested Porcupine",
+      "scientificName": "Hystrix indica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/171668813/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26063,
+      "commonName": "Mugger Crocodile",
+      "scientificName": "Crocodylus palustris",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/57354214/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26555,
+      "commonName": "Chunam Tree Frog",
+      "scientificName": "Polypedates maculatus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/178802066/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26654,
+      "commonName": "Common Bronzeback Tree Snake",
+      "scientificName": "Dendrelaphis tristis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/255244287/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31260,
+      "commonName": "Oriental Forest Lizards",
+      "scientificName": "Calotes",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/5361006/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 34505,
+      "commonName": "Northern House Gecko",
+      "scientificName": "Hemidactylus flaviviridis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/87990951/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39415,
+      "commonName": "Bengal Monitor",
+      "scientificName": "Varanus bengalensis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/1813745/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43122,
+      "commonName": "Indian Hare",
+      "scientificName": "Lepus nigricollis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/218911/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43362,
+      "commonName": "Indian Pangolin",
+      "scientificName": "Manis crassicaudata",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/130040533/medium.jpeg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 45936,
+      "commonName": "Five-striped Palm Squirrel",
+      "scientificName": "Funambulus pennantii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/153746004/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 46302,
+      "commonName": "Madras Treeshrew",
+      "scientificName": "Anathana ellioti",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/19342732/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 53492,
+      "commonName": "Indian Cobra",
+      "scientificName": "Naja naja",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/97106278/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 371414,
+      "commonName": "African Wildcat",
+      "scientificName": "Felis lybica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/99451714/medium.jpeg",
+      "conservationStatus": "Appendix II",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925969,
+      "commonName": "Ruddy Mongoose",
+      "scientificName": "Urva smithii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/15454216/medium.jpg",
+      "lastPulled": "2026-07-09"
+    }
+  ],
+  "periyar-tiger-reserve": [
+    {
+      "taxonId": 43448,
+      "commonName": "Bonnet Macaque",
+      "scientificName": "Macaca radiata",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 67,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/28393243/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 46030,
+      "commonName": "Indian Giant Squirrel",
+      "scientificName": "Ratufa indica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 54,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/251341162/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42134,
+      "commonName": "Wild Boar",
+      "scientificName": "Sus scrofa",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 29,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/414500081/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43697,
+      "commonName": "Asian Elephant",
+      "scientificName": "Elephas maximus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 28,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/2035244/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 717509,
+      "commonName": "Kerala Warty Frog",
+      "scientificName": "Minervarya keralensis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 19,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/64702096/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39415,
+      "commonName": "Bengal Monitor",
+      "scientificName": "Varanus bengalensis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 16,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/1813745/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 74111,
+      "commonName": "Gaur",
+      "scientificName": "Bos gaurus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 16,
+      "photoUrl": "https://static.inaturalist.org/photos/299727910/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 44175,
+      "commonName": "Indian Crested Porcupine",
+      "scientificName": "Hystrix indica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 15,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/171668813/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 45937,
+      "commonName": "Jungle Palm Squirrel",
+      "scientificName": "Funambulus tristriatus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 12,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/173278198/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26137,
+      "commonName": "Indian frogs",
+      "scientificName": "Indirana",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 11,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/61691/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39959,
+      "commonName": "Indian Black Turtle",
+      "scientificName": "Melanochelys trijuga",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 11,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/8411267/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925968,
+      "commonName": "Stripe-necked Mongoose",
+      "scientificName": "Urva vitticollis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 10,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/200988/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 963196,
+      "commonName": "Nilgiri Langur",
+      "scientificName": "Semnopithecus johnii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 10,
+      "photoUrl": "https://static.inaturalist.org/photos/55515452/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1250500,
+      "commonName": "Keira's shrub frog",
+      "scientificName": "Raorchestes keirasabinae",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 10,
+      "photoUrl": "https://static.inaturalist.org/photos/303743557/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 28868,
+      "commonName": "Oriental Rat Snake",
+      "scientificName": "Ptyas mucosa",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 9,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/323553661/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 68532,
+      "commonName": "Keeled Indian Mabuya",
+      "scientificName": "Eutropis carinata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 9,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/139182074/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31270,
+      "commonName": "Large Scaled Forest Lizard",
+      "scientificName": "Calotes grandisquamis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 8,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/72739423/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 476760,
+      "commonName": "Beautiful Dancing Frog",
+      "scientificName": "Micrixalus adonis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 8,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/97066194/medium.jpeg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26433,
+      "commonName": "Waynad bush frog",
+      "scientificName": "Pseudophilautus wynaadensis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 7,
+      "photoUrl": "https://static.inaturalist.org/photos/291700835/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 75053,
+      "commonName": "Sambar",
+      "scientificName": "Rusa unicolor",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 7,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/58143931/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 65182,
+      "commonName": "Bicolored Frog",
+      "scientificName": "Clinotarsus curtipes",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 6,
+      "photoUrl": "https://static.inaturalist.org/photos/33913/medium.JPG",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1304809,
+      "commonName": "Anamala Pit Viper",
+      "scientificName": "Craspedocephalus anamallensis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 6,
+      "photoUrl": "https://static.inaturalist.org/photos/183376488/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1499804,
+      "commonName": "Nilgiri keelback",
+      "scientificName": "Sahyadriophis beddomei",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 6,
+      "photoUrl": "https://static.inaturalist.org/photos/1339753/medium.JPG",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1677654,
+      "commonName": "Sreen's Golden-backed Frog",
+      "scientificName": "Hylarana sreeni",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 6,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/67601037/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41651,
+      "commonName": "Sloth Bear",
+      "scientificName": "Melursus ursinus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 5,
+      "photoUrl": "https://static.inaturalist.org/photos/62552125/medium.png",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41967,
+      "commonName": "Tiger",
+      "scientificName": "Panthera tigris",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13207883/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42101,
+      "commonName": "Dhole",
+      "scientificName": "Cuon alpinus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/65925444/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 45938,
+      "commonName": "Three-striped Palm Squirrel",
+      "scientificName": "Funambulus palmarum",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/45724654/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 62345,
+      "commonName": "Asian Common Toad",
+      "scientificName": "Duttaphrynus melanostictus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/354903227/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 70908,
+      "commonName": "Variable Bush Frog",
+      "scientificName": "Raorchestes akroparallagi",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/132556841/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 74659,
+      "commonName": "Northern Red Muntjac",
+      "scientificName": "Muntiacus vaginalis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/110225991/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 797728,
+      "commonName": "Elliot's Forest Lizard",
+      "scientificName": "Monilesaurus ellioti",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 5,
+      "photoUrl": "https://static.inaturalist.org/photos/164911959/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31276,
+      "commonName": "Common Green Forest Lizard",
+      "scientificName": "Calotes calotes",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 4,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/441905634/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31281,
+      "commonName": "Indian Garden Lizard",
+      "scientificName": "Calotes versicolor",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 4,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/164183277/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42166,
+      "commonName": "Chital",
+      "scientificName": "Axis axis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 4,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/261197112/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 66517,
+      "commonName": "Western Tree Frog",
+      "scientificName": "Polypedates occidentalis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 4,
+      "photoUrl": "https://static.inaturalist.org/photos/157287405/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 75010,
+      "commonName": "Beddome's Horseshoe Bat",
+      "scientificName": "Rhinolophus beddomei",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 4,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/85493707/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 81925,
+      "commonName": "Domestic Water Buffalo",
+      "scientificName": "Bubalus bubalis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 4,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/4666378/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1161476,
+      "commonName": "Wall's Vine Snake",
+      "scientificName": "Ahaetulla isabellina",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 4,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/162083439/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 29550,
+      "commonName": "Travancore Wolf Snake",
+      "scientificName": "Lycodon travancoricus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://static.inaturalist.org/photos/101296663/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31198,
+      "commonName": "Western Ghats Flying Lizard",
+      "scientificName": "Draco dussumieri",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://static.inaturalist.org/photos/15614356/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 74649,
+      "commonName": "Indian Chevrotain",
+      "scientificName": "Moschiola indica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/241134738/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925977,
+      "commonName": "Indian Grey Mongoose",
+      "scientificName": "Urva edwardsii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://static.inaturalist.org/photos/114757878/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1641421,
+      "commonName": "Indian Flying Fox",
+      "scientificName": "Pteropus medius",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://static.inaturalist.org/photos/175031411/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26093,
+      "commonName": "Common skittering frog",
+      "scientificName": "Euphlyctis cyanophlyctis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/585716278/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26258,
+      "commonName": "Indus Valley Bullfrog",
+      "scientificName": "Hoplobatrachus tigerinus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/89719517/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26530,
+      "commonName": "Malabar Gliding Frog",
+      "scientificName": "Rhacophorus malabaricus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/231414919/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 34630,
+      "commonName": "Common Four-clawed Gecko",
+      "scientificName": "Gehyra mutilata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/10096858/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 45935,
+      "commonName": "Nilgiri Palm Squirrel",
+      "scientificName": "Funambulus sublineatus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/566724/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 45984,
+      "commonName": "Common Giant Flying Squirrel",
+      "scientificName": "Petaurista philippensis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/456073462/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 47144,
+      "commonName": "Domestic Dog",
+      "scientificName": "Canis familiaris",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/307568930/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 73833,
+      "commonName": "Travancore Tortoise",
+      "scientificName": "Indotestudo travancorica",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/45402253/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1250080,
+      "commonName": "Common Dotted Garden Skink",
+      "scientificName": "Riopa punctata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/4978828/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1403186,
+      "commonName": "Wynad Keelback",
+      "scientificName": "Amphiesma monticola",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/257473824/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1677645,
+      "commonName": "Don's Golden-backed Frog",
+      "scientificName": "Hylarana doni",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/98077784/medium.jpeg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26301,
+      "commonName": "Cross-backed Bush Frog",
+      "scientificName": "Raorchestes signatus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/23357818/medium.jpeg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26380,
+      "commonName": "Travancore Bushfrog",
+      "scientificName": "Raorchestes travancoricus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/4099139/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 27207,
+      "commonName": "Golden Tree Snake",
+      "scientificName": "Chrysopelea ornata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/329145707/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 28104,
+      "commonName": "Striped Caecilians",
+      "scientificName": "Ichthyophis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/132411165/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 28222,
+      "commonName": "Chengalam Caecilian",
+      "scientificName": "Uraeotyphlus interruptus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/53179169/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 30264,
+      "commonName": "Trinket Snake",
+      "scientificName": "Coelognathus helena",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/173613617/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31408,
+      "commonName": "Rock Dragon",
+      "scientificName": "Psammophilus dorsalis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/53482557/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 32150,
+      "commonName": "Indian Python",
+      "scientificName": "Python molurus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/51465007/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 33437,
+      "commonName": "Coastal Round-eyed Gecko",
+      "scientificName": "Cnemaspis littoralis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/79863165/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 40705,
+      "commonName": "Blyth's Horseshoe Bat",
+      "scientificName": "Rhinolophus lepidus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/20180840/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 40789,
+      "commonName": "Short-nosed Fruit Bats",
+      "scientificName": "Cynopterus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/20194/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41618,
+      "commonName": "Small Indian Civet",
+      "scientificName": "Viverricula indica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/303182/medium.JPG",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43122,
+      "commonName": "Indian Hare",
+      "scientificName": "Lepus nigricollis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/218911/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43446,
+      "commonName": "Lion-tailed Macaque",
+      "scientificName": "Macaca silenus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/455099444/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 51940,
+      "commonName": "Asian House Gecko",
+      "scientificName": "Hemidactylus frenatus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/61116593/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 53492,
+      "commonName": "Indian Cobra",
+      "scientificName": "Naja naja",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/97106278/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 66190,
+      "commonName": "Castle Rock night frog",
+      "scientificName": "Nyctibatrachus petraeus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/315006310/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 66358,
+      "commonName": "Anil's Bush Frog",
+      "scientificName": "Raorchestes anili",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/23750806/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 70883,
+      "commonName": "Kani Bushfrog",
+      "scientificName": "Pseudophilautus kani",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/959175/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 96224,
+      "commonName": "Common Krait",
+      "scientificName": "Bungarus caeruleus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/59003293/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 99181,
+      "commonName": "Ashok's Bronzeback",
+      "scientificName": "Dendrelaphis ashoki",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/101306464/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 134758,
+      "commonName": "Meowing Night Frog",
+      "scientificName": "Nyctibatrachus poocha",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/104796850/medium.jpeg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 476790,
+      "commonName": "Pleasent bush frog",
+      "scientificName": "Raorchestes blandus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/176106405/medium.jpeg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 539844,
+      "commonName": "Brahminy Blindsnake",
+      "scientificName": "Indotyphlops braminus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/404177966/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 558955,
+      "commonName": "Kerala Shieldtail",
+      "scientificName": "Uropeltis ceylanica",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/45413371/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 787617,
+      "commonName": "Common Paddy Field Frog",
+      "scientificName": "Minervarya agricola",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/175051796/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 797727,
+      "commonName": "Spiny-headed Forest Lizard",
+      "scientificName": "Monilesaurus acanthocephalus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/70497254/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 846179,
+      "commonName": "Small Cats",
+      "scientificName": "Felinae",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/64601987/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 846307,
+      "commonName": "Goats and Sheep",
+      "scientificName": "Caprini",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/11484047/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925714,
+      "commonName": "Northern Palm Civet",
+      "scientificName": "Paradoxurus hermaphroditus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/58323677/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1304685,
+      "commonName": "Tamil Nadu Mabuya",
+      "scientificName": "Eutropis dawsoni",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/483751420/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1595919,
+      "commonName": "Karaavali skittering frog",
+      "scientificName": "Phrynoderma karaavali",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/297633411/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    }
+  ],
+  "silent-valley-national-park": [
+    {
+      "taxonId": 1304708,
+      "commonName": "Malabarian Pit Viper",
+      "scientificName": "Craspedocephalus malabaricus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 17,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/542231178/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26530,
+      "commonName": "Malabar Gliding Frog",
+      "scientificName": "Rhacophorus malabaricus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 8,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/231414919/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 46030,
+      "commonName": "Indian Giant Squirrel",
+      "scientificName": "Ratufa indica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 8,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/251341162/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1161475,
+      "commonName": "Malabar Vine Snake",
+      "scientificName": "Ahaetulla malabarica",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 7,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/65354613/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1677646,
+      "commonName": "Yellowish Golden-backed Frog",
+      "scientificName": "Hylarana flavescens",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 7,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/132629801/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26433,
+      "commonName": "Waynad bush frog",
+      "scientificName": "Pseudophilautus wynaadensis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 6,
+      "photoUrl": "https://static.inaturalist.org/photos/291700835/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 62345,
+      "commonName": "Asian Common Toad",
+      "scientificName": "Duttaphrynus melanostictus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/354903227/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 25722,
+      "commonName": "Night Frogs",
+      "scientificName": "Nyctibatrachus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 3,
+      "photoUrl": "https://static.inaturalist.org/photos/233102806/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26149,
+      "commonName": "Beddomes Leaping Frog",
+      "scientificName": "Indirana beddomii",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/161031553/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31281,
+      "commonName": "Indian Garden Lizard",
+      "scientificName": "Calotes versicolor",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/164183277/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 517323,
+      "commonName": "Raorchestes lechiya",
+      "scientificName": "Raorchestes lechiya",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/90947879/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 797730,
+      "commonName": "Roux's Forest Lizard",
+      "scientificName": "Monilesaurus rouxii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://static.inaturalist.org/photos/276161685/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26104,
+      "commonName": "Silent Valley Dancing Frog",
+      "scientificName": "Micrixalus thampii",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/140412408/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26549,
+      "commonName": "whipping frogs",
+      "scientificName": "Polypedates",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/49659750/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 28868,
+      "commonName": "Oriental Rat Snake",
+      "scientificName": "Ptyas mucosa",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/323553661/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 29275,
+      "commonName": "Malabar Brown Kukri Snake",
+      "scientificName": "Oligodon affinis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/101296577/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31388,
+      "commonName": "Horsfield's Spiny Lizard",
+      "scientificName": "Salea horsfieldii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/39582776/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31408,
+      "commonName": "Rock Dragon",
+      "scientificName": "Psammophilus dorsalis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/53482557/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 68530,
+      "commonName": "Hump-nosed Viper",
+      "scientificName": "Hypnale hypnale",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/2050660/medium.JPG",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 476582,
+      "commonName": "Painted Globular Frog",
+      "scientificName": "Uperodon taprobanicus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/46281125/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 797728,
+      "commonName": "Elliot's Forest Lizard",
+      "scientificName": "Monilesaurus ellioti",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/164911959/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1499804,
+      "commonName": "Nilgiri keelback",
+      "scientificName": "Sahyadriophis beddomei",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/1339753/medium.JPG",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 24842,
+      "commonName": "Ornate Narrow-mouthed Toad",
+      "scientificName": "Microhyla ornata",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/55234572/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26093,
+      "commonName": "Common skittering frog",
+      "scientificName": "Euphlyctis cyanophlyctis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/585716278/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26258,
+      "commonName": "Indus Valley Bullfrog",
+      "scientificName": "Hoplobatrachus tigerinus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/89719517/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26685,
+      "commonName": "Large-eyed bronzeback",
+      "scientificName": "Dendrelaphis grandoculis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/2491527/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 28002,
+      "commonName": "Perrotet's Mountain Snake",
+      "scientificName": "Xylophis perroteti",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/2580482/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 28104,
+      "commonName": "Striped Caecilians",
+      "scientificName": "Ichthyophis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/132411165/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41961,
+      "commonName": "Jungle Cat",
+      "scientificName": "Felis chaus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60135146/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43448,
+      "commonName": "Bonnet Macaque",
+      "scientificName": "Macaca radiata",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/28393243/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 64762,
+      "commonName": "Clinotarsus",
+      "scientificName": "Clinotarsus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/33913/medium.JPG",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 68532,
+      "commonName": "Keeled Indian Mabuya",
+      "scientificName": "Eutropis carinata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/139182074/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 70908,
+      "commonName": "Variable Bush Frog",
+      "scientificName": "Raorchestes akroparallagi",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/132556841/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 96496,
+      "commonName": "Nilgiri Forest Lizard",
+      "scientificName": "Calotes nemoricola",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/55754288/medium.png",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 98031,
+      "commonName": "Gracile Round-eyed Gecko",
+      "scientificName": "Cnemaspis gracilis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/63092142/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 476769,
+      "commonName": "Sairandhri Dancing Frog",
+      "scientificName": "Micrixalus sairandhri",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/140447732/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 517324,
+      "commonName": "Silent Valley bushfrog",
+      "scientificName": "Raorchestes silentvalley",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/90947655/medium.jpeg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 558955,
+      "commonName": "Kerala Shieldtail",
+      "scientificName": "Uropeltis ceylanica",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/45413371/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1031591,
+      "commonName": "Thackeray's cat snake",
+      "scientificName": "Boiga thackerayi",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/463257444/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1629662,
+      "commonName": "Western Ghats King Cobra",
+      "scientificName": "Ophiophagus kaalinga",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/450533944/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1677655,
+      "commonName": "Mountain Golden-backed frog",
+      "scientificName": "Hylarana montana",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/70456672/medium.jpg",
+      "lastPulled": "2026-07-09"
+    }
+  ],
+  "valley-of-flowers": [
+    {
+      "taxonId": 850028,
+      "commonName": "Himalayan Pika",
+      "scientificName": "Ochotona roylii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/21909093/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31061,
+      "commonName": "Himalayan Pitviper",
+      "scientificName": "Gloydius himalayanus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/81952601/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42069,
+      "commonName": "Red Fox",
+      "scientificName": "Vulpes vulpes",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/265916780/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 539153,
+      "commonName": "Himalayan Mountain Keelbacks",
+      "scientificName": "Herpetoreas",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/96036692/medium.jpg",
+      "lastPulled": "2026-07-09"
+    }
+  ],
+  "chilika-lake": [
+    {
+      "taxonId": 851014,
+      "commonName": "Golden Jackal",
+      "scientificName": "Canis aureus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 13,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/12400254/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41519,
+      "commonName": "Irrawaddy Dolphin",
+      "scientificName": "Orcaella brevirostris",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 8,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/345657581/medium.jpeg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 62345,
+      "commonName": "Asian Common Toad",
+      "scientificName": "Duttaphrynus melanostictus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 6,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/354903227/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39670,
+      "commonName": "Olive Ridley Sea Turtle",
+      "scientificName": "Lepidochelys olivacea",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://static.inaturalist.org/photos/154666409/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1071032,
+      "commonName": "Bengal Sacred Langur",
+      "scientificName": "Semnopithecus entellus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/102576725/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31281,
+      "commonName": "Indian Garden Lizard",
+      "scientificName": "Calotes versicolor",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/164183277/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26555,
+      "commonName": "Chunam Tree Frog",
+      "scientificName": "Polypedates maculatus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/178802066/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 28868,
+      "commonName": "Oriental Rat Snake",
+      "scientificName": "Ptyas mucosa",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/323553661/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 29574,
+      "commonName": "Indian Wolf Snake",
+      "scientificName": "Lycodon aulicus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/260682163/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 29832,
+      "commonName": "Buff Striped Keelback",
+      "scientificName": "Amphiesma stolatum",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/317939930/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 30687,
+      "commonName": "Russell's Viper",
+      "scientificName": "Daboia russelii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/25582268/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31408,
+      "commonName": "Rock Dragon",
+      "scientificName": "Psammophilus dorsalis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/53482557/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 32205,
+      "commonName": "Rough-scaled Sand Boa",
+      "scientificName": "Eryx conicus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/154883190/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 34505,
+      "commonName": "Northern House Gecko",
+      "scientificName": "Hemidactylus flaviviridis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/87990951/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39415,
+      "commonName": "Bengal Monitor",
+      "scientificName": "Varanus bengalensis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/1813745/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42134,
+      "commonName": "Wild Boar",
+      "scientificName": "Sus scrofa",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/414500081/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43423,
+      "commonName": "Squirrel Monkeys",
+      "scientificName": "Saimiri",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/110084476/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43460,
+      "commonName": "Rhesus Macaque",
+      "scientificName": "Macaca mulatta",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/8739674/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 47144,
+      "commonName": "Domestic Dog",
+      "scientificName": "Canis familiaris",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/307568930/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 51940,
+      "commonName": "Asian House Gecko",
+      "scientificName": "Hemidactylus frenatus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/61116593/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 68532,
+      "commonName": "Keeled Indian Mabuya",
+      "scientificName": "Eutropis carinata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/139182074/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 81925,
+      "commonName": "Domestic Water Buffalo",
+      "scientificName": "Bubalus bubalis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/4666378/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 465715,
+      "commonName": "Dicroglossinae",
+      "scientificName": "Dicroglossinae",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/54620648/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 476559,
+      "commonName": "White-bellied pug-snout frog",
+      "scientificName": "Uperodon variegatus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/56664365/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925977,
+      "commonName": "Indian Grey Mongoose",
+      "scientificName": "Urva edwardsii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/114757878/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1638842,
+      "commonName": "Smooth-coated Otter",
+      "scientificName": "Lutra perspicillata",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/8015225/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    }
+  ],
+  "little-rann-of-kutch": [
+    {
+      "taxonId": 43333,
+      "commonName": "Onager",
+      "scientificName": "Equus hemionus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 78,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/325582240/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42069,
+      "commonName": "Red Fox",
+      "scientificName": "Vulpes vulpes",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 23,
+      "photoUrl": "https://static.inaturalist.org/photos/265916780/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42426,
+      "commonName": "Nilgai",
+      "scientificName": "Boselaphus tragocamelus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 18,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/489655167/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42134,
+      "commonName": "Wild Boar",
+      "scientificName": "Sus scrofa",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 9,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/414500081/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 851014,
+      "commonName": "Golden Jackal",
+      "scientificName": "Canis aureus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 7,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/12400254/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41888,
+      "commonName": "Striped Hyaena",
+      "scientificName": "Hyaena hyaena",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 6,
+      "photoUrl": "https://static.inaturalist.org/photos/282398333/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42056,
+      "commonName": "Indian Fox",
+      "scientificName": "Vulpes bengalensis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 6,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/502431502/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41961,
+      "commonName": "Jungle Cat",
+      "scientificName": "Felis chaus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60135146/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 45936,
+      "commonName": "Five-striped Palm Squirrel",
+      "scientificName": "Funambulus pennantii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/153746004/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 318756,
+      "commonName": "Hardwick's Spiny-tailed Lizard",
+      "scientificName": "Saara hardwickii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/170078039/medium.jpeg",
+      "conservationStatus": "Threatened by poaching and habitat destruction.  (Schedule II)",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42048,
+      "commonName": "Gray Wolf",
+      "scientificName": "Canis lupus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/43410580/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925977,
+      "commonName": "Indian Grey Mongoose",
+      "scientificName": "Urva edwardsii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/114757878/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26093,
+      "commonName": "Common skittering frog",
+      "scientificName": "Euphlyctis cyanophlyctis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/585716278/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31281,
+      "commonName": "Indian Garden Lizard",
+      "scientificName": "Calotes versicolor",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/164183277/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 32227,
+      "commonName": "Red Sand Boa",
+      "scientificName": "Eryx johnii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/396080939/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 34514,
+      "commonName": "Brook's House Gecko",
+      "scientificName": "Hemidactylus brookii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/18083241/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39415,
+      "commonName": "Bengal Monitor",
+      "scientificName": "Varanus bengalensis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/1813745/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39579,
+      "commonName": "Indian Flapshell Turtle",
+      "scientificName": "Lissemys punctata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/474241836/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41376,
+      "commonName": "Black-bearded Tomb Bat",
+      "scientificName": "Taphozous melanopogon",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/485945/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42253,
+      "commonName": "Indian Gazelle",
+      "scientificName": "Gazella bennettii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/230592162/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43030,
+      "commonName": "Indian Long-eared Hedgehog",
+      "scientificName": "Hemiechinus collaris",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/493478796/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 47144,
+      "commonName": "Domestic Dog",
+      "scientificName": "Canis familiaris",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/307568930/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 73648,
+      "commonName": "Ganges Softshell Turtle",
+      "scientificName": "Nilssonia gangetica",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/464264634/medium.jpeg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 371414,
+      "commonName": "African Wildcat",
+      "scientificName": "Felis lybica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/99451714/medium.jpeg",
+      "conservationStatus": "Appendix II",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 602367,
+      "commonName": "Spiny-headed fan-throated lizard",
+      "scientificName": "Sitana spinaecephalus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/155100216/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 738124,
+      "commonName": "Kutch Small-scaled Snake-eye",
+      "scientificName": "Ophisops kutchensis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/121765559/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1071032,
+      "commonName": "Bengal Sacred Langur",
+      "scientificName": "Semnopithecus entellus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/102576725/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    }
+  ],
+  "melghat-tiger-reserve": [
+    {
+      "taxonId": 26555,
+      "commonName": "Chunam Tree Frog",
+      "scientificName": "Polypedates maculatus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 5,
+      "photoUrl": "https://static.inaturalist.org/photos/178802066/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43460,
+      "commonName": "Rhesus Macaque",
+      "scientificName": "Macaca mulatta",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/8739674/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 74111,
+      "commonName": "Gaur",
+      "scientificName": "Bos gaurus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 5,
+      "photoUrl": "https://static.inaturalist.org/photos/299727910/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41651,
+      "commonName": "Sloth Bear",
+      "scientificName": "Melursus ursinus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://static.inaturalist.org/photos/62552125/medium.png",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 62345,
+      "commonName": "Asian Common Toad",
+      "scientificName": "Duttaphrynus melanostictus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/354903227/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1071032,
+      "commonName": "Bengal Sacred Langur",
+      "scientificName": "Semnopithecus entellus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/102576725/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 28868,
+      "commonName": "Oriental Rat Snake",
+      "scientificName": "Ptyas mucosa",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/323553661/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 29574,
+      "commonName": "Indian Wolf Snake",
+      "scientificName": "Lycodon aulicus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/260682163/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31260,
+      "commonName": "Oriental Forest Lizards",
+      "scientificName": "Calotes",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/5361006/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31408,
+      "commonName": "Rock Dragon",
+      "scientificName": "Psammophilus dorsalis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/53482557/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 34514,
+      "commonName": "Brook's House Gecko",
+      "scientificName": "Hemidactylus brookii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/18083241/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39415,
+      "commonName": "Bengal Monitor",
+      "scientificName": "Varanus bengalensis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/1813745/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39579,
+      "commonName": "Indian Flapshell Turtle",
+      "scientificName": "Lissemys punctata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/474241836/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42101,
+      "commonName": "Dhole",
+      "scientificName": "Cuon alpinus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/65925444/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 45938,
+      "commonName": "Three-striped Palm Squirrel",
+      "scientificName": "Funambulus palmarum",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/45724654/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 46302,
+      "commonName": "Madras Treeshrew",
+      "scientificName": "Anathana ellioti",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/19342732/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 74659,
+      "commonName": "Northern Red Muntjac",
+      "scientificName": "Muntiacus vaginalis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/110225991/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26258,
+      "commonName": "Indus Valley Bullfrog",
+      "scientificName": "Hoplobatrachus tigerinus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/89719517/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26654,
+      "commonName": "Common Bronzeback Tree Snake",
+      "scientificName": "Dendrelaphis tristis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/255244287/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 30264,
+      "commonName": "Trinket Snake",
+      "scientificName": "Coelognathus helena",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/173613617/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 30687,
+      "commonName": "Russell's Viper",
+      "scientificName": "Daboia russelii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/25582268/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 32150,
+      "commonName": "Indian Python",
+      "scientificName": "Python molurus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/51465007/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 32810,
+      "commonName": "Indian Chameleon",
+      "scientificName": "Chamaeleo zeylanicus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/551469461/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 33255,
+      "commonName": "Keeled Rock Gecko",
+      "scientificName": "Cyrtopodion scabrum",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/31531598/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 34505,
+      "commonName": "Northern House Gecko",
+      "scientificName": "Hemidactylus flaviviridis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/87990951/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 40106,
+      "commonName": "Indian Star Tortoise",
+      "scientificName": "Geochelone elegans",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/109310050/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41961,
+      "commonName": "Jungle Cat",
+      "scientificName": "Felis chaus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60135146/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41963,
+      "commonName": "Leopard",
+      "scientificName": "Panthera pardus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/8666580/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41967,
+      "commonName": "Tiger",
+      "scientificName": "Panthera tigris",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13207883/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42134,
+      "commonName": "Wild Boar",
+      "scientificName": "Sus scrofa",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/414500081/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42166,
+      "commonName": "Chital",
+      "scientificName": "Axis axis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/261197112/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42186,
+      "commonName": "Southern Red Muntjac",
+      "scientificName": "Muntiacus muntjak",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/34068208/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42386,
+      "commonName": "Four-horned Antelope",
+      "scientificName": "Tetracerus quadricornis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/305818129/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42416,
+      "commonName": "Blackbuck",
+      "scientificName": "Antilope cervicapra",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/321065501/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 44540,
+      "commonName": "Old World Rats",
+      "scientificName": "Rattus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/24898617/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 46030,
+      "commonName": "Indian Giant Squirrel",
+      "scientificName": "Ratufa indica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/251341162/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 68533,
+      "commonName": "Asian Mabuyas",
+      "scientificName": "Eutropis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/12073/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 74113,
+      "commonName": "Domestic Cattle",
+      "scientificName": "Bos taurus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/29102489/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 602367,
+      "commonName": "Spiny-headed fan-throated lizard",
+      "scientificName": "Sitana spinaecephalus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/155100216/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 738068,
+      "commonName": "Indian Egg-eater",
+      "scientificName": "Boiga westermanni",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/113105742/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 851014,
+      "commonName": "Golden Jackal",
+      "scientificName": "Canis aureus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/12400254/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 923245,
+      "commonName": "Western Burrowing Frog",
+      "scientificName": "Sphaerotheca maskeyi",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/11787822/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1250080,
+      "commonName": "Common Dotted Garden Skink",
+      "scientificName": "Riopa punctata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/4978828/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1304706,
+      "commonName": "Common Bamboo Viper",
+      "scientificName": "Craspedocephalus gramineus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/410152407/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1641421,
+      "commonName": "Indian Flying Fox",
+      "scientificName": "Pteropus medius",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/175031411/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    }
+  ],
+  "sariska-tiger-reserve": [
+    {
+      "taxonId": 42166,
+      "commonName": "Chital",
+      "scientificName": "Axis axis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 27,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/261197112/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42426,
+      "commonName": "Nilgai",
+      "scientificName": "Boselaphus tragocamelus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 27,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/489655167/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 75053,
+      "commonName": "Sambar",
+      "scientificName": "Rusa unicolor",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 27,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/58143931/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1071032,
+      "commonName": "Bengal Sacred Langur",
+      "scientificName": "Semnopithecus entellus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 23,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/102576725/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42134,
+      "commonName": "Wild Boar",
+      "scientificName": "Sus scrofa",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 14,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/414500081/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41963,
+      "commonName": "Leopard",
+      "scientificName": "Panthera pardus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 13,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/8666580/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43122,
+      "commonName": "Indian Hare",
+      "scientificName": "Lepus nigricollis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 12,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/218911/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26063,
+      "commonName": "Mugger Crocodile",
+      "scientificName": "Crocodylus palustris",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 10,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/57354214/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 45936,
+      "commonName": "Five-striped Palm Squirrel",
+      "scientificName": "Funambulus pennantii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 8,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/153746004/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26258,
+      "commonName": "Indus Valley Bullfrog",
+      "scientificName": "Hoplobatrachus tigerinus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 7,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/89719517/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39579,
+      "commonName": "Indian Flapshell Turtle",
+      "scientificName": "Lissemys punctata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 7,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/474241836/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41888,
+      "commonName": "Striped Hyaena",
+      "scientificName": "Hyaena hyaena",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 7,
+      "photoUrl": "https://static.inaturalist.org/photos/282398333/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43460,
+      "commonName": "Rhesus Macaque",
+      "scientificName": "Macaca mulatta",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 7,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/8739674/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 851014,
+      "commonName": "Golden Jackal",
+      "scientificName": "Canis aureus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 7,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/12400254/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26093,
+      "commonName": "Common skittering frog",
+      "scientificName": "Euphlyctis cyanophlyctis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 6,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/585716278/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31281,
+      "commonName": "Indian Garden Lizard",
+      "scientificName": "Calotes versicolor",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 6,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/164183277/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39415,
+      "commonName": "Bengal Monitor",
+      "scientificName": "Varanus bengalensis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 6,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/1813745/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 81542,
+      "commonName": "Dromedary Camel",
+      "scientificName": "Camelus dromedarius",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 6,
+      "photoUrl": "https://static.inaturalist.org/photos/254331474/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925969,
+      "commonName": "Ruddy Mongoose",
+      "scientificName": "Urva smithii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 6,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/15454216/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 966799,
+      "commonName": "Chequered Keelback",
+      "scientificName": "Fowlea piscator",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 6,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/171413489/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 34514,
+      "commonName": "Brook's House Gecko",
+      "scientificName": "Hemidactylus brookii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/18083241/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41967,
+      "commonName": "Tiger",
+      "scientificName": "Panthera tigris",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13207883/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1462643,
+      "commonName": "Indus Valley Toad",
+      "scientificName": "Firouzophrynus stomaticus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 5,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/216750622/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 34505,
+      "commonName": "Northern House Gecko",
+      "scientificName": "Hemidactylus flaviviridis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/87990951/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 38015,
+      "commonName": "Bronze Grass Skink",
+      "scientificName": "Eutropis macularia",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/359173987/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 62345,
+      "commonName": "Asian Common Toad",
+      "scientificName": "Duttaphrynus melanostictus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/354903227/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 73648,
+      "commonName": "Ganges Softshell Turtle",
+      "scientificName": "Nilssonia gangetica",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/464264634/medium.jpeg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925977,
+      "commonName": "Indian Grey Mongoose",
+      "scientificName": "Urva edwardsii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://static.inaturalist.org/photos/114757878/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 27650,
+      "commonName": "Common Cat Snake",
+      "scientificName": "Boiga trigonata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/320844753/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 29574,
+      "commonName": "Indian Wolf Snake",
+      "scientificName": "Lycodon aulicus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/260682163/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 30687,
+      "commonName": "Russell's Viper",
+      "scientificName": "Daboia russelii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/25582268/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31079,
+      "commonName": "Saw-scaled Viper",
+      "scientificName": "Echis carinatus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/88695831/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41651,
+      "commonName": "Sloth Bear",
+      "scientificName": "Melursus ursinus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/62552125/medium.png",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42056,
+      "commonName": "Indian Fox",
+      "scientificName": "Vulpes bengalensis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/502431502/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 53492,
+      "commonName": "Indian Cobra",
+      "scientificName": "Naja naja",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/97106278/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 81925,
+      "commonName": "Domestic Water Buffalo",
+      "scientificName": "Bubalus bubalis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/4666378/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 118552,
+      "commonName": "Domestic Cat",
+      "scientificName": "Felis catus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/129658776/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 123070,
+      "commonName": "Domestic Goat",
+      "scientificName": "Capra hircus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/6035700/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 846180,
+      "commonName": "Vesper Bats",
+      "scientificName": "Vespertilioninae",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/73885541/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 21618,
+      "commonName": "Indus Valley Toad",
+      "scientificName": "Duttaphrynus stomaticus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/26141426/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 24842,
+      "commonName": "Ornate Narrow-mouthed Toad",
+      "scientificName": "Microhyla ornata",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/55234572/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 25216,
+      "commonName": "Marbled balloon frog",
+      "scientificName": "Uperodon systoma",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/349581275/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 28868,
+      "commonName": "Oriental Rat Snake",
+      "scientificName": "Ptyas mucosa",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/323553661/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 30264,
+      "commonName": "Trinket Snake",
+      "scientificName": "Coelognathus helena",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/173613617/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31382,
+      "commonName": "Pondichéry Fan-throated Lizard",
+      "scientificName": "Sitana ponticeriana",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/152628890/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 40106,
+      "commonName": "Indian Star Tortoise",
+      "scientificName": "Geochelone elegans",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/109310050/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41618,
+      "commonName": "Small Indian Civet",
+      "scientificName": "Viverricula indica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/303182/medium.JPG",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41834,
+      "commonName": "Ratel",
+      "scientificName": "Mellivora capensis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/343004199/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41948,
+      "commonName": "Rusty-spotted Cat",
+      "scientificName": "Prionailurus rubiginosus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/297300783/medium.jpeg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41961,
+      "commonName": "Jungle Cat",
+      "scientificName": "Felis chaus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60135146/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42253,
+      "commonName": "Indian Gazelle",
+      "scientificName": "Gazella bennettii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/230592162/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43584,
+      "commonName": "Human",
+      "scientificName": "Homo sapiens",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/80550183/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 44175,
+      "commonName": "Indian Crested Porcupine",
+      "scientificName": "Hystrix indica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/171668813/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 45637,
+      "commonName": "Indian Bush Rat",
+      "scientificName": "Golunda ellioti",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/46027774/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 74111,
+      "commonName": "Gaur",
+      "scientificName": "Bos gaurus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/299727910/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 74113,
+      "commonName": "Domestic Cattle",
+      "scientificName": "Bos taurus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/29102489/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 96224,
+      "commonName": "Common Krait",
+      "scientificName": "Bungarus caeruleus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/59003293/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 318756,
+      "commonName": "Hardwick's Spiny-tailed Lizard",
+      "scientificName": "Saara hardwickii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/170078039/medium.jpeg",
+      "conservationStatus": "Threatened by poaching and habitat destruction.  (Schedule II)",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 787617,
+      "commonName": "Common Paddy Field Frog",
+      "scientificName": "Minervarya agricola",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/175051796/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 797687,
+      "commonName": "Sahgal’s Termite Hill Gecko",
+      "scientificName": "Hemidactylus sahgali",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/493600625/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925979,
+      "commonName": "Small Indian Mongoose",
+      "scientificName": "Urva auropunctata",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/29819469/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1250080,
+      "commonName": "Common Dotted Garden Skink",
+      "scientificName": "Riopa punctata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/4978828/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1367339,
+      "commonName": "Russell's Kukri Snake",
+      "scientificName": "Oligodon russelius",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/308347364/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1641421,
+      "commonName": "Indian Flying Fox",
+      "scientificName": "Pteropus medius",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/175031411/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    }
+  ],
+  "tadoba-andhari-tiger-reserve": [
+    {
+      "taxonId": 41967,
+      "commonName": "Tiger",
+      "scientificName": "Panthera tigris",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 201,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/13207883/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42166,
+      "commonName": "Chital",
+      "scientificName": "Axis axis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 84,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/261197112/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1071032,
+      "commonName": "Bengal Sacred Langur",
+      "scientificName": "Semnopithecus entellus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 78,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/102576725/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 74111,
+      "commonName": "Gaur",
+      "scientificName": "Bos gaurus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 77,
+      "photoUrl": "https://static.inaturalist.org/photos/299727910/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 75053,
+      "commonName": "Sambar",
+      "scientificName": "Rusa unicolor",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 65,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/58143931/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42101,
+      "commonName": "Dhole",
+      "scientificName": "Cuon alpinus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 48,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/65925444/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42134,
+      "commonName": "Wild Boar",
+      "scientificName": "Sus scrofa",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 40,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/414500081/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41651,
+      "commonName": "Sloth Bear",
+      "scientificName": "Melursus ursinus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 36,
+      "photoUrl": "https://static.inaturalist.org/photos/62552125/medium.png",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 74659,
+      "commonName": "Northern Red Muntjac",
+      "scientificName": "Muntiacus vaginalis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 30,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/110225991/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26063,
+      "commonName": "Mugger Crocodile",
+      "scientificName": "Crocodylus palustris",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 29,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/57354214/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925977,
+      "commonName": "Indian Grey Mongoose",
+      "scientificName": "Urva edwardsii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 25,
+      "photoUrl": "https://static.inaturalist.org/photos/114757878/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42426,
+      "commonName": "Nilgai",
+      "scientificName": "Boselaphus tragocamelus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 24,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/489655167/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925969,
+      "commonName": "Ruddy Mongoose",
+      "scientificName": "Urva smithii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 22,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/15454216/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26555,
+      "commonName": "Chunam Tree Frog",
+      "scientificName": "Polypedates maculatus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 21,
+      "photoUrl": "https://static.inaturalist.org/photos/178802066/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39415,
+      "commonName": "Bengal Monitor",
+      "scientificName": "Varanus bengalensis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 18,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/1813745/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31408,
+      "commonName": "Rock Dragon",
+      "scientificName": "Psammophilus dorsalis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 13,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/53482557/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31281,
+      "commonName": "Indian Garden Lizard",
+      "scientificName": "Calotes versicolor",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 12,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/164183277/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31409,
+      "commonName": "Blanford's Rock Agama",
+      "scientificName": "Psammophilus blanfordanus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 9,
+      "photoUrl": "https://static.inaturalist.org/photos/78332403/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41963,
+      "commonName": "Leopard",
+      "scientificName": "Panthera pardus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 9,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/8666580/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 102550,
+      "commonName": "Bark Gecko",
+      "scientificName": "Hemidactylus leschenaultii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 9,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/298744673/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 39579,
+      "commonName": "Indian Flapshell Turtle",
+      "scientificName": "Lissemys punctata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 7,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/474241836/medium.jpg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42386,
+      "commonName": "Four-horned Antelope",
+      "scientificName": "Tetracerus quadricornis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 7,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/305818129/medium.jpeg",
+      "conservationStatus": "vulnerable",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43122,
+      "commonName": "Indian Hare",
+      "scientificName": "Lepus nigricollis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 7,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/218911/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 68532,
+      "commonName": "Keeled Indian Mabuya",
+      "scientificName": "Eutropis carinata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 7,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/139182074/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 476559,
+      "commonName": "White-bellied pug-snout frog",
+      "scientificName": "Uperodon variegatus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 6,
+      "photoUrl": "https://static.inaturalist.org/photos/56664365/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 34514,
+      "commonName": "Brook's House Gecko",
+      "scientificName": "Hemidactylus brookii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 4,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/18083241/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 46302,
+      "commonName": "Madras Treeshrew",
+      "scientificName": "Anathana ellioti",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 4,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/19342732/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 476582,
+      "commonName": "Painted Globular Frog",
+      "scientificName": "Uperodon taprobanicus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 4,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/46281125/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 787617,
+      "commonName": "Common Paddy Field Frog",
+      "scientificName": "Minervarya agricola",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 4,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/175051796/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1641421,
+      "commonName": "Indian Flying Fox",
+      "scientificName": "Pteropus medius",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 4,
+      "photoUrl": "https://static.inaturalist.org/photos/175031411/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1677694,
+      "commonName": "Wide-spread Fungoid Frog",
+      "scientificName": "Hylarana bahuvistara",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 4,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/10527306/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26093,
+      "commonName": "Common skittering frog",
+      "scientificName": "Euphlyctis cyanophlyctis",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/585716278/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26220,
+      "commonName": "Burrowing Frogs",
+      "scientificName": "Sphaerotheca",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/90660309/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26258,
+      "commonName": "Indus Valley Bullfrog",
+      "scientificName": "Hoplobatrachus tigerinus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/89719517/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 27689,
+      "commonName": "Forsten's Cat Snake",
+      "scientificName": "Boiga forsteni",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/95567772/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 30687,
+      "commonName": "Russell's Viper",
+      "scientificName": "Daboia russelii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://static.inaturalist.org/photos/25582268/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 34505,
+      "commonName": "Northern House Gecko",
+      "scientificName": "Hemidactylus flaviviridis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/87990951/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43460,
+      "commonName": "Rhesus Macaque",
+      "scientificName": "Macaca mulatta",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/8739674/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 45938,
+      "commonName": "Three-striped Palm Squirrel",
+      "scientificName": "Funambulus palmarum",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/45724654/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 602367,
+      "commonName": "Spiny-headed fan-throated lizard",
+      "scientificName": "Sitana spinaecephalus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/155100216/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 851014,
+      "commonName": "Golden Jackal",
+      "scientificName": "Canis aureus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 3,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/12400254/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 27650,
+      "commonName": "Common Cat Snake",
+      "scientificName": "Boiga trigonata",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/320844753/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 28679,
+      "commonName": "Black-headed snake",
+      "scientificName": "Sibynophis subpunctatus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/55515880/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 32810,
+      "commonName": "Indian Chameleon",
+      "scientificName": "Chamaeleo zeylanicus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/551469461/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42253,
+      "commonName": "Indian Gazelle",
+      "scientificName": "Gazella bennettii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/230592162/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43697,
+      "commonName": "Asian Elephant",
+      "scientificName": "Elephas maximus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/2035244/medium.jpg",
+      "conservationStatus": "endangered",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 45936,
+      "commonName": "Five-striped Palm Squirrel",
+      "scientificName": "Funambulus pennantii",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/153746004/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 62345,
+      "commonName": "Asian Common Toad",
+      "scientificName": "Duttaphrynus melanostictus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/354903227/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 96224,
+      "commonName": "Common Krait",
+      "scientificName": "Bungarus caeruleus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/59003293/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 118552,
+      "commonName": "Domestic Cat",
+      "scientificName": "Felis catus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/129658776/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925714,
+      "commonName": "Northern Palm Civet",
+      "scientificName": "Paradoxurus hermaphroditus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 2,
+      "photoUrl": "https://static.inaturalist.org/photos/58323677/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 25216,
+      "commonName": "Marbled balloon frog",
+      "scientificName": "Uperodon systoma",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/349581275/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 25217,
+      "commonName": "Indian Balloon Frog",
+      "scientificName": "Uperodon globulosus",
+      "iconicTaxon": "Amphibia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/11948706/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 26654,
+      "commonName": "Common Bronzeback Tree Snake",
+      "scientificName": "Dendrelaphis tristis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/255244287/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 27965,
+      "commonName": "Split Keelback",
+      "scientificName": "Atretium schistosum",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/101306504/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 29574,
+      "commonName": "Indian Wolf Snake",
+      "scientificName": "Lycodon aulicus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/260682163/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 29832,
+      "commonName": "Buff Striped Keelback",
+      "scientificName": "Amphiesma stolatum",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/317939930/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 31115,
+      "commonName": "Typical Agamas",
+      "scientificName": "Agama",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/27697863/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 32150,
+      "commonName": "Indian Python",
+      "scientificName": "Python molurus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/51465007/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 32205,
+      "commonName": "Rough-scaled Sand Boa",
+      "scientificName": "Eryx conicus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/154883190/medium.jpg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 34517,
+      "commonName": "Spotted House Gecko",
+      "scientificName": "Hemidactylus parvimaculatus",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/24390799/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 38015,
+      "commonName": "Bronze Grass Skink",
+      "scientificName": "Eutropis macularia",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/359173987/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41948,
+      "commonName": "Rusty-spotted Cat",
+      "scientificName": "Prionailurus rubiginosus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/297300783/medium.jpeg",
+      "conservationStatus": "near threatened",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 41961,
+      "commonName": "Jungle Cat",
+      "scientificName": "Felis chaus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60135146/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 42416,
+      "commonName": "Blackbuck",
+      "scientificName": "Antilope cervicapra",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/321065501/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 43584,
+      "commonName": "Human",
+      "scientificName": "Homo sapiens",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/80550183/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 44698,
+      "commonName": "Common Indian Field Mouse",
+      "scientificName": "Mus booduga",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/14066011/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 45984,
+      "commonName": "Common Giant Flying Squirrel",
+      "scientificName": "Petaurista philippensis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/456073462/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 46030,
+      "commonName": "Indian Giant Squirrel",
+      "scientificName": "Ratufa indica",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/251341162/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 47144,
+      "commonName": "Domestic Dog",
+      "scientificName": "Canis familiaris",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/307568930/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 74113,
+      "commonName": "Domestic Cattle",
+      "scientificName": "Bos taurus",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/29102489/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 81925,
+      "commonName": "Domestic Water Buffalo",
+      "scientificName": "Bubalus bubalis",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/4666378/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 104886,
+      "commonName": "Yellow-collared Wolf Snake",
+      "scientificName": "Lycodon flavicollis",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/148949240/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 846180,
+      "commonName": "Vesper Bats",
+      "scientificName": "Vespertilioninae",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/73885541/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 925979,
+      "commonName": "Small Indian Mongoose",
+      "scientificName": "Urva auropunctata",
+      "iconicTaxon": "Mammalia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/29819469/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 966799,
+      "commonName": "Chequered Keelback",
+      "scientificName": "Fowlea piscator",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/171413489/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1250161,
+      "commonName": "Banded Racer",
+      "scientificName": "Platyceps plinii",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/255241355/medium.jpg",
+      "lastPulled": "2026-07-09"
+    },
+    {
+      "taxonId": 1367339,
+      "commonName": "Russell's Kukri Snake",
+      "scientificName": "Oligodon russelius",
+      "iconicTaxon": "Reptilia",
+      "observationCount": 1,
+      "photoUrl": "https://static.inaturalist.org/photos/308347364/medium.jpeg",
+      "lastPulled": "2026-07-09"
+    }
+  ]
 }

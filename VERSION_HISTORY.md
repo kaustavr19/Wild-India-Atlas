@@ -1,6 +1,15 @@
 # Version history
 
-**v1.13 — Real favicon and app icons** (current)
+**v1.14 — Close the iNaturalist mapping gap** (current)
+- Reviewed the 10 hotspots left pending from v1.9's discovery pass against their already-fetched `data/inaturalist-candidates.json` data — no re-discovery needed. **5 confirmed, 5 left for further review:**
+  - Confirmed: `hemis-national-park` (the one India-plausible candidate among three, and its unusually large bbox matches Hemis being India's largest national park), `panna-national-park` (picked the bare-name park-boundary candidate over a same-named `admin_level 20` town/district record that would have wrongly covered a much bigger area), `periyar-tiger-reserve` (picked the whole-reserve record over its two separate East/West forest-division records), `silent-valley-national-park` (picked the more specifically NP-named of two plausible same-park records), `valley-of-flowers` (picked the park-specific record over the much larger combined Nanda-Devi-plus-Valley-of-Flowers World Heritage Site record)
+  - Still unmapped, same conservative bar as v1.9: `desert-national-park` and `manas-national-park` (their only candidates are still Australia's/Zimbabwe's same-named parks), `gir-national-park` and `kuno-national-park` (every candidate is an unrelated international place that merely starts with the same letters — none are in India), `thattekad-bird-sanctuary` (still just an ambiguous forest-division record, not clearly the sanctuary's own boundary)
+- Added **radius fallbacks** for the 5 hotspots with no iNaturalist Place at all, sized per park rather than one blanket number: Chilika Lake 20km (India's largest brackish lagoon, ~1,100 km²), Little Rann of Kutch 25km (deliberately capped well below its real ~4,950 km² rather than trying to cover it all), Melghat Tiger Reserve 20km (~2,000+ km² core and buffer), Sariska and Tadoba Andhari 15km each (moderate ~600–900 km² core zones)
+- Ran `npm run fetch:inaturalist` for all 10 newly-mapped hotspots: **1,340 species records across 33 places** (up from 915/23) — Mammalia 617, Reptilia 519, Amphibia 204. 2 places still return zero species (Simlipal, Keibul Lamjao, unchanged from v1.10). One transient fetch failure on an already-confirmed hotspot (Bandhavgarh) left its existing 72-species record untouched, per the fetch script's existing incremental-write behavior
+- Net effect on the Extended species tier: **1,359 canonical species, up from 1,289** (verified live — e.g. Hemis's Woolly Hare now has its own Extended profile, correctly linking back to Hemis National Park)
+- The 4 hotspots already explained by `data/structuralRisks.ts` (Chambal, Gahirmatha, Mangalajodi, Rushikulya) were left untouched, as instructed — their lack of iNaturalist data is already honestly disclosed there
+
+**v1.13 — Real favicon and app icons**
 - Added the site's actual favicon set to `public/` (`favicon.ico`, 16×16/32×32 PNGs, Apple touch icon, and Android Chrome 192×192/512×512 icons) — the site previously had no favicon at all
 - Wired them into `app/layout.tsx` via `Metadata.icons`/`Metadata.manifest`, and filled in `site.webmanifest`'s previously-blank `name`/`short_name` fields ("Wild India Atlas" / "Wild India") and set `theme_color` to the site's actual forest-900 brand color instead of the generator's default white
 
