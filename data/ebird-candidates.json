@@ -1,0 +1,1509 @@
+{
+  "jim-corbett-national-park": [
+    {
+      "locId": "L3918321",
+      "locName": "Corbett--Saddle Dam",
+      "distanceKm": 0.5,
+      "numSpeciesAllTime": 381,
+      "latestObsDt": "2026-06-03 17:09"
+    },
+    {
+      "locId": "L8638012",
+      "locName": "Corbett NP--Kalagarh Dam Road",
+      "distanceKm": 3.1,
+      "numSpeciesAllTime": 259,
+      "latestObsDt": "2026-05-20 09:45"
+    },
+    {
+      "locId": "L29265159",
+      "locName": "Jim Corbett Tiger Reserve",
+      "distanceKm": 9,
+      "numSpeciesAllTime": 361,
+      "latestObsDt": "2026-04-28 06:00"
+    },
+    {
+      "locId": "L34119229",
+      "locName": "Dhikala, Jim corbett",
+      "distanceKm": 10,
+      "numSpeciesAllTime": 223,
+      "latestObsDt": "2026-04-29 05:46"
+    },
+    {
+      "locId": "L3787868",
+      "locName": "Sonanadi Wildlife Sanctuary",
+      "distanceKm": 10.3,
+      "numSpeciesAllTime": 231,
+      "latestObsDt": "2026-04-05 06:30"
+    }
+  ],
+  "ranthambore-national-park": [
+    {
+      "locId": "L946220",
+      "locName": "Ranthambore NP",
+      "distanceKm": 0.8,
+      "numSpeciesAllTime": 326,
+      "latestObsDt": "2026-06-19 09:07"
+    },
+    {
+      "locId": "L12656362",
+      "locName": "Lahpur--Ranthambhore National Park",
+      "distanceKm": 2.7,
+      "numSpeciesAllTime": 122,
+      "latestObsDt": "2025-05-22 06:52"
+    },
+    {
+      "locId": "L2529173",
+      "locName": "Ranthambhore NP--Zone 3",
+      "distanceKm": 3,
+      "numSpeciesAllTime": 261,
+      "latestObsDt": "2026-06-28 06:42"
+    },
+    {
+      "locId": "L7527181",
+      "locName": "Ranthambore NP--Zone 4--Rajbagh",
+      "distanceKm": 3.4,
+      "numSpeciesAllTime": 240,
+      "latestObsDt": "2026-06-06 16:00"
+    },
+    {
+      "locId": "L9970883",
+      "locName": "Lakarda, Ranthambore National Park",
+      "distanceKm": 3.6,
+      "numSpeciesAllTime": 207,
+      "latestObsDt": "2026-05-27 10:12"
+    }
+  ],
+  "bandhavgarh-tiger-reserve": [
+    {
+      "locId": "L13625300",
+      "locName": "Bandhavgarh NP--Fort",
+      "distanceKm": 0.9,
+      "numSpeciesAllTime": 169,
+      "latestObsDt": "2026-04-09 05:53"
+    },
+    {
+      "locId": "L30703188",
+      "locName": "Bandhavgarh Tiger Reserve--Tala Zone",
+      "distanceKm": 1.4,
+      "numSpeciesAllTime": 229,
+      "latestObsDt": "2026-06-27 16:00"
+    },
+    {
+      "locId": "L2455819",
+      "locName": "Bandhavgarh NP",
+      "distanceKm": 2.2,
+      "numSpeciesAllTime": 310,
+      "latestObsDt": "2026-05-16 10:48"
+    },
+    {
+      "locId": "L10819966",
+      "locName": "Bandhavgarh Tiger Reserve--Tala Gate",
+      "distanceKm": 3.4,
+      "numSpeciesAllTime": 258,
+      "latestObsDt": "2026-06-27 05:12"
+    },
+    {
+      "locId": "L14765206",
+      "locName": "Jungle Lodge, Bandhavgarh (OBI)",
+      "distanceKm": 3.4,
+      "numSpeciesAllTime": 136,
+      "latestObsDt": "2026-06-07 08:35"
+    }
+  ],
+  "kanha-national-park": [
+    {
+      "locId": "L17894126",
+      "locName": "KTR--Kanha zone--Mundi dadar",
+      "distanceKm": 1,
+      "numSpeciesAllTime": 172,
+      "latestObsDt": "2025-01-22 16:34"
+    },
+    {
+      "locId": "L19736056",
+      "locName": "Kanha Tiger Reserve--Parasatola Protection camp",
+      "distanceKm": 2.1,
+      "numSpeciesAllTime": 139,
+      "latestObsDt": "2026-03-09 08:25"
+    },
+    {
+      "locId": "L17761642",
+      "locName": "Kanha TR--Jamun Tola Range",
+      "distanceKm": 3.4,
+      "numSpeciesAllTime": 114,
+      "latestObsDt": "2025-11-19 07:18"
+    },
+    {
+      "locId": "L17742522",
+      "locName": "Kanha Tiger Reserve--Jamuntola Beat",
+      "distanceKm": 3.4,
+      "numSpeciesAllTime": 123,
+      "latestObsDt": "2025-11-28 07:39"
+    },
+    {
+      "locId": "L1016606",
+      "locName": "Kanha Tiger Reserve",
+      "distanceKm": 4.6,
+      "numSpeciesAllTime": 331,
+      "latestObsDt": "2026-05-19 05:30"
+    }
+  ],
+  "tadoba-andhari-tiger-reserve": [
+    {
+      "locId": "L4452379",
+      "locName": "United-21 Tiger Camp Resort, Bhamdeli, Moharli",
+      "distanceKm": 2.2,
+      "numSpeciesAllTime": 185,
+      "latestObsDt": "2026-03-02 06:53"
+    },
+    {
+      "locId": "L4072167",
+      "locName": "Tadoba Andhari Tiger Reserve--Telia Lake",
+      "distanceKm": 2.4,
+      "numSpeciesAllTime": 253,
+      "latestObsDt": "2026-07-01 07:20"
+    },
+    {
+      "locId": "L55606301",
+      "locName": "Tadoba Andhari Tiger Reserve -- Sitarampeth boat camp",
+      "distanceKm": 2.6,
+      "numSpeciesAllTime": 157,
+      "latestObsDt": "2026-06-15 08:50"
+    },
+    {
+      "locId": "L10739849",
+      "locName": "Tadoba Andhari Tiger Reserve--Moharli Gate",
+      "distanceKm": 3.2,
+      "numSpeciesAllTime": 258,
+      "latestObsDt": "2026-06-26 05:29"
+    },
+    {
+      "locId": "L10739855",
+      "locName": "Tadoba Andhari Tiger Reserve--Junona Gate",
+      "distanceKm": 3.4,
+      "numSpeciesAllTime": 226,
+      "latestObsDt": "2026-06-23 05:30"
+    }
+  ],
+  "pench-national-park": [
+    {
+      "locId": "L3160868",
+      "locName": "Pench National Park, Maharashtra",
+      "distanceKm": 1.1,
+      "numSpeciesAllTime": 296,
+      "latestObsDt": "2026-06-27 15:00"
+    },
+    {
+      "locId": "L12842409",
+      "locName": "Pench National Park--Salama Check Point",
+      "distanceKm": 1.2,
+      "numSpeciesAllTime": 170,
+      "latestObsDt": "2026-04-13 15:07"
+    },
+    {
+      "locId": "L12842475",
+      "locName": "Pench National Park--Totladoh Reservoir",
+      "distanceKm": 1.8,
+      "numSpeciesAllTime": 156,
+      "latestObsDt": "2026-06-01 04:51"
+    },
+    {
+      "locId": "L4799571",
+      "locName": "Pench National Park--Sillari Gate",
+      "distanceKm": 7.7,
+      "numSpeciesAllTime": 266,
+      "latestObsDt": "2026-06-22 05:30"
+    },
+    {
+      "locId": "L12150568",
+      "locName": "Pench Tiger Reserve- -Chhindimatta",
+      "distanceKm": 9.4,
+      "numSpeciesAllTime": 154,
+      "latestObsDt": "2026-03-12 15:15"
+    }
+  ],
+  "kaziranga-national-park": [
+    {
+      "locId": "L4081617",
+      "locName": "Kaziranga NP & Surroundings--Burapahar Range (Ghorakati)",
+      "distanceKm": 1.1,
+      "numSpeciesAllTime": 326,
+      "latestObsDt": "2026-04-19 06:48"
+    },
+    {
+      "locId": "L5515335",
+      "locName": "Kaziranga NP & Surroundings--Kanchanjhuri Rhino View Point",
+      "distanceKm": 1.9,
+      "numSpeciesAllTime": 251,
+      "latestObsDt": "2026-05-24 16:32"
+    },
+    {
+      "locId": "L5515357",
+      "locName": "Kaziranga NP & Surroundings--Burapahar Nahrubasti",
+      "distanceKm": 2.5,
+      "numSpeciesAllTime": 310,
+      "latestObsDt": "2026-04-26 14:37"
+    },
+    {
+      "locId": "L6813141",
+      "locName": "Kaziranga NP & Surroundings--Pup Deopani",
+      "distanceKm": 3.3,
+      "numSpeciesAllTime": 223,
+      "latestObsDt": "2026-04-26 15:00"
+    },
+    {
+      "locId": "L17126332",
+      "locName": "Burapahar",
+      "distanceKm": 8.4,
+      "numSpeciesAllTime": 273,
+      "latestObsDt": "2026-04-22 13:40"
+    }
+  ],
+  "manas-national-park": [
+    {
+      "locId": "L29175912",
+      "locName": "Banasbari Range",
+      "distanceKm": 2.1,
+      "numSpeciesAllTime": 318,
+      "latestObsDt": "2026-06-13 06:35"
+    },
+    {
+      "locId": "L2678036",
+      "locName": "Manas NP--General Area",
+      "distanceKm": 2.3,
+      "numSpeciesAllTime": 430,
+      "latestObsDt": "2026-06-22 14:50"
+    },
+    {
+      "locId": "L24051907",
+      "locName": "Manas NP--Lota jhar",
+      "distanceKm": 3.9,
+      "numSpeciesAllTime": 258,
+      "latestObsDt": "2026-06-14 07:49"
+    },
+    {
+      "locId": "L29176033",
+      "locName": "Banasbari Range towards Manas Heritage Center",
+      "distanceKm": 4,
+      "numSpeciesAllTime": 302,
+      "latestObsDt": "2026-06-11 08:15"
+    },
+    {
+      "locId": "L4871916",
+      "locName": "Manas NP--Banasbari (Central Range)",
+      "distanceKm": 4.2,
+      "numSpeciesAllTime": 478,
+      "latestObsDt": "2026-07-03 14:50"
+    }
+  ],
+  "sundarbans-national-park": [
+    {
+      "locId": "L3915579",
+      "locName": "Sundarban Tiger Reserve--General Area",
+      "distanceKm": 7.8,
+      "numSpeciesAllTime": 307,
+      "latestObsDt": "2026-07-06 05:30"
+    },
+    {
+      "locId": "L11209575",
+      "locName": "Sunderbans Tiger Reserve--Chamta Camp",
+      "distanceKm": 10,
+      "numSpeciesAllTime": 188,
+      "latestObsDt": "2026-01-18 05:30"
+    },
+    {
+      "locId": "L7771426",
+      "locName": "Sundarban Tiger Reserve--Dobanki Camp",
+      "distanceKm": 15.4,
+      "numSpeciesAllTime": 217,
+      "latestObsDt": "2026-06-28 09:45"
+    },
+    {
+      "locId": "L12922596",
+      "locName": "Burirdabri",
+      "distanceKm": 19.5,
+      "numSpeciesAllTime": 68,
+      "latestObsDt": "2025-01-24 13:29"
+    },
+    {
+      "locId": "L3656707",
+      "locName": "Sundarban Tiger Reserve--Sudhanyakhali Watch Tower",
+      "distanceKm": 19.6,
+      "numSpeciesAllTime": 218,
+      "latestObsDt": "2026-07-04 14:00"
+    }
+  ],
+  "keoladeo-ghana-bharatpur": [
+    {
+      "locId": "L946706",
+      "locName": "Bharatpur--Keoladeo Ghana NP",
+      "distanceKm": 0.3,
+      "numSpeciesAllTime": 392,
+      "latestObsDt": "2026-06-27 16:25"
+    },
+    {
+      "locId": "L9087264",
+      "locName": "Bharatpur--Keoladeo Ghana NP--Sapan Mori",
+      "distanceKm": 1.9,
+      "numSpeciesAllTime": 332,
+      "latestObsDt": "2026-07-03 07:06"
+    },
+    {
+      "locId": "L12683520",
+      "locName": "Bharatpur--Pride Kadamb Kunj",
+      "distanceKm": 3.6,
+      "numSpeciesAllTime": 140,
+      "latestObsDt": "2026-02-11 12:44"
+    },
+    {
+      "locId": "L16674051",
+      "locName": "Malaha Water plants (Keoladeo)",
+      "distanceKm": 4.7,
+      "numSpeciesAllTime": 205,
+      "latestObsDt": "2026-06-06 13:09"
+    },
+    {
+      "locId": "L12694023",
+      "locName": "Bharatpur--Malah Road Marsh",
+      "distanceKm": 4.8,
+      "numSpeciesAllTime": 238,
+      "latestObsDt": "2026-05-10 18:16"
+    }
+  ],
+  "chambal-river-sanctuary": [
+    {
+      "locId": "L57933911",
+      "locName": "NCS--Nakhloli",
+      "distanceKm": 4.9,
+      "numSpeciesAllTime": 34,
+      "latestObsDt": "2026-02-14 10:31"
+    },
+    {
+      "locId": "L57933947",
+      "locName": "NCS--Chilonga",
+      "distanceKm": 5.8,
+      "numSpeciesAllTime": 19,
+      "latestObsDt": "2026-02-14 11:00"
+    },
+    {
+      "locId": "L57933970",
+      "locName": "NCS--Rama",
+      "distanceKm": 6.3,
+      "numSpeciesAllTime": 20,
+      "latestObsDt": "2026-02-14 11:27"
+    },
+    {
+      "locId": "L57933882",
+      "locName": "NCS--Akon",
+      "distanceKm": 7.5,
+      "numSpeciesAllTime": 14,
+      "latestObsDt": "2026-02-14 09:52"
+    },
+    {
+      "locId": "L57933991",
+      "locName": "NCS--Gadha",
+      "distanceKm": 10.2,
+      "numSpeciesAllTime": 67,
+      "latestObsDt": "2026-06-19 07:27"
+    }
+  ],
+  "little-rann-of-kutch": [
+    {
+      "locId": "L29807389",
+      "locName": "Little Rann of Kachchh--Pung Beyt",
+      "distanceKm": 9,
+      "numSpeciesAllTime": 120,
+      "latestObsDt": "2024-12-14 15:43"
+    },
+    {
+      "locId": "L4084084",
+      "locName": "Little Rann of Kachchh--Melak Beyt",
+      "distanceKm": 13.4,
+      "numSpeciesAllTime": 154,
+      "latestObsDt": "2026-01-25 10:30"
+    },
+    {
+      "locId": "L4084081",
+      "locName": "Little Rann of Kachchh",
+      "distanceKm": 16,
+      "numSpeciesAllTime": 272,
+      "latestObsDt": "2026-01-14 12:20"
+    },
+    {
+      "locId": "L5292148",
+      "locName": "Little Rann of Kachchh--Nanda Bet",
+      "distanceKm": 17.2,
+      "numSpeciesAllTime": 190,
+      "latestObsDt": "2025-11-29 11:52"
+    },
+    {
+      "locId": "L39718771",
+      "locName": "Nanda Bet",
+      "distanceKm": 17.2,
+      "numSpeciesAllTime": 15,
+      "latestObsDt": "2025-01-26 16:30"
+    }
+  ],
+  "gir-national-park": [
+    {
+      "locId": "L8810190",
+      "locName": "Gir Wildlife Sanctuary--Kankai Temple",
+      "distanceKm": 2.5,
+      "numSpeciesAllTime": 154,
+      "latestObsDt": "2026-06-13 16:52"
+    },
+    {
+      "locId": "L49610609",
+      "locName": "Gir National Park",
+      "distanceKm": 4,
+      "numSpeciesAllTime": 144,
+      "latestObsDt": "2026-04-02 07:33"
+    },
+    {
+      "locId": "L967212",
+      "locName": "Gir Wildlife Sanctuary--General",
+      "distanceKm": 6.7,
+      "numSpeciesAllTime": 276,
+      "latestObsDt": "2026-06-13 10:22"
+    },
+    {
+      "locId": "L45237098",
+      "locName": "Gir Sanctuary & NP--Lilapani Forest Office",
+      "distanceKm": 9.9,
+      "numSpeciesAllTime": 74,
+      "latestObsDt": "2026-04-08 07:00"
+    },
+    {
+      "locId": "L11864379",
+      "locName": "Shingoda Dam",
+      "distanceKm": 10.4,
+      "numSpeciesAllTime": 14,
+      "latestObsDt": "2026-01-14 18:31"
+    }
+  ],
+  "hemis-national-park": [
+    {
+      "locId": "L5199610",
+      "locName": "Wari La Pass",
+      "distanceKm": 6.4,
+      "numSpeciesAllTime": 94,
+      "latestObsDt": "2026-07-06 05:06"
+    },
+    {
+      "locId": "L20467593",
+      "locName": "Tangyar",
+      "distanceKm": 11.7,
+      "numSpeciesAllTime": 75,
+      "latestObsDt": "2026-07-06 07:46"
+    },
+    {
+      "locId": "L20625763",
+      "locName": "Agham",
+      "distanceKm": 13.9,
+      "numSpeciesAllTime": 55,
+      "latestObsDt": "2026-06-27 06:42"
+    },
+    {
+      "locId": "L20625690",
+      "locName": "Digyar",
+      "distanceKm": 14.7,
+      "numSpeciesAllTime": 28,
+      "latestObsDt": "2024-08-25 05:45"
+    },
+    {
+      "locId": "L7279945",
+      "locName": "Thiksey Ringing Centre",
+      "distanceKm": 15.5,
+      "numSpeciesAllTime": 15,
+      "latestObsDt": "2023-04-12 19:42"
+    }
+  ],
+  "periyar-tiger-reserve": [
+    {
+      "locId": "L3120215",
+      "locName": "Periyar Tiger Reserve--Aruviyoda",
+      "distanceKm": 3.7,
+      "numSpeciesAllTime": 161,
+      "latestObsDt": "2025-03-21 06:16"
+    },
+    {
+      "locId": "L3120198",
+      "locName": "Periyar Tiger Reserve--Thannikkudy",
+      "distanceKm": 4.7,
+      "numSpeciesAllTime": 179,
+      "latestObsDt": "2025-12-30 15:02"
+    },
+    {
+      "locId": "L8096278",
+      "locName": "Periyar Tiger Reserve--Meenar",
+      "distanceKm": 7.2,
+      "numSpeciesAllTime": 146,
+      "latestObsDt": "2024-02-11 06:19"
+    },
+    {
+      "locId": "L3120199",
+      "locName": "Periyar Tiger Reserve--Mullakudi",
+      "distanceKm": 7.4,
+      "numSpeciesAllTime": 161,
+      "latestObsDt": "2025-12-31 07:42"
+    },
+    {
+      "locId": "L8518354",
+      "locName": "Periyar Tiger Reserve--Aruvipalam",
+      "distanceKm": 7.6,
+      "numSpeciesAllTime": 144,
+      "latestObsDt": "2025-12-14 07:28"
+    }
+  ],
+  "nagarhole-kabini": [
+    {
+      "locId": "L22544128",
+      "locName": "Kallehebballa beat Antrasantnthe",
+      "distanceKm": 3.9,
+      "numSpeciesAllTime": 88,
+      "latestObsDt": "2025-10-19 13:56"
+    },
+    {
+      "locId": "L37414506",
+      "locName": "Nagarahole Range Forest Office, Nagarahole",
+      "distanceKm": 5.1,
+      "numSpeciesAllTime": 140,
+      "latestObsDt": "2026-03-30 06:59"
+    },
+    {
+      "locId": "L2612302",
+      "locName": "Nagarahole NP ನಾಗರಹೊಳೆ ರಾಷ್ಟ್ರೀಯ ಉದ್ಯಾನವನ -General Area ಜನೋಪಯೋಗಿ ಪ್ರದೇಶ",
+      "distanceKm": 5.2,
+      "numSpeciesAllTime": 305,
+      "latestObsDt": "2026-05-09 05:30"
+    },
+    {
+      "locId": "L29044091",
+      "locName": "Nagarahole National Park, Safari",
+      "distanceKm": 8.7,
+      "numSpeciesAllTime": 170,
+      "latestObsDt": "2026-05-23 14:54"
+    },
+    {
+      "locId": "L3287276",
+      "locName": "Wayanad WLS--Kaimaram",
+      "distanceKm": 8.7,
+      "numSpeciesAllTime": 85,
+      "latestObsDt": "2025-02-13 06:35"
+    }
+  ],
+  "thattekad-bird-sanctuary": [
+    {
+      "locId": "L28424965",
+      "locName": "Thattekkad--Jewel Homes",
+      "distanceKm": 1.1,
+      "numSpeciesAllTime": 176,
+      "latestObsDt": "2026-05-26 08:44"
+    },
+    {
+      "locId": "L55782709",
+      "locName": "Jungle Bird Homestay",
+      "distanceKm": 1.2,
+      "numSpeciesAllTime": 118,
+      "latestObsDt": "2026-05-26 17:55"
+    },
+    {
+      "locId": "L3789514",
+      "locName": "Thattekkad Bird Sanctuary--General Area",
+      "distanceKm": 1.3,
+      "numSpeciesAllTime": 277,
+      "latestObsDt": "2026-06-07 07:19"
+    },
+    {
+      "locId": "L21346839",
+      "locName": "Thattekkad--Bird Songs Homestay",
+      "distanceKm": 1.3,
+      "numSpeciesAllTime": 167,
+      "latestObsDt": "2026-06-13 06:40"
+    },
+    {
+      "locId": "L41281603",
+      "locName": "Thattekad",
+      "distanceKm": 1.4,
+      "numSpeciesAllTime": 203,
+      "latestObsDt": "2026-07-05 11:51"
+    }
+  ],
+  "mangalajodi-wetlands": [
+    {
+      "locId": "L8224034",
+      "locName": "Manglajodi Eco Tourism",
+      "distanceKm": 0.8,
+      "numSpeciesAllTime": 178,
+      "latestObsDt": "2026-06-20 16:23"
+    },
+    {
+      "locId": "L39796165",
+      "locName": "Chilika Lake-Manglajodi",
+      "distanceKm": 1.1,
+      "numSpeciesAllTime": 150,
+      "latestObsDt": "2026-04-05 06:08"
+    },
+    {
+      "locId": "L10217574",
+      "locName": "Mangalajodi Nature Camp",
+      "distanceKm": 1.1,
+      "numSpeciesAllTime": 178,
+      "latestObsDt": "2026-04-10 05:25"
+    },
+    {
+      "locId": "L6809354",
+      "locName": "Godwit Eco Cottage",
+      "distanceKm": 1.2,
+      "numSpeciesAllTime": 144,
+      "latestObsDt": "2026-06-15 18:30"
+    },
+    {
+      "locId": "L64182491",
+      "locName": "Mangalajodi Bird Watching Tower",
+      "distanceKm": 1.7,
+      "numSpeciesAllTime": 91,
+      "latestObsDt": "2026-07-01 14:30"
+    }
+  ],
+  "chilika-lake": [
+    {
+      "locId": "L29043817",
+      "locName": "Chilika Lake--Nalbana Bird Sanctuary",
+      "distanceKm": 2.5,
+      "numSpeciesAllTime": 123,
+      "latestObsDt": "2026-02-28 14:45"
+    },
+    {
+      "locId": "L3111314",
+      "locName": "Chilika Lake--Nalabana Bird Sanctuary",
+      "distanceKm": 2.6,
+      "numSpeciesAllTime": 173,
+      "latestObsDt": "2026-04-04 06:00"
+    },
+    {
+      "locId": "L2527665",
+      "locName": "Chilika Lake",
+      "distanceKm": 7.1,
+      "numSpeciesAllTime": 189,
+      "latestObsDt": "2026-01-27 12:50"
+    },
+    {
+      "locId": "L17436056",
+      "locName": "Chilika--Nuapada",
+      "distanceKm": 8.1,
+      "numSpeciesAllTime": 26,
+      "latestObsDt": "2025-02-14 10:39"
+    },
+    {
+      "locId": "L3110090",
+      "locName": "Chilika Lake - Kansari",
+      "distanceKm": 8.9,
+      "numSpeciesAllTime": 114,
+      "latestObsDt": "2026-01-17 05:13"
+    }
+  ],
+  "great-himalayan-national-park": [
+    {
+      "locId": "L6032383",
+      "locName": "Great Himalayan NP--Dhel camp",
+      "distanceKm": 2.9,
+      "numSpeciesAllTime": 86,
+      "latestObsDt": "2026-06-29 07:41"
+    },
+    {
+      "locId": "L8536894",
+      "locName": "Great Himalayan NP--Nada",
+      "distanceKm": 5.4,
+      "numSpeciesAllTime": 39,
+      "latestObsDt": "2025-07-01 12:12"
+    },
+    {
+      "locId": "L5844598",
+      "locName": "Great Himalayan NP--Dengha Pool",
+      "distanceKm": 5.6,
+      "numSpeciesAllTime": 125,
+      "latestObsDt": "2025-05-03 09:28"
+    },
+    {
+      "locId": "L1801551",
+      "locName": "Great Himalayan NP--Gumtro camp",
+      "distanceKm": 5.9,
+      "numSpeciesAllTime": 112,
+      "latestObsDt": "2026-06-19 13:27"
+    },
+    {
+      "locId": "L1801542",
+      "locName": "Great Himalayan NP--Rakundi Top",
+      "distanceKm": 7,
+      "numSpeciesAllTime": 77,
+      "latestObsDt": "2026-04-14 11:47"
+    }
+  ],
+  "desert-national-park": [
+    {
+      "locId": "L33084221",
+      "locName": "Sam Desert",
+      "distanceKm": 1.2,
+      "numSpeciesAllTime": 76,
+      "latestObsDt": "2026-03-01 06:45"
+    },
+    {
+      "locId": "L2585018",
+      "locName": "Desert NP--Sam Sand Dunes",
+      "distanceKm": 1.4,
+      "numSpeciesAllTime": 156,
+      "latestObsDt": "2026-02-27 08:07"
+    },
+    {
+      "locId": "L14876882",
+      "locName": "Sam Road, Jaisalmer (OBI)",
+      "distanceKm": 1.6,
+      "numSpeciesAllTime": 129,
+      "latestObsDt": "2026-02-01 20:26"
+    },
+    {
+      "locId": "L40187411",
+      "locName": "DNP & Surroundings-  Point2",
+      "distanceKm": 3.1,
+      "numSpeciesAllTime": 171,
+      "latestObsDt": "2026-03-21 00:00"
+    },
+    {
+      "locId": "L28534785",
+      "locName": "DNP--Musa's Desert Nest",
+      "distanceKm": 3.1,
+      "numSpeciesAllTime": 129,
+      "latestObsDt": "2026-03-08 17:16"
+    }
+  ],
+  "valley-of-flowers": [
+    {
+      "locId": "L10787420",
+      "locName": "Valley of Flowers National Park",
+      "distanceKm": 0.5,
+      "numSpeciesAllTime": 124,
+      "latestObsDt": "2025-08-10 08:04"
+    },
+    {
+      "locId": "L14891109",
+      "locName": "Ghangaria (OBI)",
+      "distanceKm": 3.1,
+      "numSpeciesAllTime": 150,
+      "latestObsDt": "2025-09-21 09:16"
+    },
+    {
+      "locId": "L20495644",
+      "locName": "Hemkunt Sahib",
+      "distanceKm": 3.4,
+      "numSpeciesAllTime": 57,
+      "latestObsDt": "2026-06-27 10:55"
+    },
+    {
+      "locId": "L26973717",
+      "locName": "Ghangharia to Govindghat Rd",
+      "distanceKm": 4.8,
+      "numSpeciesAllTime": 65,
+      "latestObsDt": "2026-06-26 16:39"
+    },
+    {
+      "locId": "L9741122",
+      "locName": "Bhyudar",
+      "distanceKm": 7.3,
+      "numSpeciesAllTime": 123,
+      "latestObsDt": "2026-05-27 15:00"
+    }
+  ],
+  "dudhwa-national-park": [
+    {
+      "locId": "L23476638",
+      "locName": "Dudhwa NP--Main Campus - VIP Rest House",
+      "distanceKm": 3.4,
+      "numSpeciesAllTime": 164,
+      "latestObsDt": "2026-07-01 15:41"
+    },
+    {
+      "locId": "L25997571",
+      "locName": "Dudhwa National Park & Tiger Reserve",
+      "distanceKm": 3.4,
+      "numSpeciesAllTime": 291,
+      "latestObsDt": "2026-07-01 19:20"
+    },
+    {
+      "locId": "L23419964",
+      "locName": "Dudhwa NP--Dudhwa Range",
+      "distanceKm": 3.5,
+      "numSpeciesAllTime": 236,
+      "latestObsDt": "2026-06-06 15:00"
+    },
+    {
+      "locId": "L967205",
+      "locName": "Dudhwa NP -- General Area",
+      "distanceKm": 5.8,
+      "numSpeciesAllTime": 336,
+      "latestObsDt": "2026-05-09 11:21"
+    },
+    {
+      "locId": "L23430002",
+      "locName": "Dudhwa NP--Rhino Enclosure Area",
+      "distanceKm": 7.3,
+      "numSpeciesAllTime": 213,
+      "latestObsDt": "2026-06-28 07:34"
+    }
+  ],
+  "satpura-tiger-reserve": [
+    {
+      "locId": "L41095335",
+      "locName": "Bori Wildlife Sanctuary, Bori-STR -Point 2",
+      "distanceKm": 5.4,
+      "numSpeciesAllTime": 66,
+      "latestObsDt": "2025-03-11 07:50"
+    },
+    {
+      "locId": "L41095796",
+      "locName": "Kulkarni Kendra, Bori WLS--Satpura Tiger Reserve",
+      "distanceKm": 6.6,
+      "numSpeciesAllTime": 40,
+      "latestObsDt": "2026-01-08 07:50"
+    },
+    {
+      "locId": "L10715970",
+      "locName": "Satpura TR--Nimghan",
+      "distanceKm": 6.8,
+      "numSpeciesAllTime": 107,
+      "latestObsDt": "2025-12-03 07:16"
+    },
+    {
+      "locId": "L57373869",
+      "locName": "Satpura TR--Denwa River--Kukara",
+      "distanceKm": 7.2,
+      "numSpeciesAllTime": 84,
+      "latestObsDt": "2026-01-07 07:41"
+    },
+    {
+      "locId": "L14702523",
+      "locName": "Satpura Tiger Reserve--Overall",
+      "distanceKm": 7.2,
+      "numSpeciesAllTime": 248,
+      "latestObsDt": "2026-06-27 06:33"
+    }
+  ],
+  "eravikulam-national-park": [
+    {
+      "locId": "L2817093",
+      "locName": "Eravikulam NP -- Eravikulam Hut",
+      "distanceKm": 1.9,
+      "numSpeciesAllTime": 78,
+      "latestObsDt": "2026-04-03 12:17"
+    },
+    {
+      "locId": "L2505420",
+      "locName": "Eravikulam NP--Eravikulam Hut",
+      "distanceKm": 3.1,
+      "numSpeciesAllTime": 58,
+      "latestObsDt": "2026-04-02 11:04"
+    },
+    {
+      "locId": "L2505460",
+      "locName": "Eravikulam NP--Varattukulam",
+      "distanceKm": 3.1,
+      "numSpeciesAllTime": 68,
+      "latestObsDt": "2023-12-08 06:42"
+    },
+    {
+      "locId": "L2818432",
+      "locName": "lakkamkudi",
+      "distanceKm": 3.1,
+      "numSpeciesAllTime": 23,
+      "latestObsDt": "2023-02-27 10:13"
+    },
+    {
+      "locId": "L9660326",
+      "locName": "Gundumalai Town",
+      "distanceKm": 3.7,
+      "numSpeciesAllTime": 43,
+      "latestObsDt": "2025-12-08 15:34"
+    }
+  ],
+  "singalila-national-park": [
+    {
+      "locId": "L5086639",
+      "locName": "Srikhola",
+      "distanceKm": 1.2,
+      "numSpeciesAllTime": 99,
+      "latestObsDt": "2025-05-10 11:58"
+    },
+    {
+      "locId": "L4907509",
+      "locName": "Gurdum DG",
+      "distanceKm": 1.3,
+      "numSpeciesAllTime": 103,
+      "latestObsDt": "2026-02-21 20:25"
+    },
+    {
+      "locId": "L3231405",
+      "locName": "Singalila NP--General Area DG",
+      "distanceKm": 1.9,
+      "numSpeciesAllTime": 232,
+      "latestObsDt": "2026-05-07 06:44"
+    },
+    {
+      "locId": "L31978755",
+      "locName": "Singalila NP--Gairibas,",
+      "distanceKm": 2.2,
+      "numSpeciesAllTime": 58,
+      "latestObsDt": "2026-05-01 14:00"
+    },
+    {
+      "locId": "L21727255",
+      "locName": "Sepi Gaon",
+      "distanceKm": 2.9,
+      "numSpeciesAllTime": 71,
+      "latestObsDt": "2026-04-19 15:13"
+    }
+  ],
+  "rushikulya-rookery": [
+    {
+      "locId": "L55700756",
+      "locName": "Pangal Dweep (ପଙ୍କାଳ ଦ୍ୱୀପ)",
+      "distanceKm": 15.5,
+      "numSpeciesAllTime": 3,
+      "latestObsDt": "2025-12-03 10:32"
+    },
+    {
+      "locId": "L12044889",
+      "locName": "Gopalpur on sea",
+      "distanceKm": 16,
+      "numSpeciesAllTime": 89,
+      "latestObsDt": "2024-07-23 07:28"
+    },
+    {
+      "locId": "L8640268",
+      "locName": "Potagarh",
+      "distanceKm": 16.1,
+      "numSpeciesAllTime": 101,
+      "latestObsDt": "2026-06-16 05:28"
+    },
+    {
+      "locId": "L6244458",
+      "locName": "Ganjam--Potagarh fort",
+      "distanceKm": 16.3,
+      "numSpeciesAllTime": 135,
+      "latestObsDt": "2026-03-03 17:15"
+    },
+    {
+      "locId": "L6244465",
+      "locName": "Rushikulya River mouth",
+      "distanceKm": 16.4,
+      "numSpeciesAllTime": 132,
+      "latestObsDt": "2026-04-02 16:00"
+    }
+  ],
+  "gahirmatha-marine-sanctuary": [
+    {
+      "locId": "L22413406",
+      "locName": "Rajnagar, Kendrapara IN-OR (20.52488, 86.77371)",
+      "distanceKm": 8.5,
+      "numSpeciesAllTime": 47,
+      "latestObsDt": "2026-01-02 12:32"
+    },
+    {
+      "locId": "L50730660",
+      "locName": "Bhitarkanika--Gupti Jetty",
+      "distanceKm": 9.4,
+      "numSpeciesAllTime": 11,
+      "latestObsDt": "2026-03-15 07:12"
+    },
+    {
+      "locId": "L30151168",
+      "locName": "Bhitarkanika--Hansina Bridge",
+      "distanceKm": 9.9,
+      "numSpeciesAllTime": 88,
+      "latestObsDt": "2026-04-13 06:55"
+    },
+    {
+      "locId": "L5323288",
+      "locName": "Bhitarkanika",
+      "distanceKm": 11.5,
+      "numSpeciesAllTime": 160,
+      "latestObsDt": "2026-04-18 11:40"
+    },
+    {
+      "locId": "L11864577",
+      "locName": "Bhitarakanika NP -- Satavaya",
+      "distanceKm": 13.7,
+      "numSpeciesAllTime": 198,
+      "latestObsDt": "2025-12-07 07:05"
+    }
+  ],
+  "bandipur-national-park": [
+    {
+      "locId": "L2386799",
+      "locName": "Bandipur NP--Forest Headquarters",
+      "distanceKm": 0.6,
+      "numSpeciesAllTime": 258,
+      "latestObsDt": "2026-06-27 14:46"
+    },
+    {
+      "locId": "L7850378",
+      "locName": "Bandipur NP--Mangala Village Road West of Mangala",
+      "distanceKm": 1.5,
+      "numSpeciesAllTime": 185,
+      "latestObsDt": "2026-04-28 17:36"
+    },
+    {
+      "locId": "L3955150",
+      "locName": "Bandipur NP, ಬಂಡೀಪುರ ರಾಷ್ಟ್ರೀಯ ಉದ್ಯಾನವನ",
+      "distanceKm": 1.9,
+      "numSpeciesAllTime": 299,
+      "latestObsDt": "2026-06-28 06:34"
+    },
+    {
+      "locId": "L66169981",
+      "locName": "Bandipur NP",
+      "distanceKm": 2.5,
+      "numSpeciesAllTime": 110,
+      "latestObsDt": "2026-06-26 16:03"
+    },
+    {
+      "locId": "L2520642",
+      "locName": "Bandipur NP--Mangala Village",
+      "distanceKm": 3.9,
+      "numSpeciesAllTime": 178,
+      "latestObsDt": "2026-06-10 12:21"
+    }
+  ],
+  "mudumalai-national-park": [
+    {
+      "locId": "L932559",
+      "locName": "Mudumalai NP",
+      "distanceKm": 1.6,
+      "numSpeciesAllTime": 256,
+      "latestObsDt": "2026-05-30 15:30"
+    },
+    {
+      "locId": "L17742966",
+      "locName": "Mudumalai Tiger Reserve-- Kargudi -Peacock Dormitory",
+      "distanceKm": 2.9,
+      "numSpeciesAllTime": 110,
+      "latestObsDt": "2026-02-07 16:37"
+    },
+    {
+      "locId": "L17752474",
+      "locName": "Thorappaly Area",
+      "distanceKm": 3.2,
+      "numSpeciesAllTime": 127,
+      "latestObsDt": "2026-04-23 08:21"
+    },
+    {
+      "locId": "L40387618",
+      "locName": "Sri Madurai -- Gudalur",
+      "distanceKm": 4.8,
+      "numSpeciesAllTime": 31,
+      "latestObsDt": "2025-08-20 07:00"
+    },
+    {
+      "locId": "L40124393",
+      "locName": "Mudhumalai Tiger Reserve Interpretation Centre",
+      "distanceKm": 5.8,
+      "numSpeciesAllTime": 104,
+      "latestObsDt": "2026-03-09 12:58"
+    }
+  ],
+  "biligiri-rangaswamy-temple-tiger-reserve": [
+    {
+      "locId": "L22423520",
+      "locName": "Bedguli-Kaddigere",
+      "distanceKm": 3.1,
+      "numSpeciesAllTime": 47,
+      "latestObsDt": "2025-02-25 07:03"
+    },
+    {
+      "locId": "L12141847",
+      "locName": "BR Hills--Honnametti coffee estate",
+      "distanceKm": 6.7,
+      "numSpeciesAllTime": 79,
+      "latestObsDt": "2025-05-02 06:55"
+    },
+    {
+      "locId": "L12143210",
+      "locName": "BR Hills--K-gudi Inspection Bungalow",
+      "distanceKm": 7.5,
+      "numSpeciesAllTime": 58,
+      "latestObsDt": "2026-02-21 07:05"
+    },
+    {
+      "locId": "L2570313",
+      "locName": "BR Hills ಬಿಳಿಗಿರಿರಂಗನಾಥಸ್ವಾಮಿ ಹುಲಿ ಅಭಯಾರಾಣ್ಯ -KGudi ಕೆ ಗುಡಿ",
+      "distanceKm": 8.6,
+      "numSpeciesAllTime": 257,
+      "latestObsDt": "2026-06-21 06:00"
+    },
+    {
+      "locId": "L3948946",
+      "locName": "Sathyamangalam Tiger Reserve--Germalam",
+      "distanceKm": 10.4,
+      "numSpeciesAllTime": 162,
+      "latestObsDt": "2026-04-04 16:25"
+    }
+  ],
+  "sariska-tiger-reserve": [
+    {
+      "locId": "L13248876",
+      "locName": "Sariska",
+      "distanceKm": 0.5,
+      "numSpeciesAllTime": 173,
+      "latestObsDt": "2026-03-24 06:47"
+    },
+    {
+      "locId": "L3468752",
+      "locName": "Makar-da-pulia - Sariska Raj",
+      "distanceKm": 1.3,
+      "numSpeciesAllTime": 113,
+      "latestObsDt": "2025-04-12 15:40"
+    },
+    {
+      "locId": "L3468764",
+      "locName": "Kali Radi- Sariska Raj.",
+      "distanceKm": 1.8,
+      "numSpeciesAllTime": 114,
+      "latestObsDt": "2025-04-04 13:26"
+    },
+    {
+      "locId": "L3468765",
+      "locName": "Pheta-ki-pal- Sariska Raj.",
+      "distanceKm": 2,
+      "numSpeciesAllTime": 35,
+      "latestObsDt": "2005-05-11 07:24"
+    },
+    {
+      "locId": "L921959",
+      "locName": "Sariska Tiger Reserve",
+      "distanceKm": 2.5,
+      "numSpeciesAllTime": 259,
+      "latestObsDt": "2026-06-25 06:12"
+    }
+  ],
+  "panna-national-park": [
+    {
+      "locId": "L57416424",
+      "locName": "Sindhysagar Talab",
+      "distanceKm": 0.7,
+      "numSpeciesAllTime": 10,
+      "latestObsDt": "2026-01-04 08:03"
+    },
+    {
+      "locId": "L57414129",
+      "locName": "Maharajsagar Talab",
+      "distanceKm": 1.1
+    },
+    {
+      "locId": "L56476421",
+      "locName": "Dharam Sagar Talab",
+      "distanceKm": 1.2,
+      "numSpeciesAllTime": 18,
+      "latestObsDt": "2026-01-07 13:58"
+    },
+    {
+      "locId": "L14765178",
+      "locName": "Panna (OBI)",
+      "distanceKm": 1.5,
+      "numSpeciesAllTime": 142,
+      "latestObsDt": "2026-01-03 18:19"
+    },
+    {
+      "locId": "L57412376",
+      "locName": "Kamlabai ka Talab",
+      "distanceKm": 1.8,
+      "numSpeciesAllTime": 20,
+      "latestObsDt": "2026-05-22 15:39"
+    }
+  ],
+  "kuno-national-park": [
+    {
+      "locId": "L57427787",
+      "locName": "Madhav TR--Muharram Wala Talab",
+      "distanceKm": 12.8,
+      "numSpeciesAllTime": 23,
+      "latestObsDt": "2026-01-08 16:48"
+    },
+    {
+      "locId": "L4299289",
+      "locName": "Sankhya Sagar Lake",
+      "distanceKm": 19.8,
+      "numSpeciesAllTime": 206,
+      "latestObsDt": "2026-06-14 19:12"
+    },
+    {
+      "locId": "L4202255",
+      "locName": "Sankhya Sagar, Shivpuri",
+      "distanceKm": 20.5,
+      "numSpeciesAllTime": 118,
+      "latestObsDt": "2026-06-14 14:43"
+    },
+    {
+      "locId": "L14765184",
+      "locName": "Shivpuri (OBI)",
+      "distanceKm": 20.6,
+      "numSpeciesAllTime": 42,
+      "latestObsDt": "2026-06-14 12:45"
+    },
+    {
+      "locId": "L40239468",
+      "locName": "Happy Days School",
+      "distanceKm": 22.4,
+      "numSpeciesAllTime": 12,
+      "latestObsDt": "2025-02-15 14:14"
+    }
+  ],
+  "rajaji-national-park": [
+    {
+      "locId": "L14724143",
+      "locName": "Rishikesh (OBI)",
+      "distanceKm": 1.2,
+      "numSpeciesAllTime": 62,
+      "latestObsDt": "2025-05-31 12:19"
+    },
+    {
+      "locId": "L3918212",
+      "locName": "IDPL Rishikesh",
+      "distanceKm": 1.3,
+      "numSpeciesAllTime": 122,
+      "latestObsDt": "2026-01-02 07:38"
+    },
+    {
+      "locId": "L3313605",
+      "locName": "Virbhadra Barrage, Rishikesh",
+      "distanceKm": 1.8,
+      "numSpeciesAllTime": 155,
+      "latestObsDt": "2026-05-09 10:34"
+    },
+    {
+      "locId": "L2637727",
+      "locName": "Virbhadra, Rishikesh",
+      "distanceKm": 2.5,
+      "numSpeciesAllTime": 74,
+      "latestObsDt": "2026-07-04 11:57"
+    },
+    {
+      "locId": "L2629817",
+      "locName": "Chilla-Rishikesh Canal Road",
+      "distanceKm": 4.2,
+      "numSpeciesAllTime": 169,
+      "latestObsDt": "2026-01-06 12:28"
+    }
+  ],
+  "melghat-tiger-reserve": [
+    {
+      "locId": "L967207",
+      "locName": "Melghat Tiger Reserve",
+      "distanceKm": 4.2,
+      "numSpeciesAllTime": 288,
+      "latestObsDt": "2026-02-08 09:20"
+    },
+    {
+      "locId": "L62675290",
+      "locName": "Melghat Tiger Reserve -- Vairat",
+      "distanceKm": 7.5,
+      "numSpeciesAllTime": 52,
+      "latestObsDt": "2026-04-30 15:00"
+    },
+    {
+      "locId": "L4900608",
+      "locName": "Mozari Point, Chikhaldara",
+      "distanceKm": 14.3,
+      "numSpeciesAllTime": 74,
+      "latestObsDt": "2025-12-29 09:51"
+    },
+    {
+      "locId": "L22833771",
+      "locName": "Chikhaldara Garden",
+      "distanceKm": 15,
+      "numSpeciesAllTime": 47,
+      "latestObsDt": "2025-03-28 09:44"
+    },
+    {
+      "locId": "L16747863",
+      "locName": "Panchbol Point",
+      "distanceKm": 15,
+      "numSpeciesAllTime": 27,
+      "latestObsDt": "2024-01-27 15:06"
+    }
+  ],
+  "simlipal-national-park": [
+    {
+      "locId": "L7899045",
+      "locName": "Simlipal National Park",
+      "distanceKm": 0.9,
+      "numSpeciesAllTime": 149,
+      "latestObsDt": "2026-04-14 05:16"
+    },
+    {
+      "locId": "L6500232",
+      "locName": "Uski waterfall",
+      "distanceKm": 0.9
+    },
+    {
+      "locId": "L56455085",
+      "locName": "Similipal--Upper Barahkamuda",
+      "distanceKm": 6.4,
+      "numSpeciesAllTime": 42,
+      "latestObsDt": "2026-04-21 16:20"
+    },
+    {
+      "locId": "L13185104",
+      "locName": "Similipal National Park",
+      "distanceKm": 21.1,
+      "numSpeciesAllTime": 195,
+      "latestObsDt": "2026-06-06 16:16"
+    }
+  ],
+  "valmiki-tiger-reserve": [
+    {
+      "locId": "L4100972",
+      "locName": "Valmiki Tiger Reserve--General Area",
+      "distanceKm": 3.5,
+      "numSpeciesAllTime": 101,
+      "latestObsDt": "2023-02-21 06:00"
+    },
+    {
+      "locId": "L41743067",
+      "locName": "Vulture Point Chiutaha,Nautanwa",
+      "distanceKm": 9.5,
+      "numSpeciesAllTime": 24,
+      "latestObsDt": "2026-06-08 07:51"
+    },
+    {
+      "locId": "L26817978",
+      "locName": "Valmiki Tiger Reserve--Raghia Range",
+      "distanceKm": 10.7,
+      "numSpeciesAllTime": 104,
+      "latestObsDt": "2026-06-08 17:13"
+    },
+    {
+      "locId": "L26132055",
+      "locName": "Valmiki Tiger Reserve--Champapur Gonauli Forest Fringes",
+      "distanceKm": 15.3,
+      "numSpeciesAllTime": 32,
+      "latestObsDt": "2026-06-29 05:00"
+    },
+    {
+      "locId": "L9215259",
+      "locName": "Valmiki Tiger Reserve--Someshwar Trail",
+      "distanceKm": 17.6,
+      "numSpeciesAllTime": 101,
+      "latestObsDt": "2024-11-07 06:47"
+    }
+  ],
+  "indravati-national-park": [],
+  "namdapha-national-park": [
+    {
+      "locId": "L17729338",
+      "locName": "Namdapha NP & Surroundings--Miao-Vijaynagar Road",
+      "distanceKm": 1,
+      "numSpeciesAllTime": 295,
+      "latestObsDt": "2026-05-16 05:46"
+    },
+    {
+      "locId": "L4696975",
+      "locName": "Namdapha NP & Surroundings--Deban",
+      "distanceKm": 2.1,
+      "numSpeciesAllTime": 372,
+      "latestObsDt": "2026-05-27 17:06"
+    },
+    {
+      "locId": "L30211109",
+      "locName": "Namdapha NP & Surroundings--22 Mile",
+      "distanceKm": 2.6,
+      "numSpeciesAllTime": 189,
+      "latestObsDt": "2026-05-17 06:24"
+    },
+    {
+      "locId": "L22971766",
+      "locName": "Namdapha NP & Surroundings--25 Mile",
+      "distanceKm": 3.3,
+      "numSpeciesAllTime": 188,
+      "latestObsDt": "2026-05-28 08:41"
+    },
+    {
+      "locId": "L17744840",
+      "locName": "Namdapha NP & Surroundings--13 Mile",
+      "distanceKm": 4.2,
+      "numSpeciesAllTime": 257,
+      "latestObsDt": "2026-05-02 13:00"
+    }
+  ],
+  "keibul-lamjao-national-park": [
+    {
+      "locId": "L8879521",
+      "locName": "Sungu--Logtak Lake",
+      "distanceKm": 1.4,
+      "numSpeciesAllTime": 1,
+      "latestObsDt": "1997-01-15 00:00"
+    },
+    {
+      "locId": "L17976656",
+      "locName": "Keibul Lamjao National Park",
+      "distanceKm": 3.1,
+      "numSpeciesAllTime": 127,
+      "latestObsDt": "2026-07-07 15:39"
+    },
+    {
+      "locId": "L4535355",
+      "locName": "Keibul Lamjao NP",
+      "distanceKm": 3.8,
+      "numSpeciesAllTime": 167,
+      "latestObsDt": "2023-04-16 15:18"
+    },
+    {
+      "locId": "L7968973",
+      "locName": "Sendra Park Resort",
+      "distanceKm": 3.9,
+      "numSpeciesAllTime": 37,
+      "latestObsDt": "2026-03-12 08:11"
+    },
+    {
+      "locId": "L22191288",
+      "locName": "Takmu Lake",
+      "distanceKm": 4.6,
+      "numSpeciesAllTime": 46,
+      "latestObsDt": "2025-05-17 13:58"
+    }
+  ],
+  "silent-valley-national-park": [
+    {
+      "locId": "L2504933",
+      "locName": "Silent Valley National Park--General Area",
+      "distanceKm": 2.3,
+      "numSpeciesAllTime": 68,
+      "latestObsDt": "2024-03-04 07:32"
+    },
+    {
+      "locId": "L3221879",
+      "locName": "Silent Valley NP--Punnamala",
+      "distanceKm": 3,
+      "numSpeciesAllTime": 58,
+      "latestObsDt": "2021-03-31 07:37"
+    },
+    {
+      "locId": "L9673691",
+      "locName": "Poochippara 93,22,7 First cell4/4",
+      "distanceKm": 3.3,
+      "numSpeciesAllTime": 8,
+      "latestObsDt": "2019-07-20 08:38"
+    },
+    {
+      "locId": "L3287351",
+      "locName": "Silent Valley NP--Poochippara towards Neelikkal",
+      "distanceKm": 3.7,
+      "numSpeciesAllTime": 43,
+      "latestObsDt": "2026-03-06 19:58"
+    },
+    {
+      "locId": "L3221874",
+      "locName": "Silent Valley NP--Poochappara",
+      "distanceKm": 3.8,
+      "numSpeciesAllTime": 97,
+      "latestObsDt": "2024-12-23 09:57"
+    }
+  ]
+}
