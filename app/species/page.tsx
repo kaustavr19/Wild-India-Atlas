@@ -1,4 +1,4 @@
-import type { Metadata } from "next"; import { species } from "@/data/species"; import { SpeciesCard } from "@/components/SpeciesCard";
+import type { Metadata } from "next"; import { species } from "@/data/species"; import { SpeciesCard } from "@/components/SpeciesCard"; import { getExtendedSpecies } from "@/lib/extendedSpecies"; import { ExtendedSpeciesSection } from "@/components/ExtendedSpeciesSection";
 
 export const metadata: Metadata = {
   title: "Wildlife Species Guide — Wild India Atlas",
@@ -13,5 +13,6 @@ export default function SpeciesPage(){
     <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {species.map(s => <SpeciesCard key={s.slug} species={s} />)}
     </div>
+    <ExtendedSpeciesSection species={getExtendedSpecies()} />
   </main>;
 }
