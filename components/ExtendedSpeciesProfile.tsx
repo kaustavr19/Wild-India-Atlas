@@ -21,7 +21,7 @@ export function ExtendedSpeciesProfile({ species }: { species: ExtendedSpecies }
           </>
         )}
         <div className="mx-auto w-full max-w-7xl">
-          <Link href="/species" className="font-mono text-xs font-bold uppercase tracking-wide text-flare">← Back to species guide</Link>
+          <Link href="/species" className="font-mono text-xs font-bold uppercase tracking-wide text-sand">← Back to species guide</Link>
           <div className="mt-5 flex flex-wrap items-center gap-2">
             <span className="rounded-sm bg-forest-700 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-white">{species.iconicGroup}</span>
             <span className="rounded-sm border border-white/30 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-white/90">via {species.source}</span>
@@ -29,7 +29,7 @@ export function ExtendedSpeciesProfile({ species }: { species: ExtendedSpecies }
           </div>
           <h1 className="mt-4 max-w-4xl text-5xl font-semibold">{species.commonName}</h1>
           <p className="mt-2 max-w-3xl text-lg italic text-white/70">{species.scientificName}</p>
-          <p className="mt-3 max-w-3xl border-l-2 border-flare pl-4 text-sm leading-7 text-ivory">
+          <p className="mt-3 max-w-3xl border-l-2 border-sand pl-4 text-sm leading-7 text-ivory">
             An Extended-tier entry, auto-grouped from real {species.source} citizen-science records rather than hand-curated — not a full profile like the Flagship species above it on the guide.
           </p>
         </div>

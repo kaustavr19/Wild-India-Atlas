@@ -50,7 +50,7 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
       <SpeciesImage slug={sp.slug} category={sp.category} className="absolute inset-0 -z-20 h-full w-full" />
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-forest-900 via-forest-900/75 to-forest-900/10"/>
       <div className="mx-auto w-full max-w-7xl">
-        <Link href="/species" className="font-mono text-xs font-bold uppercase tracking-wide text-flare">← Back to species guide</Link>
+        <Link href="/species" className="font-mono text-xs font-bold uppercase tracking-wide text-sand">← Back to species guide</Link>
         <div className="mt-5 flex flex-wrap items-center gap-2">
           <span className="rounded-sm bg-forest-700 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-white">{sp.category}</span>
           <span className="rounded-sm border border-white/30 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-white/90">Sighting: {sp.difficultyOfSighting}</span>
@@ -58,7 +58,7 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
         </div>
         <h1 className="mt-4 max-w-4xl text-5xl font-semibold">{sp.commonName}</h1>
         <p className="mt-2 max-w-3xl text-lg italic text-white/70">{sp.scientificName}</p>
-        <p className="mt-3 max-w-3xl border-l-2 border-flare pl-4 text-lg leading-8 text-ivory">{sp.shortDescription}</p>
+        <p className="mt-3 max-w-3xl border-l-2 border-sand pl-4 text-lg leading-8 text-ivory">{sp.shortDescription}</p>
       </div>
     </section>
     <section className="mx-auto grid max-w-7xl items-start gap-6 px-4 py-10 sm:px-6 lg:grid-cols-[1fr_360px]">

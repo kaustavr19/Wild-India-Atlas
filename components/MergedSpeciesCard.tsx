@@ -26,12 +26,12 @@ export function MergedSpeciesCard({ item }: { item: MergedSpeciesListItem }) {
         {item.tier === "Flagship" ? (
           <div className="relative">
             <SpeciesImage slug={item.slug} category={item.group} className="h-36 w-full" showCredit={false} />
-            <div className="absolute right-3 top-3 rounded-sm bg-forest-900/90 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-flare">{item.group}</div>
+            <div className="absolute right-3 top-3 rounded-sm bg-forest-900/90 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-sand">{item.group}</div>
           </div>
         ) : item.photoUrl ? (
           <div className="relative h-36 w-full overflow-hidden bg-forest-900">
             <img src={item.photoUrl} alt="" className="h-full w-full object-cover" loading="lazy" />
-            <div className="absolute right-3 top-3 rounded-sm bg-forest-900/90 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-flare">{item.group}</div>
+            <div className="absolute right-3 top-3 rounded-sm bg-forest-900/90 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-sand">{item.group}</div>
           </div>
         ) : (
           <div className="flex h-14 items-center bg-forest-100 px-4 dark:bg-forest-900/40">

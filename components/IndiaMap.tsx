@@ -191,7 +191,7 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
           <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
             <div className="pointer-events-auto max-w-full truncate rounded-sm border border-white/20 bg-white/20 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-white backdrop-blur-md">Interactive India atlas · {visibleOnMap.length} visible</div>
             {bestNowRegions.length > 0 && (
-              <div className="pointer-events-auto max-w-full rounded-sm border border-flare/40 bg-flare/25 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-flare backdrop-blur-md sm:max-w-[60%]">
+              <div className="pointer-events-auto max-w-full rounded-sm border border-sand/40 bg-sand/25 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-sand backdrop-blur-md sm:max-w-[60%]">
                 Best in {currentMonth}: {bestNowRegions.join(", ")}
               </div>
             )}
@@ -200,7 +200,7 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
             <button onClick={() => setLegendOpen(o => !o)} className="flex items-center gap-1.5 rounded-sm border border-white/20 bg-white/20 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-white backdrop-blur-md hover:bg-white/30">
               <SlidersHorizontal size={13} />
               Layers &amp; legend
-              {activeLayers.size > 0 && <span className="grid h-4 w-4 place-items-center rounded-full bg-flare text-[10px] text-forest-900">{activeLayers.size}</span>}
+              {activeLayers.size > 0 && <span className="grid h-4 w-4 place-items-center rounded-full bg-amberfield text-[10px] text-forest-900">{activeLayers.size}</span>}
               <ChevronDown size={13} className={"transition-transform " + (legendOpen ? "rotate-180" : "")} />
             </button>
             {legendOpen && (
@@ -211,7 +211,7 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
                     {LAYER_KEYS.map(key => {
                       const on = activeLayers.has(key);
                       return (
-                        <button key={key} onClick={() => toggleLayer(key)} className={"rounded-full border px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wide transition " + (on ? "border-flare bg-flare text-forest-900" : "border-white/25 bg-white/10 text-white/80 hover:border-white/50")}>
+                        <button key={key} onClick={() => toggleLayer(key)} className={"rounded-full border px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wide transition " + (on ? "border-amberfield bg-amberfield text-forest-900" : "border-white/25 bg-white/10 text-white/80 hover:border-white/50")}>
                           {key}
                         </button>
                       );
@@ -323,7 +323,7 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
             className="pointer-events-none absolute z-20 -translate-y-full rounded-sm border border-white/20 bg-forest-900/95 px-3 py-2 shadow-lg backdrop-blur-md"
             style={{ left: left + "%", top: (top - 3) + "%", transform: "translate(" + (flipLeft ? "-100%" : "-8px") + ", -100%)" }}
           >
-            <p className="rounded-sm bg-forest-900/0 font-mono text-[10px] font-semibold uppercase tracking-wider text-flare">{hoveredAccess.kind}</p>
+            <p className="rounded-sm bg-forest-900/0 font-mono text-[10px] font-semibold uppercase tracking-wider text-sand">{hoveredAccess.kind}</p>
             <p className="mt-0.5 whitespace-nowrap text-sm font-bold text-white">{hoveredAccess.name}</p>
           </div>
         );
@@ -339,7 +339,7 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
             className="pointer-events-none absolute z-20 -translate-y-full rounded-sm border border-white/20 bg-forest-900/95 px-3 py-2 shadow-lg backdrop-blur-md"
             style={{ left: left + "%", top: (top - 3) + "%", transform: "translate(" + (flipLeft ? "-100%" : "-8px") + ", -100%)" }}
           >
-            <p className="rounded-sm bg-forest-900/0 font-mono text-[10px] font-semibold uppercase tracking-wider text-flare">{hovered.type}</p>
+            <p className="rounded-sm bg-forest-900/0 font-mono text-[10px] font-semibold uppercase tracking-wider text-sand">{hovered.type}</p>
             <p className="mt-0.5 whitespace-nowrap text-sm font-bold text-white">{hovered.name}</p>
             <p className="text-xs text-white/60">{hovered.state}</p>
           </div>
