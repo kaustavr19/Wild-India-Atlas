@@ -13,6 +13,14 @@ export type INaturalistMapping =
 // Australia's Little Desert National Park), and thattekad-bird-sanctuary (the only candidate
 // was a "Forest division" administrative area, not clearly the sanctuary's own boundary).
 //
+// Phase 10 closed most of the remaining gap. Still deliberately unmapped, all reviewed again
+// against this same bar with no better data available: desert-national-park and
+// manas-national-park (candidates unchanged — still Australia/Zimbabwe parks with the same
+// name), gir-national-park and kuno-national-park (every candidate is an unrelated
+// international place that merely starts with the same letters — Girne/Giresun/Giro/etc. for
+// "Gir", Kunohe/Kunoy/Kunovice for "Kuno" — none are in India at all), and
+// thattekad-bird-sanctuary (still just the same ambiguous forest-division record).
+//
 // A "radius" fallback is never auto-picked by the discovery script — whether a point+radius
 // search is an acceptable substitute for a real place boundary is a per-park judgment call.
 export const inaturalistPlaces: Record<string, INaturalistMapping> = {
@@ -39,4 +47,35 @@ export const inaturalistPlaces: Record<string, INaturalistMapping> = {
   "indravati-national-park": { method: "place", placeId: 69589, placeName: "Indravati", verifiedBy: "manual" },
   "namdapha-national-park": { method: "place", placeId: 69391, placeName: "Namdapha", verifiedBy: "manual" },
   "keibul-lamjao-national-park": { method: "place", placeId: 69398, placeName: "Keibul-Lamjao", verifiedBy: "manual" },
+
+  // Confirmed in Phase 10, from data/inaturalist-candidates.json's existing candidate lists.
+  "hemis-national-park": { method: "place", placeId: 69395, placeName: "Hemis", verifiedBy: "manual" },
+  "panna-national-park": { method: "place", placeId: 69640, placeName: "Panna", verifiedBy: "manual" },
+  "periyar-tiger-reserve": { method: "place", placeId: 190814, placeName: "Periyar Tiger Reserve", verifiedBy: "manual" },
+  "silent-valley-national-park": { method: "place", placeId: 199131, placeName: "Silent Valley NP", verifiedBy: "manual" },
+  "valley-of-flowers": { method: "place", placeId: 69580, placeName: "Valley Of Flowers", verifiedBy: "manual" },
+
+  // Radius fallbacks (Phase 10) — no iNaturalist Place polygon exists for these at all, so a
+  // point+radius search around the hotspot's own coordinates substitutes for one. Radius is
+  // chosen per park from its known real extent, not a single blanket number.
+  "chilika-lake": {
+    method: "radius", lat: 19.72, lng: 85.32, radiusKm: 20, verifiedBy: "manual",
+    note: "No iNaturalist Place found for Chilika Lake. Radius fallback around the hotspot's coordinates — 20km reflects the lake's real size (India's largest brackish lagoon, ~1,100 km2), larger than the default since a tighter radius would miss much of the actual lagoon.",
+  },
+  "little-rann-of-kutch": {
+    method: "radius", lat: 23.45, lng: 71.2, radiusKm: 25, verifiedBy: "manual",
+    note: "No iNaturalist Place found for Little Rann of Kutch. Radius fallback around the hotspot's coordinates — 25km is larger than the default given the sanctuary's genuinely vast real extent (~4,950 km2), but deliberately capped well below a radius that would try to cover the whole sanctuary, to avoid pulling in species records from well outside it.",
+  },
+  "melghat-tiger-reserve": {
+    method: "radius", lat: 21.33, lng: 77.2, radiusKm: 20, verifiedBy: "manual",
+    note: "No iNaturalist Place found for Melghat Tiger Reserve. Radius fallback around the hotspot's coordinates — 20km reflects the reserve's above-average size (~2,000+ km2 core and buffer across the Satpura hills).",
+  },
+  "sariska-tiger-reserve": {
+    method: "radius", lat: 27.32, lng: 76.44, radiusKm: 15, verifiedBy: "manual",
+    note: "No iNaturalist Place found for Sariska Tiger Reserve. Radius fallback around the hotspot's coordinates — 15km (the default) fits its moderate core size (~880 km2).",
+  },
+  "tadoba-andhari-tiger-reserve": {
+    method: "radius", lat: 20.22, lng: 79.33, radiusKm: 15, verifiedBy: "manual",
+    note: "No iNaturalist Place found for Tadoba Andhari Tiger Reserve. Radius fallback around the hotspot's coordinates — 15km (the default) fits its core zone size (~625 km2).",
+  },
 };
