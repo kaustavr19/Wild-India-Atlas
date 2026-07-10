@@ -186,6 +186,12 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
 
   return (
     <section className={"relative overflow-hidden bg-[#1c3a4a] " + (isHero ? "h-full w-full" : "h-full min-h-[560px] w-full rounded-sm border border-forest-700/20")}>
+      {/* Ocean atmosphere — same restrained dot pattern as the hero/fallback illustrations
+          (.canopy-texture in globals.css). Sits behind the SVG, so the opaque land/state
+          polygons drawn on top cover it completely; only the uncovered ocean shows the
+          texture. Landmass fills are intentionally left flat — see the regionFill comment
+          above for why they can't compete visually with the ecosystem-pin colors. */}
+      <div className="canopy-texture pointer-events-none absolute inset-0" />
       {!isHero && (
         <div className="pointer-events-none absolute inset-x-3 top-3 z-10 flex flex-col gap-2 sm:inset-x-6 sm:top-6">
           <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
