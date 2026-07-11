@@ -29,10 +29,12 @@ const bestNow = allHotspots.filter(h => h.bestMonths.includes(currentMonth));
 const bestNowStates = new Set(bestNow.flatMap(h => h.state.split("/").map(x=>x.trim())));
 const bestNowRegions = Array.from(new Set(bestNow.map(h => h.region)));
 
-const VIEW_W = 760, VIEW_H = 620;
+export const VIEW_W = 760, VIEW_H = 620;
 const MIN_W = VIEW_W / 16;
-const projection = geoMercator().fitSize([VIEW_W, VIEW_H], indiaStates as GeoJSON.FeatureCollection);
-const pathGen = geoPath(projection);
+// Exported so other views (e.g. the homepage Descent sequence) can zoom/pan toward
+// real projected coordinates instead of duplicating a second projection setup.
+export const projection = geoMercator().fitSize([VIEW_W, VIEW_H], indiaStates as GeoJSON.FeatureCollection);
+export const pathGen = geoPath(projection);
 const stateLabels = (indiaStates as GeoJSON.FeatureCollection).features.map(f => ({
   name: (f.properties as { name: string }).name,
   centroid: pathGen.centroid(f),
