@@ -8,3 +8,8 @@ html.dark body{background:radial-gradient(circle at 10% 5%,rgba(215,230,76,.06),
 html.dark h1,html.dark h2,html.dark h3{color:#f3f6ef}
 html.dark .field-card{background:#152119;border-color:rgba(255,255,255,.1)}
 html.dark .map-grid{background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px)}
+/* Slow hero Ken Burns — wrapped in the no-preference query rather than toggled by JS, so
+   prefers-reduced-motion users never even register the animation (static crop instead)
+   with no extra client-side detection needed. */
+@media (prefers-reduced-motion:no-preference){.hero-ken-burns{animation:heroKenBurns 55s ease-in-out infinite alternate}}
+@keyframes heroKenBurns{0%{transform:scale(1) translate(0,0)}100%{transform:scale(1.08) translate(-1.5%,-1%)}}

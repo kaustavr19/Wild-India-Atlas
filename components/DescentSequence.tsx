@@ -62,8 +62,8 @@ function HeroCopy({ totalParks, regionCount, currentSeason }: { totalParks: numb
   return (
     <>
       <p className="flex items-center gap-3 font-mono text-xs font-semibold uppercase tracking-[0.25em] text-sand"><span className="h-px w-8 bg-sand" />Field guide · Travel planner · Atlas</p>
-      <h1 className="mt-6 text-6xl font-semibold leading-[0.98] tracking-tight sm:text-7xl">Explore India&apos;s<br /><em className="text-sand not-italic">Wild Side</em></h1>
-      <p className="mt-6 max-w-lg text-lg leading-8 text-ivory/90">Plan wildlife, birding, and nature trips across India by species, season, region, and experience.</p>
+      <h1 className="mt-8 text-7xl font-semibold leading-[0.9] tracking-tight sm:text-8xl">Explore India&apos;s<br /><em className="text-sand not-italic">Wild Side</em></h1>
+      <p className="mt-8 max-w-lg text-lg leading-8 text-ivory/90">Plan wildlife, birding, and nature trips across India by species, season, region, and experience.</p>
       <p className="mt-4 font-mono text-xs uppercase tracking-[0.15em] text-ivory/60">{totalParks} parks — {regionCount} regions — live seasonal map</p>
       <div className="mt-8 flex flex-wrap gap-3">
         <Link href="/map" className="inline-flex items-center gap-2 rounded-sm bg-amberfield px-5 py-3 font-bold text-forest-900 transition hover:bg-white">Open Wildlife Map <ArrowRight size={18} /></Link>
@@ -80,7 +80,7 @@ function HeroFunctional() {
   const [query, setQuery] = useState("");
   return (
     <>
-      <div className="mt-8 max-w-xl"><SearchBar value={query} onChange={setQuery} placeholder="Search by species, park, state, season..." /></div>
+      <div className="mt-8 max-w-xl"><SearchBar value={query} onChange={setQuery} placeholder="Search by species, park, state, season..." variant="dark" /></div>
       <div className="mt-4 flex flex-wrap gap-2">
         {CHIPS.map(c => <Link href={"/map?query=" + encodeURIComponent(c)} key={c} className="rounded-sm border border-white/25 px-3 py-1.5 font-mono text-xs uppercase tracking-wide text-white/80 transition hover:border-sand hover:text-sand">{c}</Link>)}
       </div>
@@ -94,8 +94,8 @@ function HeroFunctional() {
 // (min-h-[720px]/[820px]) since it now holds the same amount of content.
 function LandedDescent({ featured, totalParks, regionCount, currentSeason }: DescentProps) {
   return (
-    <section className="relative isolate flex min-h-[720px] items-center overflow-hidden px-4 pb-16 pt-28 text-white sm:px-6 sm:pt-16 lg:min-h-[820px]">
-      <HotspotImage slug={featured.slug} type={featured.type} className="absolute inset-0 -z-20 h-full w-full" showCredit={false} />
+    <section className="group relative isolate flex min-h-[720px] items-center overflow-hidden px-4 pb-16 pt-28 text-white sm:px-6 sm:pt-16 lg:min-h-[820px]">
+      <HotspotImage slug={featured.slug} type={featured.type} className="hero-ken-burns absolute inset-0 -z-20 h-full w-full" />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgba(20,47,37,.96)_10%,rgba(20,47,37,.75)_45%,rgba(20,47,37,.35)_75%,rgba(20,47,37,.15)_100%),linear-gradient(0deg,rgba(20,47,37,.55),transparent_40%)]" />
       <div className="mx-auto w-full max-w-7xl">
         <div className="max-w-2xl">
@@ -207,9 +207,14 @@ function ScrollDescent({ featured, totalParks, regionCount, currentSeason }: Des
 
           <div className="absolute inset-0 bg-forest-900" style={{ opacity: darkenT * 0.55 }} />
 
-          <div className="absolute inset-0" style={{ opacity: photoT }}>
-            <HotspotImage slug={featured.slug} type={featured.type} className="absolute inset-0 h-full w-full" showCredit={false} />
-            <div className="absolute inset-0 bg-gradient-to-t from-forest-900 via-forest-900/65 to-forest-900/20" />
+          <div className="group absolute inset-0" style={{ opacity: photoT }}>
+            <HotspotImage slug={featured.slug} type={featured.type} className="hero-ken-burns absolute inset-0 h-full w-full" />
+            {/* Same 100deg left-to-right vignette as the landed hero (darkest behind the
+                left-aligned text column, lightest toward the right where photo detail
+                should read through) rather than a generic bottom-heavy fade, so the
+                animated and landed hero states use one consistent, actually-editorial
+                vignette instead of two different ad-hoc ones. */}
+            <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(20,47,37,.96)_10%,rgba(20,47,37,.75)_45%,rgba(20,47,37,.35)_75%,rgba(20,47,37,.15)_100%),linear-gradient(0deg,rgba(20,47,37,.55),transparent_40%)]" />
           </div>
         </div>
 
