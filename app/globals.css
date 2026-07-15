@@ -334,6 +334,8 @@ html.dark .map-grid, html.dark .texture-field-grid { background-image: linear-gr
   box-shadow: 0 0 22px rgb(var(--biome-accent-rgb) / 0.35);
   opacity: 0.45;
 }
+.encounter-volume { accent-color: rgb(var(--biome-accent-rgb)); }
+.encounter-volume:focus-visible { outline-offset: 2px; }
 .encounter-act { opacity: 0.42; }
 .encounter-act.is-active { opacity: 1; }
 

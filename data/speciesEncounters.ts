@@ -12,6 +12,13 @@ export type SpeciesEncounter = {
   title: string;
   introduction: string;
   place: string;
+  soundscape: {
+    title: string;
+    src: string;
+    author: string;
+    license: string;
+    sourcePage: string;
+  };
   acts: EncounterAct[];
   closing: string;
 };
@@ -22,6 +29,7 @@ export const speciesEncounters: Partial<Record<string, SpeciesEncounter>> = {
     title: "The forest tells you first.",
     introduction: "A tiger encounter rarely begins with stripes. It begins with a quieter language: dust, distance, an interrupted chorus, and the patience to notice what changed.",
     place: "Central Indian forest · dawn",
+    soundscape: { title: "Forest ambience", src: "/audio/forest-ambience.ogg", author: "nille", license: "Public domain", sourcePage: "https://commons.wikimedia.org/wiki/File:20090610_0_ambience.ogg" },
     acts: [
       {
         time: "05:42",
@@ -63,6 +71,7 @@ export const speciesEncounters: Partial<Record<string, SpeciesEncounter>> = {
     title: "Look for the mountain moving.",
     introduction: "In the trans-Himalaya, scale plays tricks on the eye. A snow leopard can be present for minutes before stone, shadow, and tail resolve into an animal.",
     place: "Ladakh · winter morning",
+    soundscape: { title: "Howling wind", src: "/audio/howling-wind.ogg", author: "Tvabutzku1234", license: "CC0 1.0", sourcePage: "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg" },
     acts: [
       { time: "07:06", title: "Cold glass", signal: "The spotting scope settles on a sunlit ridgeline.", narrative: "The valley is too large to scan quickly. A spotter divides the opposite slope into ledges, gullies, and scree fans, returning to each patch with deliberate patience.", fieldNote: "Let local spotters lead. Their knowledge keeps both people and wildlife at a safe distance.", visualFocus: "The far ridge" },
       { time: "08:22", title: "A broken line", signal: "One curve does not match the geology.", narrative: "At first it is only a pale interruption beneath an overhang. Then the line moves—a tail laid across stone—and the entire mountain rearranges itself around the cat.", fieldNote: "Most sightings are distant. A telescope often matters more than a closer position.", visualFocus: "The silhouette" },
@@ -76,6 +85,7 @@ export const speciesEncounters: Partial<Record<string, SpeciesEncounter>> = {
     title: "Let the horizon reveal it.",
     introduction: "The Great Indian Bustard lives in a landscape often mistaken for emptiness. The encounter begins by reading grass height, distant movement, and the immense space a wary bird needs around it.",
     place: "Thar Desert · first light",
+    soundscape: { title: "Howling wind", src: "/audio/howling-wind.ogg", author: "Tvabutzku1234", license: "CC0 1.0", sourcePage: "https://commons.wikimedia.org/wiki/File:Howling_wind.ogg" },
     acts: [
       { time: "06:04", title: "Long horizon", signal: "A pale shape stands beyond the grass shimmer.", narrative: "From inside the vehicle, the plain resolves slowly: low scrub, tawny grass, a line of heat beginning above the earth. One upright form remains still while everything around it moves.", fieldNote: "Use the vehicle as a hide and let your guide determine the viewing distance.", visualFocus: "The horizon" },
       { time: "06:11", title: "The sentinel", signal: "A white neck turns above the grass.", narrative: "The bird lifts its head and surveys the open ground. Its stillness is not calm for our benefit; it is vigilance shaped by a landscape with nowhere to hide.", fieldNote: "Do not step out for a lower angle. A tiny remaining population cannot absorb disturbance.", visualFocus: "The watch" },
@@ -89,6 +99,7 @@ export const speciesEncounters: Partial<Record<string, SpeciesEncounter>> = {
     title: "The grass begins to breathe.",
     introduction: "A rhinoceros encounter arrives through layers: river mist, dew-heavy elephant grass, the rhythm of grazing, and finally an armoured silhouette emerging from the floodplain.",
     place: "Assam floodplain · early morning",
+    soundscape: { title: "Pond at dusk", src: "/audio/pond-at-dusk.ogg", author: "Glaneur de sons", license: "CC BY 3.0", sourcePage: "https://commons.wikimedia.org/wiki/File:Nature_sounds_ambience_in_a_Dordogne_pond.ogg" },
     acts: [
       { time: "06:12", title: "White water", signal: "Mist holds low above the wet grass.", narrative: "The track runs between reed beds and shallow water. Egrets appear and disappear in the haze while the floodplain waits for sunlight to define its edges.", fieldNote: "Remain on designated safari routes; wetlands and tall grass conceal more life than you can see.", visualFocus: "The mist" },
       { time: "06:24", title: "Grass moving", signal: "A broad channel opens through the reeds.", narrative: "Stems bend in sequence before the animal itself appears. A rounded back rises above the grass, beaded with moisture and almost the same grey as the morning.", fieldNote: "Let the guide set the pace and distance. Never pressure the animal toward water or cover.", visualFocus: "The reed line" },
@@ -102,6 +113,7 @@ export const speciesEncounters: Partial<Record<string, SpeciesEncounter>> = {
     title: "Search the branches between breaths.",
     introduction: "Red panda country is close, green, and vertical. The search slows to the pace of filtered light—bamboo stems, mossed limbs, and a rust-red shape sleeping above the trail.",
     place: "Eastern Himalayan forest · cloud morning",
+    soundscape: { title: "Rain, thunder and birds", src: "/audio/rain-thunder-birds.ogg", author: "Ezwa", license: "Public domain", sourcePage: "https://commons.wikimedia.org/wiki/File:Rainthunderandbirds.ogg" },
     acts: [
       { time: "07:18", title: "Into bamboo", signal: "The trail narrows beneath a wet canopy.", narrative: "Cloud drifts through broadleaf forest and every branch carries moss. The guide scans forks and horizontal limbs where a small animal can become part of the tree.", fieldNote: "Stay on marked trails; trampling the understory damages the habitat you came to see.", visualFocus: "The canopy" },
       { time: "07:46", title: "A warm colour", signal: "Rust-red fur interrupts a mossed branch.", narrative: "The first glimpse is not a face but a colour that does not belong to bark. A ringed tail hangs below the limb, motionless in the filtered morning light.", fieldNote: "Whisper, point slowly, and allow others to find the animal without crowding.", visualFocus: "The tail" },
@@ -115,6 +127,7 @@ export const speciesEncounters: Partial<Record<string, SpeciesEncounter>> = {
     title: "Let darkness protect the shore.",
     introduction: "On an arribada beach, wonder depends on discipline. The ocean, moon, and nesting turtles set the pace; visitors become a quiet edge to a journey older than any light we carry.",
     place: "Odisha coast · moonless night",
+    soundscape: { title: "Waves", src: "/audio/waves.ogg", author: "Monplaisir", license: "CC0 1.0", sourcePage: "https://commons.wikimedia.org/wiki/File:Monplaisir_-_06_-_Waves.ogg" },
     acts: [
       { time: "22:14", title: "Dark adaptation", signal: "The shoreline appears only after the torch goes off.", narrative: "At first there is surf and almost nothing else. Slowly the eye learns the beach: a pale break of foam, wet sand, and tracks drawing parallel lines from the water.", fieldNote: "Use only guide-approved red-filtered light. White light and flash can disorient turtles.", visualFocus: "The tide line" },
       { time: "22:27", title: "From the surf", signal: "A dark shell pauses between two waves.", narrative: "The turtle waits through the backwash, then pulls forward with deliberate strokes. Each metre inland is work, and the watching group gives the route a wide, silent margin.", fieldNote: "Never stand between a turtle and the nesting beach—or between hatchlings and the sea.", visualFocus: "The landing" },

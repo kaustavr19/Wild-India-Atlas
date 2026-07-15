@@ -1,9 +1,10 @@
 "use client";
 
-import { Eye, Footprints, Quote, Volume2 } from "lucide-react";
+import { AudioLines, Eye, Footprints, Quote, Volume1, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import type { SpeciesEncounter } from "@/data/speciesEncounters";
 import { SpeciesImage } from "./SpeciesImage";
+import { useSoundPreference } from "./SoundPreference";
 
 export function WildlifeEncounter({
   encounter,
@@ -15,7 +16,25 @@ export function WildlifeEncounter({
   category: string;
 }) {
   const [activeAct, setActiveAct] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [audioError, setAudioError] = useState("");
+  const [audioErrorCode, setAudioErrorCode] = useState("");
+  const [volume, setVolume] = useState(65);
+  const [saveData, setSaveData] = useState(false);
   const actRefs = useRef<Array<HTMLElement | null>>([]);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const fadeRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const { soundEnabled, setSoundEnabled } = useSoundPreference();
+
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem("wia-sound-volume");
+      const storedVolume = stored === null ? Number.NaN : Number(stored);
+      if (Number.isFinite(storedVolume) && storedVolume >= 0 && storedVolume <= 100) setVolume(storedVolume);
+    } catch {}
+    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+    setSaveData(connection?.saveData === true);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -30,6 +49,65 @@ export function WildlifeEncounter({
     actRefs.current.forEach((node) => node && observer.observe(node));
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    if (!isPlaying || !audioRef.current) return;
+    const audio = audioRef.current;
+    const target = ([0.11, 0.145, 0.18, 0.09][activeAct] ?? 0.12) * (volume / 100);
+    if (fadeRef.current) clearInterval(fadeRef.current);
+    fadeRef.current = setInterval(() => {
+      const delta = target - audio.volume;
+      if (Math.abs(delta) < 0.008) {
+        audio.volume = target;
+        if (fadeRef.current) clearInterval(fadeRef.current);
+        fadeRef.current = null;
+        return;
+      }
+      audio.volume = Math.max(0, Math.min(1, audio.volume + delta * 0.24));
+    }, 55);
+    return () => { if (fadeRef.current) clearInterval(fadeRef.current); };
+  }, [activeAct, isPlaying, volume]);
+
+  useEffect(() => () => {
+    if (fadeRef.current) clearInterval(fadeRef.current);
+    audioRef.current?.pause();
+  }, []);
+
+  async function toggleSoundscape() {
+    setAudioError("");
+    setAudioErrorCode("");
+    if (saveData) {
+      setAudioError("Data Saver is active, so this soundscape has not been loaded.");
+      setAudioErrorCode("SaveData");
+      return;
+    }
+    if (!audioRef.current) {
+      const audio = new Audio(encounter.soundscape.src);
+      audio.loop = true;
+      audio.preload = "none";
+      audio.volume = 0.01;
+      audioRef.current = audio;
+    }
+
+    if (isPlaying) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+      setSoundEnabled(false);
+      return;
+    }
+
+    try {
+      await audioRef.current.play();
+      setIsPlaying(true);
+      setSoundEnabled(true);
+    } catch (error) {
+      const code = error instanceof DOMException ? error.name : "PlaybackError";
+      setAudioError(code === "NotAllowedError" ? "Your browser blocked sound. Allow audio for this site and try again." : "Sound could not be loaded. Check your connection and try again.");
+      setAudioErrorCode(code);
+      setIsPlaying(false);
+      setSoundEnabled(false);
+    }
+  }
 
   const current = encounter.acts[activeAct];
 
@@ -52,7 +130,12 @@ export function WildlifeEncounter({
 
               <div className="absolute inset-x-0 top-0 flex items-start justify-between gap-4 p-5 sm:p-7">
                 <div><p className="field-label text-biome-accent">{encounter.eyebrow}</p><p className="mt-2 text-sm text-biome-ink/58">{encounter.place}</p></div>
-                <div className="rounded-full border border-white/15 bg-black/20 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-biome-ink/68 backdrop-blur-md">Act {String(activeAct + 1).padStart(2, "0")}</div>
+                <div className="flex shrink-0 flex-col items-end gap-2">
+                  <div className="rounded-full border border-white/15 bg-black/20 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-biome-ink/68 backdrop-blur-md">Act {String(activeAct + 1).padStart(2, "0")}</div>
+                  <button type="button" onClick={toggleSoundscape} aria-pressed={isPlaying} data-audio-state={isPlaying ? "playing" : "paused"} data-audio-error={audioErrorCode || undefined} className="encounter-sound-button shell-chrome inline-flex min-h-11 items-center gap-2 rounded-full px-3 font-mono text-[9px] font-semibold uppercase tracking-[0.12em] text-biome-ink transition hover:border-biome-accent hover:text-biome-accent">
+                    {isPlaying ? <Volume2 size={14} /> : <VolumeX size={14} />}{isPlaying ? "Sound on" : soundEnabled ? "Start sound" : "Sound off"}
+                  </button>
+                </div>
               </div>
 
               <div className="absolute inset-x-0 bottom-0 p-5 sm:p-7">
@@ -63,6 +146,9 @@ export function WildlifeEncounter({
                   <div className="flex items-center gap-3 text-biome-accent"><Volume2 size={17} /><span className="field-label">Field signal · {current.time}</span></div>
                   <p className="mt-3 font-display text-2xl leading-tight text-biome-ink sm:text-3xl">{current.signal}</p>
                   <div className="mt-5 flex items-center justify-between border-t border-white/10 pt-4"><span className="field-label text-biome-ink/44">Visual focus</span><span className="text-sm text-biome-ink/72">{current.visualFocus}</span></div>
+                  <div className="mt-3 flex flex-wrap items-center justify-between gap-2 border-t border-white/10 pt-3 text-[10px] text-biome-ink/42"><span className="inline-flex items-center gap-1.5"><AudioLines size={12} />{encounter.soundscape.title}</span><a href={encounter.soundscape.sourcePage} target="_blank" rel="noreferrer" className="transition hover:text-biome-accent">{encounter.soundscape.author} · {encounter.soundscape.license}</a></div>
+                  <label className="mt-3 flex min-h-11 items-center gap-3 border-t border-white/10 pt-3 text-biome-ink/48"><Volume1 size={14} /><span className="field-label shrink-0">Volume</span><input type="range" min="0" max="100" step="5" value={volume} onChange={(event) => { const next = Number(event.target.value); setVolume(next); try { localStorage.setItem("wia-sound-volume", String(next)); } catch {} }} aria-label="Soundscape volume" className="encounter-volume h-5 min-w-0 flex-1" /><span className="w-8 text-right font-mono text-[10px]">{volume}%</span></label>
+                  {audioError && <p role="status" className="mt-3 text-xs text-biome-accent">{audioError}</p>}
                 </div>
               </div>
             </figure>
