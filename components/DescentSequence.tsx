@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import type { Hotspot, Season } from "@/data/types";
 import { projection, pathGen, VIEW_W, VIEW_H } from "@/components/IndiaMap";
@@ -10,7 +11,7 @@ import { HotspotImage } from "@/components/HotspotImage";
 import { SearchBar } from "@/components/SearchBar";
 
 const SEEN_KEY = "wia-descent-seen";
-const CONTAINER_VH = 320;
+const CONTAINER_VH = 260;
 const CHIPS = ["Tiger", "Birds", "Rhino", "Snow Leopard", "Mangroves", "Wetlands", "Western Ghats"];
 
 function clamp01(n: number) { return Math.min(1, Math.max(0, n)); }
@@ -61,13 +62,16 @@ export function DescentSequence(props: DescentProps) {
 function HeroCopy({ totalParks, regionCount, currentSeason }: { totalParks: number; regionCount: number; currentSeason: Season }) {
   return (
     <>
-      <p className="flex items-center gap-3 font-mono text-xs font-semibold uppercase tracking-[0.25em] text-sand"><span className="h-px w-8 bg-sand" />Field guide · Travel planner · Atlas</p>
-      <h1 className="mt-8 text-7xl font-semibold leading-[0.9] tracking-tight sm:text-8xl">Explore India&apos;s<br /><em className="text-sand not-italic">Wild Side</em></h1>
-      <p className="mt-8 max-w-lg text-lg leading-8 text-ivory/90">Plan wildlife, birding, and nature trips across India by species, season, region, and experience.</p>
-      <p className="mt-4 font-mono text-xs uppercase tracking-[0.15em] text-ivory/60">{totalParks} parks — {regionCount} regions — live seasonal map</p>
+      <div className="flex flex-wrap items-center gap-3">
+        <p className="field-label flex items-center gap-3 text-biome-accent"><span className="h-px w-8 bg-biome-accent" />Field guide · Travel planner · Atlas</p>
+        <span className="atlas-chip bg-black/10">Now · {currentSeason}</span>
+      </div>
+      <h1 className="display-hero mt-8 text-biome-ink">Explore India&apos;s<br /><em className="text-biome-accent">wild side.</em></h1>
+      <p className="mt-8 max-w-xl text-lg leading-8 text-biome-ink/78">A living atlas for finding wildlife, reading seasons and choosing a responsible way into India&apos;s protected places.</p>
+      <p className="field-label mt-5 text-biome-ink/48">{totalParks} field sites · {regionCount} regions · one seasonal map</p>
       <div className="mt-8 flex flex-wrap gap-3">
-        <Link href="/map" className="inline-flex items-center gap-2 rounded-sm bg-amberfield px-5 py-3 font-bold text-forest-900 transition hover:bg-white">Open Wildlife Map <ArrowRight size={18} /></Link>
-        <Link href={"/map?season=" + encodeURIComponent(currentSeason)} className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-5 py-3 font-bold text-white transition hover:border-white hover:bg-white/10">Where to go this month</Link>
+        <Link href="/map" className="atlas-button">Open the wildlife map <ArrowRight size={16} /></Link>
+        <Link href={"/map?season=" + encodeURIComponent(currentSeason)} className="atlas-button atlas-button-ghost">Follow this season</Link>
       </div>
     </>
   );
@@ -78,11 +82,20 @@ function HeroCopy({ totalParks, regionCount, currentSeason }: { totalParks: numb
 // pop-in and the static landed state can render it without duplicating the JSX.
 function HeroFunctional() {
   const [query, setQuery] = useState("");
+  const router = useRouter();
+  function submit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const value = query.trim();
+    router.push(value ? `/map?query=${encodeURIComponent(value)}` : "/map");
+  }
   return (
     <>
-      <div className="mt-8 max-w-xl"><SearchBar value={query} onChange={setQuery} placeholder="Search by species, park, state, season..." variant="dark" /></div>
+      <form onSubmit={submit} className="mt-8 grid max-w-2xl gap-2 sm:grid-cols-[1fr_auto]">
+        <SearchBar value={query} onChange={setQuery} placeholder="Search species, park, state or habitat…" variant="dark" />
+        <button type="submit" className="atlas-button">Search atlas <ArrowRight size={14} /></button>
+      </form>
       <div className="mt-4 flex flex-wrap gap-2">
-        {CHIPS.map(c => <Link href={"/map?query=" + encodeURIComponent(c)} key={c} className="rounded-sm border border-white/25 px-3 py-1.5 font-mono text-xs uppercase tracking-wide text-white/80 transition hover:border-sand hover:text-sand">{c}</Link>)}
+        {CHIPS.map(c => <Link href={"/map?query=" + encodeURIComponent(c)} key={c} className="atlas-chip bg-black/10 transition hover:border-biome-accent hover:text-biome-accent">{c}</Link>)}
       </div>
     </>
   );
@@ -94,11 +107,13 @@ function HeroFunctional() {
 // (min-h-[720px]/[820px]) since it now holds the same amount of content.
 function LandedDescent({ featured, totalParks, regionCount, currentSeason }: DescentProps) {
   return (
-    <section className="group relative isolate flex min-h-[720px] items-center overflow-hidden px-4 pb-16 pt-28 text-white sm:px-6 sm:pt-16 lg:min-h-[820px]">
+    <section className="biome-forest group relative isolate flex min-h-[760px] items-center overflow-hidden px-4 pb-16 pt-28 text-biome-ink sm:px-6 sm:pt-20 lg:min-h-[860px]">
       <HotspotImage slug={featured.slug} type={featured.type} className="hero-ken-burns absolute inset-0 -z-20 h-full w-full" />
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgba(20,47,37,.96)_10%,rgba(20,47,37,.75)_45%,rgba(20,47,37,.35)_75%,rgba(20,47,37,.15)_100%),linear-gradient(0deg,rgba(20,47,37,.55),transparent_40%)]" />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgba(10,30,21,.98)_6%,rgba(20,47,37,.88)_44%,rgba(20,47,37,.38)_76%,rgba(20,47,37,.12)_100%),linear-gradient(0deg,rgba(10,28,20,.7),transparent_45%)]" />
+      <div className="texture-topography pointer-events-none absolute inset-0 -z-10 opacity-20" />
+      <p className="field-label absolute bottom-8 right-6 hidden origin-bottom-right -rotate-90 text-biome-ink/38 lg:block">Field station · 22.9734° N · 78.6569° E</p>
       <div className="mx-auto w-full max-w-7xl">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           <HeroCopy totalParks={totalParks} regionCount={regionCount} currentSeason={currentSeason} />
           <HeroFunctional />
         </div>
@@ -176,12 +191,13 @@ function ScrollDescent({ featured, totalParks, regionCount, currentSeason }: Des
 
   return (
     <div ref={containerRef} style={{ height: CONTAINER_VH + "vh" }} className="relative">
-      <div className="sticky top-0 isolate h-screen w-full bg-[#1c3a4a]">
+      <div className="biome-forest sticky top-0 isolate h-screen w-full bg-[#153b48]">
         {/* Media layers clip to the stage edge-to-edge; kept in their own overflow-hidden
             wrapper so the text layer below is free to overflow gracefully on very short
             viewports instead of being invisibly clipped. */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="canopy-texture pointer-events-none absolute inset-0" />
+          <div className="texture-topography pointer-events-none absolute inset-0 opacity-25" />
           <svg
             viewBox={view.x + " " + view.y + " " + view.w + " " + view.h}
             preserveAspectRatio="xMidYMid slice"
@@ -214,7 +230,7 @@ function ScrollDescent({ featured, totalParks, regionCount, currentSeason }: Des
                 should read through) rather than a generic bottom-heavy fade, so the
                 animated and landed hero states use one consistent, actually-editorial
                 vignette instead of two different ad-hoc ones. */}
-            <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(20,47,37,.96)_10%,rgba(20,47,37,.75)_45%,rgba(20,47,37,.35)_75%,rgba(20,47,37,.15)_100%),linear-gradient(0deg,rgba(20,47,37,.55),transparent_40%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(10,30,21,.98)_6%,rgba(20,47,37,.88)_44%,rgba(20,47,37,.38)_76%,rgba(20,47,37,.12)_100%),linear-gradient(0deg,rgba(10,28,20,.7),transparent_45%)]" />
           </div>
         </div>
 
@@ -223,7 +239,7 @@ function ScrollDescent({ featured, totalParks, regionCount, currentSeason }: Des
           style={{ opacity: textT, transform: "translateY(" + (1 - textT) * 28 + "px)" }}
         >
           <div className="mx-auto w-full max-w-7xl">
-            <div className="max-w-2xl text-white">
+            <div className="max-w-3xl text-biome-ink">
               <HeroCopy totalParks={totalParks} regionCount={regionCount} currentSeason={currentSeason} />
               <div style={{ opacity: functionalOpacity, transform: "scale(" + functionalScale + ")", transformOrigin: "left top" }}>
                 <HeroFunctional />
@@ -233,7 +249,7 @@ function ScrollDescent({ featured, totalParks, regionCount, currentSeason }: Des
         </div>
 
         <div className="absolute inset-x-0 bottom-10 flex justify-center" style={{ opacity: 1 - cueT }}>
-          <p className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-white/60">Scroll to begin ↓</p>
+          <p className="field-label flex items-center gap-3 text-biome-ink/55"><span className="h-px w-8 bg-biome-accent/60" />Scroll to enter the atlas ↓</p>
         </div>
       </div>
     </div>
