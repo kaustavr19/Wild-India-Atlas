@@ -14,7 +14,7 @@ export function speciesExperience(species: Species): SpeciesExperience {
 
   if (/marine|coast|beach|nearshore|ocean/.test(habitat)) biome = "marine";
   else if (/mangrove|tidal/.test(habitat) && !/deciduous|forest/.test(habitat)) biome = "mangrove";
-  else if (/himalaya|alpine|high-altitude|above the treeline|mountain/.test(habitat)) biome = "alpine";
+  else if (/himalaya|alpine|high-altitude|above the treeline|mountain/.test(habitat) && !/forest|bamboo|canopy/.test(habitat)) biome = "alpine";
   else if (/desert|arid|salt|thorn/.test(habitat)) biome = "desert";
   else if (/wetland|swamp|floodplain|river|marsh|lagoon|reed|water/.test(habitat)) biome = "wetland";
 

@@ -277,6 +277,8 @@ html.dark .map-grid, html.dark .texture-field-grid { background-image: linear-gr
   transition: color var(--duration-fast);
 }
 .species-chapter-nav a:hover { color: rgb(var(--biome-accent-rgb)); }
+.species-chapter-nav .atlas-scrollbar { scrollbar-width: none; }
+.species-chapter-nav .atlas-scrollbar::-webkit-scrollbar { display: none; }
 .species-glass-panel {
   background: linear-gradient(145deg, rgb(255 255 255 / 0.075), rgb(255 255 255 / 0.025));
   border: 1px solid rgb(var(--biome-line-rgb) / 0.18);
@@ -295,6 +297,51 @@ html.dark .map-grid, html.dark .texture-field-grid { background-image: linear-gr
   transform: translateY(-0.35rem);
 }
 
+.wildlife-encounter {
+  background:
+    radial-gradient(circle at 16% 28%, rgb(var(--biome-secondary-rgb) / 0.13), transparent 28%),
+    linear-gradient(180deg, rgb(var(--biome-surface-rgb)), rgb(var(--biome-soft-rgb) / 0.72), rgb(var(--biome-surface-rgb)));
+}
+.encounter-visual img {
+  filter: saturate(0.7) contrast(1.08) brightness(0.78);
+  transform: scale(1.08);
+  transition: filter 1.2s var(--ease-field), object-position 1.2s var(--ease-field), transform 1.8s var(--ease-field);
+}
+.encounter-visual.stage-0 img { filter: saturate(0.52) contrast(1.1) brightness(0.56); object-position: 35% center; transform: scale(1.12); }
+.encounter-visual.stage-1 img { filter: saturate(0.65) contrast(1.08) brightness(0.66); object-position: 48% center; transform: scale(1.08); }
+.encounter-visual.stage-2 img { filter: saturate(0.92) contrast(1.03) brightness(0.82); object-position: 62% center; transform: scale(1.03); }
+.encounter-visual.stage-3 img { filter: saturate(0.48) contrast(1.12) brightness(0.5); object-position: 72% center; transform: scale(1.1); }
+.encounter-great-indian-bustard img { transform-origin: 40% 66%; }
+.encounter-great-indian-bustard.stage-0 img { object-position: 42% center; transform: translateY(-8%) scale(1.12); }
+.encounter-great-indian-bustard.stage-1 img { object-position: 42% center; transform: translateY(-10%) scale(1.24); }
+.encounter-great-indian-bustard.stage-2 img { object-position: 42% center; transform: translateY(-12%) scale(1.42); }
+.encounter-great-indian-bustard.stage-3 img { object-position: 50% center; transform: translateY(-8%) scale(1.12); }
+.encounter-one-horned-rhinoceros img { transform-origin: 35% 76%; }
+.encounter-one-horned-rhinoceros.stage-0 img { object-position: 32% center; transform: translateY(-13%) scale(1.06); }
+.encounter-one-horned-rhinoceros.stage-1 img { object-position: 30% center; transform: translateY(-16%) scale(1.12); }
+.encounter-one-horned-rhinoceros.stage-2 img { object-position: 28% center; transform: translateY(-18%) scale(1.18); }
+.encounter-one-horned-rhinoceros.stage-3 img { object-position: 35% center; transform: translateY(-14%) scale(1.08); }
+.encounter-red-panda img { transform-origin: 50% 44%; }
+.encounter-olive-ridley-turtle img { transform-origin: 52% 62%; }
+.encounter-visual-wash {
+  background:
+    linear-gradient(180deg, rgb(var(--biome-surface-rgb) / 0.28), transparent 35%),
+    linear-gradient(0deg, rgb(var(--biome-surface-rgb) / 0.96), rgb(var(--biome-surface-rgb) / 0.04) 58%),
+    linear-gradient(90deg, rgb(var(--biome-surface-rgb) / 0.42), transparent 55%);
+}
+.encounter-scan {
+  animation: encounterScan 8s ease-in-out infinite;
+  box-shadow: 0 0 22px rgb(var(--biome-accent-rgb) / 0.35);
+  opacity: 0.45;
+}
+.encounter-act { opacity: 0.42; }
+.encounter-act.is-active { opacity: 1; }
+
+@keyframes encounterScan {
+  0%, 100% { opacity: 0.18; transform: translateY(0); }
+  50% { opacity: 0.6; transform: translateY(38svh); }
+}
+
 @media (max-width: 767px) {
   .species-hero-wash {
     background:
@@ -304,4 +351,6 @@ html.dark .map-grid, html.dark .texture-field-grid { background-image: linear-gr
   .species-hero .hero-ken-burns { object-position: 58% center; }
   .species-month { min-height: 6.75rem; }
   .species-month.is-active { transform: none; }
+  .encounter-act { min-height: auto; opacity: 1; padding-bottom: 5rem; padding-top: 5rem; }
+  .encounter-visual { position: relative; }
 }
