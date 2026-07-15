@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChevronDown, DoorOpen, Minus, Plane, Plus, RotateCcw, SlidersHorizontal, TrainFront, type LucideIcon } from "lucide-react";
 import { geoMercator, geoPath } from "d3-geo";
 import type { Hotspot, Region } from "@/data/types";
@@ -8,10 +8,12 @@ import indiaStates from "@/data/india-states.json";
 import { neighboringCountries } from "@/data/neighboringCountries";
 import { airportPoint, railwayPoint, entryGates, type AccessPoint } from "@/data/accessPoints";
 import { ecosystem, ecosystemColorClass, ecosystemColorHex } from "@/data/ecosystems";
+import { biomeClassName } from "@/lib/experienceDesign";
 
 type AccessHover = { name: string; kind: string; coordinates: { latitude: number; longitude: number } };
-type LayerKey = "Mammals" | "Birds" | "Reptiles" | "Flora" | "Rare Species" | "Monsoon";
-const LAYER_KEYS: LayerKey[] = ["Mammals", "Birds", "Reptiles", "Flora", "Rare Species", "Monsoon"];
+export type LayerKey = "Mammals" | "Birds" | "Reptiles" | "Flora" | "Rare Species" | "Monsoon";
+export const LAYER_KEYS: LayerKey[] = ["Mammals", "Birds", "Reptiles", "Flora", "Rare Species", "Monsoon"];
+export type MapViewState = { layers: LayerKey[]; region?: Region };
 function matchesLayer(h: Hotspot, key: LayerKey): boolean {
   if (key === "Rare Species") return h.experienceTags.includes("Rare Species");
   if (key === "Monsoon") return h.bestSeason.includes("Monsoon");
@@ -43,15 +45,27 @@ const stateLabels = (indiaStates as GeoJSON.FeatureCollection).features.map(f =>
 type ViewBox = { x: number; y: number; w: number; h: number };
 const DEFAULT_VIEW: ViewBox = { x: 0, y: 0, w: VIEW_W, h: VIEW_H };
 
-export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }: { hotspots: Hotspot[]; selectedSlug?: string; onSelect?: (hotspot: Hotspot) => void; variant?: "full" | "hero" }) {
+export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full", initialLayers = [], initialRegion, onStateChange }: {
+  hotspots: Hotspot[];
+  selectedSlug?: string;
+  onSelect?: (hotspot: Hotspot) => void;
+  variant?: "full" | "hero";
+  initialLayers?: LayerKey[];
+  initialRegion?: Region;
+  onStateChange?: (state: MapViewState) => void;
+}) {
   const isHero = variant === "hero";
   const [hovered, setHovered] = useState<Hotspot | undefined>();
   const [hoveredAccess, setHoveredAccess] = useState<AccessHover | undefined>();
-  const [activeLayers, setActiveLayers] = useState<Set<LayerKey>>(new Set());
+  const [activeLayers, setActiveLayers] = useState<Set<LayerKey>>(() => new Set(initialLayers));
   const [legendOpen, setLegendOpen] = useState(false);
   const [view, setView] = useState<ViewBox>(DEFAULT_VIEW);
+  const [focusedRegion, setFocusedRegion] = useState<Region | undefined>(initialRegion);
   const svgRef = useRef<SVGSVGElement>(null);
   const dragRef = useRef<{ startX: number; startY: number; viewX: number; viewY: number; moved: boolean } | null>(null);
+  const viewRef = useRef<ViewBox>(DEFAULT_VIEW);
+  const cameraAnimationRef = useRef<number | undefined>(undefined);
+  const restoredRegionRef = useRef(false);
 
   function clampView(v: ViewBox): ViewBox {
     const w = Math.min(VIEW_W, Math.max(MIN_W, v.w));
@@ -62,14 +76,53 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
   }
 
   function zoomBy(factor: number, cx: number, cy: number) {
+    if (cameraAnimationRef.current !== undefined) cancelAnimationFrame(cameraAnimationRef.current);
     setView(v => {
       const newW = Math.min(VIEW_W, Math.max(MIN_W, v.w / factor));
       const newH = (newW / VIEW_W) * VIEW_H;
       const relX = (cx - v.x) / v.w;
       const relY = (cy - v.y) / v.h;
-      return clampView({ x: cx - relX * newW, y: cy - relY * newH, w: newW, h: newH });
+      const next = clampView({ x: cx - relX * newW, y: cy - relY * newH, w: newW, h: newH });
+      viewRef.current = next;
+      return next;
     });
   }
+
+  function animateToView(rawTarget: ViewBox) {
+    const target = clampView(rawTarget);
+    const start = viewRef.current;
+    if (cameraAnimationRef.current !== undefined) cancelAnimationFrame(cameraAnimationRef.current);
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      viewRef.current = target;
+      setView(target);
+      return;
+    }
+    const startedAt = performance.now();
+    const duration = 820;
+    const frame = (now: number) => {
+      const progress = Math.min(1, (now - startedAt) / duration);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const next = {
+        x: start.x + (target.x - start.x) * eased,
+        y: start.y + (target.y - start.y) * eased,
+        w: start.w + (target.w - start.w) * eased,
+        h: start.h + (target.h - start.h) * eased,
+      };
+      viewRef.current = next;
+      setView(next);
+      if (progress < 1) cameraAnimationRef.current = requestAnimationFrame(frame);
+      else cameraAnimationRef.current = undefined;
+    };
+    cameraAnimationRef.current = requestAnimationFrame(frame);
+  }
+
+  useEffect(() => () => {
+    if (cameraAnimationRef.current !== undefined) cancelAnimationFrame(cameraAnimationRef.current);
+  }, []);
+
+  useEffect(() => {
+    onStateChange?.({ layers: Array.from(activeLayers), region: focusedRegion });
+  }, [activeLayers, focusedRegion, onStateChange]);
 
   function toSvgPoint(clientX: number, clientY: number) {
     const svg = svgRef.current;
@@ -93,6 +146,7 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
 
   function handlePointerDown(e: React.PointerEvent<SVGSVGElement>) {
     if (isHero) return;
+    if (cameraAnimationRef.current !== undefined) cancelAnimationFrame(cameraAnimationRef.current);
     dragRef.current = { startX: e.clientX, startY: e.clientY, viewX: view.x, viewY: view.y, moved: false };
     (e.target as Element).setPointerCapture?.(e.pointerId);
   }
@@ -105,7 +159,11 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
     const dyPx = e.clientY - drag.startY;
     if (Math.abs(dxPx) + Math.abs(dyPx) > 3) drag.moved = true;
     const scaleX = view.w / rect.width, scaleY = view.h / rect.height;
-    setView(v => clampView({ ...v, x: drag.viewX - dxPx * scaleX, y: drag.viewY - dyPx * scaleY }));
+    setView(v => {
+      const next = clampView({ ...v, x: drag.viewX - dxPx * scaleX, y: drag.viewY - dyPx * scaleY });
+      viewRef.current = next;
+      return next;
+    });
   }
 
   function handlePointerUp() {
@@ -158,8 +216,22 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
     const minY = Math.min(...ys) - pad, maxY = Math.max(...ys) + pad;
     const w = maxX - minX, h = maxY - minY;
     const cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
-    setView(clampView({ x: cx - w / 2, y: cy - h / 2, w, h }));
+    setFocusedRegion(cluster.region);
+    animateToView({ x: cx - w / 2, y: cy - h / 2, w, h });
   }
+
+  useEffect(() => {
+    if (isHero || selectedSlug || !initialRegion || restoredRegionRef.current) return;
+    const regionHotspots = hotspots.filter((hotspot) => hotspot.region === initialRegion);
+    const points = regionHotspots.map((hotspot) => projection([hotspot.coordinates.longitude, hotspot.coordinates.latitude])).filter((point): point is [number, number] => !!point);
+    if (!points.length) return;
+    restoredRegionRef.current = true;
+    const xs = points.map((point) => point[0]), ys = points.map((point) => point[1]);
+    const pad = 50;
+    const minX = Math.min(...xs) - pad, maxX = Math.max(...xs) + pad;
+    const minY = Math.min(...ys) - pad, maxY = Math.max(...ys) + pad;
+    animateToView({ x: minX, y: minY, w: maxX - minX, h: maxY - minY });
+  }, [hotspots, initialRegion, isHero, selectedSlug]);
   // Marker sizes are defined in SVG user units, which stay fixed while the viewBox
   // shrinks as you zoom in — without this, markers grow to cover a larger and larger
   // geographic area on screen the more you zoom, looking imprecise. Scaling them down
@@ -169,6 +241,41 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
   const activeAirport = activeHotspot ? airportPoint[activeHotspot.slug] : undefined;
   const activeRailway = activeHotspot ? railwayPoint[activeHotspot.slug] : undefined;
   const activeGates = activeHotspot ? entryGates[activeHotspot.slug] : undefined;
+  const mapAtmosphere = activeHotspot ? biomeClassName[ecosystem[activeHotspot.slug] ?? "forest"] : "biome-marine";
+  const focusedHotspots = focusedRegion ? visibleOnMap.filter((hotspot) => hotspot.region === focusedRegion) : [];
+  const focusedBiome = focusedHotspots.length ? Object.entries(focusedHotspots.reduce<Record<string, number>>((counts, hotspot) => {
+    const key = ecosystem[hotspot.slug] ?? "forest";
+    counts[key] = (counts[key] ?? 0) + 1;
+    return counts;
+  }, {})).sort((a, b) => b[1] - a[1])[0]?.[0] : undefined;
+  const focusedSpecies = Array.from(new Set(focusedHotspots.flatMap((hotspot) => hotspot.mainSpecies))).slice(0, 3);
+  const activeProjection = activeHotspot ? projection([activeHotspot.coordinates.longitude, activeHotspot.coordinates.latitude]) : null;
+  const routePoints: Array<{ key: string; point: AccessPoint; color: string }> = [];
+  if (activeAirport) routePoints.push({ key: "airport", point: activeAirport, color: "#c084fc" });
+  if (activeRailway) routePoints.push({ key: "railway", point: activeRailway, color: "#facc15" });
+  activeGates?.forEach((point, index) => routePoints.push({ key: `gate-${index}`, point, color: "#fb7185" }));
+
+  useEffect(() => {
+    if (isHero || !selectedSlug) return;
+    const hotspot = hotspots.find((item) => item.slug === selectedSlug);
+    if (!hotspot) return;
+    const point = projection([hotspot.coordinates.longitude, hotspot.coordinates.latitude]);
+    if (!point) return;
+    const access = [airportPoint[hotspot.slug], railwayPoint[hotspot.slug], ...(entryGates[hotspot.slug] ?? [])].filter((item): item is AccessPoint => !!item);
+    const projected = [point, ...access.map((item) => projection([item.coordinates.longitude, item.coordinates.latitude])).filter((item): item is [number, number] => !!item)];
+    const xs = projected.map((item) => item[0]);
+    const ys = projected.map((item) => item[1]);
+    const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
+    const targetW = Math.min(340, Math.max(150, maxX - minX + 55, (maxY - minY + 55) * (VIEW_W / VIEW_H)));
+    const targetH = (targetW / VIEW_W) * VIEW_H;
+    setFocusedRegion(hotspot.region);
+    animateToView({ x: (minX + maxX) / 2 - targetW / 2, y: (minY + maxY) / 2 - targetH / 2, w: targetW, h: targetH });
+  }, [hotspots, isHero, selectedSlug]);
+
+  function resetMap() {
+    setFocusedRegion(undefined);
+    animateToView(DEFAULT_VIEW);
+  }
 
   function accessMarker(point: AccessPoint, kind: string, Icon: LucideIcon, color: string, key?: string | number) {
     const p = projection([point.coordinates.longitude, point.coordinates.latitude]);
@@ -187,7 +294,7 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
   }
 
   return (
-    <section className={"relative overflow-hidden bg-[#1c3a4a] " + (isHero ? "h-full w-full" : "h-full min-h-[560px] w-full rounded-sm border border-forest-700/20")}>
+    <section className={`${isHero ? "bg-[#1c3a4a]" : `biome-surface ${mapAtmosphere}`} relative overflow-hidden transition-colors duration-700 ${isHero ? "h-full w-full" : "h-full min-h-[560px] w-full rounded-field border border-white/14 shadow-lift"}`}>
       {/* Ocean atmosphere — same restrained dot pattern as the hero/fallback illustrations
           (.canopy-texture in globals.css). Sits behind the SVG, so the opaque land/state
           polygons drawn on top cover it completely; only the uncovered ocean shows the
@@ -197,7 +304,7 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
       {!isHero && (
         <div className="pointer-events-none absolute inset-x-3 top-3 z-10 flex flex-col gap-2 sm:inset-x-6 sm:top-6">
           <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <div className="pointer-events-auto max-w-full truncate rounded-sm border border-white/20 bg-white/20 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-white backdrop-blur-md">Interactive India atlas · {visibleOnMap.length} visible</div>
+            <div className="pointer-events-auto max-w-full truncate rounded-full border border-white/20 bg-black/20 px-3 py-2 font-mono text-[10px] font-bold uppercase tracking-[0.14em] text-white backdrop-blur-md">Live field map · {visibleOnMap.length} signals</div>
             {bestNowRegions.length > 0 && (
               <div className="pointer-events-auto max-w-full rounded-sm border border-sand/40 bg-sand/25 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-sand backdrop-blur-md sm:max-w-[60%]">
                 Best in {currentMonth}: {bestNowRegions.join(", ")}
@@ -205,7 +312,7 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
             )}
           </div>
           <div className="pointer-events-auto">
-            <button onClick={() => setLegendOpen(o => !o)} className="flex items-center gap-1.5 rounded-sm border border-white/20 bg-white/20 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-white backdrop-blur-md hover:bg-white/30">
+            <button aria-expanded={legendOpen} onClick={() => setLegendOpen(o => !o)} className="flex items-center gap-1.5 rounded-sm border border-white/20 bg-white/20 px-3 py-2 font-mono text-xs font-bold uppercase tracking-wide text-white backdrop-blur-md hover:bg-white/30">
               <SlidersHorizontal size={13} />
               Layers &amp; legend
               {activeLayers.size > 0 && <span className="grid h-4 w-4 place-items-center rounded-full bg-amberfield text-[10px] text-forest-900">{activeLayers.size}</span>}
@@ -219,7 +326,7 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
                     {LAYER_KEYS.map(key => {
                       const on = activeLayers.has(key);
                       return (
-                        <button key={key} onClick={() => toggleLayer(key)} className={"rounded-full border px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wide transition " + (on ? "border-amberfield bg-amberfield text-forest-900" : "border-white/25 bg-white/10 text-white/80 hover:border-white/50")}>
+                        <button key={key} aria-pressed={on} onClick={() => toggleLayer(key)} className={"rounded-full border px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wide transition " + (on ? "border-amberfield bg-amberfield text-forest-900" : "border-white/25 bg-white/10 text-white/80 hover:border-white/50")}>
                           {key}
                         </button>
                       );
@@ -266,7 +373,7 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
               fill="#3d4f42"
               fillOpacity={isHero ? 0.35 : 0.55}
               stroke="#1c3a4a"
-              strokeWidth={1}
+              strokeWidth={isHero ? 1 : 1 * zoomScale}
             />
           ))}
         </g>
@@ -282,7 +389,7 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
                 fillOpacity={isHero ? 0.55 : 1}
                 stroke="#fbf7ec"
                 strokeOpacity={isHero ? 0.25 : 1}
-                strokeWidth={1.2}
+                strokeWidth={1.2 * (isHero ? 1 : zoomScale)}
                 className={highlighted ? "animate-pulse" : ""}
               />
             );
@@ -291,10 +398,38 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
         {!isHero && zoomed && (
           <g pointerEvents="none">
             {stateLabels.map(s => (
-              <text key={s.name} x={s.centroid[0]} y={s.centroid[1]} textAnchor="middle" fontSize={6.5} fontWeight={600} fill="#fbf7ec" fillOpacity={0.75} style={{ fontFamily: "var(--font-mono), monospace" }}>
+              <text key={s.name} x={s.centroid[0]} y={s.centroid[1]} textAnchor="middle" fontSize={6.5 * zoomScale} fontWeight={600} fill="#fbf7ec" fillOpacity={0.75} style={{ fontFamily: "var(--font-mono), monospace" }}>
                 {s.name}
               </text>
             ))}
+          </g>
+        )}
+        {!isHero && activeProjection && routePoints.length > 0 && (
+          <g pointerEvents="none" aria-hidden="true">
+            {routePoints.map((route, index) => {
+              const target = projection([route.point.coordinates.longitude, route.point.coordinates.latitude]);
+              if (!target) return null;
+              const dx = target[0] - activeProjection[0], dy = target[1] - activeProjection[1];
+              const length = Math.max(1, Math.sqrt(dx * dx + dy * dy));
+              const curve = Math.min(24, length * 0.18) * (index % 2 === 0 ? 1 : -1);
+              const controlX = (activeProjection[0] + target[0]) / 2 - (dy / length) * curve;
+              const controlY = (activeProjection[1] + target[1]) / 2 + (dx / length) * curve;
+              return (
+                <path
+                  key={route.key}
+                  data-route-kind={route.key}
+                  d={`M ${activeProjection[0]} ${activeProjection[1]} Q ${controlX} ${controlY} ${target[0]} ${target[1]}`}
+                  fill="none"
+                  stroke={route.color}
+                  strokeWidth={1.65 * zoomScale}
+                  strokeLinecap="round"
+                  pathLength={1}
+                  className="atlas-route-line"
+                  style={{ animationDelay: `${index * 110}ms` }}
+                />
+              );
+            })}
+            <circle cx={activeProjection[0]} cy={activeProjection[1]} r={9 * zoomScale} fill="none" stroke="#ffffff" strokeOpacity={0.5} strokeWidth={1 * zoomScale} className="atlas-route-origin" />
           </g>
         )}
         {(isHero || zoomed) ? visibleOnMap.map(h => {
@@ -302,14 +437,14 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
           if (!p) return null;
           const active = selectedSlug === h.slug;
           return (
-            <g key={h.slug} transform={"translate(" + p[0] + "," + p[1] + ")"} onClick={() => handleMarkerClick(h)} onMouseEnter={() => !isHero && setHovered(h)} onMouseLeave={() => setHovered(undefined)} className={isHero ? "" : "cursor-pointer"}>
+            <g key={h.slug} role={isHero ? undefined : "button"} tabIndex={isHero ? undefined : 0} aria-label={isHero ? undefined : `Open ${h.name}`} transform={"translate(" + p[0] + "," + p[1] + ")"} onClick={() => handleMarkerClick(h)} onKeyDown={(event) => { if (!isHero && (event.key === "Enter" || event.key === " ")) { event.preventDefault(); handleMarkerClick(h); } }} onMouseEnter={() => !isHero && setHovered(h)} onMouseLeave={() => setHovered(undefined)} className={isHero ? "" : "cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-sand"}>
               <circle r={isHero ? 3 : (active ? 7 : 5) * zoomScale} fill={ecosystemColorHex[ecosystem[h.slug]]} fillOpacity={isHero ? 0.5 : 1} stroke={active ? "#d98c2b" : "#ffffff"} strokeOpacity={isHero ? 0.4 : 1} strokeWidth={(active ? 2.5 : isHero ? 1 : 1.5) * zoomScale} className="transition" />
             </g>
           );
         }) : clusters.map(c => {
           const r = 10 + Math.min(c.count, 10) * 1.4;
           return (
-            <g key={c.region} transform={"translate(" + c.cx + "," + c.cy + ")"} onClick={() => handleClusterClick(c)} className="cursor-pointer">
+            <g key={c.region} role="button" tabIndex={0} aria-label={`Explore ${c.region} region, ${c.count} places`} transform={"translate(" + c.cx + "," + c.cy + ")"} onClick={() => handleClusterClick(c)} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); handleClusterClick(c); } }} className="cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-sand">
               <circle r={r} fill={regionFill[c.region]} fillOpacity={0.92} stroke="#ffffff" strokeWidth={1.5} />
               <text textAnchor="middle" dy={4} fontSize={12} fontWeight={700} fill="#ffffff" style={{ fontFamily: "var(--font-mono), monospace" }}>{c.count}</text>
               <text textAnchor="middle" y={r + 11} fontSize={7.5} fontWeight={600} fill="#fbf7ec" style={{ fontFamily: "var(--font-mono), monospace" }}>{c.region}</text>
@@ -320,6 +455,19 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
         {activeRailway && accessMarker(activeRailway, "Railway station", TrainFront, "#eab308")}
         {activeGates?.map((gate, i) => accessMarker(gate, "Entry gate", DoorOpen, "#f43f5e", i))}
       </svg>
+      {!isHero && focusedRegion && !activeHotspot && (
+        <div className="absolute bottom-4 left-4 z-10 w-[min(330px,calc(100%-5rem))] rounded-field border border-white/16 bg-black/30 p-4 text-white shadow-lg backdrop-blur-xl sm:bottom-5 sm:left-5">
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <p className="field-label text-sand">Region descent</p>
+              <h3 className="mt-1 font-display text-2xl font-medium">{focusedRegion}</h3>
+            </div>
+            <button onClick={resetMap} className="rounded-full border border-white/18 px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wide text-white/65 transition hover:border-sand hover:text-sand">India view</button>
+          </div>
+          <p className="mt-3 text-sm leading-5 text-white/62">{focusedHotspots.length} field {focusedHotspots.length === 1 ? "site" : "sites"}{focusedBiome ? ` · ${focusedBiome} is the dominant mapped ecosystem` : ""}.</p>
+          {focusedSpecies.length > 0 && <p className="field-label mt-3 text-white/42">Watch for · {focusedSpecies.join(" · ")}</p>}
+        </div>
+      )}
       {!isHero && hoveredAccess && (() => {
         const p = projection([hoveredAccess.coordinates.longitude, hoveredAccess.coordinates.latitude]);
         if (!p) return null;
@@ -354,10 +502,15 @@ export function IndiaMap({ hotspots, selectedSlug, onSelect, variant = "full" }:
         );
       })()}
       {!isHero && (
-        <div className="absolute right-4 top-1/2 z-10 grid -translate-y-1/2 gap-1">
-          <button aria-label="Zoom in" onClick={() => zoomBy(1.4, view.x + view.w / 2, view.y + view.h / 2)} className="grid h-8 w-8 place-items-center rounded-sm border border-white/20 bg-white/20 text-white backdrop-blur-md hover:bg-white/30"><Plus size={16} /></button>
-          <button aria-label="Zoom out" onClick={() => zoomBy(1 / 1.4, view.x + view.w / 2, view.y + view.h / 2)} className="grid h-8 w-8 place-items-center rounded-sm border border-white/20 bg-white/20 text-white backdrop-blur-md hover:bg-white/30"><Minus size={16} /></button>
-          {zoomed && <button aria-label="Reset zoom" onClick={() => setView(DEFAULT_VIEW)} className="grid h-8 w-8 place-items-center rounded-sm border border-white/20 bg-white/20 text-white backdrop-blur-md hover:bg-white/30"><RotateCcw size={14} /></button>}
+        <div className="absolute right-3 top-1/2 z-10 grid -translate-y-1/2 gap-1 sm:right-4">
+          <button aria-label="Zoom in" onClick={() => zoomBy(1.4, view.x + view.w / 2, view.y + view.h / 2)} className="grid h-11 w-11 place-items-center rounded-sm border border-white/20 bg-white/20 text-white backdrop-blur-md hover:bg-white/30 sm:h-8 sm:w-8"><Plus size={16} /></button>
+          <button aria-label="Zoom out" onClick={() => zoomBy(1 / 1.4, view.x + view.w / 2, view.y + view.h / 2)} className="grid h-11 w-11 place-items-center rounded-sm border border-white/20 bg-white/20 text-white backdrop-blur-md hover:bg-white/30 sm:h-8 sm:w-8"><Minus size={16} /></button>
+          {zoomed && <button aria-label="Reset zoom" onClick={resetMap} className="grid h-11 w-11 place-items-center rounded-sm border border-white/20 bg-white/20 text-white backdrop-blur-md hover:bg-white/30 sm:h-8 sm:w-8"><RotateCcw size={14} /></button>}
+        </div>
+      )}
+      {!isHero && !activeHotspot && !focusedRegion && (
+        <div className="pointer-events-none absolute bottom-4 left-1/2 z-10 -translate-x-1/2 rounded-full border border-white/15 bg-black/20 px-4 py-2 text-center font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-white/65 backdrop-blur-md">
+          Select a region to descend · drag to travel
         </div>
       )}
     </section>
