@@ -15,6 +15,8 @@ import { indiaSpecialities } from "@/data/indiaSpecialities";
 import { SpecialityBadges } from "@/components/SpecialityBadges";
 import { biomeClassName } from "@/lib/experienceDesign";
 import { speciesExperience } from "@/lib/speciesExperience";
+import { speciesEncounters } from "@/data/speciesEncounters";
+import { WildlifeEncounter } from "@/components/WildlifeEncounter";
 
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -53,6 +55,7 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
   const similar = selectedSpecies.similarSpeciesSlugs.map(getSpeciesBySlug).filter(Boolean);
   const speciality = indiaSpecialities[selectedSpecies.scientificName];
   const experience = speciesExperience(selectedSpecies);
+  const encounter = speciesEncounters[selectedSpecies.slug];
   const firstHotspot = matchedHotspots[0];
   const jsonLd = {
     "@context": "https://schema.org",
@@ -103,7 +106,7 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
 
       <nav aria-label="Species story chapters" className="species-chapter-nav sticky top-[65px] z-30 border-b border-white/10 bg-biome-surface/88 backdrop-blur-xl">
         <div className="atlas-scrollbar mx-auto flex max-w-[90rem] gap-6 overflow-x-auto px-4 py-3 sm:px-6 lg:px-10">
-          <a href="#encounter">01 · Encounter</a><a href="#season">02 · Season</a><a href="#range">03 · Range</a><a href="#fieldcraft">04 · Fieldcraft</a>
+          <a href="#encounter">01 · Encounter</a>{encounter && <a href="#expedition">02 · Expedition</a>}<a href="#season">{encounter ? "03" : "02"} · Season</a><a href="#range">{encounter ? "04" : "03"} · Range</a><a href="#fieldcraft">{encounter ? "05" : "04"} · Fieldcraft</a>
         </div>
       </nav>
 
@@ -128,9 +131,11 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
         </div>
       </section>
 
+      {encounter && <WildlifeEncounter encounter={encounter} speciesSlug={selectedSpecies.slug} category={selectedSpecies.category} />}
+
       <section id="season" className="scroll-mt-32 border-b border-white/10 py-20 sm:py-28">
         <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-10">
-          <div className="max-w-3xl"><p className="field-label text-biome-accent">02 · Read the year</p><h2 className="display-section mt-4 text-biome-ink">Wait for the right season.</h2><p className="mt-6 max-w-2xl text-base leading-7 text-biome-ink/60">These windows are derived from the best months of atlas places where this species is a known highlight.</p></div>
+          <div className="max-w-3xl"><p className="field-label text-biome-accent">{encounter ? "03" : "02"} · Read the year</p><h2 className="display-section mt-4 text-biome-ink">Wait for the right season.</h2><p className="mt-6 max-w-2xl text-base leading-7 text-biome-ink/60">These windows are derived from the best months of atlas places where this species is a known highlight.</p></div>
           {bestMonths.length ? (
             <div className="mt-12 grid grid-cols-4 gap-2 sm:grid-cols-6 lg:grid-cols-12">
               {monthNames.map((month, index) => {
@@ -144,14 +149,14 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
 
       <section id="range" className="texture-grain relative scroll-mt-32 border-b border-white/10 py-20 sm:py-28">
         <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-10">
-          <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end"><div><p className="field-label text-biome-accent">03 · Follow the trail</p><h2 className="display-section mt-4 text-biome-ink">Where the wild still holds.</h2></div>{firstHotspot && <Link href={`/map?place=${firstHotspot.slug}`} className="atlas-button atlas-button-ghost shrink-0">Open living atlas <ArrowRight size={15} /></Link>}</div>
+          <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end"><div><p className="field-label text-biome-accent">{encounter ? "04" : "03"} · Follow the trail</p><h2 className="display-section mt-4 text-biome-ink">Where the wild still holds.</h2></div>{firstHotspot && <Link href={`/map?place=${firstHotspot.slug}`} className="atlas-button atlas-button-ghost shrink-0">Open living atlas <ArrowRight size={15} /></Link>}</div>
           {matchedHotspots.length ? <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">{matchedHotspots.map((hotspot) => <HotspotCard key={hotspot.slug} hotspot={hotspot} compact tone="atlas" />)}</div> : <div className="mt-10"><EmptyState title="Not yet featured at an atlas hotspot" body="Its real range extends beyond the places currently mapped. Coverage is still growing." /></div>}
         </div>
       </section>
 
       <section id="fieldcraft" className="scroll-mt-32 bg-paper py-20 text-ink sm:py-28">
         <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-10">
-          <p className="field-label text-forest-700 dark:text-sand">04 · Fieldcraft</p>
+          <p className="field-label text-forest-700 dark:text-sand">{encounter ? "05" : "04"} · Fieldcraft</p>
           <h2 className="display-section mt-4 max-w-4xl text-forest-900">Leave with the story, not the disturbance.</h2>
           <div className="mt-12 grid gap-px overflow-hidden rounded-field border border-forest-900/10 bg-forest-900/10 lg:grid-cols-2">
             <article className="bg-paper p-7 sm:p-10"><ShieldCheck size={28} className="text-forest-700 dark:text-sand" /><p className="field-label mt-10 text-slate-500">Ethical encounter</p><h3 className="mt-3 font-display text-3xl text-forest-900">Let the animal choose the distance.</h3><p className="mt-5 max-w-xl text-base leading-8 text-slate-700 dark:text-slate-300">{selectedSpecies.viewingTips}</p></article>
