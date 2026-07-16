@@ -18,6 +18,7 @@ type JournalContextValue = {
   hydrated: boolean;
   isSaved: (type: JournalEntryType, slug: string) => boolean;
   toggleSave: (type: JournalEntryType, slug: string) => void;
+  saveMany: (items: Array<{ type: JournalEntryType; slug: string }>) => void;
   updateNote: (id: string, note: string) => void;
   remove: (id: string) => void;
   clear: () => void;
@@ -50,6 +51,15 @@ export function JournalProvider({ children }: { children: React.ReactNode }) {
       const next = current.some((entry) => entry.id === id)
         ? current.filter((entry) => entry.id !== id)
         : [{ id, type, slug, note: "", savedAt: new Date().toISOString() }, ...current];
+      persist(next);
+      return next;
+    }),
+    saveMany: (items) => setEntries((current) => {
+      const existing = new Set(current.map((entry) => entry.id));
+      const additions = items
+        .filter((item) => !existing.has(`${item.type}:${item.slug}`))
+        .map((item) => ({ id: `${item.type}:${item.slug}`, ...item, note: "", savedAt: new Date().toISOString() }));
+      const next = [...additions, ...current];
       persist(next);
       return next;
     }),
