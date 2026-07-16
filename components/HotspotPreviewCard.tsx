@@ -7,6 +7,7 @@ import { Tag } from "./Tag";
 import { HotspotImage } from "./HotspotImage";
 import { closureInfo } from "@/data/closures";
 import { ConfidenceDot } from "./FreshnessBadge";
+import { JournalSaveButton } from "./JournalSaveButton";
 
 export function HotspotPreviewCard({ hotspot, docked, onClose, nearby = [], onSelect }: {
   hotspot: Hotspot;
@@ -45,6 +46,7 @@ export function HotspotPreviewCard({ hotspot, docked, onClose, nearby = [], onSe
             )}
             <div className="mt-2 flex items-center gap-3 border-t border-white/12 pt-2 sm:mt-4 sm:pt-4">
               <span className="field-label hidden min-w-0 items-center gap-1.5 truncate text-biome-ink/48 sm:flex"><CalendarDays size={12} />Best {hotspot.bestMonths.slice(0, 4).join(" · ")}</span>
+              <JournalSaveButton type="hotspot" slug={hotspot.slug} tone="dark" compact />
               <Link href={`/hotspots/${hotspot.slug}`} className="ml-auto inline-flex shrink-0 items-center gap-1.5 rounded-full bg-biome-accent px-4 py-2 text-xs font-bold text-biome-surface transition hover:bg-white">Open field guide <ArrowRight size={13} /></Link>
             </div>
           </div>
