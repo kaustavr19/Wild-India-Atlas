@@ -14,7 +14,7 @@ export function ThemeToggle() {
     localStorage.setItem("theme", next ? "dark" : "light");
   }
   return (
-    <button onClick={toggle} aria-label="Toggle dark mode" className="grid h-8 w-8 place-items-center rounded-full text-white/80 transition hover:bg-white/10 hover:text-sand">
+    <button onClick={toggle} aria-label={dark ? "Switch to light mode" : "Switch to dark mode"} title={dark ? "Switch to light mode" : "Switch to dark mode"} className="grid h-9 w-9 place-items-center rounded-full border border-transparent text-biome-ink/78 transition hover:border-biome-accent/45 hover:bg-white/10 hover:text-biome-accent">
       {dark ? <Sun size={16} /> : <Moon size={16} />}
     </button>
   );

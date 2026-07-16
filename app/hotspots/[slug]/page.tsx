@@ -1,6 +1,7 @@
 import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Binoculars, Camera, Footprints, Lock, LockOpen, PawPrint, Sailboat, Sparkles, Users } from "lucide-react"; import { hotspots, getHotspotBySlug } from "@/data/hotspots"; import { closureInfo } from "@/data/closures"; import { FreshnessBadge } from "@/components/FreshnessBadge"; import { formatVerifiedDate } from "@/lib/formatDate"; import { QuickFactsCard } from "@/components/QuickFactsCard"; import { Tag } from "@/components/Tag"; import { PlanLinksCard } from "@/components/PlanLinksCard"; import { EthicalTravelNote } from "@/components/EthicalTravelNote"; import { HotspotCard } from "@/components/HotspotCard"; import { HotspotImage } from "@/components/HotspotImage"; import { ecosystem, ecosystemColorClass } from "@/data/ecosystems"; import { hasBoating } from "@/data/boatingSpots"; import { seasonalWisdom } from "@/data/seasonalWisdom"; import { buildItinerary } from "@/lib/itinerary"; import { haversineKm } from "@/lib/geo"; import { speciesSlugForName } from "@/lib/speciesLinks"; import { species, getSpeciesBySlug } from "@/data/species"; import { SpeciesCard } from "@/components/SpeciesCard"; import ebirdSpeciesRaw from "@/data/ebirdSpecies.json"; import type { EbirdSpeciesEntry } from "@/scripts/fetch-ebird-species"; import { EbirdChecklist } from "@/components/EbirdChecklist"; import { structuralRisks } from "@/data/structuralRisks"; import { StructuralRiskNotice } from "@/components/StructuralRiskNotice";
 const ebirdSpecies = ebirdSpeciesRaw as Record<string, EbirdSpeciesEntry[]>;
 import { JournalSaveButton } from "@/components/JournalSaveButton";
+import { JourneyTracker } from "@/components/JourneyTracker";
 
 const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const experienceIcons: Record<string, typeof Camera> = { Photography: Camera, Safari: PawPrint, Birding: Binoculars, Trekking: Footprints, "Family-friendly": Users, Offbeat: Sparkles };
@@ -71,6 +72,7 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
   };
 
   return <main>
+    <JourneyTracker type="hotspot" slug={hotspot.slug} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <section className="relative flex min-h-[440px] items-end overflow-hidden px-4 pb-10 pt-28 text-white sm:min-h-[560px] sm:px-6">
       <HotspotImage slug={hotspot.slug} type={hotspot.type} className="absolute inset-0 -z-20 h-full w-full"/>

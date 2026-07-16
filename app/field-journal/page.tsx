@@ -10,6 +10,7 @@ import { HotspotImage } from "@/components/HotspotImage";
 import { SpeciesImage } from "@/components/SpeciesImage";
 import { useJournal, type JournalEntry, type JournalEntryType } from "@/components/JournalProvider";
 import type { HotspotType } from "@/data/types";
+import { JourneyTrail } from "@/components/JourneyTrail";
 
 type Filter = "all" | JournalEntryType;
 
@@ -40,6 +41,8 @@ export default function FieldJournalPage() {
           </div>
         </div>
       </section>
+
+      <JourneyTrail />
 
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
         {!hydrated ? (
