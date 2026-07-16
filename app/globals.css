@@ -63,6 +63,24 @@ button, input, select, textarea { font: inherit; }
 .skip-link:focus { transform: translateY(0); }
 .content-auto { content-visibility: auto; contain-intrinsic-size: 1px 700px; }
 
+.atlas-header-frame {
+  isolation: isolate;
+}
+.atlas-header-frame::before {
+  background: linear-gradient(180deg, rgb(var(--biome-surface-rgb)) 0%, rgb(var(--biome-surface-rgb)) 78%, transparent 100%);
+  content: "";
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity var(--duration-fast);
+  z-index: -1;
+}
+.atlas-header-frame.is-scrolled::before { opacity: 1; }
+.sticky-filter-surface {
+  background: rgb(var(--biome-surface-rgb));
+}
+
 html.dark body {
   background:
     radial-gradient(circle at 10% 5%, rgb(215 230 76 / 0.06), transparent 30%),

@@ -70,7 +70,7 @@ export function HotspotsDiscovery() {
         </div>
       </section>
 
-      <section className={`biome-surface ${landscape === "all" ? "biome-forest" : biomeClassName[landscape]} sticky top-[65px] z-30 border-b border-white/10 px-4 py-4 shadow-lift sm:px-6`} aria-label="Destination observation lens">
+      <section className={`sticky-filter-surface biome-surface ${landscape === "all" ? "biome-forest" : biomeClassName[landscape]} sticky top-16 z-30 border-b border-white/10 px-4 py-4 shadow-lift sm:top-[68px] sm:px-6`} aria-label="Destination observation lens">
         <div className="mx-auto max-w-7xl"><FilterPanel filters={filters} setFilters={updateFilters} onReset={reset} horizontal variant="atlas" /></div>
       </section>
 
