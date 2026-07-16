@@ -59,6 +59,9 @@ h1, h2, h3 { font-family: var(--font-display), serif; letter-spacing: -0.02em; f
 button, input, select, textarea { font: inherit; }
 ::selection { background: rgb(var(--biome-accent-rgb) / 0.35); color: currentColor; }
 :focus-visible { outline: 2px solid rgb(var(--biome-accent-rgb)); outline-offset: 3px; }
+.skip-link { position: fixed; left: 1rem; top: 1rem; z-index: 100; transform: translateY(-160%); border-radius: 999px; background: #fff7df; color: #16261e; padding: 0.75rem 1rem; font-size: 0.75rem; font-weight: 700; transition: transform var(--duration-fast); }
+.skip-link:focus { transform: translateY(0); }
+.content-auto { content-visibility: auto; contain-intrinsic-size: 1px 700px; }
 
 html.dark body {
   background:

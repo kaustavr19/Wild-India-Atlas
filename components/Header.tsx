@@ -10,12 +10,12 @@ import { SoundPreferenceToggle } from "./SoundPreference";
 import { ThemeToggle } from "./ThemeToggle";
 import { JournalShortcut } from "./JournalShortcut";
 
-const nav = [
+const nav: Array<{ label: string; href: string; number: string; description: string; disabled?: boolean }> = [
   { label: "Map", href: "/map", number: "01", description: "Read India by habitat, season and species." },
   { label: "Hotspots", href: "/hotspots", number: "02", description: "Explore national parks, wetlands and reserves." },
   { label: "Species", href: "/species", number: "03", description: "Plan journeys around the wildlife you hope to see." },
   { label: "Field journal", href: "/field-journal", number: "04", description: "Keep the species, places and field notes that call you back." },
-  { label: "Seasonal planner", href: "#seasonal", number: "05", description: "Follow migrations, monsoons and forest seasons.", disabled: true },
+  { label: "Seasonal planner", href: "/seasonal-planner", number: "05", description: "Follow migrations, monsoons and forest seasons." },
 ];
 
 function isActive(pathname: string, href: string) {
