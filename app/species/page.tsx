@@ -1,37 +1,51 @@
-import type { Metadata } from "next"; import { species as flagshipSpecies } from "@/data/species"; import { getExtendedSpecies } from "@/lib/extendedSpecies"; import { indiaSpecialities } from "@/data/indiaSpecialities"; import { MergedSpeciesList } from "@/components/MergedSpeciesList"; import type { MergedSpeciesListItem } from "@/components/MergedSpeciesCard";
+import type { Metadata } from "next";
+import { SpeciesDiscovery } from "@/components/SpeciesDiscovery";
+import { indiaSpecialities } from "@/data/indiaSpecialities";
+import { species as flagshipSpecies } from "@/data/species";
+import { getExtendedSpecies } from "@/lib/extendedSpecies";
+import { speciesExperience } from "@/lib/speciesExperience";
+import type { SpeciesDiscoveryItem } from "@/lib/speciesDiscovery";
 
 export const metadata: Metadata = {
   title: "Wildlife Species Guide — Wild India Atlas",
-  description: "Plan sightings of India's tigers, rhinos, snow leopards, and more — where to see each species, best months, sighting difficulty, and ethical viewing notes.",
+  description: "Explore India's wildlife through habitat, conservation status, sighting difficulty, and confirmed citizen-science field records.",
 };
 
-export default function SpeciesPage(){
-  const items: MergedSpeciesListItem[] = [
-    ...flagshipSpecies.map((s): MergedSpeciesListItem => ({
-      slug: s.slug,
-      commonName: s.commonName,
-      scientificName: s.scientificName,
-      group: s.category,
-      tier: "Flagship",
-      endemic: indiaSpecialities[s.scientificName]?.endemic === "yes",
-      iconic: indiaSpecialities[s.scientificName]?.iconic ?? true,
-    })),
-    ...getExtendedSpecies().map((s): MergedSpeciesListItem => ({
-      slug: s.slug,
-      commonName: s.commonName,
-      scientificName: s.scientificName,
-      group: s.iconicGroup,
+export default function SpeciesPage() {
+  const items: SpeciesDiscoveryItem[] = [
+    ...flagshipSpecies.map((species): SpeciesDiscoveryItem => {
+      const experience = speciesExperience(species);
+      return {
+        slug: species.slug,
+        commonName: species.commonName,
+        scientificName: species.scientificName,
+        group: species.category,
+        tier: "Flagship",
+        endemic: indiaSpecialities[species.scientificName]?.endemic === "yes",
+        iconic: indiaSpecialities[species.scientificName]?.iconic ?? true,
+        shortDescription: species.shortDescription,
+        habitat: species.habitat,
+        conservationStatus: species.conservationStatus,
+        difficultyOfSighting: species.difficultyOfSighting,
+        biome: experience.biome,
+        landscape: experience.landscape,
+        fieldSignal: experience.fieldSignal,
+      };
+    }),
+    ...getExtendedSpecies().map((species): SpeciesDiscoveryItem => ({
+      slug: species.slug,
+      commonName: species.commonName,
+      scientificName: species.scientificName,
+      group: species.iconicGroup,
       tier: "Extended",
-      photoUrl: s.photoUrl,
-      endemic: indiaSpecialities[s.scientificName]?.endemic === "yes",
-      iconic: indiaSpecialities[s.scientificName]?.iconic ?? false,
+      photoUrl: species.photoUrl,
+      endemic: indiaSpecialities[species.scientificName]?.endemic === "yes",
+      iconic: indiaSpecialities[species.scientificName]?.iconic ?? false,
+      conservationStatus: species.conservationStatus,
+      confirmedAtCount: species.confirmedAt.length,
+      source: species.source,
     })),
   ];
 
-  return <main className="mx-auto max-w-7xl px-4 pb-16 pt-24 sm:px-6 sm:pt-28">
-    <p className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-river">Species guide</p>
-    <h1 className="mt-2 text-4xl font-semibold text-forest-900">{items.length} species to plan around</h1>
-    <p className="mt-3 max-w-2xl text-slate-700 dark:text-slate-300">From hand-curated Flagship profiles to real citizen-science records confirmed via eBird and iNaturalist — search, filter by group, or narrow to species that are endemic to India or editorially iconic.</p>
-    <MergedSpeciesList items={items} />
-  </main>;
+  return <SpeciesDiscovery items={items} />;
 }
