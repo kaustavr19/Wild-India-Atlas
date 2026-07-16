@@ -101,7 +101,39 @@ function HabitatPortal({ biome, count, active, onSelect }: { biome: Ecosystem; c
 function SpeciesFieldCard({ item }: { item: SpeciesDiscoveryItem }) {
   const biome = item.biome ?? "forest";
   const recordNote = item.confirmedAtCount ? `Confirmed across ${item.confirmedAtCount} atlas ${item.confirmedAtCount === 1 ? "place" : "places"} from ${item.source}.` : undefined;
-  return <article className="field-card field-card-lift group flex min-h-full flex-col overflow-hidden rounded-field"><div className="relative h-60 overflow-hidden bg-forest-900">{item.tier === "Flagship" ? <SpeciesImage slug={item.slug} category={item.group} className="h-full w-full" showCredit={false} /> : item.photoUrl ? <img src={item.photoUrl} alt="" className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]" loading="lazy" /> : <div className={`biome-surface ${biomeClassName[biome]} texture-topography h-full w-full`} />}<div className="absolute inset-0 bg-gradient-to-t from-forest-900/90 via-transparent to-transparent" /><span className="absolute left-4 top-4 rounded-full bg-forest-900/88 px-3 py-1 font-mono text-[9px] font-semibold uppercase tracking-wider text-sand">{item.tier === "Flagship" ? item.biome : item.source} · {item.group}</span><div className="absolute bottom-4 left-4 right-4 text-white"><SpecialityBadges endemic={item.endemic} iconic={item.iconic} className="mb-2" /><h3 className="font-display text-3xl leading-tight">{item.commonName}</h3><p className="mt-1 truncate text-xs italic text-white/62">{item.scientificName}</p></div></div><div className="flex flex-1 flex-col p-5"><p className="line-clamp-3 text-sm leading-6 text-slate-600 dark:text-slate-300">{item.shortDescription ?? recordNote ?? "Confirmed in the atlas field-record index."}</p><div className="mt-5 grid grid-cols-2 gap-3 border-t border-forest-900/10 pt-4"><FieldFact light label="Status" value={item.conservationStatus ? conservationBand(item.conservationStatus) : "Not listed"} /><FieldFact light label={item.tier === "Flagship" ? "Sighting" : "Atlas records"} value={item.difficultyOfSighting ?? String(item.confirmedAtCount ?? 0)} /></div><div className="mt-auto flex items-center gap-2 pt-5"><Link href={`/species/${item.slug}`} className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-full bg-forest-900 px-4 text-xs font-bold text-white">Open field guide <ArrowRight size={13} /></Link><JournalSaveButton type="species" slug={item.slug} compact /></div></div></article>;
+  const provenance = item.tier === "Flagship" ? item.biome : item.source;
+
+  return (
+    <article className="field-card field-card-lift group flex min-h-full flex-col overflow-hidden rounded-field">
+      <div className="relative h-60 overflow-hidden bg-forest-900">
+        {item.tier === "Flagship" ? (
+          <SpeciesImage slug={item.slug} category={item.group} className="h-full w-full" showCredit={false} />
+        ) : item.photoUrl ? (
+          <img src={item.photoUrl} alt="" className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]" loading="lazy" />
+        ) : (
+          <div className={`biome-surface ${biomeClassName[biome]} texture-topography h-full w-full`} />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-forest-900/90 via-transparent to-transparent" />
+        <div className="absolute bottom-4 left-4 right-4 text-white">
+          <h3 className="font-display text-3xl leading-tight">{item.commonName}</h3>
+          <p className="mt-1 truncate text-xs italic text-white/62">{item.scientificName}</p>
+        </div>
+      </div>
+      <div className="flex flex-1 flex-col p-5">
+        <div className="mb-4 flex min-h-7 flex-wrap items-center gap-2 border-b border-forest-900/10 pb-4 dark:border-white/10">
+          <span className="rounded-full bg-forest-100 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-wider text-forest-800 dark:bg-white/10 dark:text-sand">{provenance}</span>
+          <span className="rounded-full bg-river/10 px-2.5 py-1 font-mono text-[9px] font-bold uppercase tracking-wider text-river dark:bg-river/20 dark:text-sky-200">{item.group}</span>
+          <SpecialityBadges endemic={item.endemic} iconic={item.iconic} />
+        </div>
+        <p className="line-clamp-3 text-sm leading-6 text-slate-600 dark:text-slate-300">{item.shortDescription ?? recordNote ?? "Confirmed in the atlas field-record index."}</p>
+        <div className="mt-5 grid grid-cols-2 gap-3 border-t border-forest-900/10 pt-4">
+          <FieldFact light label="Status" value={item.conservationStatus ? conservationBand(item.conservationStatus) : "Not listed"} />
+          <FieldFact light label={item.tier === "Flagship" ? "Sighting" : "Atlas records"} value={item.difficultyOfSighting ?? String(item.confirmedAtCount ?? 0)} />
+        </div>
+        <div className="mt-auto flex items-center gap-2 pt-5"><Link href={`/species/${item.slug}`} className="inline-flex min-h-11 flex-1 items-center justify-center gap-2 rounded-full bg-forest-900 px-4 text-xs font-bold text-white">Open field guide <ArrowRight size={13} /></Link><JournalSaveButton type="species" slug={item.slug} compact /></div>
+      </div>
+    </article>
+  );
 }
 
 function FilterSelect({ label, value, options, onChange }: { label: string; value: string; options: { value: string; label: string }[]; onChange: (value: string) => void }) { return <label className="block"><span className="field-label text-biome-ink/45">{label}</span><select value={value} onChange={(event) => onChange(event.target.value)} className="mt-2 min-h-11 w-full rounded-full border border-white/15 bg-black/10 px-4 text-sm text-biome-ink outline-none">{options.map((option) => <option key={option.value} value={option.value} className="bg-forest-900 text-white">{option.label}</option>)}</select></label>; }
