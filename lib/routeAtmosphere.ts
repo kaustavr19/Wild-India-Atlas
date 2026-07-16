@@ -15,6 +15,7 @@ const atmospheres: Record<string, Omit<RouteAtmosphere, "className">> = {
   species: { biome: "wetland", label: "Species observation guide", coordinate: "Citizen science · Field records" },
   sources: { biome: "alpine", label: "Evidence & field methods", coordinate: "Sources · Confidence · Freshness" },
   fieldKit: { biome: "forest", label: "Experience system", coordinate: "Private field reference" },
+  journal: { biome: "forest", label: "Personal field journal", coordinate: "Saved sightings · Private notes" },
 };
 
 export function routeAtmosphere(pathname: string): RouteAtmosphere {
@@ -24,6 +25,8 @@ export function routeAtmosphere(pathname: string): RouteAtmosphere {
       ? "hotspots"
       : pathname.startsWith("/species")
         ? "species"
+        : pathname.startsWith("/field-journal")
+          ? "journal"
         : pathname.startsWith("/data-sources")
           ? "sources"
           : pathname.startsWith("/field-kit")

@@ -1,5 +1,6 @@
 import type { Metadata } from "next"; import { notFound } from "next/navigation"; import Link from "next/link"; import { Binoculars, Camera, Footprints, Lock, LockOpen, PawPrint, Sailboat, Sparkles, Users } from "lucide-react"; import { hotspots, getHotspotBySlug } from "@/data/hotspots"; import { closureInfo } from "@/data/closures"; import { FreshnessBadge } from "@/components/FreshnessBadge"; import { formatVerifiedDate } from "@/lib/formatDate"; import { QuickFactsCard } from "@/components/QuickFactsCard"; import { Tag } from "@/components/Tag"; import { PlanLinksCard } from "@/components/PlanLinksCard"; import { EthicalTravelNote } from "@/components/EthicalTravelNote"; import { HotspotCard } from "@/components/HotspotCard"; import { HotspotImage } from "@/components/HotspotImage"; import { ecosystem, ecosystemColorClass } from "@/data/ecosystems"; import { hasBoating } from "@/data/boatingSpots"; import { seasonalWisdom } from "@/data/seasonalWisdom"; import { buildItinerary } from "@/lib/itinerary"; import { haversineKm } from "@/lib/geo"; import { speciesSlugForName } from "@/lib/speciesLinks"; import { species, getSpeciesBySlug } from "@/data/species"; import { SpeciesCard } from "@/components/SpeciesCard"; import ebirdSpeciesRaw from "@/data/ebirdSpecies.json"; import type { EbirdSpeciesEntry } from "@/scripts/fetch-ebird-species"; import { EbirdChecklist } from "@/components/EbirdChecklist"; import { structuralRisks } from "@/data/structuralRisks"; import { StructuralRiskNotice } from "@/components/StructuralRiskNotice";
 const ebirdSpecies = ebirdSpeciesRaw as Record<string, EbirdSpeciesEntry[]>;
+import { JournalSaveButton } from "@/components/JournalSaveButton";
 
 const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const experienceIcons: Record<string, typeof Camera> = { Photography: Camera, Safari: PawPrint, Birding: Binoculars, Trekking: Footprints, "Family-friendly": Users, Offbeat: Sparkles };
@@ -83,6 +84,7 @@ export default async function HotspotDetail({ params }: { params: Promise<{ slug
         <h1 className="mt-4 max-w-4xl text-5xl font-semibold">{hotspot.name}</h1>
         <p className="mt-3 max-w-3xl text-sm font-semibold uppercase tracking-wide text-white/70">{hotspot.state} · {hotspot.habitat} · Best: {bestMonthsRange(hotspot.bestMonths)}</p>
         <p className="mt-3 max-w-3xl border-l-2 border-sand pl-4 text-lg leading-8 text-ivory">{hotspot.summary}</p>
+        <div className="mt-6"><JournalSaveButton type="hotspot" slug={hotspot.slug} tone="dark" /></div>
       </div>
     </section>
     {structuralRisk && (

@@ -6,6 +6,7 @@ const explore = [
   { label: "Interactive map", href: "/map" },
   { label: "Wildlife hotspots", href: "/hotspots" },
   { label: "Species guide", href: "/species" },
+  { label: "Field journal", href: "/field-journal" },
 ];
 
 const fieldwork = [

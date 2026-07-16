@@ -17,6 +17,7 @@ import { biomeClassName } from "@/lib/experienceDesign";
 import { speciesExperience } from "@/lib/speciesExperience";
 import { speciesEncounters } from "@/data/speciesEncounters";
 import { WildlifeEncounter } from "@/components/WildlifeEncounter";
+import { JournalSaveButton } from "@/components/JournalSaveButton";
 
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -88,6 +89,7 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#encounter" className="atlas-button"><ArrowDown size={15} /> Enter the encounter</a>
               {firstHotspot && <Link href={`/map?place=${firstHotspot.slug}`} className="atlas-button atlas-button-ghost"><MapPin size={15} /> Find on the atlas</Link>}
+              <JournalSaveButton type="species" slug={selectedSpecies.slug} tone="dark" />
             </div>
           </div>
 

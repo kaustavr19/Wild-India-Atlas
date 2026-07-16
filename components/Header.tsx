@@ -8,12 +8,14 @@ import { useEffect, useState } from "react";
 import { routeAtmosphere } from "@/lib/routeAtmosphere";
 import { SoundPreferenceToggle } from "./SoundPreference";
 import { ThemeToggle } from "./ThemeToggle";
+import { JournalShortcut } from "./JournalShortcut";
 
 const nav = [
   { label: "Map", href: "/map", number: "01", description: "Read India by habitat, season and species." },
   { label: "Hotspots", href: "/hotspots", number: "02", description: "Explore national parks, wetlands and reserves." },
   { label: "Species", href: "/species", number: "03", description: "Plan journeys around the wildlife you hope to see." },
-  { label: "Seasonal planner", href: "#seasonal", number: "04", description: "Follow migrations, monsoons and forest seasons.", disabled: true },
+  { label: "Field journal", href: "/field-journal", number: "04", description: "Keep the species, places and field notes that call you back." },
+  { label: "Seasonal planner", href: "#seasonal", number: "05", description: "Follow migrations, monsoons and forest seasons.", disabled: true },
 ];
 
 function isActive(pathname: string, href: string) {
@@ -69,6 +71,7 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-1">
+            <JournalShortcut />
             <ThemeToggle />
             <button
               type="button"
