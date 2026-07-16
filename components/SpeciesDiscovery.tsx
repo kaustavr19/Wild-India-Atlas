@@ -69,8 +69,8 @@ export function SpeciesDiscovery({ items }: { items: SpeciesDiscoveryItem[] }) {
         </div>
       </section>
 
-      <section className={`sticky-filter-surface biome-surface ${filters.biome === "all" ? "biome-forest" : biomeClassName[filters.biome]} sticky top-16 z-30 border-b border-white/10 px-4 py-4 shadow-lift sm:top-[68px] sm:px-6`} aria-label="Species observation lens">
-        <div className="mx-auto max-w-7xl">
+      <section className={`${filters.biome === "all" ? "biome-forest" : biomeClassName[filters.biome]} sticky top-16 z-30 px-4 py-2 sm:top-[68px] sm:px-6`} aria-label="Species observation lens">
+        <div className="field-filter-dock mx-auto max-w-7xl rounded-field border border-white/12 p-4">
           <div className="grid gap-3 lg:grid-cols-[minmax(220px,1.35fr)_repeat(3,minmax(150px,0.65fr))_auto] lg:items-end">
             <label className="block"><span className="field-label text-biome-ink/45">Search the index</span><span className="mt-2 flex min-h-11 items-center gap-2 rounded-full border border-white/15 bg-black/10 px-4"><Search size={14} className="text-biome-accent" /><input value={filters.query} onChange={(event) => updateFilter("query", event.target.value)} placeholder="Species or scientific name" className="min-w-0 flex-1 bg-transparent text-sm text-biome-ink outline-none placeholder:text-biome-ink/35" /></span></label>
             <FilterSelect label="Wildlife group" value={filters.group} onChange={(value) => updateFilter("group", value)} options={[{ value: "all", label: "All groups" }, ...groups.map((group) => ({ value: group, label: group }))]} />
