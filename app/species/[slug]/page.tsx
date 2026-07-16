@@ -13,7 +13,7 @@ import { getExtendedSpecies, getExtendedSpeciesBySlug } from "@/lib/extendedSpec
 import { ExtendedSpeciesProfile } from "@/components/ExtendedSpeciesProfile";
 import { indiaSpecialities } from "@/data/indiaSpecialities";
 import { SpecialityBadges } from "@/components/SpecialityBadges";
-import { biomeClassName } from "@/lib/experienceDesign";
+import { biomeClassName, biomeThemes } from "@/lib/experienceDesign";
 import { speciesExperience } from "@/lib/speciesExperience";
 import { speciesEncounters } from "@/data/speciesEncounters";
 import { WildlifeEncounter } from "@/components/WildlifeEncounter";
@@ -21,6 +21,20 @@ import { JournalSaveButton } from "@/components/JournalSaveButton";
 import { JourneyTracker } from "@/components/JourneyTracker";
 
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+function monthWindow(months: string[]): string {
+  const indices = Array.from(new Set(months.map((month) => monthNames.indexOf(month)).filter((index) => index >= 0))).sort((a, b) => a - b);
+  if (!indices.length) return "Varies by range";
+  if (indices.length === 1) return monthNames[indices[0]];
+  let largestGap = -1;
+  let start = 0;
+  for (let index = 0; index < indices.length; index += 1) {
+    const gap = (indices[(index + 1) % indices.length] - indices[index] + 12) % 12;
+    if (gap > largestGap) { largestGap = gap; start = (index + 1) % indices.length; }
+  }
+  const end = (start - 1 + indices.length) % indices.length;
+  return `${monthNames[indices[start]]}–${monthNames[indices[end]]}`;
+}
 
 export function generateStaticParams() {
   return [...species.map((item) => ({ slug: item.slug })), ...getExtendedSpecies().map((item) => ({ slug: item.slug }))];
@@ -32,13 +46,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (selectedSpecies) {
     const title = `${selectedSpecies.commonName} — Where to See It in India | Wild India Atlas`;
     const description = `${selectedSpecies.shortDescription} Sighting difficulty: ${selectedSpecies.difficultyOfSighting}. ${selectedSpecies.habitat}.`;
-    return { title, description, openGraph: { title, description, type: "article" } };
+    return { title: { absolute: title }, description, openGraph: { title, description, type: "article" } };
   }
   const extended = getExtendedSpeciesBySlug(slug);
   if (extended) {
     const title = `${extended.commonName} — Confirmed Sightings | Wild India Atlas`;
     const description = `${extended.commonName} (${extended.scientificName}), confirmed via ${extended.source} at ${extended.confirmedAt.length} hotspot${extended.confirmedAt.length === 1 ? "" : "s"} in the atlas.`;
-    return { title, description, openGraph: { title, description, type: "article" } };
+    return { title: { absolute: title }, description, openGraph: { title, description, type: "article" } };
   }
   return {};
 }
@@ -57,6 +71,7 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
   const similar = selectedSpecies.similarSpeciesSlugs.map(getSpeciesBySlug).filter(Boolean);
   const speciality = indiaSpecialities[selectedSpecies.scientificName];
   const experience = speciesExperience(selectedSpecies);
+  const biomeTheme = biomeThemes.find((theme) => theme.key === experience.biome) ?? biomeThemes[0];
   const encounter = speciesEncounters[selectedSpecies.slug];
   const firstHotspot = matchedHotspots[0];
   const jsonLd = {
@@ -81,6 +96,7 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
             <Link href="/species" className="field-label inline-flex min-h-11 items-center gap-2 text-biome-ink/65 transition hover:text-biome-accent"><ArrowRight size={14} className="rotate-180" /> Species field guide</Link>
             <div className="mt-7 flex flex-wrap items-center gap-2">
               <span className="atlas-chip border-biome-accent/40 text-biome-accent">{selectedSpecies.category}</span>
+              <span className="atlas-chip">{biomeTheme.label}</span>
               <span className="atlas-chip">Sighting · {selectedSpecies.difficultyOfSighting}</span>
               {speciality && <SpecialityBadges endemic={speciality.endemic === "yes"} iconic={speciality.iconic} />}
             </div>
@@ -93,16 +109,22 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
               {firstHotspot && <Link href={`/map?place=${firstHotspot.slug}`} className="atlas-button atlas-button-ghost"><MapPin size={15} /> Find on the atlas</Link>}
               <JournalSaveButton type="species" slug={selectedSpecies.slug} tone="dark" />
             </div>
+            <div className="mt-8 grid grid-cols-3 gap-px overflow-hidden rounded-field border border-biome-line/15 bg-biome-line/15 lg:hidden">
+              <MobileSpeciesSignal label="Status" value={selectedSpecies.conservationStatus} />
+              <MobileSpeciesSignal label="Trails" value={matchedHotspots.length ? String(matchedHotspots.length) : "Mapping"} />
+              <MobileSpeciesSignal label="Window" value={monthWindow(bestMonths)} />
+            </div>
           </div>
 
           <aside className="shell-chrome hidden rounded-field p-5 lg:block">
-            <p className="field-label text-biome-accent">Field signal</p>
+            <div className="flex items-center justify-between border-b border-biome-line/15 pb-4"><p className="field-label text-biome-accent">Field signal</p><Compass size={18} className="text-biome-ink/48" /></div>
             <p className="mt-3 font-display text-2xl leading-tight">{experience.fieldSignal}</p>
-            <div className="mt-6 grid gap-4 border-t border-white/10 pt-5 text-sm">
+            <div className="mt-5 grid gap-4 border-t border-biome-line/10 pt-5 text-sm">
               <div><p className="field-label text-biome-ink/45">Status</p><p className="mt-1 text-biome-ink/85">{selectedSpecies.conservationStatus}</p></div>
               <div><p className="field-label text-biome-ink/45">Known trails</p><p className="mt-1 text-biome-ink/85">{matchedHotspots.length || "Atlas expansion pending"}</p></div>
               <div><p className="field-label text-biome-ink/45">Best window</p><p className="mt-1 text-biome-ink/85">{bestMonths.length ? `${bestMonths[0]} — ${bestMonths.at(-1)}` : "Varies by range"}</p></div>
             </div>
+            <p className="field-note mt-5 text-biome-ink/68">{biomeTheme.cue}</p>
           </aside>
         </div>
         <div className="absolute bottom-0 right-6 z-[2] hidden h-24 w-px bg-gradient-to-b from-biome-accent to-transparent lg:block" />
@@ -172,4 +194,8 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
       </section>
     </main>
   );
+}
+
+function MobileSpeciesSignal({ label, value }: { label: string; value: string }) {
+  return <div className="bg-biome-surface/82 p-3 sm:p-4"><p className="field-label text-[9px] text-biome-ink/42">{label}</p><p className="mt-1 truncate text-xs font-semibold text-biome-ink/82 sm:text-sm">{value}</p></div>;
 }

@@ -340,6 +340,48 @@ html.dark .map-grid, html.dark .texture-field-grid { background-image: linear-gr
   transform: translateY(-0.35rem);
 }
 
+/* Phase 6A.1 hotspot journeys */
+.hotspot-story { background: rgb(var(--biome-surface-rgb)); }
+.hotspot-hero-wash {
+  background:
+    linear-gradient(90deg, rgb(var(--biome-surface-rgb) / 0.98) 0%, rgb(var(--biome-surface-rgb) / 0.8) 40%, rgb(var(--biome-surface-rgb) / 0.12) 74%, transparent 100%),
+    linear-gradient(0deg, rgb(var(--biome-surface-rgb) / 0.96) 0%, transparent 52%),
+    linear-gradient(180deg, rgb(4 12 9 / 0.48) 0%, transparent 28%);
+}
+.hotspot-chapter-nav a {
+  color: rgb(var(--biome-ink-rgb) / 0.48);
+  flex: 0 0 auto;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  min-height: 2.75rem;
+  padding-top: 0.85rem;
+  text-transform: uppercase;
+  transition: color var(--duration-fast);
+}
+.hotspot-chapter-nav a:hover { color: rgb(var(--biome-accent-rgb)); }
+.hotspot-chapter-nav .atlas-scrollbar { scrollbar-width: none; }
+.hotspot-chapter-nav .atlas-scrollbar::-webkit-scrollbar { display: none; }
+.hotspot-glass-panel {
+  background: linear-gradient(145deg, rgb(255 255 255 / 0.075), rgb(255 255 255 / 0.025));
+  border: 1px solid rgb(var(--biome-line-rgb) / 0.18);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.07), 0 28px 70px rgb(0 0 0 / 0.12);
+}
+.hotspot-month {
+  border: 1px solid rgb(var(--biome-line-rgb) / 0.12);
+  color: rgb(var(--biome-ink-rgb) / 0.25);
+  min-height: 8.5rem;
+  transition: background-color var(--duration-medium), border-color var(--duration-medium), color var(--duration-medium), transform var(--duration-medium) var(--ease-field);
+}
+.hotspot-month.is-active {
+  background: rgb(var(--biome-accent-rgb));
+  border-color: rgb(var(--biome-accent-rgb));
+  box-shadow: 0 18px 45px rgb(0 0 0 / 0.18);
+  color: rgb(var(--biome-surface-rgb));
+  transform: translateY(-0.35rem);
+}
+
 .wildlife-encounter {
   background:
     radial-gradient(circle at 16% 28%, rgb(var(--biome-secondary-rgb) / 0.13), transparent 28%),
@@ -396,6 +438,14 @@ html.dark .map-grid, html.dark .texture-field-grid { background-image: linear-gr
   .species-hero .hero-ken-burns { object-position: 58% center; }
   .species-month { min-height: 6.75rem; }
   .species-month.is-active { transform: none; }
+  .hotspot-hero-wash {
+    background:
+      linear-gradient(0deg, rgb(var(--biome-surface-rgb) / 0.99) 0%, rgb(var(--biome-surface-rgb) / 0.82) 58%, rgb(var(--biome-surface-rgb) / 0.2) 100%),
+      linear-gradient(180deg, rgb(4 12 9 / 0.5) 0%, transparent 32%);
+  }
+  .hotspot-hero .hero-ken-burns { object-position: 58% center; }
+  .hotspot-month { min-height: 6.75rem; }
+  .hotspot-month.is-active { transform: none; }
   .encounter-act { min-height: auto; opacity: 1; padding-bottom: 5rem; padding-top: 5rem; }
   .encounter-visual { position: relative; }
 }
