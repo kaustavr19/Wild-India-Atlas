@@ -26,8 +26,15 @@ export function Header() {
   const pathname = usePathname();
   const atmosphere = routeAtmosphere(pathname);
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => { setOpen(false); }, [pathname]);
+  useEffect(() => {
+    const updateScrolled = () => setScrolled(window.scrollY > 24);
+    updateScrolled();
+    window.addEventListener("scroll", updateScrolled, { passive: true });
+    return () => window.removeEventListener("scroll", updateScrolled);
+  }, []);
   useEffect(() => {
     if (!open) return;
     const previousOverflow = document.body.style.overflow;
@@ -45,7 +52,7 @@ export function Header() {
 
   return (
     <>
-      <div className={`fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-4 ${atmosphere.className}`}>
+      <div className={`atlas-header-frame fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-4 ${scrolled ? "is-scrolled" : ""} ${atmosphere.className}`}>
         <header className="shell-chrome mx-auto flex max-w-6xl items-center justify-between gap-3 rounded-full px-3 py-2 sm:px-4">
           <Link href="/" className="flex min-w-0 items-center gap-2.5 font-bold text-biome-ink">
             <Image src="/brand/logomark-white.svg" alt="" width={36} height={24} className="h-7 w-auto shrink-0" />
