@@ -1,14 +1,16 @@
 "use client";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MapPin, PawPrint, Search } from "lucide-react";
 import type { Hotspot, Season } from "@/data/types";
 import { projection, pathGen, VIEW_W, VIEW_H } from "@/components/IndiaMap";
 import indiaStates from "@/data/india-states.json";
 import { neighboringCountries } from "@/data/neighboringCountries";
 import { HotspotImage } from "@/components/HotspotImage";
-import { SearchBar } from "@/components/SearchBar";
+import { hotspots } from "@/data/hotspots";
+import { species } from "@/data/species";
+import { searchAtlas, type AtlasSearchItem } from "@/lib/atlasSearch";
 
 const SEEN_KEY = "wia-descent-seen";
 const CONTAINER_VH = 260;
@@ -82,17 +84,86 @@ function HeroCopy({ totalParks, regionCount, currentSeason }: { totalParks: numb
 // pop-in and the static landed state can render it without duplicating the JSX.
 function HeroFunctional() {
   const [query, setQuery] = useState("");
+  const [open, setOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
   const router = useRouter();
+  const searchItems = useMemo<AtlasSearchItem[]>(() => [
+    ...species.map((item) => ({ id: `species:${item.slug}`, title: item.commonName, subtitle: `${item.category} · ${item.difficultyOfSighting} sighting`, keywords: `${item.scientificName} ${item.habitat} ${item.conservationStatus}`, href: `/species/${item.slug}`, kind: "Species" as const })),
+    ...hotspots.map((item) => ({ id: `place:${item.slug}`, title: item.name, subtitle: `${item.state} · ${item.type}`, keywords: `${item.region} ${item.habitat} ${item.mainSpecies.join(" ")} ${item.birdSpecies.join(" ")} ${item.knownFor.join(" ")}`, href: `/hotspots/${item.slug}`, kind: "Place" as const })),
+  ], []);
+  const suggestions = useMemo(() => searchAtlas(searchItems, query), [query, searchItems]);
+
+  function updateQuery(value: string) {
+    setQuery(value);
+    setOpen(Boolean(value.trim()));
+    setActiveIndex(-1);
+  }
+
   function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    navigateFromSearch();
+  }
+
+  function navigateFromSearch() {
     const value = query.trim();
-    router.push(value ? `/map?query=${encodeURIComponent(value)}` : "/map");
+    const selected = suggestions[activeIndex >= 0 ? activeIndex : 0];
+    setOpen(false);
+    router.push(selected?.href ?? (value ? `/map?query=${encodeURIComponent(value)}` : "/map"));
+  }
+
+  function onKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
+    if (event.key === "Escape") { setOpen(false); setActiveIndex(-1); return; }
+    if (event.key === "Enter") { event.preventDefault(); navigateFromSearch(); return; }
+    if (!suggestions.length || (event.key !== "ArrowDown" && event.key !== "ArrowUp")) return;
+    event.preventDefault();
+    setOpen(true);
+    setActiveIndex((current) => event.key === "ArrowDown" ? (current + 1) % suggestions.length : (current <= 0 ? suggestions.length - 1 : current - 1));
   }
   return (
     <>
-      <form onSubmit={submit} className="mt-8 grid max-w-2xl gap-2 sm:grid-cols-[1fr_auto]">
-        <SearchBar value={query} onChange={setQuery} placeholder="Search species, park, state or habitat…" variant="dark" />
-        <button type="submit" className="atlas-button">Search atlas <ArrowRight size={14} /></button>
+      <form onSubmit={submit} role="search" className="relative mt-8 max-w-2xl">
+        <label htmlFor="atlas-home-search" className="sr-only">Search the wildlife atlas</label>
+        <Search aria-hidden="true" className="pointer-events-none absolute left-5 top-1/2 z-10 -translate-y-1/2 text-biome-accent" size={20} strokeWidth={2.2} />
+        <input
+          id="atlas-home-search"
+          type="search"
+          value={query}
+          onChange={(event) => updateQuery(event.target.value)}
+          onFocus={() => setOpen(Boolean(query.trim()))}
+          onBlur={() => window.setTimeout(() => setOpen(false), 120)}
+          onKeyDown={onKeyDown}
+          placeholder="Search species, park, state or habitat…"
+          autoComplete="off"
+          role="combobox"
+          aria-autocomplete="list"
+          aria-expanded={open && suggestions.length > 0}
+          aria-controls="atlas-home-suggestions"
+          aria-activedescendant={activeIndex >= 0 ? `atlas-suggestion-${activeIndex}` : undefined}
+          className="min-h-14 w-full rounded-full border border-white/30 bg-black/30 py-3 pl-14 pr-5 text-base text-white shadow-[0_16px_45px_rgba(4,18,13,.18)] outline-none backdrop-blur-xl transition placeholder:text-white/65 focus:border-biome-accent focus:ring-2 focus:ring-biome-accent/35"
+        />
+        {open && query.trim() && (
+          <div id="atlas-home-suggestions" role="listbox" aria-label="Atlas suggestions" className="atlas-scrollbar absolute inset-x-0 bottom-[calc(100%+.65rem)] z-30 max-h-72 overflow-y-auto rounded-field border border-white/15 bg-forest-950/95 p-2 text-white shadow-[0_24px_70px_rgba(4,18,13,.4)] backdrop-blur-xl sm:bottom-auto sm:top-[calc(100%+.65rem)]">
+            {suggestions.length ? suggestions.map((item, index) => (
+              <Link
+                id={`atlas-suggestion-${index}`}
+                role="option"
+                aria-selected={activeIndex === index}
+                key={item.id}
+                href={item.href}
+                onMouseDown={(event) => event.preventDefault()}
+                onMouseEnter={() => setActiveIndex(index)}
+                onClick={() => setOpen(false)}
+                className={`flex min-h-14 items-center gap-3 rounded-field px-3 py-2 text-left transition ${activeIndex === index ? "bg-sand text-forest-950" : "text-white hover:bg-white/10"}`}
+              >
+                <span className={`grid h-9 w-9 shrink-0 place-items-center rounded-full border ${activeIndex === index ? "border-forest-950/15" : "border-white/15 text-sand"}`}>{item.kind === "Place" ? <MapPin size={15} /> : <PawPrint size={15} />}</span>
+                <span className="min-w-0 flex-1"><span className="block truncate font-semibold">{item.title}</span><span className={`mt-0.5 block truncate text-xs ${activeIndex === index ? "text-forest-950/65" : "text-white/65"}`}>{item.subtitle}</span></span>
+                <span className={`field-label ${activeIndex === index ? "text-forest-950/60" : "text-white/60"}`}>{item.kind}</span>
+              </Link>
+            )) : (
+              <div className="px-4 py-4"><p className="text-sm font-semibold">No direct match yet</p><p className="mt-1 text-xs text-white/65">Press Enter to search the full map for “{query.trim()}”.</p></div>
+            )}
+          </div>
+        )}
       </form>
       <div className="mt-4 flex flex-wrap gap-2">
         {CHIPS.map(c => <Link href={"/map?query=" + encodeURIComponent(c)} key={c} className="atlas-chip bg-black/10 transition hover:border-biome-accent hover:text-biome-accent">{c}</Link>)}

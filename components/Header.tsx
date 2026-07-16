@@ -9,6 +9,7 @@ import { routeAtmosphere } from "@/lib/routeAtmosphere";
 import { SoundPreferenceToggle } from "./SoundPreference";
 import { ThemeToggle } from "./ThemeToggle";
 import { JournalShortcut } from "./JournalShortcut";
+import { JourneyShortcut } from "./JourneyShortcut";
 
 const nav: Array<{ label: string; href: string; number: string; description: string; disabled?: boolean }> = [
   { label: "Map", href: "/map", number: "01", description: "Read India by habitat, season and species." },
@@ -54,7 +55,7 @@ export function Header() {
 
           <div className="hidden min-w-0 items-center gap-2 lg:flex">
             <span className="motion-pulse-soft h-1.5 w-1.5 shrink-0 rounded-full bg-biome-accent" />
-            <span className="field-label truncate text-biome-ink/60">{atmosphere.label}</span>
+            <span className="field-label truncate text-biome-ink/78">{atmosphere.label}</span>
           </div>
 
           <nav className="hidden items-center gap-5 md:flex" aria-label="Primary navigation">
@@ -71,6 +72,7 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-1">
+            <JourneyShortcut />
             <JournalShortcut />
             <ThemeToggle />
             <button

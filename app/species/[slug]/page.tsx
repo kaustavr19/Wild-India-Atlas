@@ -18,6 +18,7 @@ import { speciesExperience } from "@/lib/speciesExperience";
 import { speciesEncounters } from "@/data/speciesEncounters";
 import { WildlifeEncounter } from "@/components/WildlifeEncounter";
 import { JournalSaveButton } from "@/components/JournalSaveButton";
+import { JourneyTracker } from "@/components/JourneyTracker";
 
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -68,6 +69,7 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
 
   return (
     <main className={`${biomeClassName[experience.biome]} species-story overflow-clip bg-biome-surface text-biome-ink`}>
+      <JourneyTracker type="species" slug={selectedSpecies.slug} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="species-hero relative flex min-h-[92svh] items-end overflow-hidden border-b border-white/10">

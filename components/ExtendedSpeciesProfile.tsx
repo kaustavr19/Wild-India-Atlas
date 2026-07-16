@@ -4,6 +4,7 @@ import type { ExtendedSpecies } from "@/lib/extendedSpecies";
 import { formatVerifiedDate } from "@/lib/formatDate";
 import { indiaSpecialities } from "@/data/indiaSpecialities";
 import { SpecialityBadges } from "./SpecialityBadges";
+import { JourneyTracker } from "./JourneyTracker";
 
 // Deliberately distinct from the Flagship species profile (app/species/[slug]/page.tsx) — no
 // viewingTips/photographyTips/similarSpecies sections, since that data doesn't exist for an
@@ -13,6 +14,7 @@ export function ExtendedSpeciesProfile({ species }: { species: ExtendedSpecies }
   const speciality = indiaSpecialities[species.scientificName];
   return (
     <main>
+      <JourneyTracker type="species" slug={species.slug} />
       <section className={"relative flex min-h-[280px] items-end overflow-hidden px-4 pb-10 pt-28 text-white sm:px-6 " + (species.photoUrl ? "" : "bg-forest-900")}>
         {species.photoUrl && (
           <>

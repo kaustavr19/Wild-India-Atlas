@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SoundPreferenceProvider } from "@/components/SoundPreference";
 import { JournalProvider } from "@/components/JournalProvider";
+import { JourneyProvider } from "@/components/JourneyProvider";
 import "./globals.css";
 const display = Fraunces({ subsets: ["latin"], weight: ["400","500","600","700","900"], style: ["normal","italic"], variable: "--font-display" });
 const body = Work_Sans({ subsets: ["latin"], variable: "--font-body" });
@@ -27,4 +28,4 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 const themeInitScript = `(function(){try{var t=localStorage.getItem('theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.toggle('dark',d);}catch(e){}})();`;
-export default function RootLayout({ children }: { children: React.ReactNode }) { return <html lang="en" suppressHydrationWarning className={display.variable + " " + body.variable + " " + mono.variable}><body><a href="#main-content" className="skip-link">Skip to main content</a><Script id="theme-init" strategy="beforeInteractive">{themeInitScript}</Script><JournalProvider><SoundPreferenceProvider><Header /><div id="main-content" tabIndex={-1}>{children}</div><Footer /></SoundPreferenceProvider></JournalProvider></body></html>; }
+export default function RootLayout({ children }: { children: React.ReactNode }) { return <html lang="en" suppressHydrationWarning className={display.variable + " " + body.variable + " " + mono.variable}><body><a href="#main-content" className="skip-link">Skip to main content</a><Script id="theme-init" strategy="beforeInteractive">{themeInitScript}</Script><JournalProvider><JourneyProvider><SoundPreferenceProvider><Header /><div id="main-content" tabIndex={-1}>{children}</div><Footer /></SoundPreferenceProvider></JourneyProvider></JournalProvider></body></html>; }

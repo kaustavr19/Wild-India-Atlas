@@ -164,7 +164,7 @@ html.dark h1, html.dark h2, html.dark h3 { color: #f3f6ef; }
   }
   .shell-nav-link {
     border-bottom: 1px solid transparent;
-    color: rgb(var(--biome-ink-rgb) / 0.6);
+    color: rgb(var(--biome-ink-rgb) / 0.78);
     padding-block: 0.35rem;
     transition: border-color var(--duration-fast), color var(--duration-fast);
   }
@@ -175,6 +175,19 @@ html.dark h1, html.dark h2, html.dark h3 { color: #f3f6ef; }
 }
 
 html.dark .field-card { background: #152119; border-color: rgb(255 255 255 / 0.1); }
+
+/* Older content utilities now sit on theme-aware paper surfaces. Keep their text,
+   borders and icons theme-aware too so legacy cards cannot become dark-on-dark. */
+html.dark .text-forest-900 { color: #f3f6ef; }
+html.dark .text-forest-800 { color: #e2e9e2; }
+html.dark .text-forest-700 { color: #b8cea8; }
+html.dark .text-slate-800 { color: #e2e8f0; }
+html.dark .text-slate-700 { color: #cbd5e1; }
+html.dark .text-slate-600 { color: #b8c3cf; }
+html.dark .text-slate-500 { color: #9fadb9; }
+html.dark .border-forest-900\/10 { border-color: rgb(255 255 255 / 0.1); }
+html.dark .border-forest-900\/15 { border-color: rgb(255 255 255 / 0.15); }
+html.dark .border-forest-900\/20 { border-color: rgb(255 255 255 / 0.2); }
 
 /* Scoped biome tokens let individual sections change atmosphere without changing the app theme. */
 .biome-forest { --biome-surface-rgb: 20 47 37; --biome-soft-rgb: 43 75 58; --biome-accent-rgb: 216 181 109; --biome-secondary-rgb: 143 194 138; --biome-ink-rgb: 251 247 236; --biome-line-rgb: 184 206 168; }
