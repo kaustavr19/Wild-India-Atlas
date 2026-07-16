@@ -9,6 +9,8 @@ import { ecosystem, type Ecosystem } from "@/data/ecosystems";
 import type { Hotspot } from "@/data/types";
 import { filterHotspots, defaultFilters } from "@/lib/filterHotspots";
 import { biomeClassName, biomeThemes } from "@/lib/experienceDesign";
+import { fieldLeadForMonth } from "@/lib/hotspotDiscovery";
+import { MONTHS } from "@/lib/seasonalPlanner";
 import { FilterPanel } from "@/components/FilterPanel";
 import { HotspotImage } from "@/components/HotspotImage";
 import { JournalSaveButton } from "@/components/JournalSaveButton";
@@ -22,7 +24,9 @@ export function HotspotsDiscovery() {
   const [filters, setFilters] = useState(defaultFilters);
   const [landscape, setLandscape] = useState<Ecosystem | "all">("all");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
-  const featured = hotspots.find((item) => item.slug === "kaziranga-national-park") ?? hotspots[0];
+  const currentMonth = MONTHS[new Date().getMonth()];
+  const featured = fieldLeadForMonth(hotspots, currentMonth);
+  const heroBiome = ecosystem[featured.slug] ?? "forest";
   const filtered = useMemo(() => filterHotspots(hotspots, filters).filter((item) => landscape === "all" || ecosystem[item.slug] === landscape), [filters, landscape]);
   const visible = filtered.slice(0, visibleCount);
   const lead = visible[0];
@@ -34,7 +38,7 @@ export function HotspotsDiscovery() {
 
   return (
     <main className="min-h-screen bg-paper text-ink">
-      <section className="biome-surface biome-wetland texture-grain relative flex min-h-[88svh] items-end overflow-hidden border-b border-white/10">
+      <section className={`biome-surface ${biomeClassName[heroBiome]} texture-grain relative flex min-h-[88svh] items-end overflow-hidden border-b border-white/10`}>
         <HotspotImage slug={featured.slug} type={featured.type} className="hero-ken-burns absolute inset-0 -z-20 h-full w-full" />
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(10,38,47,0.98)_0%,rgba(10,38,47,0.88)_42%,rgba(10,38,47,0.25)_76%,rgba(10,38,47,0.12)_100%),linear-gradient(0deg,rgba(10,38,47,0.92)_0%,transparent_55%)]" />
         <div className="texture-topography absolute inset-0 -z-[5] opacity-35" />
@@ -46,10 +50,11 @@ export function HotspotsDiscovery() {
             <div className="mt-8 flex flex-wrap gap-3"><a href="#landscapes" className="atlas-button"><Compass size={15} /> Choose a landscape</a><Link href="/map" className="atlas-button atlas-button-ghost"><Map size={15} /> Open the living atlas</Link></div>
           </div>
           <aside className="shell-chrome rounded-field p-5">
-            <p className="field-label text-biome-accent">First descent · Northeast</p>
+            <p className="field-label text-biome-accent">This month&apos;s field lead · {currentMonth}</p>
             <h2 className="mt-3 font-display text-3xl leading-tight text-biome-ink">{featured.name}</h2>
             <p className="mt-3 flex items-center gap-1.5 text-xs text-biome-ink/48"><MapPin size={13} />{featured.state}</p>
             <p className="mt-5 text-sm leading-6 text-biome-ink/66">{featured.summary}</p>
+            <p className="mt-3 text-[11px] leading-5 text-biome-ink/40">Selected from atlas places whose field window includes {currentMonth}.</p>
             <div className="mt-5 flex items-center justify-between border-t border-white/10 pt-4"><span className="field-label text-biome-ink/42">Best · {featured.bestMonths.slice(0, 4).join(" · ")}</span><Link href={`/hotspots/${featured.slug}`} aria-label={`Open ${featured.name} field guide`} className="grid h-11 w-11 place-items-center rounded-full bg-biome-accent text-biome-surface"><ArrowRight size={16} /></Link></div>
           </aside>
         </div>
