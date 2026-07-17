@@ -1,36 +1,133 @@
 # Wild India Atlas
 
-Wild India Atlas is a map-first travel guide for planning wildlife trips across India. It combines an interactive, real-boundary map of 42 tiger reserves, bird sanctuaries, wetlands, and Himalayan sanctuaries with a species guide (21 species and counting), so a trip can be planned by region, season, ecosystem, or species — whichever a traveler starts from. Every hotspot page carries real, individually-sourced photography, travel logistics (nearest airport/railway, permits, district), a species spotlight, a real closure/seasonal-access fact, and a suggested itinerary; species pages link back to exactly the hotspots where that animal is actually documented, derived live from the hotspot data rather than a separately hand-maintained list.
+**Explore India’s wild places as landscapes, seasons, and living stories—not rows in a travel database.**
 
-## Changelog
+[Wild India Atlas](https://wild-india-atlas-mu.vercel.app/) is an immersive, map-first field guide for discovering wildlife across India. It connects 42 protected landscapes, six biomes, flagship species stories, 1,300+ citizen-science species profiles, seasonal travel signals, and practical planning information in one evidence-aware experience.
 
-The current release is **v1.7 — Structural-risk disclosures + re-verification cadence**. Every past release, in full detail, lives in [VERSION_HISTORY.md](VERSION_HISTORY.md) — read it for the complete build-by-build history back to the original v1 prototype slice.
+Start with a tiger, a monsoon month, a floodplain, or a place you have always wanted to visit. The atlas turns each entry point into a trail through the wild.
 
-## Features
+## Why it feels different
 
-- **Real India map** — actual state boundaries (not a placeholder blob), rendered from a vendored GeoJSON with `d3-geo`, with neighboring countries and water muted in behind it, and hotspots plotted at their real coordinates
-- **Region clusters + ecosystem-colored pins** — hotspots cluster by region until you zoom into one, then resolve into pins colored by ecosystem (forest, wetland, desert, alpine, mangrove, marine)
-- **Map layer toggles** — filter the map by Mammals, Birds, Reptiles, Flora, Rare Species, or Monsoon, independent of the sidebar filters
-- **Access-point markers** — selecting a hotspot shows its real nearest airport, railway station, and (where documented) entry gates directly on the map
-- **"Best time to visit" awareness** — the map and homepage highlight regions and hotspots whose best season matches the current month, plus a "Where to go in [month]" homepage section with season-level field notes (best for / avoid / travel caution)
-- **42 wildlife hotspots** with real photography sourced and attributed from Wikimedia Commons (CC-licensed), real nearest airport/railway names linked to Google Maps, and a "Plan your visit" block with directions, background reading, and booking-search links
-- **Interactive Map Explorer** (`/map`) — filter by region, wildlife type, experience, season, and difficulty; click a marker or list card for a rich preview (species, difficulty, permits, photography-friendly badge)
-- **Hotspot directory** (`/hotspots`) with the same filtering, and detail pages (`/hotspots/[slug]`) with a full destination structure — species, a species-spotlight card grid, seasonal calendar, experiences, a season/closures fact with a tap-to-reveal source-confidence badge, a suggested itinerary, and real geographic-nearest hotspots
-- **Species Guide** (`/species`, `/species/[slug]`) — 21 species with real photography, where to actually see each one (derived live from hotspot data, shown as compact location cards), best months, sighting difficulty, habitat, ethical viewing notes, and photography tips
-- **Data confidence, made visible** — a small confidence dot appears on every hotspot card (list, map sidebar, map preview) wherever a closure fact exists; on the detail page it expands into a full badge explaining the source and how recently it was checked, and a footer-linked [`/data-sources`](app/data-sources/page.tsx) page explains the three confidence tiers in plain language
-- **Structural-risk disclosures** — five hotspots whose real complexity is jurisdictional or access-related rather than seasonal (multi-state sanctuaries, split management authorities, and one park with tourism effectively closed on security grounds) get a prominent, plain-language callout right at the top of their page, distinct in tone from an ordinary closure fact
-- Jungle/expedition-inspired visual language — `Fraunces` for headlines, `Work Sans` for body text, an earthy palette, and a full-bleed map hero
+- **Enter a landscape** — every hotspot opens as a biome-led journey through terrain, wildlife, seasonal rhythm, field planning, and nearby places.
+- **Experience an encounter** — selected flagship species feature cinematic, scroll-led field encounters with optional ambient soundscapes and ethical observation cues.
+- **Follow real evidence** — eBird and iNaturalist records expand the guide without being presented as guaranteed sightings or hand-curated expertise.
+- **Plan by nature’s calendar** — discover where to go by month, migration, monsoon, ecosystem, wildlife group, difficulty, or experience.
+- **Keep a Field Journal** — save landscapes and species while the expedition trail remembers the latest places and animals explored.
+- **See confidence, not false certainty** — closures, access constraints, structural risks, source confidence, and verification dates remain visible where they matter.
 
-## Tech stack
+## Experience highlights
 
-- [Next.js 16](https://nextjs.org) (App Router) + React 19 + TypeScript
-- Tailwind CSS for styling
-- [`d3-geo`](https://github.com/d3/d3-geo) for map projection and path rendering
-- [`world-atlas`](https://github.com/topojson/world-atlas) + [`topojson-client`](https://github.com/topojson/topojson-client) for the neighboring-countries basemap layer
-- [`lucide-react`](https://lucide.dev) for icons
-- Local, static data — no backend or database
+### A living atlas of India
 
-## Getting started
+The interactive map uses real state boundaries and real hotspot coordinates. Region clusters open into ecosystem-coloured markers for forest, wetland, desert, alpine, mangrove, and marine landscapes.
+
+Filters cover region, wildlife group, experience, season, and difficulty. Map layers add signals for mammals, birds, reptiles, flora, rare species, and monsoon travel. Selecting a place reveals its airport, railway station, and documented entry gates.
+
+### 42 immersive hotspot journeys
+
+Every hotspot detail page now feels like entering a distinct landscape:
+
+- cinematic, biome-aware photography and atmosphere
+- a fast field-signal panel for season, access, effort, and duration
+- landscape, wildlife, season, journey, and onward chapters
+- curated mammals, birds, flora, and eBird checklist evidence
+- a visual 12-month travel window
+- seasonal closure guidance with confidence and freshness signals
+- structural-risk disclosures where access or management is unusually complex
+- suggested itineraries, permits, directions, travel notes, and ethical guidance
+- related landscapes and genuinely nearby hotspots
+
+### Flagship species stories
+
+The 21 hand-curated flagship profiles connect habitat, conservation status, sighting difficulty, ethical viewing, photography guidance, best months, and real atlas locations.
+
+Six signature species go further with scroll-led wildlife encounters:
+
+- Bengal Tiger
+- Snow Leopard
+- Great Indian Bustard
+- One-horned Rhinoceros
+- Red Panda
+- Olive Ridley Turtle
+
+Each encounter begins with field signs rather than spectacle—tracks, calls, tides, grass movement, and patient observation.
+
+### Evidence-led species profiles
+
+More than 1,300 additional bird, mammal, reptile, and amphibian profiles are derived from grouped eBird and iNaturalist records.
+
+These profiles are intentionally transparent:
+
+- they identify the source and last refresh date
+- they show the atlas places where a record is confirmed
+- they distinguish presence from probability
+- they avoid invented habitat, photography, or viewing advice
+- missing conservation or photography data remains missing rather than being guessed
+
+### Seasonal Planner
+
+The Seasonal Planner turns every month into an expedition brief. Explore recommended hotspots, flagship wildlife, regional options, seasonal cautions, and experience types without treating nature as predictable.
+
+### Field Journal and expedition trail
+
+Save species and hotspots to a browser-local Field Journal, revisit them later, and follow the expedition trail of recent encounters across the site. No account or backend is required.
+
+### A coherent field-guide design system
+
+The interface uses:
+
+- `Fraunces` for editorial display typography
+- `Work Sans` for readable field notes
+- `IBM Plex Mono` for labels and navigation signals
+- biome-specific colour systems and atmosphere
+- topographic, grain, and field-grid textures
+- light and dark themes
+- reduced-motion support and keyboard-visible interactions
+
+## Trust and data philosophy
+
+Wild India Atlas is designed to be evocative without becoming careless.
+
+- Seasonal closure notes are researched per protected area rather than inferred from its category.
+- Confidence tiers distinguish official, inferred, and currently unconfirmed information.
+- Verification dates show when a fact was last checked.
+- Structural risks are separated from ordinary seasonal closures.
+- Species-to-hotspot links are derived from atlas data rather than maintained as a second conflicting list.
+- Citizen-science presence is never presented as abundance or sighting probability.
+- Exact gates, source URLs, conservation fields, and photos are omitted when the underlying source does not support them.
+
+Read the public methodology at [`/data-sources`](https://wild-india-atlas-mu.vercel.app/data-sources) and the maintenance policy in [`docs/verification-cadence.md`](docs/verification-cadence.md).
+
+## Main routes
+
+| Route | Experience |
+| --- | --- |
+| `/` | Immersive atlas arrival, seasonal lead, search, and trail choices |
+| `/map` | Interactive geographic explorer |
+| `/hotspots` | Landscape-led hotspot discovery |
+| `/hotspots/[slug]` | Immersive protected-landscape journey |
+| `/species` | Unified flagship and evidence-led species guide |
+| `/species/[slug]` | Curated encounter story or evidence profile |
+| `/seasonal-planner` | Month-led wildlife trip discovery |
+| `/field-journal` | Saved species, places, and expedition trail |
+| `/field-kit` | Practical field preparation |
+| `/data-sources` | Confidence tiers and data methodology |
+
+## Technology
+
+- [Next.js 16](https://nextjs.org/) App Router
+- React 19 and TypeScript
+- Tailwind CSS
+- [`d3-geo`](https://github.com/d3/d3-geo) for the India map
+- [`world-atlas`](https://github.com/topojson/world-atlas) and [`topojson-client`](https://github.com/topojson/topojson-client) for geographic context
+- [`lucide-react`](https://lucide.dev/) for interface icons
+- static local data with no required backend or database
+
+The production build statically generates 1,413 pages.
+
+## Run locally
+
+Requirements: a current Node.js installation and npm.
 
 ```bash
 npm install
@@ -39,77 +136,53 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-**Optional — eBird tooling.** Copy `.env.local.example` to `.env.local` and add a free key from [ebird.org/api/keygen](https://ebird.org/api/keygen), then:
-
-```bash
-npm run find:ebird-hotspots   # writes data/ebird-candidates.json for manual review
-npm run fetch:ebird            # fetches species data for confirmed data/ebirdHotspots.ts entries
-```
-
-## Checks
+### Verification
 
 ```bash
 npm run typecheck
+npm test
 npm run build
 ```
 
+### Optional data-refresh tooling
+
+Copy `.env.local.example` to `.env.local` and add a free eBird API key when running the eBird scripts.
+
+```bash
+npm run find:ebird-hotspots
+npm run fetch:ebird
+npm run find:inaturalist-places
+npm run fetch:inaturalist
+npm run tag:specialities
+```
+
+Discovery candidates are reviewed before mappings enter the atlas. These scripts are manual tools, not build hooks, and no live third-party API request is required to render the site.
+
 ## Project structure
 
-```
-app/                     Next.js App Router pages
-  page.tsx                 Home
-  map/page.tsx              Interactive map explorer
-  hotspots/page.tsx          Hotspot directory (with filters)
-  hotspots/[slug]/page.tsx    Hotspot detail page
-  species/page.tsx           Species guide index
-  species/[slug]/page.tsx     Species detail page
-  data-sources/page.tsx       "How we verify data" — explains the confidence tiers
-components/               Reusable UI, map, and card components (incl. Footer.tsx, FreshnessBadge.tsx)
-data/
-  hotspots.ts               42 hotspot records
-  species.ts                 21 species records (real content — habitat, conservation status, ethical/photography notes)
-  species-images.json         Wikimedia Commons image metadata + attribution, per species
-  india-states.json           Vendored India state boundaries (GeoJSON)
-  neighboringCountries.ts     Neighboring-country basemap layer (derived from world-atlas)
-  hotspot-images.json          Wikimedia Commons image metadata + attribution, per hotspot
-  officialLinks.ts             Wikipedia / Maps / search link builders
-  accessPoints.ts              Verified district/airport/railway/entry-gate data per hotspot
-  ecosystems.ts                 Ecosystem classification per hotspot (forest/wetland/desert/alpine/mangrove/marine)
-  closures.ts                   Individually-researched per-park seasonal closure facts, with source name/URL, last-verified date, and a confidence rating per entry
-  seasonalWisdom.ts             Month-to-season mapping + generic season-level travel field notes (fallback only)
-  boatingSpots.ts               Hotspots with a real, text-derived boating experience signal
-  ebirdHotspots.ts              Confirmed hotspot -> eBird hotspot mappings (manually reviewed; starts empty)
-  ebirdSpecies.json             eBird species data per hotspot, populated by scripts/fetch-ebird-species.ts (starts empty)
-  structuralRisks.ts             Jurisdiction/authority/access-status flags for the 5 hotspots that need them
-lib/
-  filterHotspots.ts         Search and filter logic
-  speciesLinks.ts             Live species <-> hotspot derivation (no hand-maintained species-location lists)
-  itinerary.ts                 Generic suggested-itinerary builder
-  geo.ts                       Haversine distance for "nearby hotspots"
-scripts/                  Manually-run CLI tooling (not build hooks)
-  find-ebird-hotspots.ts    Finds candidate eBird hotspots near each park for manual review
-  fetch-ebird-species.ts     Fetches species data for confirmed eBird hotspot mappings
-docs/
-  verification-cadence.md   Re-verification policy for closures.ts and structuralRisks.ts
-public/brand/               Logo assets
+```text
+app/                         Next.js routes and page templates
+components/                  UI, map, discovery, encounter, journal, and shell components
+data/                        Hotspots, species, imagery, access, season, and evidence records
+lib/                         Search, filtering, relationships, itinerary, journey, and biome logic
+scripts/                     Optional eBird and iNaturalist refresh tooling
+tests/                       Search, discovery, journey, season, and species tests
+docs/                        Verification and maintenance policy
+public/                      Brand, audio, and static assets
 ```
 
-## Data & attribution
+## Photography and attribution
 
-- State boundaries are a trimmed/simplified GeoJSON of India's states and union territories; the neighboring-countries layer comes from the public-domain Natural Earth dataset via `world-atlas`.
-- Hotspot photography is sourced from [Wikimedia Commons](https://commons.wikimedia.org) under CC licenses; each image credits its photographer and license, linking back to the source file.
-- Airport/railway/booking/Wikipedia links are generated from real place names — no fabricated or placeholder data.
-- District, airport/railway coordinates, and entry-gate markers (`data/accessPoints.ts`) are individually source-verified; where no reliable public source exists (most park entry gates only publish names, not coordinates), the entry is omitted rather than estimated.
-- Ecosystem categories (`data/ecosystems.ts`) are manually classified from each hotspot's existing habitat description. Seasonal field notes (`data/seasonalWisdom.ts`) are general, broadly-true patterns for Indian wildlife travel, not park-specific facts — always confirm exact closure dates and permits locally before booking.
-- Species photography is sourced from Wikimedia Commons the same way hotspot photography is — real, attributed, CC-licensed files (`data/species-images.json`).
-- A species' "where can I see this" and "best months" are computed live from the real hotspot species lists (`lib/speciesLinks.ts`), not a separately hand-maintained list — this is what caught and fixed several factually wrong species-location claims that existed before this pass. Species with no genuine hotspot match show an honest empty state rather than a fabricated location.
-- New hotspots added specifically to cover a species' real range (Eravikulam, Singalila, Rushikulya, Gahirmatha) were only added after checking that no existing hotspot already had a real, documented population — see the "1 fringe + flagship split" note in the [v1.3 changelog](VERSION_HISTORY.md) for how a borderline case (Nilgiri Tahr at Periyar) was handled.
-- "Season & closures" facts (`data/closures.ts`) are individually researched per park from state forest department notices and official park portals — not a blanket rule applied to every "Tiger Reserve"-type hotspot. Exact dates shift year to year by forest department order; treat these as a real planning signal, not a fixed calendar.
-- Each closure fact carries a `confidence` rating (`official`/`inferred`/`unconfirmed`) and a `lastVerified` date, shown on the hotspot page via a `<FreshnessBadge>` (tap/click to reveal the source and a "what does this mean" explanation) and as a bare `<ConfidenceDot>` on cards elsewhere — `sourceName` is only set where a note already cited a specific department, and `sourceUrl` is left unset until a specific citable page is verified, rather than ever being guessed. See [`/data-sources`](app/data-sources/page.tsx) for the plain-language explanation.
-- Species presence (`mainSpecies`/`birdSpecies`) is currently hand-authored. `scripts/find-ebird-hotspots.ts` and `scripts/fetch-ebird-species.ts` are opt-in CLI tools (see Getting started) that ground this in real eBird citizen-science records instead — `data/ebirdHotspots.ts` and `data/ebirdSpecies.json` start empty and are never auto-filled with a guessed match; a human confirms each hotspot mapping before any species data is fetched.
-- `data/structuralRisks.ts` flags hotspots whose real complexity is jurisdictional, authority-related, or access-related rather than seasonal — kept as a separate file/shape from `data/closures.ts` on purpose, since a single closure sentence would understate this kind of fact. `sourceUrl` follows the same never-fabricate rule as `closures.ts`.
-- `docs/verification-cadence.md` documents how often each tier of fact should be re-checked (quarterly for `unconfirmed` closures and anything with a structural-risk flag, yearly otherwise) — a written policy for now, not yet an automated check.
+Hotspot and flagship-species photography is sourced from Wikimedia Commons under its listed licence. Evidence-led fauna imagery comes from the corresponding iNaturalist source data when available. Credits remain visible and link back to the source page.
 
-## Not yet built
+Geographic, travel, access, and wildlife information can change. Always confirm permits, closures, weather, route conditions, and local guidance before travelling.
 
-Seasonal Planner appears as a disabled nav placeholder — intentionally out of scope for this slice. Also on the wishlist: a CMS for hotspot content, live park advisories, saved itineraries/wishlists, and end-to-end test coverage.
+## Release history
+
+The current release is **v1.25 — Immersive hotspot and species detail journeys**.
+
+See [VERSION_HISTORY.md](VERSION_HISTORY.md) for the complete build-by-build changelog.
+
+## Project status
+
+Wild India Atlas is a growing independent field-guide experience. The strongest next opportunities are live park advisories, a maintainable editorial CMS, richer verified biodiversity coverage, itinerary export, and end-to-end browser testing.
