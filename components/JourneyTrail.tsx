@@ -2,83 +2,56 @@
 
 import Link from "next/link";
 import { ArrowRight, Compass, MapPin, PawPrint, Route, Sparkles, Trash2 } from "lucide-react";
-import { hotspots } from "@/data/hotspots";
-import { species } from "@/data/species";
 import type { HotspotType } from "@/data/types";
-import { getExtendedSpecies } from "@/lib/extendedSpecies";
-import { hotspotsForSpecies } from "@/lib/speciesLinks";
+import type { JournalIndex, JournalIndexRecord } from "@/lib/journalIndexTypes";
 import type { JourneyEntry } from "@/lib/journey";
+import { useJournalIndex } from "@/lib/useJournalIndex";
 import { HotspotImage } from "./HotspotImage";
 import { SpeciesImage } from "./SpeciesImage";
 import { useJourney } from "./JourneyProvider";
 
-type ResolvedJourney = {
+type ResolvedJourney = JournalIndexRecord & {
   entry: JourneyEntry;
-  title: string;
-  eyebrow: string;
-  detail: string;
-  href: string;
   image: React.ReactNode;
-  nextHref: string;
-  nextLabel: string;
 };
 
-const extendedSpecies = getExtendedSpecies();
+function resolveJourney(entry: JourneyEntry, index: JournalIndex): ResolvedJourney | null {
+  const item = index[entry.id];
+  if (!item) return null;
 
-function resolveJourney(entry: JourneyEntry): ResolvedJourney | null {
-  if (entry.type === "hotspot") {
-    const item = hotspots.find((candidate) => candidate.slug === entry.slug);
-    if (!item) return null;
-    return {
-      entry,
-      title: item.name,
-      eyebrow: "Protected place",
-      detail: `${item.state} · ${item.habitat}`,
-      href: `/hotspots/${item.slug}`,
-      image: <HotspotImage slug={item.slug} type={item.type as HotspotType} showCredit={false} className="h-full w-full" />,
-      nextHref: `/map?place=${item.slug}`,
-      nextLabel: "Return to this place on the map",
-    };
-  }
+  const image = item.kind === "hotspot"
+    ? <HotspotImage slug={entry.slug} type={item.category as HotspotType} showCredit={false} className="h-full w-full" />
+    : item.photoUrl
+      ? <img src={item.photoUrl} alt="" className="h-full w-full object-cover" loading="lazy" />
+      : item.kind === "flagship-species"
+        ? <SpeciesImage slug={entry.slug} category={item.category} showCredit={false} className="h-full w-full" />
+        : <div className="grid h-full place-items-center bg-forest-900 text-sand"><PawPrint size={28} /></div>;
 
-  const flagship = species.find((candidate) => candidate.slug === entry.slug);
-  if (flagship) {
-    const firstPlace = hotspotsForSpecies(flagship, hotspots)[0];
-    return {
-      entry,
-      title: flagship.commonName,
-      eyebrow: "Wildlife encounter",
-      detail: `${flagship.category} · ${flagship.difficultyOfSighting} sighting`,
-      href: `/species/${flagship.slug}`,
-      image: <SpeciesImage slug={flagship.slug} category={flagship.category} showCredit={false} className="h-full w-full" />,
-      nextHref: firstPlace ? `/map?place=${firstPlace.slug}` : "/hotspots",
-      nextLabel: firstPlace ? `Follow it to ${firstPlace.name}` : "Find a landscape to explore",
-    };
-  }
-
-  const extended = extendedSpecies.find((candidate) => candidate.slug === entry.slug);
-  if (!extended) return null;
-  const firstPlace = extended.confirmedAt[0];
   return {
     entry,
-    title: extended.commonName,
-    eyebrow: "Citizen-science sighting",
-    detail: `${extended.iconicGroup} · confirmed at ${extended.confirmedAt.length} place${extended.confirmedAt.length === 1 ? "" : "s"}`,
-    href: `/species/${extended.slug}`,
-    image: extended.photoUrl
-      ? <img src={extended.photoUrl} alt="" className="h-full w-full object-cover" loading="lazy" />
-      : <div className="grid h-full place-items-center bg-forest-900 text-sand"><PawPrint size={28} /></div>,
-    nextHref: firstPlace ? `/hotspots/${firstPlace.slug}` : "/hotspots",
-    nextLabel: firstPlace ? `Explore ${firstPlace.hotspotName}` : "Find a landscape to explore",
+    ...item,
+    image,
   };
 }
 
 export function JourneyTrail() {
   const { entries, hydrated, clearJourney } = useJourney();
-  const resolved = entries.map(resolveJourney).filter((item): item is ResolvedJourney => Boolean(item));
+  const { index, loading, failed } = useJournalIndex(hydrated && entries.length > 0);
+  const resolved = index ? entries.map((entry) => resolveJourney(entry, index)).filter((item): item is ResolvedJourney => Boolean(item)) : [];
   const latest = resolved[0];
 
-  if (!hydrated) return <section id="trail" className="mx-auto h-64 max-w-7xl scroll-mt-28 animate-pulse px-4 py-10 sm:px-6"><div className="h-full rounded-field bg-forest-900/5" /></section>;
+  if (!hydrated || loading) return <section id="trail" className="mx-auto h-64 max-w-7xl scroll-mt-28 animate-pulse px-4 py-10 sm:px-6"><div className="h-full rounded-field bg-forest-900/5" /></section>;
+
+  if (failed) {
+    return (
+      <section id="trail" className="mx-auto max-w-7xl scroll-mt-28 px-4 pt-10 sm:px-6">
+        <div className="rounded-field border border-forest-900/10 px-6 py-8">
+          <p className="field-label text-forest-700">Expedition trail</p>
+          <p className="mt-2 text-sm text-slate-500">Your trail is still saved in this browser. Reload to reconnect its field details.</p>
+        </div>
+      </section>
+    );
+  }
 
   if (!latest) {
     return (
@@ -101,7 +74,7 @@ export function JourneyTrail() {
             <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
               <p className="field-label text-sand">Last encounter</p>
               <h2 className="mt-2 font-display text-4xl sm:text-5xl">{latest.title}</h2>
-              <p className="mt-2 max-w-md text-sm text-white/65">{latest.detail}</p>
+              <p className="mt-2 max-w-md text-sm text-white/65">{latest.trailDetail}</p>
             </div>
           </div>
 
