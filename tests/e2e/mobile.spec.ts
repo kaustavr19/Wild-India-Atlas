@@ -1,9 +1,5 @@
 import { expect, test } from "@playwright/test";
 
-test.beforeEach(async ({ page }) => {
-  await page.addInitScript(() => localStorage.setItem("wia-descent-seen", "1"));
-});
-
 for (const listing of [
   {
     path: "/hotspots",

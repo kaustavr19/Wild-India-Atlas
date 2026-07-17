@@ -29,12 +29,29 @@ const seededJourney = [
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(
     ({ journal, journey }) => {
-      localStorage.setItem("wia-descent-seen", "1");
       localStorage.setItem("wia-field-journal-v1", JSON.stringify(journal));
       localStorage.setItem("wia-expedition-trail-v1", JSON.stringify(journey));
     },
     { journal: seededJournal, journey: seededJourney },
   );
+});
+
+test("fresh visitors receive the regular homepage hero without a descent gate", async ({ page }) => {
+  await page.goto("/");
+
+  const heading = page.getByRole("heading", { level: 1, name: "Explore India's wild side." });
+  await expect(heading).toBeVisible();
+  await expect(page.getByText("Scroll to enter the atlas")).toHaveCount(0);
+
+  const hero = heading.locator("xpath=ancestor::section[1]");
+  const heroBox = await hero.boundingBox();
+  const viewport = page.viewportSize();
+  expect(heroBox).not.toBeNull();
+  expect(viewport).not.toBeNull();
+  expect(heroBox!.height).toBeLessThan(viewport!.height * 1.5);
+
+  const descentPreference = await page.evaluate(() => localStorage.getItem("wia-descent-seen"));
+  expect(descentPreference).toBeNull();
 });
 
 test("homepage search reaches a species profile", async ({ page }) => {
