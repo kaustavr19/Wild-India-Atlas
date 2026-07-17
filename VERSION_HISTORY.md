@@ -1,6 +1,19 @@
 # Version history
 
-**v1.24 — Homepage redesign Phase 7 (final): interface & hero polish** (current)
+**v1.25 — Immersive hotspot and species detail journeys (Phase 6A.1)** (current)
+- **6A.1A — Hotspot journeys:** rebuilt the shared detail template across all 42 protected landscapes. Every page now opens with a cinematic, biome-aware arrival and moves through five clear chapters: Landscape, Wildlife, Season, Journey, and Onward.
+- Added fast field signals for the recommended travel window, access rhythm, difficulty, and ideal duration, plus biome atmosphere and sound cues drawn from the shared experience-design system.
+- Reframed habitat, signature wildlife, flora, photography notes, eBird checklists, closures, structural risks, and seasonal cautions as one coherent field narrative while preserving the existing provenance and confidence distinctions.
+- Replaced the old utility-card itinerary with a visual day-by-day field trail, retained real transport/permit links, and added richer related and geographic-nearest landscape transitions.
+- **6A.1B — Species journeys:** refined the 21 flagship profiles with clearer biome identity, stronger desktop field signals, and essential status/range/season information that remains visible on mobile.
+- Rebuilt every citizen-science-derived species page as an immersive evidence profile rather than an older utility layout. The new Evidence, Recorded Range, and Context chapters state exactly what eBird/iNaturalist records establish—and what they cannot establish.
+- Evidence-led profiles deliberately do not invent habitat descriptions, sighting probability, photography advice, or conservation values. Missing source fields stay missing; presence is explicitly distinguished from abundance and guaranteed sightings.
+- Added photo/fallback hero treatments, source and freshness signals, compact atlas hotspot cards, save-to-journal support, and responsible-observation guidance across the evidence tier.
+- Fixed duplicated document titles on dynamic species routes.
+- Browser-reviewed representative forest, wetland, alpine, flagship, bird, and photographed-mammal profiles in both theme states; no runtime errors found.
+- `npm run typecheck`, all 14 automated tests, and `npm run build` pass; the production build generates **1,413 static pages**.
+
+**v1.24 — Homepage redesign Phase 7 (final): interface & hero polish**
 - **1. Hero photo — selection and treatment**:
   - Selection: the featured-park pick (`app/page.tsx`) previously considered only seasonal timing (`bestMonths.includes(currentMonth)`, first match wins). Added a secondary preference — not a hard requirement — for a hotspot whose real photo shows wildlife/fauna over one that's pure landscape, applied only when more than one hotspot qualifies for the month. The check (`photoShowsFauna()`) looks for one of that hotspot's own listed `mainSpecies`/`birdSpecies` names appearing in its photo's real Wikimedia file title (e.g. "Bengal tiger in Bandhavgarh National Park..." vs "The Main Lake at Ranthambore National Park..." — Ranthambore's own title has no species name, so it wouldn't win the tie-break over a hotspot whose title does) — not an invented generic keyword list. If no qualifying candidate's photo mentions its own species, the original seasonal order is left untouched. As of this build only July matches (Valley of Flowers alone), so this tie-break currently has zero effect — confirmed by checking `bestMonths` matches per month before writing the logic, per the phase brief's own instruction not to force a worse seasonal match for a better photo.
   - Treatment: added a slow Ken Burns zoom/pan (`.hero-ken-burns`, `app/globals.css`) — 55s, `scale(1)→scale(1.08)` with a slight diagonal pan, `ease-in-out infinite alternate`. Wrapped in `@media (prefers-reduced-motion: no-preference)` rather than gated by JS/`matchMedia` state, so reduced-motion users never register any animation at all (static crop) with no extra client-side detection code needed — applied to the photo layer in both `LandedDescent` and `ScrollDescent` (`components/DescentSequence.tsx`).
