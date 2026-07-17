@@ -424,6 +424,10 @@ html.dark .map-grid, html.dark .texture-field-grid { background-image: linear-gr
 .encounter-act { opacity: 0.42; }
 .encounter-act.is-active { opacity: 1; }
 
+body:has(.atlas-map-page) footer {
+  margin-top: 0;
+}
+
 @keyframes encounterScan {
   0%, 100% { opacity: 0.18; transform: translateY(0); }
   50% { opacity: 0.6; transform: translateY(38svh); }
