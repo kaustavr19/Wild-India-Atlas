@@ -81,7 +81,7 @@ function MapExperience() {
   }
 
   return (
-    <main className={`biome-surface ${atmosphere} texture-topography relative min-h-screen overflow-x-clip overflow-y-visible px-4 pb-10 pt-24 text-biome-ink transition-colors duration-700 sm:px-6 sm:pt-28`}>
+    <main className={`atlas-map-page biome-surface ${atmosphere} texture-topography relative min-h-screen overflow-x-clip overflow-y-visible px-4 pb-10 pt-24 text-biome-ink transition-colors duration-700 sm:px-6 sm:pt-28`}>
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_8%,rgba(255,255,255,0.08),transparent_28%)]" />
       <div className="relative mx-auto max-w-[1680px]">
         <header className="grid gap-7 border-b border-white/12 pb-7 lg:grid-cols-[1fr_auto] lg:items-end">

@@ -23,9 +23,9 @@ export function HotspotPreviewCard({ hotspot, docked, onClose, nearby = [], onSe
   if (docked) {
     return (
       <article aria-live="polite" className={`biome-surface ${biomeClassName[biome]} pointer-events-auto relative z-20 w-full scroll-m-3 overflow-visible rounded-field border border-white/18 shadow-lift lg:absolute lg:bottom-5 lg:left-[390px] lg:max-h-[calc(100%-2.5rem)] lg:w-[min(540px,calc(100%-410px))] lg:scroll-m-5 lg:overflow-y-auto lg:overscroll-contain`}>
-        <div className="grid sm:grid-cols-[160px_1fr]">
+        <div className="grid sm:grid-cols-[160px_minmax(0,1fr)]">
           <HotspotImage slug={hotspot.slug} type={hotspot.type} className="hidden h-full min-h-[220px] sm:block" />
-          <div className="relative p-3 sm:p-5">
+          <div className="relative min-w-0 p-3 sm:p-5">
             {onClose && <button onClick={onClose} aria-label="Close selected place" className="absolute right-2 top-2 grid h-11 w-11 place-items-center rounded-full border border-white/15 text-biome-ink/55 transition hover:border-biome-accent hover:text-biome-accent sm:right-3 sm:top-3 sm:h-8 sm:w-8"><X size={15} /></button>}
             <p className="field-label max-w-[calc(100%-2rem)] text-biome-accent">{theme?.label ?? biome} · {hotspot.region}</p>
             <h2 className="mt-1 pr-10 font-display text-xl font-medium leading-tight text-biome-ink sm:mt-2 sm:pr-8 sm:text-3xl">{hotspot.name}</h2>
@@ -44,10 +44,10 @@ export function HotspotPreviewCard({ hotspot, docked, onClose, nearby = [], onSe
                 </div>
               </div>
             )}
-            <div className="mt-2 flex items-center gap-3 border-t border-white/12 pt-2 sm:mt-4 sm:pt-4">
-              <span className="field-label hidden min-w-0 items-center gap-1.5 truncate text-biome-ink/48 sm:flex"><CalendarDays size={12} />Best {hotspot.bestMonths.slice(0, 4).join(" · ")}</span>
+            <div className="mt-2 flex min-w-0 flex-wrap items-center gap-2 border-t border-white/12 pt-2 sm:mt-4 sm:pt-4">
+              <span className="field-label hidden min-w-0 flex-1 items-center gap-1.5 truncate text-biome-ink/48 sm:flex"><CalendarDays size={12} />Best {hotspot.bestMonths.slice(0, 4).join(" · ")}</span>
               <JournalSaveButton type="hotspot" slug={hotspot.slug} tone="dark" compact />
-              <Link href={`/hotspots/${hotspot.slug}`} className="ml-auto inline-flex shrink-0 items-center gap-1.5 rounded-full bg-biome-accent px-4 py-2 text-xs font-bold text-biome-surface transition hover:bg-white">Open field guide <ArrowRight size={13} /></Link>
+              <Link href={`/hotspots/${hotspot.slug}`} className="ml-auto inline-flex max-w-full shrink-0 items-center gap-1.5 rounded-full bg-biome-accent px-3 py-2 text-xs font-bold text-biome-surface transition hover:bg-white sm:px-4">Open field guide <ArrowRight size={13} /></Link>
             </div>
           </div>
         </div>
