@@ -3,14 +3,13 @@
 import Link from "next/link";
 import { ArrowRight, Binoculars, BookOpen, Compass, MapPin, PawPrint, Trash2 } from "lucide-react";
 import { useMemo, useState } from "react";
-import { hotspots } from "@/data/hotspots";
-import { species } from "@/data/species";
-import { ecosystem } from "@/data/ecosystems";
 import { HotspotImage } from "@/components/HotspotImage";
 import { SpeciesImage } from "@/components/SpeciesImage";
 import { useJournal, type JournalEntry, type JournalEntryType } from "@/components/JournalProvider";
 import type { HotspotType } from "@/data/types";
 import { JourneyTrail } from "@/components/JourneyTrail";
+import type { JournalIndex, JournalIndexRecord } from "@/lib/journalIndexTypes";
+import { useJournalIndex } from "@/lib/useJournalIndex";
 
 type Filter = "all" | JournalEntryType;
 
@@ -21,7 +20,11 @@ export default function FieldJournalPage() {
   const speciesCount = entries.filter((entry) => entry.type === "species").length;
   const hotspotCount = entries.filter((entry) => entry.type === "hotspot").length;
   const visibleEntries = filter === "all" ? entries : entries.filter((entry) => entry.type === filter);
-  const resolvedEntries = useMemo(() => visibleEntries.map((entry) => resolveEntry(entry)).filter(Boolean) as ResolvedEntry[], [visibleEntries]);
+  const { index, loading: indexLoading, failed: indexFailed } = useJournalIndex(hydrated && entries.length > 0);
+  const resolvedEntries = useMemo(
+    () => index ? visibleEntries.map((entry) => resolveEntry(entry, index)).filter(Boolean) as ResolvedEntry[] : [],
+    [index, visibleEntries],
+  );
 
   return (
     <main className="min-h-screen bg-paper pb-24 text-ink">
@@ -54,6 +57,13 @@ export default function FieldJournalPage() {
             <p className="mx-auto mt-4 max-w-lg text-sm leading-7 text-slate-600 dark:text-slate-300">Save a species that fascinates you or a place you want to experience. It will appear here with space for your own notes.</p>
             <div className="mt-8 flex flex-wrap justify-center gap-3"><Link href="/species" className="atlas-button"><PawPrint size={15} /> Explore species</Link><Link href="/map" className="atlas-button !bg-forest-900 !border-forest-900 !text-white"><Compass size={15} /> Open the atlas</Link></div>
           </section>
+        ) : indexLoading ? (
+          <div className="grid gap-4 sm:grid-cols-2" aria-label="Loading saved field notes"><div className="h-72 animate-pulse rounded-field bg-forest-900/5" /><div className="h-72 animate-pulse rounded-field bg-forest-900/5" /></div>
+        ) : indexFailed ? (
+          <section className="rounded-field border border-clay/20 bg-clay/5 px-6 py-12 text-center">
+            <h2 className="font-display text-3xl text-forest-900">Your notes are still safe in this browser.</h2>
+            <p className="mx-auto mt-3 max-w-xl text-sm leading-7 text-slate-600">The field index could not be loaded just now. Reload to reconnect names and images to your saved entries.</p>
+          </section>
         ) : (
           <>
             <div className="flex flex-col justify-between gap-4 border-b border-forest-900/10 pb-6 sm:flex-row sm:items-center">
@@ -79,25 +89,13 @@ export default function FieldJournalPage() {
   );
 }
 
-type ResolvedEntry = {
+type ResolvedEntry = JournalIndexRecord & {
   entry: JournalEntry;
-  title: string;
-  subtitle: string;
-  meta: string;
-  href: string;
-  mapHref: string;
-  category: string;
 };
 
-function resolveEntry(entry: JournalEntry): ResolvedEntry | null {
-  if (entry.type === "species") {
-    const item = species.find((candidate) => candidate.slug === entry.slug);
-    if (!item) return null;
-    return { entry, title: item.commonName, subtitle: item.scientificName, meta: `${item.category} · ${item.difficultyOfSighting} sighting`, href: `/species/${item.slug}`, mapHref: `/species/${item.slug}#range`, category: item.category };
-  }
-  const item = hotspots.find((candidate) => candidate.slug === entry.slug);
-  if (!item) return null;
-  return { entry, title: item.name, subtitle: `${item.state} · ${item.region}`, meta: `${ecosystem[item.slug] ?? item.type} · Best ${item.bestMonths.slice(0, 4).join(", ")}`, href: `/hotspots/${item.slug}`, mapHref: `/map?place=${item.slug}`, category: item.type };
+function resolveEntry(entry: JournalEntry, index: JournalIndex): ResolvedEntry | null {
+  const item = index[entry.id];
+  return item ? { entry, ...item } : null;
 }
 
 function JournalCard({ item, onNote, onRemove }: { item: ResolvedEntry; onNote: (id: string, note: string) => void; onRemove: (id: string) => void }) {
@@ -105,7 +103,11 @@ function JournalCard({ item, onNote, onRemove }: { item: ResolvedEntry; onNote: 
   return (
     <article className="field-card overflow-hidden rounded-field">
       <div className="grid min-h-[190px] sm:grid-cols-[180px_1fr]">
-        {isSpecies ? <SpeciesImage slug={item.entry.slug} category={item.category} showCredit={false} className="h-48 w-full sm:h-full" /> : <HotspotImage slug={item.entry.slug} type={item.category as HotspotType} showCredit={false} className="h-48 w-full sm:h-full" />}
+        {isSpecies
+          ? item.photoUrl
+            ? <img src={item.photoUrl} alt="" className="h-48 w-full object-cover sm:h-full" loading="lazy" />
+            : <SpeciesImage slug={item.entry.slug} category={item.category} showCredit={false} className="h-48 w-full sm:h-full" />
+          : <HotspotImage slug={item.entry.slug} type={item.category as HotspotType} showCredit={false} className="h-48 w-full sm:h-full" />}
         <div className="flex flex-col p-5">
           <p className="field-label flex items-center gap-2 text-forest-700 dark:text-sand">{isSpecies ? <Binoculars size={13} /> : <MapPin size={13} />}{isSpecies ? "Wildlife" : "Atlas place"}</p>
           <h2 className="mt-3 font-display text-3xl text-forest-900">{item.title}</h2>

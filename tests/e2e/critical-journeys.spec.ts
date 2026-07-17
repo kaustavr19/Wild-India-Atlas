@@ -15,6 +15,13 @@ const seededJournal = [
     note: "",
     savedAt: "2026-07-01T00:00:00.000Z",
   },
+  {
+    id: "species:ablepharus",
+    type: "species",
+    slug: "ablepharus",
+    note: "Extended record remains available",
+    savedAt: "2026-07-01T00:00:00.000Z",
+  },
 ];
 
 const seededJourney = [
@@ -104,12 +111,29 @@ test("seasonal planner filters remain shareable in the URL", async ({ page }) =>
   await expect(page.getByText("Showing south · birding", { exact: false })).toBeVisible();
 });
 
+test("an empty field journal does not download the static species lookup", async ({ page }) => {
+  await page.addInitScript(() => {
+    localStorage.removeItem("wia-field-journal-v1");
+    localStorage.removeItem("wia-expedition-trail-v1");
+  });
+
+  let lookupRequests = 0;
+  page.on("request", (request) => {
+    if (new URL(request.url()).pathname === "/data/journal-index") lookupRequests += 1;
+  });
+
+  await page.goto("/field-journal");
+  await expect(page.getByRole("heading", { level: 2, name: "Your first field note starts outside." })).toBeVisible();
+  expect(lookupRequests).toBe(0);
+});
+
 test("existing journal and trail storage survives hydration and reload", async ({ page }) => {
   await page.goto("/field-journal");
 
   await expect(page.getByRole("heading", { level: 1, name: "Keep what calls you back." })).toBeVisible();
   await expect(page.locator("article").getByRole("heading", { level: 2, name: "Bengal Tiger" })).toBeVisible();
   await expect(page.locator("article").getByRole("heading", { level: 2, name: "Jim Corbett National Park" })).toBeVisible();
+  await expect(page.locator("article").getByRole("heading", { level: 2, name: "Ablepharus" })).toBeVisible();
   const seededNote = page.locator('textarea[id="note-species:bengal-tiger"]');
   await expect(seededNote).toHaveValue("Keep this field note");
 
