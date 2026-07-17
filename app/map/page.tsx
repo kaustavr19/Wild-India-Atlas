@@ -81,7 +81,7 @@ function MapExperience() {
   }
 
   return (
-    <main className={`biome-surface ${atmosphere} texture-topography relative min-h-screen overflow-hidden px-4 pb-10 pt-24 text-biome-ink transition-colors duration-700 sm:px-6 sm:pt-28`}>
+    <main className={`biome-surface ${atmosphere} texture-topography relative min-h-screen overflow-x-clip overflow-y-visible px-4 pb-10 pt-24 text-biome-ink transition-colors duration-700 sm:px-6 sm:pt-28`}>
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_8%,rgba(255,255,255,0.08),transparent_28%)]" />
       <div className="relative mx-auto max-w-[1680px]">
         <header className="grid gap-7 border-b border-white/12 pb-7 lg:grid-cols-[1fr_auto] lg:items-end">
@@ -107,7 +107,7 @@ function MapExperience() {
           <button aria-pressed={tab === "list"} onClick={() => setTab("list")} className={`atlas-chip flex flex-1 items-center justify-center ${tab === "list" ? "border-biome-accent bg-biome-accent text-biome-surface" : ""}`}><List size={14} />Field index ({visible.length})</button>
         </div>
 
-        <div className="mt-5 grid min-h-0 gap-5 lg:h-[calc(100svh-17rem)] lg:min-h-[620px] lg:grid-cols-[350px_minmax(0,1fr)]">
+        <div className="relative mt-5 grid min-h-0 gap-5 lg:h-[calc(100svh-17rem)] lg:min-h-[620px] lg:grid-cols-[350px_minmax(0,1fr)]">
           <aside className={`${tab === "list" ? "flex" : "hidden"} h-[72svh] min-h-[560px] max-h-[760px] flex-col overflow-hidden rounded-field border border-white/12 bg-black/18 backdrop-blur-xl lg:flex lg:h-auto lg:min-h-0 lg:max-h-none`}>
             <div className="border-b border-white/10 p-4">
               <FilterPanel variant="atlas" filters={filters} setFilters={setFilters} onReset={resetFilters} />
@@ -128,10 +128,11 @@ function MapExperience() {
             </section>
           </aside>
 
-          <div className={`${tab === "map" ? "block" : "hidden"} relative min-w-0 lg:block lg:h-full`}>
+          <div data-testid="map-canvas" className={`${tab === "map" ? "block" : "hidden"} relative min-h-0 min-w-0 lg:block`}>
             <IndiaMap hotspots={visible} selectedSlug={active?.slug} onSelect={select} initialLayers={mapState.layers} initialRegion={mapState.region} onStateChange={updateMapState} />
-            {active && panelOpen && <HotspotPreviewCard hotspot={active} nearby={nearby} onSelect={select} docked onClose={() => setPanelOpen(false)} />}
           </div>
+
+          {active && panelOpen && <HotspotPreviewCard hotspot={active} nearby={nearby} onSelect={select} docked onClose={() => setPanelOpen(false)} />}
         </div>
       </div>
     </main>
