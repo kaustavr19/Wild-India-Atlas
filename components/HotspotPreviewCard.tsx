@@ -22,7 +22,7 @@ export function HotspotPreviewCard({ hotspot, docked, onClose, nearby = [], onSe
 
   if (docked) {
     return (
-      <article aria-live="polite" className={`biome-surface ${biomeClassName[biome]} pointer-events-auto absolute inset-x-3 bottom-3 z-20 max-h-[52%] overflow-y-auto rounded-field border border-white/18 shadow-lift sm:bottom-5 sm:left-5 sm:right-auto sm:max-h-none sm:w-[min(540px,calc(100%-2.5rem))] sm:overflow-hidden`}>
+      <article aria-live="polite" className={`biome-surface ${biomeClassName[biome]} pointer-events-auto relative z-20 w-full scroll-m-3 overflow-visible rounded-field border border-white/18 shadow-lift lg:absolute lg:bottom-5 lg:left-[390px] lg:max-h-[calc(100%-2.5rem)] lg:w-[min(540px,calc(100%-410px))] lg:scroll-m-5 lg:overflow-y-auto lg:overscroll-contain`}>
         <div className="grid sm:grid-cols-[160px_1fr]">
           <HotspotImage slug={hotspot.slug} type={hotspot.type} className="hidden h-full min-h-[220px] sm:block" />
           <div className="relative p-3 sm:p-5">
