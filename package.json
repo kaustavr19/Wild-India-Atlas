@@ -10,6 +10,10 @@
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "test:e2e": "node scripts/run-e2e.mjs",
     "test:e2e:production": "node scripts/run-e2e.mjs --production-server",
+    "audit:species-images": "node --experimental-strip-types scripts/audit-species-images.ts",
+    "find:species-images": "node --experimental-strip-types scripts/find-species-image-candidates.ts",
+    "source:species-images": "node --experimental-strip-types scripts/source-wikimedia-species-images.ts",
+    "cache:species-images": "node --experimental-strip-types scripts/cache-species-images.ts",
     "find:ebird-hotspots": "node --experimental-strip-types scripts/find-ebird-hotspots.ts",
     "fetch:ebird": "node --experimental-strip-types scripts/fetch-ebird-species.ts",
     "find:inaturalist-places": "node --experimental-strip-types scripts/find-inaturalist-places.ts",
@@ -34,6 +38,7 @@
     "@types/topojson-client": "^3.1.5",
     "autoprefixer": "10.4.20",
     "postcss": "8.4.49",
+    "sharp": "^0.34.5",
     "tailwindcss": "3.4.17",
     "typescript": "5.7.2"
   }

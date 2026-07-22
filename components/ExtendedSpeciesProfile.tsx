@@ -16,7 +16,7 @@ import { indiaSpecialities } from "@/data/indiaSpecialities";
 import { SpecialityBadges } from "./SpecialityBadges";
 import { JourneyTracker } from "./JourneyTracker";
 import { JournalSaveButton } from "./JournalSaveButton";
-import { SpeciesImage } from "./SpeciesImage";
+import { ExtendedSpeciesImage } from "./ExtendedSpeciesImage";
 import { HotspotCard } from "./HotspotCard";
 import { getHotspotBySlug } from "@/data/hotspots";
 import { ecosystem, type Ecosystem } from "@/data/ecosystems";
@@ -45,13 +45,7 @@ export function ExtendedSpeciesProfile({ species }: { species: ExtendedSpecies }
       <JourneyTracker type="species" slug={species.slug} />
 
       <section className="species-hero relative flex min-h-[88svh] items-end overflow-hidden border-b border-biome-line/10">
-        {species.photoUrl ? (
-          <div className="absolute inset-0 overflow-hidden bg-biome-surface">
-            <img src={species.photoUrl} alt={`${species.commonName} citizen-science observation`} className="hero-ken-burns h-full w-full object-cover" loading="eager" fetchPriority="high" />
-          </div>
-        ) : (
-          <SpeciesImage slug={species.slug} category={species.iconicGroup} alt="" priority className="hero-ken-burns absolute inset-0 h-full w-full" />
-        )}
+        <ExtendedSpeciesImage slug={species.slug} category={species.iconicGroup} fallbackPhotoUrl={species.photoUrl} alt={`${species.commonName} taxonomic reference`} priority className="absolute inset-0 h-full w-full" imageClassName="hero-ken-burns" />
         <div className="species-hero-wash absolute inset-0" />
         <div className="texture-grain pointer-events-none absolute inset-0" />
 
