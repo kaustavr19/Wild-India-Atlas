@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { SpeciesImage } from "./SpeciesImage";
+import { ExtendedSpeciesImage } from "./ExtendedSpeciesImage";
 import { SpecialityBadges } from "./SpecialityBadges";
 
 // One consistent minimal layout for the merged /species list regardless of tier — the
 // Flagship/Extended split still exists (it decides which profile template a click leads to),
 // it just isn't shown as a browsing-level distinction anymore. Flagship keeps its existing
 // photo behavior (real photo or the site's designed fallback illustration, via
-// <SpeciesImage>); Extended keeps its own (real photoUrl or a plain text header, never a
-// placeholder) — unchanged from how each already worked, just wrapped in the same card shell.
+// <SpeciesImage>); Extended resolves reviewed manifest images first, preserves legacy
+// citizen-science photos, and uses the designed fallback when neither is available.
 export type MergedSpeciesListItem = {
   slug: string;
   commonName: string;
@@ -28,14 +29,10 @@ export function MergedSpeciesCard({ item }: { item: MergedSpeciesListItem }) {
             <SpeciesImage slug={item.slug} category={item.group} className="h-36 w-full" showCredit={false} />
             <div className="absolute right-3 top-3 rounded-sm bg-forest-900/90 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-sand">{item.group}</div>
           </div>
-        ) : item.photoUrl ? (
-          <div className="relative h-36 w-full overflow-hidden bg-forest-900">
-            <img src={item.photoUrl} alt="" className="h-full w-full object-cover" loading="lazy" />
-            <div className="absolute right-3 top-3 rounded-sm bg-forest-900/90 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-sand">{item.group}</div>
-          </div>
         ) : (
-          <div className="flex h-14 items-center bg-forest-100 px-4 dark:bg-forest-900/40">
-            <span className="font-mono text-[10px] font-semibold uppercase tracking-wider text-forest-700 dark:text-forest-300">{item.group}</span>
+          <div className="relative">
+            <ExtendedSpeciesImage slug={item.slug} category={item.group} fallbackPhotoUrl={item.photoUrl} className="h-36 w-full" showCredit={false} />
+            <div className="absolute right-3 top-3 rounded-sm bg-forest-900/90 px-2 py-1 font-mono text-[10px] font-semibold uppercase tracking-wider text-sand">{item.group}</div>
           </div>
         )}
         <div className="p-4">

@@ -9,6 +9,7 @@ import { biomeClassName, biomeThemes } from "@/lib/experienceDesign";
 import { conservationBand, defaultSpeciesDiscoveryFilters, filterSpeciesDiscovery, type ConservationBand, type SpeciesDiscoveryFilters, type SpeciesDiscoveryItem } from "@/lib/speciesDiscovery";
 import { JournalSaveButton } from "@/components/JournalSaveButton";
 import { SpeciesImage } from "@/components/SpeciesImage";
+import { ExtendedSpeciesImage } from "@/components/ExtendedSpeciesImage";
 import { SpecialityBadges } from "@/components/SpecialityBadges";
 
 const ecosystemOrder: Ecosystem[] = ["forest", "wetland", "desert", "alpine", "mangrove", "marine"];
@@ -99,7 +100,6 @@ function HabitatPortal({ biome, count, active, onSelect }: { biome: Ecosystem; c
 }
 
 function SpeciesFieldCard({ item }: { item: SpeciesDiscoveryItem }) {
-  const biome = item.biome ?? "forest";
   const recordNote = item.confirmedAtCount ? `Confirmed across ${item.confirmedAtCount} atlas ${item.confirmedAtCount === 1 ? "place" : "places"} from ${item.source}.` : undefined;
   const provenance = item.tier === "Flagship" ? item.biome : item.source;
 
@@ -108,10 +108,8 @@ function SpeciesFieldCard({ item }: { item: SpeciesDiscoveryItem }) {
       <div className="relative h-60 overflow-hidden bg-forest-900">
         {item.tier === "Flagship" ? (
           <SpeciesImage slug={item.slug} category={item.group} className="h-full w-full" showCredit={false} />
-        ) : item.photoUrl ? (
-          <img src={item.photoUrl} alt="" className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]" loading="lazy" />
         ) : (
-          <div className={`biome-surface ${biomeClassName[biome]} texture-topography h-full w-full`} />
+          <ExtendedSpeciesImage slug={item.slug} category={item.group} fallbackPhotoUrl={item.photoUrl} className="h-full w-full" showCredit={false} />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-forest-900/90 via-transparent to-transparent" />
         <div className="absolute bottom-4 left-4 right-4 text-white">
