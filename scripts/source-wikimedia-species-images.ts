@@ -30,7 +30,7 @@ type CommonsImageInfo = {
 };
 type CommonsResponse = { query?: { pages?: Record<string, { title?: string; imageinfo?: CommonsImageInfo[] }> } };
 
-const USER_AGENT = "WildIndiaAtlas/1.0 (read-only licensed image candidate lookup; contact via repository)";
+const USER_AGENT = "WildIndiaAtlas/1.0 (read-only licensed image candidate lookup; https://github.com/kaustavr19/Wild-India-Atlas)";
 
 function plainText(value: string | undefined): string {
   return (value ?? "")
@@ -44,9 +44,24 @@ function plainText(value: string | undefined): string {
 }
 
 async function getJson<T>(url: URL): Promise<T> {
-  const response = await fetch(url, { headers: { "User-Agent": USER_AGENT }, signal: AbortSignal.timeout(15_000) });
-  if (!response.ok) throw new Error(`${response.status} ${response.statusText} for ${url.hostname}`);
-  return await response.json() as T;
+  let lastError = "unknown error";
+  for (let attempt = 1; attempt <= 5; attempt++) {
+    try {
+      const response = await fetch(url, { headers: { "User-Agent": USER_AGENT }, signal: AbortSignal.timeout(30_000) });
+      if (response.ok) return await response.json() as T;
+      lastError = `${response.status} ${response.statusText}`;
+      if (response.status !== 429 && response.status < 500) break;
+      const retryAfter = Number(response.headers.get("retry-after"));
+      const delay = Number.isFinite(retryAfter) && retryAfter > 0
+        ? Math.min(retryAfter * 1_000, 30_000)
+        : attempt * 4_000;
+      await new Promise((resolve) => setTimeout(resolve, delay));
+    } catch (error) {
+      lastError = error instanceof Error ? error.message : String(error);
+      await new Promise((resolve) => setTimeout(resolve, attempt * 4_000));
+    }
+  }
+  throw new Error(`${lastError} for ${url.hostname}`);
 }
 
 async function wikidataImageFilename(scientificName: string): Promise<string> {
@@ -90,11 +105,21 @@ async function commonsMetadata(filename: string, scientificName: string): Promis
 }
 
 const output: Record<string, ExtendedSpeciesImageMeta> = {};
+const failures: Array<{ slug: string; reason: string }> = [];
 for (const slug of requestedSlugs) {
   const species = bySlug.get(slug);
   if (!species) throw new Error(`${slug} is not a canonical extended species slug.`);
-  const filename = await wikidataImageFilename(species.scientificName);
-  output[slug] = await commonsMetadata(filename, species.scientificName);
+  try {
+    const filename = await wikidataImageFilename(species.scientificName);
+    output[slug] = await commonsMetadata(filename, species.scientificName);
+  } catch (error) {
+    failures.push({ slug, reason: error instanceof Error ? error.message : String(error) });
+  }
+  await new Promise((resolve) => setTimeout(resolve, 1_500));
 }
 
 console.log(JSON.stringify(output, null, 2));
+if (failures.length > 0) {
+  console.error("\nCandidates requiring manual review:");
+  for (const failure of failures) console.error(`${failure.slug}\t${failure.reason}`);
+}

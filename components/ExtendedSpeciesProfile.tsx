@@ -21,6 +21,7 @@ import { HotspotCard } from "./HotspotCard";
 import { getHotspotBySlug } from "@/data/hotspots";
 import { ecosystem, type Ecosystem } from "@/data/ecosystems";
 import { biomeClassName, biomeThemes } from "@/lib/experienceDesign";
+import type { ExtendedSpeciesImageMeta } from "@/lib/speciesImageAudit";
 
 function dominantBiome(slugs: string[]): Ecosystem {
   const counts = new Map<Ecosystem, number>();
@@ -33,7 +34,13 @@ function dominantBiome(slugs: string[]): Ecosystem {
 
 // Evidence-led profiles deliberately do not invent habitat, viewing or photography notes.
 // Their richer presentation is built only from grouped citizen-science records already in the atlas.
-export function ExtendedSpeciesProfile({ species }: { species: ExtendedSpecies }) {
+export function ExtendedSpeciesProfile({
+  species,
+  licensedImage,
+}: {
+  species: ExtendedSpecies;
+  licensedImage?: ExtendedSpeciesImageMeta;
+}) {
   const speciality = indiaSpecialities[species.scientificName];
   const confirmedHotspots = species.confirmedAt.map((confirmation) => getHotspotBySlug(confirmation.slug)).filter(Boolean);
   const biome = dominantBiome(species.confirmedAt.map((confirmation) => confirmation.slug));
@@ -45,7 +52,7 @@ export function ExtendedSpeciesProfile({ species }: { species: ExtendedSpecies }
       <JourneyTracker type="species" slug={species.slug} />
 
       <section className="species-hero relative flex min-h-[88svh] items-end overflow-hidden border-b border-biome-line/10">
-        <ExtendedSpeciesImage slug={species.slug} category={species.iconicGroup} fallbackPhotoUrl={species.photoUrl} alt={`${species.commonName} taxonomic reference`} priority className="absolute inset-0 h-full w-full" imageClassName="hero-ken-burns" />
+        <ExtendedSpeciesImage slug={species.slug} category={species.iconicGroup} fallbackPhotoUrl={species.photoUrl} licensedImage={licensedImage} alt={`${species.commonName} taxonomic reference`} priority className="absolute inset-0 h-full w-full" imageClassName="hero-ken-burns" />
         <div className="species-hero-wash absolute inset-0" />
         <div className="texture-grain pointer-events-none absolute inset-0" />
 
