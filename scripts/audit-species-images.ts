@@ -49,7 +49,7 @@ async function remoteImageCheck(): Promise<RemoteImageCheck> {
     while (cursor < queue.length) {
       const url = queue[cursor++];
       try {
-        const requestHeaders = { "User-Agent": "WildIndiaAtlas/1.0 (read-only image health audit; contact via repository)" };
+        const requestHeaders = { "User-Agent": "WildIndiaAtlas/1.0 (read-only image health audit; https://github.com/kaustavr19/Wild-India-Atlas)" };
         let response = await fetch(url, { method: "HEAD", headers: requestHeaders, redirect: "follow", signal: AbortSignal.timeout(10_000) });
         if (response.status === 405 || response.status === 403) {
           response = await fetch(url, { headers: { ...requestHeaders, Range: "bytes=0-0" }, redirect: "follow", signal: AbortSignal.timeout(10_000) });

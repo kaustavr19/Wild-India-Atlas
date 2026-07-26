@@ -19,7 +19,7 @@ const extendedImages = extendedImagesRaw as Record<string, ExtendedSpeciesImageM
 const ebirdSpecies = ebirdSpeciesRaw as Record<string, Array<{ sciName: string; comName: string; photoUrl?: string }>>;
 const inaturalistSpecies = inaturalistSpeciesRaw as Record<string, Array<{ scientificName: string; commonName: string; photoUrl?: string }>>;
 
-test("records the current Phase 3B species image coverage", () => {
+test("records the current Phase 3F species image coverage", () => {
   const report = buildSpeciesImageAudit({ flagshipSpecies, flagshipImages, extendedImages, ebirdSpecies, inaturalistSpecies });
 
   assert.deepEqual(report.catalog, {
@@ -30,11 +30,11 @@ test("records the current Phase 3B species image coverage", () => {
     extendedOtherAnimals: 389,
   });
   assert.deepEqual(report.coverage, {
-    attributableLicensed: 33,
+    attributableLicensed: 130,
     legacyRemoteWithoutAttribution: 389,
-    designedFallbackRequired: 937,
-    displayablePercent: 31.05,
-    attributablePercent: 2.43,
+    designedFallbackRequired: 840,
+    displayablePercent: 38.19,
+    attributablePercent: 9.57,
   });
 });
 
@@ -44,7 +44,7 @@ test("keeps every current manifest entry valid and attached to a canonical speci
 
   assert.deepEqual(errors, []);
   assert.equal(report.manifests.flagshipEntries, flagshipSpecies.length);
-  assert.equal(report.manifests.extendedEntries, 12);
+  assert.equal(report.manifests.extendedEntries, 109);
   assert.ok(report.issues.some((issue) => issue.code === "legacy-photos-without-attribution"));
   let totalCachedBytes = 0;
   for (const [slug, meta] of Object.entries(extendedImages)) {
@@ -56,7 +56,7 @@ test("keeps every current manifest entry valid and attached to a canonical speci
     assert.ok(bytes <= 500_000, `${slug} should remain below the 500 KB per-image pilot limit`);
     totalCachedBytes += bytes;
   }
-  assert.ok(totalCachedBytes <= 2_500_000, "the complete pilot should remain below 2.5 MB");
+  assert.ok(totalCachedBytes <= 11_000_000, "the complete Phase 3F reviewed image collection should remain below 11 MB");
 });
 
 test("rejects incomplete licensed image overrides", () => {

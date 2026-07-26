@@ -19,8 +19,11 @@ import { speciesEncounters } from "@/data/speciesEncounters";
 import { WildlifeEncounter } from "@/components/WildlifeEncounter";
 import { JournalSaveButton } from "@/components/JournalSaveButton";
 import { JourneyTracker } from "@/components/JourneyTracker";
+import extendedSpeciesImagesRaw from "@/data/extended-species-images.json";
+import type { ExtendedSpeciesImageMeta } from "@/lib/speciesImageAudit";
 
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const extendedSpeciesImages = extendedSpeciesImagesRaw as Record<string, ExtendedSpeciesImageMeta>;
 
 function monthWindow(months: string[]): string {
   const indices = Array.from(new Set(months.map((month) => monthNames.indexOf(month)).filter((index) => index >= 0))).sort((a, b) => a - b);
@@ -63,7 +66,7 @@ export default async function SpeciesDetail({ params }: { params: Promise<{ slug
   if (!selectedSpecies) {
     const extended = getExtendedSpeciesBySlug(slug);
     if (!extended) notFound();
-    return <ExtendedSpeciesProfile species={extended} />;
+    return <ExtendedSpeciesProfile species={extended} licensedImage={extendedSpeciesImages[slug]} />;
   }
 
   const matchedHotspots = hotspotsForSpecies(selectedSpecies, hotspots);
